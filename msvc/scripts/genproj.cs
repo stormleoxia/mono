@@ -106,7 +106,12 @@ class MsbuildGenerator {
 	public const string profile_4_0 = "_4_0";
 	public const string profile_4_5 = "_4_5";
 
-	static void Usage ()
+    public bool IsValid
+    {
+        get { return (Directory.Exists(base_dir)); }
+    }
+
+    static void Usage ()
 	{
 		Console.WriteLine ("Invalid argument");
 	}
@@ -152,7 +157,7 @@ class MsbuildGenerator {
 			csProjFilename = this.CsprojFilename,
 			projectGuid = this.projectGuid,
 			library_output = this.LibraryOutput,
-			fx_version = double.Parse (fx_version),
+			fx_version = double.Parse (fx_version, CultureInfo.InvariantCulture),
 			library = this.library,
 			MsbuildGenerator = this
 		};
@@ -726,8 +731,7 @@ class MsbuildGenerator {
 		}
 
 		string [] source_files;
-		//Console.WriteLine ("Base: {0} res: {1}", base_dir, response);
-		using (var reader = new StreamReader (NativeName (base_dir + "\\" + response))) {
+	    using (var reader = new StreamReader (NativeName (base_dir + "\\" + response))) {
 			source_files = reader.ReadToEnd ().Split ();
 		}
 
@@ -1042,18 +1046,24 @@ public class Driver {
 			projects [library_output] = new MsbuildGenerator (project);
 		}
 		foreach (var project in GetProjects (makefileDeps)){
-			var library_output = project.Element ("library_output").Value;
-			var gen = projects [library_output];
-			try {
-				var csproj = gen.Generate (projects);
-				var csprojFilename = csproj.csProjFilename;
-				if (!sln_gen.ContainsProjectIdentifier (csproj.library)) {
-					sln_gen.Add (csproj);
-				} else {
-					duplicates.Add (csprojFilename);
-				}
-				
-			} catch (Exception e) {
+            try
+            {
+                var library_output = project.Element("library_output").Value;
+			    var gen = projects [library_output];
+                if (gen.IsValid)
+                {
+                    var csproj = gen.Generate(projects);
+                    var csprojFilename = csproj.csProjFilename;
+                    if (!sln_gen.ContainsProjectIdentifier(csproj.library))
+                    {
+                        sln_gen.Add(csproj);
+                    }
+                    else
+                    {
+                        duplicates.Add(csprojFilename);
+                    }
+                }
+            } catch (Exception e) {
 				Console.WriteLine ("Error in {0}\n{1}", project, e);
 			}
 		}
