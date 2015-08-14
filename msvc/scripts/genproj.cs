@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Globalization;
 using System.Xml.Linq;
@@ -280,7 +281,7 @@ class MsbuildGenerator {
 		case "/out":
 			if (value.Length == 0) {
 				Usage ();
-				Environment.Exit (1);
+				Driver.ConsoleExit (1);
 			}
 			OutputFile = value;
 			return true;
@@ -307,7 +308,7 @@ class MsbuildGenerator {
 		case "/define": {
 				if (value.Length == 0) {
 					Usage ();
-					Environment.Exit (1);
+					Driver.ConsoleExit (1);
 				}
 
 				foreach (string d in value.Split (argument_value_separator)) {
@@ -324,6 +325,9 @@ class MsbuildGenerator {
 			// We should collect data, runtime, etc and store in the file specified
 			//
 			return true;
+        case "/-getresourcestrings":
+            // unrecognized argument: ignore it.
+            return true;
 		case "/linkres":
 		case "/linkresource":
 		case "/res":
@@ -341,11 +345,11 @@ class MsbuildGenerator {
 				break;
 			case 3:
 				Console.WriteLine ("Does not support this method yet: {0}", arg);
-				Environment.Exit (1);
+				Driver.ConsoleExit (1);
 				break;
 			default:
 				Console.WriteLine ("Wrong number of arguments for option `{0}'", option);
-				Environment.Exit (1);
+				Driver.ConsoleExit (1);
 				break;
 			}
 
@@ -353,14 +357,14 @@ class MsbuildGenerator {
 
 		case "/recurse":
 			Console.WriteLine ("/recurse not supported");
-			Environment.Exit (1);
+			Driver.ConsoleExit (1);
 			return true;
 
 		case "/r":
 		case "/reference": {
 				if (value.Length == 0) {
 					Console.WriteLine ("-reference requires an argument");
-					Environment.Exit (1);
+					Driver.ConsoleExit (1);
 				}
 
 				string [] refs = value.Split (argument_value_separator);
@@ -461,7 +465,7 @@ class MsbuildGenerator {
 
 				if (value.Length == 0) {
 					Console.WriteLine ("/nowarn requires an argument");
-					Environment.Exit (1);
+					Driver.ConsoleExit (1);
 				}
 
 				warns = value.Split (argument_value_separator);
@@ -477,7 +481,7 @@ class MsbuildGenerator {
 						ignore_warning.Add (warn);
 					} catch {
 						Console.WriteLine (String.Format ("`{0}' is not a valid warning number", wc));
-						Environment.Exit (1);
+						Driver.ConsoleExit (1);
 					}
 				}
 				return true;
@@ -502,14 +506,14 @@ class MsbuildGenerator {
 		case "/keyfile":
 			if (value == String.Empty) {
 				Console.WriteLine ("{0} requires an argument", arg);
-				Environment.Exit (1);
+				Driver.ConsoleExit (1);
 			}
 			StrongNameKeyFile = value;
 			return true;
 		case "/keycontainer":
 			if (value == String.Empty) {
 				Console.WriteLine ("{0} requires an argument", arg);
-				Environment.Exit (1);
+				Driver.ConsoleExit (1);
 			}
 			StrongNameKeyContainer = value;
 			return true;
@@ -538,7 +542,7 @@ class MsbuildGenerator {
 				return true;
 			}
 			Console.WriteLine ("Invalid option `{0}' for /langversion. It must be either `ISO-1', `ISO-2' or `Default'", value);
-			Environment.Exit (1);
+			Driver.ConsoleExit (1);
 			return true;
 
 		case "/codepage":
@@ -704,30 +708,33 @@ class MsbuildGenerator {
 		while (all_args.Count > 0) {
 			string [] f = all_args.Dequeue ();
 
-			for (int i = 0; i < f.Length; i++) {
-				if (f [i].Length > 0 && f [i][0] == '-')
-					f [i] = "/" + f [i].Substring (1);
-				
-				if (f [i] [0] == '@') {
-					string [] extra_args;
-					string response_file = f [i].Substring (1);
+            for (int i = 0; i < f.Length; i++)
+            {
+                if (f[i].Length > 0 && f[i][0] == '-')
+                    f[i] = "/" + f[i].Substring(1);
 
-					var resp_file_full = Path.Combine (base_dir, response_file);
-					extra_args = LoadArgs (resp_file_full);
-					if (extra_args == null) {
-						Console.WriteLine ("Unable to open response file: " + resp_file_full);
-						Environment.Exit (1);
-					}
+                if (f[i][0] == '@')
+                {
+                    string[] extra_args;
+                    string response_file = f[i].Substring(1);
 
-					all_args.Enqueue (extra_args);
-					continue;
-				}
+                    var resp_file_full = Path.Combine(base_dir, response_file);
+                    extra_args = LoadArgs(resp_file_full);
+                    if (extra_args == null)
+                    {
+                        Console.WriteLine("Unable to open response file: " + resp_file_full);
+                        Driver.ConsoleExit(1);
+                    }
 
-				if (CSCParseOption (f [i], ref f))
-					continue;
-				Console.WriteLine ("Failure with {0}", f [i]);
-				Environment.Exit (1);
-			}
+                    all_args.Enqueue(extra_args);
+                    continue;
+                }
+
+                if (!CSCParseOption(f[i], ref f))
+                {
+                    Console.WriteLine("Unrecognized CSC option {0}: It will be ignored.", f[i]);
+                }
+            }
 		}
 
 		string [] source_files;
@@ -1012,9 +1019,11 @@ public class Driver {
 
 	static void Main (string [] args)
 	{
+	    System.AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
+
 		if (!File.Exists ("genproj.cs")) {
 			Console.WriteLine ("This command must be executed from mono/msvc/scripts");
-			Environment.Exit (1);
+			Driver.ConsoleExit (1);
 		}
 
 		if (args.Length == 1 && args [0].ToLower ().Contains ("-h")) {
@@ -1027,7 +1036,7 @@ public class Driver {
 			Console.WriteLine ("genproj.exe with no arguments is equivalent to 'genproj.exe 2012 true'\n\n");
 			Console.WriteLine ("genproj.exe deps");
 			Console.WriteLine ("Generates a Makefile dependency file from the projects input");
-			Environment.Exit (0);
+			Driver.ConsoleExit (0);
 		}
 
 		var slnVersion = (args.Length > 0) ? args [0] : "2012";
@@ -1101,17 +1110,34 @@ public class Driver {
 				Console.WriteLine ("\n");
 			}
 		}
-		
-		// A few other optional solutions
-		// Solutions with 'everything' and the most common libraries used in development may be of interest
-		//WriteSolution (sln_gen, "mcs_full.sln");
-		//WriteSolution (small_full_sln_gen, "small_full.sln");
-		// The following may be useful if lacking visual studio or MonoDevelop, to bootstrap mono compiler self-hosting
-		//WriteSolution (basic_sln_gen, "mcs_basic.sln");
-		//WriteSolution (build_sln_gen, "mcs_build.sln");
+
+	    ConsoleExit(0);
+
+	    // A few other optional solutions
+	    // Solutions with 'everything' and the most common libraries used in development may be of interest
+	    //WriteSolution (sln_gen, "mcs_full.sln");
+	    //WriteSolution (small_full_sln_gen, "small_full.sln");
+	    // The following may be useful if lacking visual studio or MonoDevelop, to bootstrap mono compiler self-hosting
+	    //WriteSolution (basic_sln_gen, "mcs_basic.sln");
+	    //WriteSolution (build_sln_gen, "mcs_build.sln");
 	}
 
-	// Rebases a path, assuming that execution is taking place in the "class" subdirectory,
+    private static void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
+    {
+        Console.Error.WriteLine(e.ExceptionObject);
+        ConsoleExit(1);
+    }
+
+    public static void ConsoleExit(int errorCode)
+    {
+        if (Debugger.IsAttached)
+        {
+            Console.ReadLine();
+        }
+        System.Environment.Exit(errorCode);
+    }
+
+    // Rebases a path, assuming that execution is taking place in the "class" subdirectory,
 	// so it strips ../class/ from a path, which is a no-op
 	static string RebaseToClassDirectory (string path)
 	{
