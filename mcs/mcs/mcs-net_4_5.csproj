@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\mcs-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,13 +18,12 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <NoWarn>1699</NoWarn>
     <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE;STATIC;NO_SYMBOL_WRITER;NO_AUTHENTICODE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;STATIC;NO_SYMBOL_WRITER;NO_AUTHENTICODE;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -33,7 +31,7 @@
     <DebugType>pdbonly</DebugType>
     <NoWarn>1699</NoWarn>
     <Optimize>true</Optimize>
-    <DefineConstants>STATIC;NO_SYMBOL_WRITER;NO_AUTHENTICODE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <DefineConstants>STATIC;NO_SYMBOL_WRITER;NO_AUTHENTICODE;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -42,6 +40,12 @@
   is a problem to compile the Mono mscorlib.dll -->
   <PropertyGroup>
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>mono.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -73,6 +77,7 @@
     <Compile Include="constant.cs" />
     <Compile Include="context.cs" />
     <Compile Include="convert.cs" />
+    <Compile Include="cs-parser.cs" />
     <Compile Include="cs-tokenizer.cs" />
     <Compile Include="decl.cs" />
     <Compile Include="delegate.cs" />
@@ -109,7 +114,8 @@
     <Compile Include="support.cs" />
     <Compile Include="typemanager.cs" />
     <Compile Include="typespec.cs" />
-    <Compile Include="visit.cs" />  </ItemGroup>
+    <Compile Include="visit.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -119,19 +125,16 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-$(ProjectDir)\..\jay\jay -ct &lt; $(ProjectDir)\..\jay\skeleton.cs $(ProjectDir)\cs-parser.jay > $(ProjectDir)\cs-parser.cs
+$(ProjectDir)\..\jay\jay -ct &lt; $(ProjectDir)\..\jay\skeleton.cs $(ProjectDir)\cs-parser.jay &gt; $(ProjectDir)\cs-parser.cs
 
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-$(ProjectDir)\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\jay\skeleton.cs $(ProjectDir)\cs-parser.jay > $(ProjectDir)\cs-parser.cs
+$(ProjectDir)\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\jay\skeleton.cs $(ProjectDir)\cs-parser.jay &gt; $(ProjectDir)\cs-parser.cs
 
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -139,9 +142,27 @@ $(ProjectDir)\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\jay\skeleton.cs $(Project
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
       <Name>corlib-net_4_5</Name>
     </ProjectReference>
+    <ProjectReference Include="..\class\Microsoft.CSharp\Microsoft.CSharp-net_4_5.csproj">
+      <Project>{d554618c-5d38-413a-82ba-7a70b6fc61a3}</Project>
+      <Name>Microsoft.CSharp-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\class\System.Core\System.Core-net_4_5.csproj">
+      <Project>{d92530f4-3f2b-4351-bd21-9d6bee6d2a4e}</Project>
+      <Name>System.Core-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\class\System.XML\System.Xml-net_4_5.csproj">
+      <Project>{2951dec2-4393-4a78-83f9-42eb39cb708f}</Project>
+      <Name>System.Xml-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\class\System\System-bare-net_4_5.csproj">
+      <Project>{91CDF14E-F60F-4AB7-BC9D-5CBD7E669076}</Project>
+      <Name>System-bare-net_4_5</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="mono.snk" />
+  </ItemGroup>
 </Project>
-

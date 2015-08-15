@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <ProjectGuid>{9A33954F-57A8-4D75-B1D8-0F81808A0DD4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,649</NoWarn>
-    <OutputPath>./../../class/lib/net_4_5</OutputPath>
+    <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -19,13 +19,12 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <NoWarn>1699,649</NoWarn>
     <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NET_4_0;NET_4_5;MONO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -33,7 +32,7 @@
     <DebugType>pdbonly</DebugType>
     <NoWarn>1699,649</NoWarn>
     <Optimize>true</Optimize>
-    <DefineConstants>NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <DefineConstants>NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -46,6 +45,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="..\..\..\external\referencesource\System.Data\Misc\HResults.cs" />
+    <Compile Include="..\..\..\external\referencesource\System.Data\System\Data\Common\AdapterSwitches.cs">
+      <Link>System.Data.Common\AdapterSwitches.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\referencesource\System.Data\System\Data\Common\AdapterUtil.cs" />
     <Compile Include="..\..\..\external\referencesource\System.Data\System\Data\Common\DataColumnMapping.cs" />
     <Compile Include="..\..\..\external\referencesource\System.Data\System\Data\Common\DataColumnMappingCollection.cs" />
@@ -399,7 +401,8 @@
     <Compile Include="System.Data\XmlTableWriter.cs" />
     <Compile Include="System.Data\XmlWriteMode.cs" />
     <Compile Include="System.Xml\XmlDataDocument.cs" />
-    <Compile Include="Mono.Data.SqlExpressions\Parser.cs" />  </ItemGroup>
+    <Compile Include="Mono.Data.SqlExpressions\Parser.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -409,17 +412,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -460,4 +458,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

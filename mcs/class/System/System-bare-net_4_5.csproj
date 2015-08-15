@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <ProjectGuid>{91CDF14E-F60F-4AB7-BC9D-5CBD7E669076}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,618</NoWarn>
-    <OutputPath>./../../class/lib/net_4_5/bare</OutputPath>
+    <OutputPath>.\..\..\class\lib\net_4_5\bare</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -19,13 +19,12 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <NoWarn>1699,618</NoWarn>
     <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;CONFIGURATION_2_0;FEATURE_PAL;SYSTEM_NAMESPACE;MONO</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NET_4_0;NET_4_5;MONO;CONFIGURATION_2_0;FEATURE_PAL;SYSTEM_NAMESPACE;MONO;PLATFORM_UNIX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -33,7 +32,7 @@
     <DebugType>pdbonly</DebugType>
     <NoWarn>1699,618</NoWarn>
     <Optimize>true</Optimize>
-    <DefineConstants>NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;CONFIGURATION_2_0;FEATURE_PAL;SYSTEM_NAMESPACE;MONO</DefineConstants>
+    <DefineConstants>NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;CONFIGURATION_2_0;FEATURE_PAL;SYSTEM_NAMESPACE;MONO;PLATFORM_UNIX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -42,6 +41,12 @@
   is a problem to compile the Mono mscorlib.dll -->
   <PropertyGroup>
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>leoxia.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -1132,7 +1137,8 @@
     <Compile Include="System\UriParseComponents.cs" />
     <Compile Include="System\UriParser.cs" />
     <Compile Include="System\UriPartial.cs" />
-    <Compile Include="System\UriTypeConverter.cs" />  </ItemGroup>
+    <Compile Include="System\UriTypeConverter.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -1142,17 +1148,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -1181,5 +1182,8 @@
       <LogicalName>Question.wav</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="leoxia.snk" />
+    <None Include="mono.snk" />
+  </ItemGroup>
 </Project>
-

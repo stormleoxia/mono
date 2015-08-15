@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,10 +8,9 @@
     <ProjectGuid>{DAF033A4-D1CF-464F-B581-578259BF3F8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
-    <OutputPath>./../../class/lib/net_4_5</OutputPath>
+    <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,13 +18,12 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <NoWarn>1699</NoWarn>
     <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;NET_3_5;NET_3_0</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;NET_3_5;NET_3_0</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -33,7 +31,7 @@
     <DebugType>pdbonly</DebugType>
     <NoWarn>1699</NoWarn>
     <Optimize>true</Optimize>
-    <DefineConstants>NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;NET_3_5;NET_3_0</DefineConstants>
+    <DefineConstants>NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;NET_3_5;NET_3_0</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -142,7 +140,8 @@
     <Compile Include="System.ServiceModel.Discovery\ServiceDiscoveryMode.cs" />
     <Compile Include="System.ServiceModel.Discovery\UdpAnnouncementEndpoint.cs" />
     <Compile Include="System.ServiceModel.Discovery\UdpDiscoveryEndpoint.cs" />
-    <Compile Include="System.ServiceModel.Discovery\UdpTransportSettings.cs" />  </ItemGroup>
+    <Compile Include="System.ServiceModel.Discovery\UdpTransportSettings.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -152,17 +151,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -198,9 +192,12 @@
       <Project>{D52A2CEA-245E-4877-950E-3EAC5F541B8E}</Project>
       <Name>System.Configuration-net_4_5</Name>
     </ProjectReference>
+    <ProjectReference Include="..\System.IdentityModel\System.IdentityModel-net_4_5.csproj">
+      <Project>{f056c062-e467-4989-9366-440e8cd23c0c}</Project>
+      <Name>System.IdentityModel-net_4_5</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-
