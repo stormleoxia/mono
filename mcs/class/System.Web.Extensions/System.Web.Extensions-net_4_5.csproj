@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,7 +19,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -45,6 +44,12 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Extensions\ui\WebControls\IQueryableDataSource.cs">
+      <Link>System.Web.UI.WebControls\IQueryableDataSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Extensions\ui\WebControls\QueryCreatedEventArgs.cs">
+      <Link>System.Web.UI.WebControls\QueryCreatedEventArgs.cs</Link>
+    </Compile>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
@@ -198,17 +203,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -289,4 +289,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-
