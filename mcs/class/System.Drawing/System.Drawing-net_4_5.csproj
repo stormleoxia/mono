@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,7 +19,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -149,7 +148,9 @@
     <Compile Include="System.Drawing.Printing\PreviewPrintController.cs" />
     <Compile Include="System.Drawing.Printing\PrintAction.cs" />
     <Compile Include="System.Drawing.Printing\PrintController.cs" />
-    <Compile Include="System.Drawing.Printing\PrintDocument.cs" />
+    <Compile Include="System.Drawing.Printing\PrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="System.Drawing.Printing\PrinterResolution.cs" />
     <Compile Include="System.Drawing.Printing\PrinterResolutionKind.cs" />
     <Compile Include="System.Drawing.Printing\PrinterSettings.cs" />
@@ -176,6 +177,7 @@
     <Compile Include="System.Drawing.Text\PrivateFontCollection.cs" />
     <Compile Include="System.Drawing.Text\TextRenderingHint.cs" />
     <Compile Include="System.Drawing\Bitmap.cs" />
+    <Compile Include="System.Drawing\BitmapSuffixInSameAssemblyAttribute.cs" />
     <Compile Include="System.Drawing\Brush.cs" />
     <Compile Include="System.Drawing\Brushes.cs" />
     <Compile Include="System.Drawing\BufferedGraphics.cs" />
@@ -236,7 +238,8 @@
     <Compile Include="System.Drawing\SystemIcons.cs" />
     <Compile Include="System.Drawing\SystemPens.cs" />
     <Compile Include="System.Drawing\TextureBrush.cs" />
-    <Compile Include="System.Drawing\ToolboxBitmapAttribute.cs" />  </ItemGroup>
+    <Compile Include="System.Drawing\ToolboxBitmapAttribute.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -246,17 +249,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -292,5 +290,7 @@
       <LogicalName>Shield.ico</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
 </Project>
-
