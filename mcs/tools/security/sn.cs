@@ -176,30 +176,40 @@ namespace Mono.Tools {
 			byte[] token = an.GetPublicKeyToken ();
 
 			// first, try to compare using a mapped public key (e.g. ECMA)
-			bool same = Compare (sign.PublicKey, StrongNameManager.GetMappedPublicKey (token));
+		    var mappedPublicKey = StrongNameManager.GetMappedPublicKey (token);
+		    bool same = Compare (sign.PublicKey, mappedPublicKey);
+		    var explanation = new Explanation ();
+		    explanation.Append ("Key Public Key", sign.PublicKey);
+            explanation.Append ("Assembly Name Token", mappedPublicKey);
 			if (!same) {
 				// second, try to compare using the assembly public key
 				same = Compare (sign.PublicKey, an.GetPublicKey ());
-				if (!same) {
+                explanation.Append ("Assembly Public Key", an.GetPublicKey());
+                if (!same) {
 					// third (and last) chance, try to compare public key token
 					same = Compare (sign.PublicKeyToken, token);
-				}
+                    explanation.Append ("Assembly Public Key Token", token);
+                }
 			}
-
+		    bool signed = false;
 			if (same) {
-				bool signed = sign.Sign (assemblyName);
-				if (!quiet || !signed) {
-					Console.WriteLine (signed ? "Assembly {0} signed." : "Couldn't sign the assembly {0}.", 
-							   assemblyName);
+				signed = sign.Sign (assemblyName);
+				if (!quiet) {
+					Console.WriteLine ("Assembly {0} signed.", assemblyName);
 				}
-				return signed;
 			}
-			
-			Console.WriteLine ("Couldn't sign the assembly {0} with this key pair.", assemblyName);
-			return false;
+		    if (!signed) {
+		        explanation.FailureCause = (same) ? "Sign failure." : "Public keys are not matching.";
+		        // TODO: Should append that kind of message to Console.Error instead.
+		        Console.Write (explanation.ToString ());
+		        Console.WriteLine ("Couldn't sign the assembly {0} with this key pair. {1}", assemblyName,
+		            explanation.FailureCause);
+		    }
+            return signed;		    
 		}
 
-		static int Verify (string assemblyName, bool forceVerification, bool quiet) 
+
+	    static int Verify (string assemblyName, bool forceVerification, bool quiet) 
 		{
 			// this doesn't load the assembly (well it unloads it ;)
 			// http://weblogs.asp.net/nunitaddin/posts/9991.aspx
@@ -520,4 +530,30 @@ namespace Mono.Tools {
 			return 1;
 		}
 	}
+
+    internal class Explanation
+    {
+        private readonly StringBuilder buffer = new StringBuilder ();
+        public string FailureCause { get; set; }
+
+        internal void Append (string keyName, byte[] key)
+        {
+            buffer.AppendFormat ("{0}: {1}{2}", keyName, ConvertToHumanReadableKey (key), Environment.NewLine);
+        }
+
+        private string ConvertToHumanReadableKey (byte[] key)
+        {
+            if (key == null || key.Length == 0)
+                return "<empty>";
+            var display = Convert.ToBase64String (key);
+            if (string.IsNullOrEmpty (display))
+                return "<empty>";
+            return display;
+        }
+
+        public override string ToString ()
+        {
+            return buffer.ToString ();
+        }
+    }
 }
