@@ -140,6 +140,7 @@ net_4_5_dirs := \
 	System.ServiceModel		\
 	System.Web.Extensions		\
 	System.Web.Extensions.Design	\
+	System.Web.Entity \
 	System.Web.DynamicData		\
 	Mono.C5				\
 	Mono.Management			\
