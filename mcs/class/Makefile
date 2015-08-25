@@ -140,7 +140,6 @@ net_4_5_dirs := \
 	System.ServiceModel		\
 	System.Web.Extensions		\
 	System.Web.Extensions.Design	\
-	System.Web.Entity \
 	System.Web.DynamicData		\
 	Mono.C5				\
 	Mono.Management			\
@@ -180,6 +179,7 @@ net_4_5_dirs := \
 	System.Data.Services \
 	System.Json.Microsoft \
 	System.Data.Entity \
+	System.Web.Entity \
 	monodoc	\
 	System.Threading.Tasks.Dataflow \
 	System.ComponentModel.Composition.4.5 \
