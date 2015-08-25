@@ -179,7 +179,6 @@ net_4_5_dirs := \
 	System.ServiceModel		\
 	System.Web.Extensions		\
 	System.Web.Extensions.Design	\
-	System.Web.Entity \
 	System.Web.DynamicData		\
 	Mono.CSharp			\
 	System.Net			\
@@ -242,6 +241,7 @@ net_4_5_parallel_dirs := \
 	System.Data.Entity \
 	System.Data.DataSetExtensions	\
 	System.Json.Microsoft \
+	System.Web.Entity \
 	System.Threading.Tasks.Dataflow \
 	System.ComponentModel.Composition.4.5 \
 	System.IO.Compression \
