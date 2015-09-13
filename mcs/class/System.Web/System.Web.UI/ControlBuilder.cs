@@ -38,6 +38,7 @@ using System.Security.Permissions;
 using System.Web.Compilation;
 using System.Web.Configuration;
 using System.IO;
+using System.Web.Instrumentation;
 using System.Web.UI.WebControls;
 using System.Web.Util;
 
