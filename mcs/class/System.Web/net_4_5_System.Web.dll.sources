@@ -11,3 +11,7 @@ System.Web/TaskAsyncResult.cs
 System.Web/TaskEventHandler.cs
 System.Web.Security/MembershipPasswordAttribute.cs
 System.Web/DynamicModuleManager.cs
+
+../../../external/referencesource/System.Web/Instrumentation/PageExecutionContext.cs
+../../../external/referencesource/System.Web/Instrumentation/PageExecutionListener.cs
+../../../external/referencesource/System.Web/Instrumentation/PageInstrumentationService.cs

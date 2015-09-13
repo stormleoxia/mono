@@ -45,6 +45,15 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\System.Web\Instrumentation\PageExecutionContext.cs">
+      <Link>System.Web.Instrumentation\PageExecutionContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web\Instrumentation\PageExecutionListener.cs">
+      <Link>System.Web.Instrumentation\PageExecutionListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web\Instrumentation\PageInstrumentationService.cs">
+      <Link>System.Web.Instrumentation\PageInstrumentationService.cs</Link>
+    </Compile>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />

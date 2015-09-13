@@ -47,6 +47,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Resources;
 using System.Web.Compilation;
+using System.Web.Instrumentation;
 using System.Web.Profile;
 using CustomErrorMode = System.Web.Configuration.CustomErrorsMode;
 
@@ -88,8 +89,9 @@ namespace System.Web
 		internal static Assembly AppGlobalResourcesAssembly;
 		ProfileBase profile = null;
 		LinkedList<IHttpHandler> handlers;
+	    private PageInstrumentationService _pageInstrumentationService;
 
-		static DefaultResourceProviderFactory DefaultProviderFactory {
+	    static DefaultResourceProviderFactory DefaultProviderFactory {
 			get {
 				if (default_provider_factory == null)
 					default_provider_factory = new DefaultResourceProviderFactory ();
@@ -224,6 +226,19 @@ namespace System.Web
 				return items;
 			}
 		}
+
+        // System.Web.HttpContext
+        public PageInstrumentationService PageInstrumentation
+        {
+            get
+            {
+                if (this._pageInstrumentationService == null)
+                {
+                    this._pageInstrumentationService = new PageInstrumentationService();
+                }
+                return this._pageInstrumentationService;
+            }
+        }
 
 		public HttpRequest Request {
 			get {
