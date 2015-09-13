@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>./../../class/lib/build</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,6 +43,9 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\system.xml\system\xml\bits.cs">
+      <Link>System.Xml/bits.cs</Link>
+    </Compile>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
@@ -432,9 +434,8 @@
     <Compile Include="System.Xml\XmlWriter.cs" />
     <Compile Include="System.Xml\XmlWriterSettings.cs" />
     <Compile Include="System.Xml\XQueryConvert.cs" />
-    <Compile Include="Mono.Xml.Xsl\PatternParser.cs" />
-    <Compile Include="Mono.Xml.Xsl\PatternTokenizer.cs" />
-    <Compile Include="System.Xml.XPath\Parser.cs" />  </ItemGroup>
+    <Compile Include="system.xml\xsddatetime2.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -445,18 +446,16 @@
   <PropertyGroup>
     <PreBuildEvent>
 $(ProjectDir)\..\..\..\mono\msvc\scripts\prepare.exe $(ProjectDir)..\.. xml
-$(ProjectDir)\..\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\..\jay\skeleton.cs $(ProjectDir)\System.Xml.XPath\Parser.jay > $(ProjectDir)\System.Xml.XPath\Parser.cs
-echo #define XSLT_PATTERN > $(ProjectDir)\Mono.Xml.Xsl\PatternParser.cs
-$(ProjectDir)\..\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\..\jay\skeleton.cs $(ProjectDir)\Mono.Xml.Xsl\PatternParser.jay >> $(ProjectDir)\Mono.Xml.Xsl\PatternParser.cs
-echo #define XSLT_PATTERN > $(ProjectDir)\Mono.Xml.Xsl\PatternTokenizer.cs
-type $(ProjectDir)\System.Xml.XPath\Tokenizer.cs >> $(ProjectDir)\Mono.Xml.Xsl\PatternTokenizer.cs
+$(ProjectDir)\..\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\..\jay\skeleton.cs $(ProjectDir)\System.Xml.XPath\Parser.jay &gt; $(ProjectDir)\System.Xml.XPath\Parser.cs
+echo #define XSLT_PATTERN &gt; $(ProjectDir)\Mono.Xml.Xsl\PatternParser.cs
+$(ProjectDir)\..\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\..\jay\skeleton.cs $(ProjectDir)\Mono.Xml.Xsl\PatternParser.jay &gt;&gt; $(ProjectDir)\Mono.Xml.Xsl\PatternParser.cs
+echo #define XSLT_PATTERN &gt; $(ProjectDir)\Mono.Xml.Xsl\PatternTokenizer.cs
+type $(ProjectDir)\System.Xml.XPath\Tokenizer.cs &gt;&gt; $(ProjectDir)\Mono.Xml.Xsl\PatternTokenizer.cs
 
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -473,4 +472,3 @@ type $(ProjectDir)\System.Xml.XPath\Tokenizer.cs >> $(ProjectDir)\Mono.Xml.Xsl\P
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

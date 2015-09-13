@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Mono.Data.Tds-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,8 +43,51 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\bug-4786.cs" />
-    <Compile Include="Test\ConnLifetime.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="mono.data.tds.protocol\tds.cs" />
+    <Compile Include="mono.data.tds.protocol\tds42.cs" />
+    <Compile Include="mono.data.tds.protocol\tds50.cs" />
+    <Compile Include="mono.data.tds.protocol\tds70.cs" />
+    <Compile Include="mono.data.tds.protocol\tds80.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsasyncresult.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsasyncstate.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsbigdecimal.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsbulkcopy.cs" />
+    <Compile Include="mono.data.tds.protocol\tdscollation.cs" />
+    <Compile Include="mono.data.tds.protocol\tdscolumnstatus.cs" />
+    <Compile Include="mono.data.tds.protocol\tdscolumntype.cs" />
+    <Compile Include="mono.data.tds.protocol\tdscomm.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsconnectionparameters.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsconnectionpool.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsdatacolumn.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsdatacolumncollection.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsdatarow.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsenvpacketsubtype.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalerror.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalerrorcollection.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalerrormessageeventargs.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalerrormessageeventhandler.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalexception.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalinfomessageeventargs.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsinternalinfomessageeventhandler.cs" />
+    <Compile Include="mono.data.tds.protocol\tdspacketsubtype.cs" />
+    <Compile Include="mono.data.tds.protocol\tdspackettype.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsrpcprocid.cs" />
+    <Compile Include="mono.data.tds.protocol\tdstimeoutexception.cs" />
+    <Compile Include="mono.data.tds.protocol\tdsversion.cs" />
+    <Compile Include="mono.data.tds\tdsmetaparameter.cs" />
+    <Compile Include="mono.data.tds\tdsmetaparametercollection.cs" />
+    <Compile Include="mono.data.tds\tdsparameterdirection.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -55,13 +97,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -87,4 +126,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

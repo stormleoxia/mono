@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\WebMatrix.Data-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,10 +43,17 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="webmatrix.data\connectioneventargs.cs" />
+    <Compile Include="webmatrix.data\database.cs" />
     <Compile Include="WebMatrix.Data\DynamicRecord.cs" />
-    <Compile Include="Test\WebMatrix.Data\ConnectionEventArgsTests.cs" />
-    <Compile Include="Test\WebMatrix.Data\DatabaseTests.cs" />
-    <Compile Include="Test\WebMatrix.Data\DynamicRecordTests.cs" />  </ItemGroup>
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -57,13 +63,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -101,4 +104,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

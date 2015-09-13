@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,13 +44,39 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\SqliteCommandUnitTests.cs" />
-    <Compile Include="Test\SqliteConnectionTest.cs" />
-    <Compile Include="Test\SqliteDataAdapterUnitTests.cs" />
-    <Compile Include="Test\SqliteDataReaderTest.cs" />
-    <Compile Include="Test\SqliteExceptionUnitTests.cs" />
-    <Compile Include="Test\SqliteFunctionTests.cs" />
-    <Compile Include="Test\SqliteParameterUnitTests.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="mono.data.sqlite_2.0\linq\sqliteconnection_linq.cs" />
+    <Compile Include="mono.data.sqlite_2.0\linq\sqlitefactory_linq.cs" />
+    <Compile Include="mono.data.sqlite_2.0\monopinvokecallbackattribute.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlite3.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlite3_utf16.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitebase.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitecommand.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitecommandbuilder.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteconnection.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteconnectionpool.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteconnectionstringbuilder.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteconvert.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitedataadapter.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitedatareader.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitedatasourceenumerator.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteenlistment.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteexception.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitefactory.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitefunction.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitefunctionattribute.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitekeyreader.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitemetadatacollectionnames.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteparameter.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqliteparametercollection.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitestatement.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sqlitetransaction.cs" />
+    <Compile Include="mono.data.sqlite_2.0\sr.designer.cs" />
+    <Compile Include="mono.data.sqlite_2.0\unsafenativemethods.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -60,13 +86,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -114,4 +137,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

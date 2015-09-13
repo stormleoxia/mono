@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Xaml-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,46 +43,137 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Windows.Markup\ArrayExtensionTest.cs" />
-    <Compile Include="Test\System.Windows.Markup\ReferenceTest.cs" />
-    <Compile Include="Test\System.Windows.Markup\StaticExtensionTest.cs" />
-    <Compile Include="Test\System.Windows.Markup\TypeExtensionConverterTest.cs" />
-    <Compile Include="Test\System.Windows.Markup\TypeExtensionTest.cs" />
-    <Compile Include="Test\System.Windows.Markup\ValueSerializerTest.cs" />
-    <Compile Include="Test\System.Windows.Markup\XDataTest.cs" />
-    <Compile Include="Test\System.Xaml.Schema\XamlMemberInvokerTest.cs" />
-    <Compile Include="Test\System.Xaml.Schema\XamlTypeInvokerTest.cs" />
-    <Compile Include="Test\System.Xaml.Schema\XamlTypeNameTest.cs" />
-    <Compile Include="Test\System.Xaml.Schema\XamlTypeTypeConverterTest.cs" />
-    <Compile Include="Test\System.Xaml.Schema\XamlValueConverterTest.cs" />
-    <Compile Include="Test\System.Xaml\AmbientPropertyValueTest.cs" />
-    <Compile Include="Test\System.Xaml\AttachableMemberIdentifierTest.cs" />
-    <Compile Include="Test\System.Xaml\AttachablePropertyServicesTest.cs" />
-    <Compile Include="Test\System.Xaml\DummyValueSerializerContext.cs" />
-    <Compile Include="Test\System.Xaml\NamespaceDeclarationTest.cs" />
-    <Compile Include="Test\System.Xaml\TestedTypes.cs" />
-    <Compile Include="Test\System.Xaml\ValueSerializerContextTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlBackgroundReaderTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlDirectiveTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlDuplicateMemberExceptionTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlLanguageTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlMemberTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlNodeQueueTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlObjectEventArgsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlObjectReaderSettingsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlObjectReaderTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlObjectWriterSettingsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlObjectWriterTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlReaderSettingsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlReaderTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlReaderTestBase.cs" />
-    <Compile Include="Test\System.Xaml\XamlSchemaContextSettingsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlSchemaContextTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlTypeTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlXmlReaderSettingsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlXmlReaderTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlXmlWriterSettingsTest.cs" />
-    <Compile Include="Test\System.Xaml\XamlXmlWriterTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.windows.markup\ambientattribute.cs" />
+    <Compile Include="system.windows.markup\arrayextension.cs" />
+    <Compile Include="system.windows.markup\constructorargumentattribute.cs" />
+    <Compile Include="system.windows.markup\contentpropertyattribute.cs" />
+    <Compile Include="system.windows.markup\contentwrapperattribute.cs" />
+    <Compile Include="system.windows.markup\datetimevalueserializer.cs" />
+    <Compile Include="system.windows.markup\dependsonattribute.cs" />
+    <Compile Include="system.windows.markup\dictionarykeypropertyattribute.cs" />
+    <Compile Include="system.windows.markup\icomponentconnector.cs" />
+    <Compile Include="system.windows.markup\inamescope.cs" />
+    <Compile Include="system.windows.markup\inamescopedictionary.cs" />
+    <Compile Include="system.windows.markup\iprovidevaluetarget.cs" />
+    <Compile Include="system.windows.markup\iqueryambient.cs" />
+    <Compile Include="system.windows.markup\iuricontext.cs" />
+    <Compile Include="system.windows.markup\ivalueserializercontext.cs" />
+    <Compile Include="system.windows.markup\ixamltyperesolver.cs" />
+    <Compile Include="system.windows.markup\markupextension.cs" />
+    <Compile Include="system.windows.markup\markupextensionreturntypeattribute.cs" />
+    <Compile Include="system.windows.markup\memberdefinition.cs" />
+    <Compile Include="system.windows.markup\namereferenceconverter.cs" />
+    <Compile Include="system.windows.markup\namescopepropertyattribute.cs" />
+    <Compile Include="system.windows.markup\nullextension.cs" />
+    <Compile Include="system.windows.markup\propertydefinition.cs" />
+    <Compile Include="system.windows.markup\reference.cs" />
+    <Compile Include="system.windows.markup\rootnamespaceattribute.cs" />
+    <Compile Include="system.windows.markup\runtimenamepropertyattribute.cs" />
+    <Compile Include="system.windows.markup\staticextension.cs" />
+    <Compile Include="system.windows.markup\staticextensionconverter.cs" />
+    <Compile Include="system.windows.markup\trimsurroundingwhitespaceattribute.cs" />
+    <Compile Include="system.windows.markup\typeextension.cs" />
+    <Compile Include="system.windows.markup\typeextensionconverter.cs" />
+    <Compile Include="system.windows.markup\uidpropertyattribute.cs" />
+    <Compile Include="system.windows.markup\usableduringinitializationattribute.cs" />
+    <Compile Include="system.windows.markup\valueserializer.cs" />
+    <Compile Include="system.windows.markup\valueserializerattribute.cs" />
+    <Compile Include="system.windows.markup\whitespacesignificantcollectionattribute.cs" />
+    <Compile Include="system.windows.markup\xamldeferloadattribute.cs" />
+    <Compile Include="system.windows.markup\xamlsetmarkupextensionattribute.cs" />
+    <Compile Include="system.windows.markup\xamlsetmarkupextensioneventargs.cs" />
+    <Compile Include="system.windows.markup\xamlsettypeconverterattribute.cs" />
+    <Compile Include="system.windows.markup\xamlsettypeconvertereventargs.cs" />
+    <Compile Include="system.windows.markup\xamlsetvalueeventargs.cs" />
+    <Compile Include="system.windows.markup\xdata.cs" />
+    <Compile Include="system.windows.markup\xmllangpropertyattribute.cs" />
+    <Compile Include="system.windows.markup\xmlnscompatiblewithattribute.cs" />
+    <Compile Include="system.windows.markup\xmlnsdefinitionattribute.cs" />
+    <Compile Include="system.windows.markup\xmlnsprefixattribute.cs" />
+    <Compile Include="system.xaml.permissions\xamlaccesslevel.cs" />
+    <Compile Include="system.xaml.permissions\xamlloadpermission.cs" />
+    <Compile Include="system.xaml.schema\allowedmemberlocations.cs" />
+    <Compile Include="system.xaml.schema\shouldserializeresult.cs" />
+    <Compile Include="system.xaml.schema\xamlcollectionkind.cs" />
+    <Compile Include="system.xaml.schema\xamlmemberinvoker.cs" />
+    <Compile Include="system.xaml.schema\xamltypeinvoker.cs" />
+    <Compile Include="system.xaml.schema\xamltypename.cs" />
+    <Compile Include="system.xaml.schema\xamltypetypeconverter.cs" />
+    <Compile Include="system.xaml.schema\xamlvalueconverter.cs" />
+    <Compile Include="system.xaml\ambientpropertyvalue.cs" />
+    <Compile Include="system.xaml\attachablememberidentifier.cs" />
+    <Compile Include="system.xaml\attachablepropertyservices.cs" />
+    <Compile Include="system.xaml\iambientprovider.cs" />
+    <Compile Include="system.xaml\iattachedpropertystore.cs" />
+    <Compile Include="system.xaml\idestinationtypeprovider.cs" />
+    <Compile Include="system.xaml\inamespaceprefixlookup.cs" />
+    <Compile Include="system.xaml\irootobjectprovider.cs" />
+    <Compile Include="system.xaml\ixamlindexingreader.cs" />
+    <Compile Include="system.xaml\ixamllineinfo.cs" />
+    <Compile Include="system.xaml\ixamllineinfoconsumer.cs" />
+    <Compile Include="system.xaml\ixamlnameprovider.cs" />
+    <Compile Include="system.xaml\ixamlnameresolver.cs" />
+    <Compile Include="system.xaml\ixamlnamespaceresolver.cs" />
+    <Compile Include="system.xaml\ixamlobjectwriterfactory.cs" />
+    <Compile Include="system.xaml\ixamlschemacontextprovider.cs" />
+    <Compile Include="system.xaml\namescope.cs" />
+    <Compile Include="system.xaml\namespacedeclaration.cs" />
+    <Compile Include="system.xaml\parsedmarkupextensioninfo.cs" />
+    <Compile Include="system.xaml\prefixlookup.cs" />
+    <Compile Include="system.xaml\typeextensionmethods.cs" />
+    <Compile Include="system.xaml\valueserializercontext.cs" />
+    <Compile Include="system.xaml\xamlbackgroundreader.cs" />
+    <Compile Include="system.xaml\xamldeferringloader.cs" />
+    <Compile Include="system.xaml\xamldirective.cs" />
+    <Compile Include="system.xaml\xamlduplicatememberexception.cs" />
+    <Compile Include="system.xaml\xamlexception.cs" />
+    <Compile Include="system.xaml\xamlinternalexception.cs" />
+    <Compile Include="system.xaml\xamllanguage.cs" />
+    <Compile Include="system.xaml\xamlmember.cs" />
+    <Compile Include="system.xaml\xamlnameresolver.cs" />
+    <Compile Include="system.xaml\xamlnode.cs" />
+    <Compile Include="system.xaml\xamlnodelist.cs" />
+    <Compile Include="system.xaml\xamlnodequeue.cs" />
+    <Compile Include="system.xaml\xamlnodequeuereader.cs" />
+    <Compile Include="system.xaml\xamlnodequeuewriter.cs" />
+    <Compile Include="system.xaml\xamlnodetype.cs" />
+    <Compile Include="system.xaml\xamlobjecteventargs.cs" />
+    <Compile Include="system.xaml\xamlobjectnodeiterator.cs" />
+    <Compile Include="system.xaml\xamlobjectreader.cs" />
+    <Compile Include="system.xaml\xamlobjectreaderexception.cs" />
+    <Compile Include="system.xaml\xamlobjectreadersettings.cs" />
+    <Compile Include="system.xaml\xamlobjectwriter.cs" />
+    <Compile Include="system.xaml\xamlobjectwriterexception.cs" />
+    <Compile Include="system.xaml\xamlobjectwritersettings.cs" />
+    <Compile Include="system.xaml\xamlparseexception.cs" />
+    <Compile Include="system.xaml\xamlreader.cs" />
+    <Compile Include="system.xaml\xamlreadersettings.cs" />
+    <Compile Include="system.xaml\xamlschemacontext.cs" />
+    <Compile Include="system.xaml\xamlschemacontextsettings.cs" />
+    <Compile Include="system.xaml\xamlschemaexception.cs" />
+    <Compile Include="system.xaml\xamlservices.cs" />
+    <Compile Include="system.xaml\xamlsubtreereader.cs" />
+    <Compile Include="system.xaml\xamltype.cs" />
+    <Compile Include="system.xaml\xamlwriter.cs" />
+    <Compile Include="system.xaml\xamlwriterinternalbase.cs" />
+    <Compile Include="system.xaml\xamlwritersettings.cs" />
+    <Compile Include="system.xaml\xamlwriterstatemanager.cs" />
+    <Compile Include="system.xaml\xamlxmlreader.cs" />
+    <Compile Include="system.xaml\xamlxmlreadersettings.cs" />
+    <Compile Include="system.xaml\xamlxmlwriter.cs" />
+    <Compile Include="system.xaml\xamlxmlwriterexception.cs" />
+    <Compile Include="system.xaml\xamlxmlwritersettings.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -93,13 +183,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -129,4 +216,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

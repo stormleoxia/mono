@@ -43,8 +43,12 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="System.Windows.Forms.DataVisualization.Charting\Annotation.cs" />
     <Compile Include="System.Windows.Forms.DataVisualization.Charting\AnnotationCollection.cs" />

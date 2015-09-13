@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Web.Routing-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,21 +43,14 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Web.Routing\AssertExtensions.cs" />
-    <Compile Include="Test\System.Web.Routing\FakeHttpWorkerRequest.cs" />
-    <Compile Include="Test\System.Web.Routing\HttpMethodConstraintTest.cs" />
-    <Compile Include="Test\System.Web.Routing\KnownResponseHeader.cs" />
-    <Compile Include="Test\System.Web.Routing\RequestContext.cs" />
-    <Compile Include="Test\System.Web.Routing\RouteCollectionTest.cs" />
-    <Compile Include="Test\System.Web.Routing\RouteDataTest.cs" />
-    <Compile Include="Test\System.Web.Routing\RouteTest.cs" />
-    <Compile Include="Test\System.Web.Routing\RouteValueDictionaryTest.cs" />
-    <Compile Include="Test\System.Web.Routing\StopRoutingHandlerTest.cs" />
-    <Compile Include="Test\System.Web.Routing\TestStubTypes.cs" />
-    <Compile Include="Test\System.Web.Routing\UnknownResponseHeader.cs" />
-    <Compile Include="Test\System.Web.Routing\UrlRoutingHandlerTest.cs" />
-    <Compile Include="Test\System.Web.Routing\UrlRoutingModuleTest.cs" />
-    <Compile Include="Test\System.Web.Routing\VirtualPathDataTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -68,13 +60,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -108,4 +97,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Mono.Messaging-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,8 +43,39 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\Mono.Messaging\ConcurrentLinkedQueueTest.cs" />
-    <Compile Include="Test\Mono.Messaging\QueueReferenceTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="Mono.Messaging\AcknowledgeTypes.cs" />
+    <Compile Include="Mono.Messaging\Acknowledgment.cs" />
+    <Compile Include="Mono.Messaging\CompletedEventArgs.cs" />
+    <Compile Include="Mono.Messaging\CompletedEventHandler.cs" />
+    <Compile Include="Mono.Messaging\ConcurrentLinkedQueue.cs" />
+    <Compile Include="Mono.Messaging\ConnectionException.cs" />
+    <Compile Include="Mono.Messaging\CryptographicProviderType.cs" />
+    <Compile Include="Mono.Messaging\EncryptionAlgorithm.cs" />
+    <Compile Include="Mono.Messaging\EncryptionRequired.cs" />
+    <Compile Include="Mono.Messaging\HashAlgorithm.cs" />
+    <Compile Include="Mono.Messaging\IMessage.cs" />
+    <Compile Include="Mono.Messaging\IMessageEnumerator.cs" />
+    <Compile Include="Mono.Messaging\IMessageQueue.cs" />
+    <Compile Include="Mono.Messaging\IMessageQueueTransaction.cs" />
+    <Compile Include="Mono.Messaging\IMessagingProvider.cs" />
+    <Compile Include="Mono.Messaging\MessageBase.cs" />
+    <Compile Include="Mono.Messaging\MessagePriority.cs" />
+    <Compile Include="Mono.Messaging\MessageQueueBase.cs" />
+    <Compile Include="Mono.Messaging\MessageQueueTransactionStatus.cs" />
+    <Compile Include="Mono.Messaging\MessageQueueTransactionType.cs" />
+    <Compile Include="Mono.Messaging\MessageType.cs" />
+    <Compile Include="Mono.Messaging\MessageUnavailableException.cs" />
+    <Compile Include="Mono.Messaging\MessagingProviderLocator.cs" />
+    <Compile Include="Mono.Messaging\MonoMessagingException.cs" />
+    <Compile Include="Mono.Messaging\QueueReference.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -55,13 +85,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -96,4 +123,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

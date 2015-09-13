@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,7 +19,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -48,19 +47,45 @@
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ByteArrayFromResXHandler.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\FileRefHandler.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\InMemoryHandler.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\NullRefHandler.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXDataNode.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXDataNodeHandler.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXFileRef.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXNullRef.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXResourceReader.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXResourceSet.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXResourceWriter.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\SerializedFromResXHandler.cs" />
-    <Compile Include="..\Managed.Windows.Forms\System.Resources\TypeConverterFromResXHandler.cs" />
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ByteArrayFromResXHandler.cs">
+      <Link>resources/ByteArrayFromResXHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\FileRefHandler.cs">
+      <Link>resources/FileRefHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\InMemoryHandler.cs">
+      <Link>resources/InMemoryHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\NullRefHandler.cs">
+      <Link>resources/NullRefHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXDataNode.cs">
+      <Link>resources/ResXDataNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXDataNodeHandler.cs">
+      <Link>resources/ResXDataNodeHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXFileRef.cs">
+      <Link>resources/ResXFileRef.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXNullRef.cs">
+      <Link>resources/ResXNullRef.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXResourceReader.cs">
+      <Link>resources/ResXResourceReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXResourceSet.cs">
+      <Link>resources/ResXResourceSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\ResXResourceWriter.cs">
+      <Link>resources/ResXResourceWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\SerializedFromResXHandler.cs">
+      <Link>resources/SerializedFromResXHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Managed.Windows.Forms\System.Resources\TypeConverterFromResXHandler.cs">
+      <Link>resources/TypeConverterFromResXHandler.cs</Link>
+    </Compile>
     <Compile Include="..\System.Design\System.Data.Design\TypedDataSetGenerator.cs" />
     <Compile Include="..\System.Web.Abstractions\System.Web\HttpApplicationStateBase.cs" />
     <Compile Include="..\System.Web.Abstractions\System.Web\HttpApplicationStateWrapper.cs" />
@@ -1349,6 +1374,7 @@
     <Compile Include="System.Web\UnvalidatedRequestValues.cs" />
     <Compile Include="System.Web\UnvalidatedRequestValuesBase.cs" />
     <Compile Include="System.Web\UnvalidatedRequestValuesWrapper.cs" />
+    <Compile Include="System.Web\UplevelHelper.cs" />
     <Compile Include="System.Web\VirtualPath.cs" />
     <Compile Include="System.Web\VirtualPathUtility.cs" />
     <Compile Include="System.Web\WebCategoryAttribute.cs" />
@@ -1356,7 +1382,7 @@
     <Compile Include="System.Web\WebROCollection.cs" />
     <Compile Include="System.Web\WebSysDescriptionAttribute.cs" />
     <Compile Include="System.Web\XmlSiteMapProvider.cs" />
-    <Compile Include="System.Web\UplevelHelper.cs" />  </ItemGroup>
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -1366,17 +1392,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -1604,4 +1625,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

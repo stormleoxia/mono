@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,7 +19,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -45,61 +44,170 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\Locale.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Assert.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\BoolArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\BoundDispEvent.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\CollectionExtensions.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComBinder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComBinderHelpers.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComDispIds.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventDesc.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventSink.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventSinkProxy.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventSinksContainer.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComFallbackMetaObject.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComHresults.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComInterop.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComInvokeAction.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComInvokeBinder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComMetaObject.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComMethodDesc.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComObject.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComRuntimeHelpers.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeClassDesc.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeDesc.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeEnumDesc.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeLibDesc.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ContractUtils.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ConversionArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ConvertArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ConvertibleArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\CurrencyArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DateTimeArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DispatchArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DispCallable.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DispCallableMetaObject.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ErrorArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Errors.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ExcepInfo.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Helpers.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\IDispatchComObject.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\IDispatchMetaObject.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\NullArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\SimpleArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\SplatCallSite.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\StringArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\TypeUtils.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\UnknownArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VarEnumSelector.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Variant.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VariantArgBuilder.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VariantArray.cs" />
-    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VariantBuilder.cs" />
-    <Compile Include="Assembly\AssemblyInfo.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Locale.cs">
+      <Link>Locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ArgBuilder.cs">
+      <Link>ArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Assert.cs">
+      <Link>Assert.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\BoolArgBuilder.cs">
+      <Link>BoolArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\BoundDispEvent.cs">
+      <Link>BoundDispEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\CollectionExtensions.cs">
+      <Link>CollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComBinder.cs">
+      <Link>ComBinder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComBinderHelpers.cs">
+      <Link>ComBinderHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComDispIds.cs">
+      <Link>ComDispIds.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventDesc.cs">
+      <Link>ComEventDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventSink.cs">
+      <Link>ComEventSink.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventSinkProxy.cs">
+      <Link>ComEventSinkProxy.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComEventSinksContainer.cs">
+      <Link>ComEventSinksContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComFallbackMetaObject.cs">
+      <Link>ComFallbackMetaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComHresults.cs">
+      <Link>ComHresults.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComInterop.cs">
+      <Link>ComInterop.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComInvokeAction.cs">
+      <Link>ComInvokeAction.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComInvokeBinder.cs">
+      <Link>ComInvokeBinder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComMetaObject.cs">
+      <Link>ComMetaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComMethodDesc.cs">
+      <Link>ComMethodDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComObject.cs">
+      <Link>ComObject.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComRuntimeHelpers.cs">
+      <Link>ComRuntimeHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeClassDesc.cs">
+      <Link>ComTypeClassDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeDesc.cs">
+      <Link>ComTypeDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeEnumDesc.cs">
+      <Link>ComTypeEnumDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ComTypeLibDesc.cs">
+      <Link>ComTypeLibDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ContractUtils.cs">
+      <Link>ContractUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ConversionArgBuilder.cs">
+      <Link>ConversionArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ConvertArgBuilder.cs">
+      <Link>ConvertArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ConvertibleArgBuilder.cs">
+      <Link>ConvertibleArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\CurrencyArgBuilder.cs">
+      <Link>CurrencyArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DateTimeArgBuilder.cs">
+      <Link>DateTimeArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DispatchArgBuilder.cs">
+      <Link>DispatchArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DispCallable.cs">
+      <Link>DispCallable.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\DispCallableMetaObject.cs">
+      <Link>DispCallableMetaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ErrorArgBuilder.cs">
+      <Link>ErrorArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Errors.cs">
+      <Link>Errors.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\ExcepInfo.cs">
+      <Link>ExcepInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Helpers.cs">
+      <Link>Helpers.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\IDispatchComObject.cs">
+      <Link>IDispatchComObject.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\IDispatchMetaObject.cs">
+      <Link>IDispatchMetaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\NullArgBuilder.cs">
+      <Link>NullArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\SimpleArgBuilder.cs">
+      <Link>SimpleArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\SplatCallSite.cs">
+      <Link>SplatCallSite.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\StringArgBuilder.cs">
+      <Link>StringArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\TypeUtils.cs">
+      <Link>TypeUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\UnknownArgBuilder.cs">
+      <Link>UnknownArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VarEnumSelector.cs">
+      <Link>VarEnumSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\Variant.cs">
+      <Link>Variant.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VariantArgBuilder.cs">
+      <Link>VariantArgBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VariantArray.cs">
+      <Link>VariantArray.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\Runtime\Microsoft.Dynamic\VariantBuilder.cs">
+      <Link>VariantBuilder.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -109,17 +217,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -140,4 +243,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

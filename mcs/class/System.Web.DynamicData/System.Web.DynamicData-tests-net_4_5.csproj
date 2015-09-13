@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Web.DynamicData-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,128 +43,53 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\crc32.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\Header.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\HtmlAttribute.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\HtmlDocument.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\HtmlEntity.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\HtmlNode.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\HtmlNodeNavigator.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\HtmlWeb.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\MixedCodeDocument.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\ParseReader.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\HtmlAgilityPack\tools.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\NunitWebTest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\MainsoftWebTest\XmlComparer.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\BaseControl.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\BaseControlCollection.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\BaseInvoker.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\BaseRequest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\BaseWorkerRequest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\CustomSection.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\FakeMembershipProvider.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\FormRequest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\HandlerInvoker.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\IForeignData.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\MyHandler.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\MyHost.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\MyPageHandlerFactory.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\MyTemplateControls.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\PageDelegates.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\PageInvoker.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\PostableRequest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\PostableWorkerRequest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\Response.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\StandardUrl.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\WebTest.cs" />
-    <Compile Include="..\System.Web\Test\mainsoft\NunitWeb\NunitWeb\WebTestResourcesSetupAttribute.cs" />
-    <Compile Include="Test\Assembly\AssemblyInfo.cs" />
-    <Compile Include="Test\Common\AFieldTemplate.cs" />
-    <Compile Include="Test\Common\AssertExtensions.cs" />
-    <Compile Include="Test\Common\AssociatedBar.cs" />
-    <Compile Include="Test\Common\AssociatedFoo.cs" />
-    <Compile Include="Test\Common\Baz.cs" />
-    <Compile Include="Test\Common\BazColumnAttributes.cs" />
-    <Compile Include="Test\Common\BazDataTypeDefaultTypes.cs" />
-    <Compile Include="Test\Common\BazNoStrings.cs" />
-    <Compile Include="Test\Common\BazNoStringsNoPrimary.cs" />
-    <Compile Include="Test\Common\BazValidationAttributes.cs" />
-    <Compile Include="Test\Common\BazWithDataTypeAttribute.cs" />
-    <Compile Include="Test\Common\EmployeesDataContext.cs" />
-    <Compile Include="Test\Common\FakeHttpWorkerRequest.cs" />
-    <Compile Include="Test\Common\FieldFormattingOptions.cs" />
-    <Compile Include="Test\Common\FieldTemplatePathTables.cs" />
-    <Compile Include="Test\Common\FieldTemplateTestDescription.cs" />
-    <Compile Include="Test\Common\FooBarNoScaffold.cs" />
-    <Compile Include="Test\Common\FooDisplayColumnAttribute.cs" />
-    <Compile Include="Test\Common\FooDisplayName.cs" />
-    <Compile Include="Test\Common\FooDisplayNameEmptyName.cs" />
-    <Compile Include="Test\Common\FooEmpty.cs" />
-    <Compile Include="Test\Common\FooEmptyDisplayColumnAttribute.cs" />
-    <Compile Include="Test\Common\FooEmptySortColumn.cs" />
-    <Compile Include="Test\Common\FooInvalidDisplayColumnAttribute.cs" />
-    <Compile Include="Test\Common\FooMisnamedSortColumn.cs" />
-    <Compile Include="Test\Common\FooNoDefaultsWithPrimaryKey.cs" />
-    <Compile Include="Test\Common\FooNoPrimaryColumns.cs" />
-    <Compile Include="Test\Common\FooNoScaffold.cs" />
-    <Compile Include="Test\Common\FooReadOnly.cs" />
-    <Compile Include="Test\Common\FooSettableDefaults.cs" />
-    <Compile Include="Test\Common\FooWithDefaults.cs" />
-    <Compile Include="Test\Common\FooWithMetadataType.cs" />
-    <Compile Include="Test\Common\FooWithToString.cs" />
-    <Compile Include="Test\Common\ITestDataContext.cs" />
-    <Compile Include="Test\Common\KnownResponseHeader.cs" />
-    <Compile Include="Test\Common\MiscExtensions.cs" />
-    <Compile Include="Test\Common\Mocks.cs" />
-    <Compile Include="Test\Common\MyDynamicDataRouteHandler.cs" />
-    <Compile Include="Test\Common\MyHttpContextWrapper.cs" />
-    <Compile Include="Test\Common\MyHttpRequestWrapper.cs" />
-    <Compile Include="Test\Common\PokerDynamicControl.cs" />
-    <Compile Include="Test\Common\PokerDynamicValidator.cs" />
-    <Compile Include="Test\Common\PokerFieldTemplateUserControl.cs" />
-    <Compile Include="Test\Common\TestDataColumn.cs" />
-    <Compile Include="Test\Common\TestDataContainer.cs" />
-    <Compile Include="Test\Common\TestDataContext.cs" />
-    <Compile Include="Test\Common\TestDataContext2.cs" />
-    <Compile Include="Test\Common\TestDataContext3.cs" />
-    <Compile Include="Test\Common\TestDataContext4.cs" />
-    <Compile Include="Test\Common\TestDataTable.cs" />
-    <Compile Include="Test\Common\TestsBasePage.cs" />
-    <Compile Include="Test\Common\TestsSetup.cs" />
-    <Compile Include="Test\Common\TestStubTypes.cs" />
-    <Compile Include="Test\Common\UnknownResponseHeader.cs" />
-    <Compile Include="Test\Common\Utils.cs" />
-    <Compile Include="Test\DataObjects\Employee.cs" />
-    <Compile Include="Test\DataObjects\EmployeeColumn.cs" />
-    <Compile Include="Test\DataObjects\EmployeeDynamicDataContainer.cs" />
-    <Compile Include="Test\DataObjects\EmployeeTable.cs" />
-    <Compile Include="Test\DataObjects\SeasonalEmployee.cs" />
-    <Compile Include="Test\DataSource\DynamicDataColumn.cs" />
-    <Compile Include="Test\DataSource\DynamicDataContainer.cs" />
-    <Compile Include="Test\DataSource\DynamicDataSource.cs" />
-    <Compile Include="Test\DataSource\DynamicDataSourceView.cs" />
-    <Compile Include="Test\DataSource\DynamicDataTable.cs" />
-    <Compile Include="Test\DataSource\IDynamicDataContainer.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataAssociationAttribute.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataAssociationProvider.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataContainerColumnProvider.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataContainerModelProvider.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataContainerTableProvider.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataSortableAttribute.cs" />
-    <Compile Include="Test\ModelProviders\DynamicDataStringLengthAttribute.cs" />
-    <Compile Include="Test\System.Web.DynamicData.ModelProviders\TableProviderTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\ContextConfigurationTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\DynamicControlTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\DynamicDataExtensionsTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\DynamicDataManagerTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\DynamicDataRouteHandlerTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\DynamicDataRouteTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\DynamicValidatorTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\FieldTemplateFactoryTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\FieldTemplateUserControlTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\MetaColumnTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\MetaModelTest.cs" />
-    <Compile Include="Test\System.Web.DynamicData\MetaTableTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\associationdirection.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\associationprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\columnprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\datamodelprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\dlinqassociationprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\dlinqcolumnprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\dlinqdatamodelprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\dlinqtableprovider.cs" />
+    <Compile Include="system.web.dynamicdata.modelproviders\tableprovider.cs" />
+    <Compile Include="system.web.dynamicdata\contextconfiguration.cs" />
+    <Compile Include="system.web.dynamicdata\dynamiccontrol.cs" />
+    <Compile Include="system.web.dynamicdata\dynamiccontrolparameter.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicdataextensions.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicdatamanager.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicdataroute.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicdataroutehandler.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicfield.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicquerystringparameter.cs" />
+    <Compile Include="system.web.dynamicdata\dynamicvalidator.cs" />
+    <Compile Include="system.web.dynamicdata\fieldtemplatefactory.cs" />
+    <Compile Include="system.web.dynamicdata\fieldtemplateusercontrol.cs" />
+    <Compile Include="system.web.dynamicdata\filterrepeater.cs" />
+    <Compile Include="system.web.dynamicdata\filterusercontrolbase.cs" />
+    <Compile Include="system.web.dynamicdata\icontrolparametertarget.cs" />
+    <Compile Include="system.web.dynamicdata\ifieldformattingoptions.cs" />
+    <Compile Include="system.web.dynamicdata\ifieldtemplate.cs" />
+    <Compile Include="system.web.dynamicdata\ifieldtemplatefactory.cs" />
+    <Compile Include="system.web.dynamicdata\ifieldtemplatehost.cs" />
+    <Compile Include="system.web.dynamicdata\iwhereparametersprovider.cs" />
+    <Compile Include="system.web.dynamicdata\metachildrencolumn.cs" />
+    <Compile Include="system.web.dynamicdata\metacolumn.cs" />
+    <Compile Include="system.web.dynamicdata\metaforeignkeycolumn.cs" />
+    <Compile Include="system.web.dynamicdata\metamodel.cs" />
+    <Compile Include="system.web.dynamicdata\metatable.cs" />
+    <Compile Include="system.web.dynamicdata\pageaction.cs" />
+    <Compile Include="system.web.dynamicdata\tablenameattribute.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -175,13 +99,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -698,4 +619,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Transactions-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,10 +43,45 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\AsyncTest.cs" />
-    <Compile Include="Test\EnlistTest.cs" />
-    <Compile Include="Test\IntResourceManager.cs" />
-    <Compile Include="Test\TransactionScopeTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.transactions\committabletransaction.cs" />
+    <Compile Include="system.transactions\configuration\defaultsettingssection.cs" />
+    <Compile Include="system.transactions\configuration\machinesettingssection.cs" />
+    <Compile Include="system.transactions\configuration\transactionssectiongroup.cs" />
+    <Compile Include="system.transactions\delegates.cs" />
+    <Compile Include="system.transactions\dependentcloneoption.cs" />
+    <Compile Include="system.transactions\dependenttransaction.cs" />
+    <Compile Include="system.transactions\enlistment.cs" />
+    <Compile Include="system.transactions\enlistmentoptions.cs" />
+    <Compile Include="system.transactions\enterpriseservicesinteropoption.cs" />
+    <Compile Include="system.transactions\idtctransaction.cs" />
+    <Compile Include="system.transactions\ienlistmentnotification.cs" />
+    <Compile Include="system.transactions\ipromotablesinglephasenotification.cs" />
+    <Compile Include="system.transactions\isimpletransactionsuperior.cs" />
+    <Compile Include="system.transactions\isinglephasenotification.cs" />
+    <Compile Include="system.transactions\isolationlevel.cs" />
+    <Compile Include="system.transactions\itransactionpromoter.cs" />
+    <Compile Include="system.transactions\preparingenlistment.cs" />
+    <Compile Include="system.transactions\singlephaseenlistment.cs" />
+    <Compile Include="system.transactions\subordinatetransaction.cs" />
+    <Compile Include="system.transactions\transaction.cs" />
+    <Compile Include="system.transactions\transactionabortedexception.cs" />
+    <Compile Include="system.transactions\transactioneventargs.cs" />
+    <Compile Include="system.transactions\transactionexception.cs" />
+    <Compile Include="system.transactions\transactionindoubtexception.cs" />
+    <Compile Include="system.transactions\transactioninformation.cs" />
+    <Compile Include="system.transactions\transactioninterop.cs" />
+    <Compile Include="system.transactions\transactionmanager.cs" />
+    <Compile Include="system.transactions\transactionmanagercommunicationexception.cs" />
+    <Compile Include="system.transactions\transactionoptions.cs" />
+    <Compile Include="system.transactions\transactionpromotionexception.cs" />
+    <Compile Include="system.transactions\transactionscope.cs" />
+    <Compile Include="system.transactions\transactionscopeoption.cs" />
+    <Compile Include="system.transactions\transactionstatus.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -57,13 +91,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -89,4 +120,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

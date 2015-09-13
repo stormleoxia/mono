@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Microsoft.Build.Tasks-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,35 +43,134 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\Microsoft.Build.Engine\Test\Microsoft.Build.BuildEngine\Consts.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\ALTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\AssignCultureTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\AssignProjectConfigurationTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\AssignTargetPathTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CombinePathTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CopyTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CreateCSharpManifestResourceNameTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CreateItemTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CreatePropertyTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CreateVisualBasicManifestResourceNameTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\CscTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\DeleteTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\ErrorTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\FindAppConfigFileTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\GetFrameworkPathTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\GetFrameworkSdkPathTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\LCTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\MakeDirTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\ManagedCompilerTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\MessageTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\RemoveDirTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\RemoveDuplicatesTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\ResolveAssemblyReferenceTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\TaskBatchingTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\TestEngine.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\TestMessageLogger.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\WarningTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Tasks\WriteLinesToFileTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\tools\xbuild\xbuildconsts.cs">
+      <Link>xbuildconsts.cs</Link>
+    </Compile>
+    <Compile Include="..\microsoft.build.engine\microsoft.build.buildengine\directoryscanner.cs" />
+    <Compile Include="..\microsoft.build.engine\microsoft.build.buildengine\unknowntoolsversionexception.cs" />
+    <Compile Include="..\microsoft.build.utilities\mono.xbuild.utilities\msbuildutils.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\bootstrapperbuilder.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\buildmessage.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\buildmessageseverity.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\buildresults.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\buildsettings.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\componentslocation.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\ibootstrapperbuilder.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\ibuildmessage.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\ibuildresults.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\ibuildsettings.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\iproduct.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\iproductbuilder.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\iproductbuildercollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\iproductcollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\product.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\productbuilder.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\productbuildercollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.bootstrapper\productcollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\applicationidentity.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\applicationmanifest.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\assemblyidentity.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\assemblymanifest.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\assemblyreference.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\assemblyreferencecollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\assemblyreferencetype.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\basereference.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\comclass.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\deploymanifest.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\filereference.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\filereferencecollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\manifest.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\manifestreader.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\manifestwriter.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\outputmessage.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\outputmessagecollection.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\outputmessagetype.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\proxystub.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\securityutilities.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\trustinfo.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\typelib.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\updatemode.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\updateunit.cs" />
+    <Compile Include="microsoft.build.tasks.deployment.manifestutilities\windowclass.cs" />
+    <Compile Include="microsoft.build.tasks.hosting\icschostobject.cs" />
+    <Compile Include="microsoft.build.tasks.hosting\icschostobject4.cs" />
+    <Compile Include="microsoft.build.tasks.hosting\ivbchostobject.cs" />
+    <Compile Include="microsoft.build.tasks\al.cs" />
+    <Compile Include="microsoft.build.tasks\appdomainisolatedtaskextension.cs" />
+    <Compile Include="microsoft.build.tasks\aspnetcompiler.cs" />
+    <Compile Include="microsoft.build.tasks\assemblyresolver.cs" />
+    <Compile Include="microsoft.build.tasks\assignculture.cs" />
+    <Compile Include="microsoft.build.tasks\assignlinkmetadata.cs" />
+    <Compile Include="microsoft.build.tasks\assignprojectconfiguration.cs" />
+    <Compile Include="microsoft.build.tasks\assigntargetpath.cs" />
+    <Compile Include="microsoft.build.tasks\calltarget.cs" />
+    <Compile Include="microsoft.build.tasks\codetaskfactory.cs" />
+    <Compile Include="microsoft.build.tasks\combinepath.cs" />
+    <Compile Include="microsoft.build.tasks\commandlinebuilderextension.cs" />
+    <Compile Include="microsoft.build.tasks\copy.cs" />
+    <Compile Include="microsoft.build.tasks\createcsharpmanifestresourcename.cs" />
+    <Compile Include="microsoft.build.tasks\createitem.cs" />
+    <Compile Include="microsoft.build.tasks\createmanifestresourcename.cs" />
+    <Compile Include="microsoft.build.tasks\createproperty.cs" />
+    <Compile Include="microsoft.build.tasks\createtemporaryvcproject.cs" />
+    <Compile Include="microsoft.build.tasks\createvisualbasicmanifestresourcename.cs" />
+    <Compile Include="microsoft.build.tasks\csc.cs" />
+    <Compile Include="microsoft.build.tasks\delete.cs" />
+    <Compile Include="microsoft.build.tasks\error.cs" />
+    <Compile Include="microsoft.build.tasks\exec.cs" />
+    <Compile Include="microsoft.build.tasks\extractedclassname.cs" />
+    <Compile Include="microsoft.build.tasks\findappconfigfile.cs" />
+    <Compile Include="microsoft.build.tasks\findunderpath.cs" />
+    <Compile Include="microsoft.build.tasks\formaturl.cs" />
+    <Compile Include="microsoft.build.tasks\formatversion.cs" />
+    <Compile Include="microsoft.build.tasks\generateapplicationmanifest.cs" />
+    <Compile Include="microsoft.build.tasks\generatebootstrapper.cs" />
+    <Compile Include="microsoft.build.tasks\generatedeploymentmanifest.cs" />
+    <Compile Include="microsoft.build.tasks\generatemanifestbase.cs" />
+    <Compile Include="microsoft.build.tasks\generateresource.cs" />
+    <Compile Include="microsoft.build.tasks\generatetrustinfo.cs" />
+    <Compile Include="microsoft.build.tasks\getassemblyidentity.cs" />
+    <Compile Include="microsoft.build.tasks\getframeworkpath.cs" />
+    <Compile Include="microsoft.build.tasks\getframeworksdkpath.cs" />
+    <Compile Include="microsoft.build.tasks\getreferenceassemblypaths.cs" />
+    <Compile Include="microsoft.build.tasks\lc.cs" />
+    <Compile Include="microsoft.build.tasks\makedir.cs" />
+    <Compile Include="microsoft.build.tasks\managedcompiler.cs" />
+    <Compile Include="microsoft.build.tasks\message.cs" />
+    <Compile Include="microsoft.build.tasks\msbuild.cs" />
+    <Compile Include="microsoft.build.tasks\readlinesfromfile.cs" />
+    <Compile Include="microsoft.build.tasks\registerassembly.cs" />
+    <Compile Include="microsoft.build.tasks\removedir.cs" />
+    <Compile Include="microsoft.build.tasks\removeduplicates.cs" />
+    <Compile Include="microsoft.build.tasks\resolveassemblyreference.cs" />
+    <Compile Include="microsoft.build.tasks\resolvedreference.cs" />
+    <Compile Include="microsoft.build.tasks\resolvemanifestfiles.cs" />
+    <Compile Include="microsoft.build.tasks\resolveprojectbase.cs" />
+    <Compile Include="microsoft.build.tasks\sgen.cs" />
+    <Compile Include="microsoft.build.tasks\signfile.cs" />
+    <Compile Include="microsoft.build.tasks\taskextension.cs" />
+    <Compile Include="microsoft.build.tasks\tasklogginghelperextension.cs" />
+    <Compile Include="microsoft.build.tasks\tooltaskextension.cs" />
+    <Compile Include="microsoft.build.tasks\touch.cs" />
+    <Compile Include="microsoft.build.tasks\unregisterassembly.cs" />
+    <Compile Include="microsoft.build.tasks\updatemanifest.cs" />
+    <Compile Include="microsoft.build.tasks\vbc.cs" />
+    <Compile Include="microsoft.build.tasks\vcbuild.cs" />
+    <Compile Include="microsoft.build.tasks\warning.cs" />
+    <Compile Include="microsoft.build.tasks\writecodefragment.cs" />
+    <Compile Include="microsoft.build.tasks\writelinestofile.cs" />
+    <Compile Include="mono.xbuild.tasks.generateresourceinternal\poresourcereader.cs" />
+    <Compile Include="mono.xbuild.tasks.generateresourceinternal\poresourcewriter.cs" />
+    <Compile Include="mono.xbuild.tasks.generateresourceinternal\txtresourcereader.cs" />
+    <Compile Include="mono.xbuild.tasks.generateresourceinternal\txtresourcewriter.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -82,13 +180,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -126,4 +221,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

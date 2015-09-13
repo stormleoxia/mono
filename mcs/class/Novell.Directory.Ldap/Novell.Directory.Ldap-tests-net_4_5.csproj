@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Novell.Directory.Ldap-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,7 +43,223 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\bug-436775_Test.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs.in" />
+    <Compile Include="novell.directory.ldap.asn1\asn1boolean.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1choice.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1decoder.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1encoder.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1enumerated.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1identifier.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1integer.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1length.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1null.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1numeric.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1object.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1octetstring.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1sequence.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1sequenceof.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1set.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1setof.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1structured.cs" />
+    <Compile Include="novell.directory.ldap.asn1\asn1tagged.cs" />
+    <Compile Include="novell.directory.ldap.asn1\lberdecoder.cs" />
+    <Compile Include="novell.directory.ldap.asn1\lberencoder.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldapentrychangecontrol.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldappersistsearchcontrol.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldapsortcontrol.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldapsortkey.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldapsortresponse.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldapvirtuallistcontrol.cs" />
+    <Compile Include="novell.directory.ldap.controls\ldapvirtuallistresponse.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\baseedireventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\binderyobjecteventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\changeaddresseventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\connectionstateeventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\debugeventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\debugparameter.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\dsetimestamp.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\entryeventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\generaldseventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\modulestateeventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\networkaddresseventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\referraladdress.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\securityequivalenceeventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir.eventdata\valueeventdata.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\edireventargs.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\edireventconstants.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\edireventintermediateresponse.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\edireventsource.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\edireventspecifier.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\monitoreventrequest.cs" />
+    <Compile Include="novell.directory.ldap.events.edir\monitoreventresponse.cs" />
+    <Compile Include="novell.directory.ldap.events\baseeventargs.cs" />
+    <Compile Include="novell.directory.ldap.events\directoryeventargs.cs" />
+    <Compile Include="novell.directory.ldap.events\directoryexceptioneventargs.cs" />
+    <Compile Include="novell.directory.ldap.events\ldapeventargs.cs" />
+    <Compile Include="novell.directory.ldap.events\ldapeventconstants.cs" />
+    <Compile Include="novell.directory.ldap.events\ldapeventsource.cs" />
+    <Compile Include="novell.directory.ldap.events\psearcheventsource.cs" />
+    <Compile Include="novell.directory.ldap.events\searchreferraleventargs.cs" />
+    <Compile Include="novell.directory.ldap.events\searchresulteventargs.cs" />
+    <Compile Include="novell.directory.ldap.extensions\abortpartitionoperationrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\addreplicarequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\backuprestoreconstants.cs" />
+    <Compile Include="novell.directory.ldap.extensions\changereplicatyperequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\getbinddnrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\getbinddnresponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\geteffectiveprivilegesrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\geteffectiveprivilegesresponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\getreplicainforequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\getreplicainforesponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\getreplicationfilterrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\getreplicationfilterresponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\ldapbackuprequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\ldapbackupresponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\ldaprestorerequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\listreplicasrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\listreplicasresponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\mergepartitionsrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\namingcontextconstants.cs" />
+    <Compile Include="novell.directory.ldap.extensions\partitionentrycountrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\partitionentrycountresponse.cs" />
+    <Compile Include="novell.directory.ldap.extensions\partitionsyncrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\receiveallupdatesrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\refreshldapserverrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\removeorphanpartitionrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\removereplicarequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\replicationconstants.cs" />
+    <Compile Include="novell.directory.ldap.extensions\schemasyncrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\sendallupdatesrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\setreplicationfilterrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\splitorphanpartitionrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\splitpartitionrequest.cs" />
+    <Compile Include="novell.directory.ldap.extensions\triggerbackgroundprocessrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcabandonrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcaddrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcaddresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcassertionvalue.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcattributedescription.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcattributedescriptionlist.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcattributelist.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcattributetypeandvalues.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcattributevalue.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcattributevalueassertion.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcauthenticationchoice.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcbindrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcbindresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfccomparerequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfccompareresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfccontrol.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfccontrols.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcdelrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcdelresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcextendedrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcextendedresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcfilter.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcintermediateresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcldapdn.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcldapmessage.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcldapoid.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcldapresult.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcldapstring.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcldapsuperdn.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmatchingruleassertion.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmatchingruleid.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmessageid.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmodifydnrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmodifydnresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmodifyrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcmodifyresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcreferral.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcrelativeldapdn.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcresponse.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcsaslcredentials.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcsearchrequest.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcsearchresultdone.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcsearchresultentry.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcsearchresultreference.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcsubstringfilter.cs" />
+    <Compile Include="novell.directory.ldap.rfc2251\rfcunbindrequest.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\arrayenumeration.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\attributequalifier.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\base64.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\bindproperties.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\charactertypes.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\dn.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\enumeratediterator.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\exceptionmessages.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\extresponsefactory.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\intermediateresponsefactory.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\rdn.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\referralinfo.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\resourceshandler.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\respcontrolvector.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\respextensionset.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\resultcodemessages.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\schemaparser.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\schematokencreator.cs" />
+    <Compile Include="novell.directory.ldap.utilclass\tokentypes.cs" />
+    <Compile Include="novell.directory.ldap\assemblyinfo.cs" />
+    <Compile Include="novell.directory.ldap\authenticationtypes.cs" />
+    <Compile Include="novell.directory.ldap\connection.cs" />
+    <Compile Include="novell.directory.ldap\interthreadexception.cs" />
+    <Compile Include="novell.directory.ldap\ldapabandonrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapaddrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapattribute.cs" />
+    <Compile Include="novell.directory.ldap\ldapattributeschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapattributeset.cs" />
+    <Compile Include="novell.directory.ldap\ldapauthhandler.cs" />
+    <Compile Include="novell.directory.ldap\ldapauthprovider.cs" />
+    <Compile Include="novell.directory.ldap\ldapbindhandler.cs" />
+    <Compile Include="novell.directory.ldap\ldapbindrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapcompareattrnames.cs" />
+    <Compile Include="novell.directory.ldap\ldapcomparerequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapconnection.cs" />
+    <Compile Include="novell.directory.ldap\ldapconstraints.cs" />
+    <Compile Include="novell.directory.ldap\ldapcontrol.cs" />
+    <Compile Include="novell.directory.ldap\ldapdeleterequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapditcontentruleschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapditstructureruleschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapdn.cs" />
+    <Compile Include="novell.directory.ldap\ldapdsconstants.cs" />
+    <Compile Include="novell.directory.ldap\ldapentry.cs" />
+    <Compile Include="novell.directory.ldap\ldapexception.cs" />
+    <Compile Include="novell.directory.ldap\ldapextendedoperation.cs" />
+    <Compile Include="novell.directory.ldap\ldapextendedrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapextendedresponse.cs" />
+    <Compile Include="novell.directory.ldap\ldapintermediateresponse.cs" />
+    <Compile Include="novell.directory.ldap\ldaplocalexception.cs" />
+    <Compile Include="novell.directory.ldap\ldapmatchingruleschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapmatchingruleuseschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapmessage.cs" />
+    <Compile Include="novell.directory.ldap\ldapmessagequeue.cs" />
+    <Compile Include="novell.directory.ldap\ldapmodification.cs" />
+    <Compile Include="novell.directory.ldap\ldapmodifydnrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapmodifyrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapnameformschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapobjectclassschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapreferralexception.cs" />
+    <Compile Include="novell.directory.ldap\ldapreferralhandler.cs" />
+    <Compile Include="novell.directory.ldap\ldapresponse.cs" />
+    <Compile Include="novell.directory.ldap\ldapresponsequeue.cs" />
+    <Compile Include="novell.directory.ldap\ldapschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapschemaelement.cs" />
+    <Compile Include="novell.directory.ldap\ldapsearchconstraints.cs" />
+    <Compile Include="novell.directory.ldap\ldapsearchqueue.cs" />
+    <Compile Include="novell.directory.ldap\ldapsearchrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapsearchresult.cs" />
+    <Compile Include="novell.directory.ldap\ldapsearchresultreference.cs" />
+    <Compile Include="novell.directory.ldap\ldapsearchresults.cs" />
+    <Compile Include="novell.directory.ldap\ldapsyntaxschema.cs" />
+    <Compile Include="novell.directory.ldap\ldapunbindrequest.cs" />
+    <Compile Include="novell.directory.ldap\ldapunsolicitednotificationlistener.cs" />
+    <Compile Include="novell.directory.ldap\ldapurl.cs" />
+    <Compile Include="novell.directory.ldap\message.cs" />
+    <Compile Include="novell.directory.ldap\messageagent.cs" />
+    <Compile Include="novell.directory.ldap\messagevector.cs" />
+    <Compile Include="novell.directory.ldap\supportclass.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -54,13 +269,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -78,4 +290,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

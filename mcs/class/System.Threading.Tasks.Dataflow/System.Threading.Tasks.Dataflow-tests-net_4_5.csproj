@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Threading.Tasks.Dataflow-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,36 +43,62 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\corlib\System.Threading\AtomicBoolean.cs" />
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.parallel\mono.threading\atomicboolean.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.threading.tasks.dataflow\actionblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\asyncexecutingmessagebox.cs" />
+    <Compile Include="system.threading.tasks.dataflow\batchblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\batchedjoinblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\batchedjoinblock`3.cs" />
+    <Compile Include="system.threading.tasks.dataflow\broadcastblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\broadcastoutgoingqueue.cs" />
+    <Compile Include="system.threading.tasks.dataflow\bufferblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\chooserblock.cs" />
     <Compile Include="System.Threading.Tasks.Dataflow\CompletionHelper.cs" />
-    <Compile Include="Test\AssertEx.cs" />
-    <Compile Include="Test\Blocks.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\ActionBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\BatchBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\BatchedJoinBlock`3Test.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\BatchedJoinBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\BoundedCapacityTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\BroadcastBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\BufferBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\ChooseTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\CompletionHelperTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\CompletionTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\DataflowBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\DataflowMessageHeaderTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\EncapsulateTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\ExecutionBlocksTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\GreedyTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\InvalidArgumentsTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\JoinBlock`3Test.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\JoinBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\OptionsTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\OutputAvailableTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\PropagateCompletionTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\ReceivingTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\TransformBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\TransformManyBlockTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks.Dataflow\WriteOnceBlockTest.cs" />
-    <Compile Include="Test\TestScheduler.cs" />  </ItemGroup>
+    <Compile Include="system.threading.tasks.dataflow\dataflowblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\dataflowblockoptions.cs" />
+    <Compile Include="system.threading.tasks.dataflow\dataflowlinkoptions.cs" />
+    <Compile Include="system.threading.tasks.dataflow\dataflowmessageheader.cs" />
+    <Compile Include="system.threading.tasks.dataflow\dataflowmessagestatus.cs" />
+    <Compile Include="system.threading.tasks.dataflow\executingmessagebox.cs" />
+    <Compile Include="system.threading.tasks.dataflow\executingmessageboxbase.cs" />
+    <Compile Include="system.threading.tasks.dataflow\executiondataflowblockoptions.cs" />
+    <Compile Include="system.threading.tasks.dataflow\groupingdataflowblockoptions.cs" />
+    <Compile Include="system.threading.tasks.dataflow\idataflowblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\ipropagatorblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\ireceivablesourceblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\isourceblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\itargetblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\joinblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\joinblock`3.cs" />
+    <Compile Include="system.threading.tasks.dataflow\jointarget.cs" />
+    <Compile Include="system.threading.tasks.dataflow\messagebox.cs" />
+    <Compile Include="system.threading.tasks.dataflow\namehelper.cs" />
+    <Compile Include="system.threading.tasks.dataflow\nulltargetblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\observabledataflowblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\observerdataflowblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\outgoingqueue.cs" />
+    <Compile Include="system.threading.tasks.dataflow\outgoingqueuebase.cs" />
+    <Compile Include="system.threading.tasks.dataflow\outputavailableblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\passingmessagebox.cs" />
+    <Compile Include="system.threading.tasks.dataflow\predicateblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\propagatorwrapperblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\receiveblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\sendblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\targetcollection.cs" />
+    <Compile Include="system.threading.tasks.dataflow\transformblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\transformmanyblock.cs" />
+    <Compile Include="system.threading.tasks.dataflow\writeonceblock.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -83,13 +108,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -115,4 +137,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

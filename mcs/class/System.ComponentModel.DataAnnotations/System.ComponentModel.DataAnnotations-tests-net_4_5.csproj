@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.ComponentModel.DataAnnotations-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,27 +43,76 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\System.Web.DynamicData\Test\Common\AssertExtensions.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\AssociatedMetadataTypeTypeDescriptionProviderTests.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\AssociationAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\CompareAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\CreditCardAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\CustomValidationAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\DisplayAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\EmailAddressAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\EnumDataTypeAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\FileExtensionsAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\FilterUIHintAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\PhoneAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\RangeAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\RegularExpressionAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\RequiredAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\StringLengthAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\UIHintAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\ValidationAttributeTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\ValidationContextTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\ValidationResultTest.cs" />
-    <Compile Include="Test\System.ComponentModel.DataAnnotations\ValidatorTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\associatedmetadatatypetypedescriptionprovider.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\associatedmetadatatypetypedescriptor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\associationattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\bindabletypeattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\compareattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\concurrencycheckattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\creditcardattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\customvalidationattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\datatype.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\datatypeattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\displayattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\displaycolumnattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\displayformatattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\editableattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\emailaddressattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\enumdatatypeattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\fileextensionsattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\filteruihintattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\ivalidatableobject.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\keyattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\localizablestring.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\maxlengthattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\metadatapropertydescriptorwrapper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\metadatatypeattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\minlengthattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\phoneattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\rangeattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\regularexpressionattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\requiredattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\scaffoldattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\columnattribute.cs">
+      <Link>columnattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\complextypeattribute.cs">
+      <Link>complextypeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\databasegeneratedattribute.cs">
+      <Link>databasegeneratedattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\databasegeneratedoption.cs">
+      <Link>databasegeneratedoption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\foreignkeyattribute.cs">
+      <Link>foreignkeyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\inversepropertyattribute.cs">
+      <Link>inversepropertyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\notmappedattribute.cs">
+      <Link>notmappedattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\schema\tableattribute.cs">
+      <Link>tableattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\stringlengthattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\timestampattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\uihintattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\urlattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\validationattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\validationattributestore.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\validationcontext.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\validationexception.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\validationresult.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.componentmodel.dataannotations\dataannotations\validator.cs" />
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="dataannotationsresources.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -74,13 +122,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -114,4 +159,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

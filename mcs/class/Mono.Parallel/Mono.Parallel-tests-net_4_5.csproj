@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Mono.Parallel-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,10 +43,20 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\Mono.Collections.Concurrent\CollectionStressTestHelper.cs" />
-    <Compile Include="Test\Mono.Collections.Concurrent\ConcurrentSkipListTests.cs" />
-    <Compile Include="Test\Mono.Threading\ParallelTestHelper.cs" />
-    <Compile Include="Test\Mono.Threading\SnziTests.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\corlib\system.collections.concurrent\concurrentorderedlist.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="mono.collections.concurrent\concurrentskiplist.cs" />
+    <Compile Include="mono.threading.tasks\cyclicdeque.cs" />
+    <Compile Include="mono.threading.tasks\iconcurrentdeque.cs" />
+    <Compile Include="mono.threading.tasks\popresult.cs" />
+    <Compile Include="mono.threading\atomicboolean.cs" />
+    <Compile Include="mono.threading\csnzi.cs" />
+    <Compile Include="mono.threading\readerwriterlockslimmer.cs" />
+    <Compile Include="mono.threading\snzi.cs" />
+    <Compile Include="mono.threading\spinlockwrapper.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -57,13 +66,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -85,4 +91,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

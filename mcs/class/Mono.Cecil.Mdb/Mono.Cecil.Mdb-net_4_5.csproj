@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,7 +18,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,13 +49,28 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.Cecil.Mdb\AssemblyInfo.cs" />
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.Cecil.Mdb\MdbReader.cs" />
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.Cecil.Mdb\MdbWriter.cs" />
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\MonoSymbolFile.cs" />
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\MonoSymbolTable.cs" />
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\MonoSymbolWriter.cs" />
-    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\SymbolWriterImpl.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.Cecil.Mdb\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.Cecil.Mdb\MdbReader.cs">
+      <Link>MdbReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.Cecil.Mdb\MdbWriter.cs">
+      <Link>MdbWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\MonoSymbolFile.cs">
+      <Link>MonoSymbolFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\MonoSymbolTable.cs">
+      <Link>MonoSymbolTable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\MonoSymbolWriter.cs">
+      <Link>MonoSymbolWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\SymbolWriterImpl.cs">
+      <Link>SymbolWriterImpl.cs</Link>
+    </Compile>
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -66,17 +80,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -97,4 +106,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

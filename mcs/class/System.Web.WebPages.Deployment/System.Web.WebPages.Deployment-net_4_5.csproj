@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,7 +18,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <SignAssembly>true</SignAssembly>
     <DelaySign>true</DelaySign>
   </PropertyGroup>
@@ -51,24 +50,57 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\..\external\aspnetwebstack\src\CommonAssemblyInfo.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\CommonResources.Designer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\ExceptionHelper.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\GlobalSuppressions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\AppDomainHelper.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\AssemblyUtils.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\BuildManagerWrapper.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Common\IFileSystem.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Common\PhysicalFileSystem.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\GlobalSuppressions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\IBuildManager.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\PreApplicationStartCode.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\CommonResources.Designer.cs">
+      <Link>CommonResources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\ExceptionHelper.cs">
+      <Link>ExceptionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\AppDomainHelper.cs">
+      <Link>AppDomainHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\AssemblyUtils.cs">
+      <Link>AssemblyUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\BuildManagerWrapper.cs">
+      <Link>BuildManagerWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Common\IFileSystem.cs">
+      <Link>IFileSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Common\PhysicalFileSystem.cs">
+      <Link>PhysicalFileSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\IBuildManager.cs">
+      <Link>IBuildManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\PreApplicationStartCode.cs">
+      <Link>PreApplicationStartCode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Properties\AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\Resources\ConfigurationResources.Designer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\WebPagesDeployment.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\TransparentCommonAssemblyInfo.cs" />
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="Assembly\AssemblyInfo.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.WebPages.Deployment\WebPagesDeployment.cs">
+      <Link>WebPagesDeployment.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\TransparentCommonAssemblyInfo.cs">
+      <Link>TransparentCommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -78,17 +110,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -129,4 +156,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

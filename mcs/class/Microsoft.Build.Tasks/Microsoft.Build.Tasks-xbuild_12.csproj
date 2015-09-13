@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>./../../class/lib/xbuild_12</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,9 +43,15 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
-    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs" />
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs">
+      <Link>XBuildConsts.cs</Link>
+    </Compile>
     <Compile Include="..\Microsoft.Build.Engine\Microsoft.Build.BuildEngine\DirectoryScanner.cs" />
     <Compile Include="..\Microsoft.Build.Engine\Microsoft.Build.BuildEngine\UnknownToolsVersionException.cs" />
     <Compile Include="..\Microsoft.Build.Utilities\Mono.XBuild.Utilities\MSBuildUtils.cs" />
@@ -106,6 +111,7 @@
     <Compile Include="Microsoft.Build.Tasks\AssignTargetPath.cs" />
     <Compile Include="Microsoft.Build.Tasks\AssignLinkMetadata.cs" />
     <Compile Include="Microsoft.Build.Tasks\CallTarget.cs" />
+    <Compile Include="microsoft.build.tasks\codetaskfactory.cs" />
     <Compile Include="Microsoft.Build.Tasks\CombinePath.cs" />
     <Compile Include="Microsoft.Build.Tasks\CommandLineBuilderExtension.cs" />
     <Compile Include="Microsoft.Build.Tasks\Copy.cs" />
@@ -158,11 +164,13 @@
     <Compile Include="Microsoft.Build.Tasks\Vbc.cs" />
     <Compile Include="Microsoft.Build.Tasks\VCBuild.cs" />
     <Compile Include="Microsoft.Build.Tasks\Warning.cs" />
+    <Compile Include="microsoft.build.tasks\writecodefragment.cs" />
     <Compile Include="Microsoft.Build.Tasks\WriteLinesToFile.cs" />
     <Compile Include="Mono.XBuild.Tasks.GenerateResourceInternal\PoResourceReader.cs" />
     <Compile Include="Mono.XBuild.Tasks.GenerateResourceInternal\PoResourceWriter.cs" />
     <Compile Include="Mono.XBuild.Tasks.GenerateResourceInternal\TxtResourceReader.cs" />
-    <Compile Include="Mono.XBuild.Tasks.GenerateResourceInternal\TxtResourceWriter.cs" />  </ItemGroup>
+    <Compile Include="Mono.XBuild.Tasks.GenerateResourceInternal\TxtResourceWriter.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -172,13 +180,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -223,4 +228,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

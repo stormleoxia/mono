@@ -268,11 +268,11 @@ namespace System.Web
 			}
 		}
 
-		internal static HttpRuntimeSection Section { get { return runtime_section; } }
+		public static HttpRuntimeSection Section { get { return runtime_section; } }
 
 		public static bool UsingIntegratedPipeline { get { return false; } }
 
-		public static Version IISVersion {
+		internal static Version IISVersion {
 			get {
 				// Null means not hosted by IIS
 				return null;

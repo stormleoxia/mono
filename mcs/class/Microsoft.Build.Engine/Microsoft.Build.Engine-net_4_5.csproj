@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,7 +18,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -47,9 +45,15 @@
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
-    <Compile Include="..\..\tools\xbuild\SolutionParser.cs" />
-    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs" />
-    <Compile Include="..\Microsoft.Build.Framework\Mono.XBuild.Framework\AssemblyLoadInfo.cs" />
+    <Compile Include="..\..\tools\xbuild\SolutionParser.cs">
+      <Link>SolutionParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs">
+      <Link>XBuildConsts.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Build.Framework\Mono.XBuild.Framework\AssemblyLoadInfo.cs">
+      <Link>AssemblyLoadInfo.cs</Link>
+    </Compile>
     <Compile Include="..\Microsoft.Build.Utilities\Mono.XBuild.Utilities\MSBuildUtils.cs" />
     <Compile Include="..\Microsoft.Build.Utilities\Mono.XBuild.Utilities\ReservedNameUtils.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
@@ -121,7 +125,8 @@
     <Compile Include="Microsoft.Build.BuildEngine\UsingTask.cs" />
     <Compile Include="Microsoft.Build.BuildEngine\UsingTaskCollection.cs" />
     <Compile Include="Microsoft.Build.BuildEngine\Utilities.cs" />
-    <Compile Include="Microsoft.Build.BuildEngine\WriteHandler.cs" />  </ItemGroup>
+    <Compile Include="Microsoft.Build.BuildEngine\WriteHandler.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -131,17 +136,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -174,4 +174,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

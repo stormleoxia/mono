@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Commons.Xml.Relaxng-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,14 +43,46 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\NvdlValidatingReaderTests.cs" />
-    <Compile Include="Test\RdpPatternTests.cs" />
-    <Compile Include="Test\RelaxngDatatypeProviderTests.cs" />
-    <Compile Include="Test\RelaxngReaderTests.cs" />
-    <Compile Include="Test\RelaxngValidatingReaderTests.cs" />
-    <Compile Include="Test\RncTests.cs" />
-    <Compile Include="Test\XsdDatatypeTests.cs" />
-    <Compile Include="Commons.Xml.Relaxng.Rnc\RncParser.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlbuiltinvalidationprovider.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlcompilecontext.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlconfig.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlexception.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlfilteredxmlreader.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlreader.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlrelaxngsupport.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlsimplified.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlstructures.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlvalidatingreader.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlvalidationprovider.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlvalidator.cs" />
+    <Compile Include="commons.xml.nvdl\nvdlxsdsupport.cs" />
+    <Compile Include="commons.xml.relaxng.derivative\rdpcontenttype.cs" />
+    <Compile Include="commons.xml.relaxng.derivative\rdpnameclasses.cs" />
+    <Compile Include="commons.xml.relaxng.derivative\rdpobjects.cs" />
+    <Compile Include="commons.xml.relaxng.derivative\rdppatterns.cs" />
+    <Compile Include="commons.xml.relaxng.derivative\util.cs" />
+    <Compile Include="commons.xml.relaxng.inference\relaxnginference.cs" />
+    <Compile Include="commons.xml.relaxng.rnc\rnctokenizer.cs" />
+    <Compile Include="commons.xml.relaxng.rnc\rncwriter.cs" />
+    <Compile Include="commons.xml.relaxng.rnc\xmlchar.cs" />
+    <Compile Include="commons.xml.relaxng\misc.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngdatatype.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngdatatypeprovider.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngdefaultdatatypes.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngexception.cs" />
+    <Compile Include="commons.xml.relaxng\relaxnggrammar.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngmergedprovider.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngnameclass.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngpattern.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngpatterntype.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngreader.cs" />
+    <Compile Include="commons.xml.relaxng\relaxngvalidatingreader.cs" />
+    <Compile Include="commons.xml.relaxng\xsddatatypeprovider.cs" />
+    <Compile Include="commons.xml\xmldefaultreader.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -61,13 +92,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -98,4 +126,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

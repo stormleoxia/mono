@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Mono.Messaging.RabbitMQ-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,15 +43,22 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\BinaryMessageFormatterTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\FailuresTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\MessageBaseTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\MessageEnumeratorExceptionTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\MessageTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\MessagingContextPoolTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\RabbitMQMessagingProviderTest.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\TestUtils.cs" />
-    <Compile Include="Test\Mono.Messaging.RabbitMQ\XmlMessageFormatterTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\IMessagingContext.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\MessageFactory.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\MessagingContext.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\MessagingContextPool.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\RabbitMQMessageEnumerator.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\RabbitMQMessageQueue.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\RabbitMQMessageQueueTransaction.cs" />
+    <Compile Include="Mono.Messaging.RabbitMQ\RabbitMQMessagingProvider.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -62,13 +68,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -107,4 +110,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

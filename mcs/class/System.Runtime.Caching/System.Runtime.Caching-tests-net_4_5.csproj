@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Runtime.Caching-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,15 +43,67 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\Common\AppDomainTools.cs" />
-    <Compile Include="Test\Common\AssertExtensions.cs" />
-    <Compile Include="Test\Common\PokerChangeMonitor.cs" />
-    <Compile Include="Test\Common\PokerMemoryCache.cs" />
-    <Compile Include="Test\Common\PokerObjectCache.cs" />
-    <Compile Include="Test\Common\TestNotificationSystem.cs" />
-    <Compile Include="Test\System.Runtime.Caching\HostFileChangeMonitorTest.cs" />
-    <Compile Include="Test\System.Runtime.Caching\MemoryCacheTest.cs" />
-    <Compile Include="Test\System.Runtime.Caching\ObjectCacheTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\resources\rh.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheentrychangemonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheentryremovedarguments.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheentryremovedcallback.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheentryremovedreason.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheentryupdatearguments.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheentryupdatecallback.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheitem.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheitempolicy.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cacheitempriority.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\cachememorymonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\changemonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\configuration\cachingsectiongroup.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\configuration\configutil.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\configuration\memorycacheelement.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\configuration\memorycachesection.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\configuration\memorycachesettingscollection.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\dbg.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\defaultcachecapabilities.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\entrystate.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\filechangemonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\filechangenotificationsystem.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\hostfilechangemonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\hosting\iapplicationidentifier.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\hosting\ifilechangenotificationsystem.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\hosting\imemorycachemanager.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycache.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycacheentry.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycacheentrychangemonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycachekey.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycachekeyequalitycomparer.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycachestatistics.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorycachestore.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\memorymonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\objectcache.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\onchangedcallback.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\perfcountername.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\perfcounters.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\physicalmemorymonitor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\safebitvector32.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\saferegistryhandle.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.caching\system\caching\sqlchangemonitor.cs" />
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\system.web\system.web.configuration_2.0\nullablestringvalidator.cs">
+      <Link>nullablestringvalidator.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="referencesources\cacheentrycollection.cs" />
+    <Compile Include="referencesources\cacheexpires.cs" />
+    <Compile Include="referencesources\cacheusage.cs" />
+    <Compile Include="referencesources\r.designer.cs" />
+    <Compile Include="referencesources\sref.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -62,13 +113,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -102,4 +150,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

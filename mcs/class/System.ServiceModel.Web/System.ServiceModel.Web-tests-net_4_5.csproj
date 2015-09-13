@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.ServiceModel.Web-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,41 +43,54 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Runtime.Serialization.Json\DataContractJsonSerializerTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization.Json\JsonReaderTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization.Json\JsonWriterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Activation\WebScriptServiceHostFactoryTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Channels\WebBodyFormatMessagePropertyTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Channels\WebMessageEncodingBindingElementTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Configuration\WebHttpBindingElementTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Description\WebHttpBehaviorTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Description\WebHttpEndpointTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Description\WebScriptEnablingBehaviorTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Dispatcher\JsonQueryStringConverterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Dispatcher\QueryStringConverterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Dispatcher\WebHttpDispatchOperationSelectorTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\Atom10FeedFormatterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\Atom10ItemFormatterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\AtomPub10CategoriesDocumentFormatterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\AtomPub10ServiceDocumentFormatterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\Rss20FeedFormatterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\Rss20ItemFormatterTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\ServiceDocumentTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\SyndicationElementExtensionTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\SyndicationFeedTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\SyndicationItemTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\SyndicationLinkTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\TextSyndicationContentTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\UrlSyndicationContentTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Syndication\XmlSyndicationContentTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Web\WebGetAttributeTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Web\WebInvokeAttributeTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Web\WebOperationContextTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Web\WebServiceHostTest.cs" />
-    <Compile Include="Test\System.ServiceModel\WebHttpBindingTest.cs" />
-    <Compile Include="Test\System\UriTemplateEquivalenceComparerTest.cs" />
-    <Compile Include="Test\System\UriTemplateTableTest.cs" />
-    <Compile Include="Test\System\UriTemplateTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="assembly\typeforwarders.cs" />
+    <Compile Include="system.servicemodel.activation\webscriptservicehostfactory.cs" />
+    <Compile Include="system.servicemodel.activation\webservicehostfactory.cs" />
+    <Compile Include="system.servicemodel.channels\webbodyformatmessageproperty.cs" />
+    <Compile Include="system.servicemodel.channels\webcontentformat.cs" />
+    <Compile Include="system.servicemodel.channels\webcontenttypemapper.cs" />
+    <Compile Include="system.servicemodel.channels\webmessageencoder.cs" />
+    <Compile Include="system.servicemodel.channels\webmessageencoderfactory.cs" />
+    <Compile Include="system.servicemodel.channels\webmessageencodingbindingelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webhttpbindingcollectionelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webhttpbindingelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webhttpelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webhttpendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webhttpendpointelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webhttpsecurityelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webmessageencodingelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webscriptenablingelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webscriptendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.configuration\webscriptendpointelement.cs" />
+    <Compile Include="system.servicemodel.description\webhttpbehavior.cs" />
+    <Compile Include="system.servicemodel.description\webhttpendpoint.cs" />
+    <Compile Include="system.servicemodel.description\webscriptenablingbehavior.cs" />
+    <Compile Include="system.servicemodel.description\webscriptendpoint.cs" />
+    <Compile Include="system.servicemodel.description\webserviceendpoint.cs" />
+    <Compile Include="system.servicemodel.dispatcher\jsonquerystringconverter.cs" />
+    <Compile Include="system.servicemodel.dispatcher\querystringconverter.cs" />
+    <Compile Include="system.servicemodel.dispatcher\webhttpdispatchoperationselector.cs" />
+    <Compile Include="system.servicemodel.dispatcher\webmessageformatter.cs" />
+    <Compile Include="system.servicemodel.web\incomingwebrequestcontext.cs" />
+    <Compile Include="system.servicemodel.web\incomingwebresponsecontext.cs" />
+    <Compile Include="system.servicemodel.web\outgoingwebrequestcontext.cs" />
+    <Compile Include="system.servicemodel.web\outgoingwebresponsecontext.cs" />
+    <Compile Include="system.servicemodel.web\webattributeinfo.cs" />
+    <Compile Include="system.servicemodel.web\webchannelfactory.cs" />
+    <Compile Include="system.servicemodel.web\webgetattribute.cs" />
+    <Compile Include="system.servicemodel.web\webinvokeattribute.cs" />
+    <Compile Include="system.servicemodel.web\webmessagebodystyle.cs" />
+    <Compile Include="system.servicemodel.web\webmessageformat.cs" />
+    <Compile Include="system.servicemodel.web\weboperationcontext.cs" />
+    <Compile Include="system.servicemodel.web\webservicehost.cs" />
+    <Compile Include="system.servicemodel\webhttpbinding.cs" />
+    <Compile Include="system.servicemodel\webhttpsecurity.cs" />
+    <Compile Include="system.servicemodel\webhttpsecuritymode.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -88,13 +100,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -144,4 +153,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

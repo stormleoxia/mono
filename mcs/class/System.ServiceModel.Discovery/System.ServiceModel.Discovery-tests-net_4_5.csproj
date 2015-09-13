@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.ServiceModel.Discovery-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,28 +43,105 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.ServiceModel.Discovery\AnnouncementBoundDiscoveryService.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\AnnouncementClientTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\AnnouncementEndpointTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\AnnouncementServiceTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\ContractTypes.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DiscoveryClientBindingElementTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DiscoveryClientTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DiscoveryEndpointTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DiscoveryProxyTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DiscoveryServiceTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DiscoveryVersionTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\DynamicEndpointTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\EndpointDiscoveryBehaviorTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\EndpointDiscoveryMetadataTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\FindCriteriaTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\InspectionBehaviors.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\IntegratedDiscoveryTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\MyDiscoveryServiceTypes.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\ServiceDiscoveryBehaviorTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\UdpAnnouncementEndpointTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\UdpDiscoveryEndpointTest.cs" />
-    <Compile Include="Test\System.ServiceModel.Discovery\UdpTransportTest.cs" />  </ItemGroup>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.servicemodel.channels\discoverychannelbase.cs" />
+    <Compile Include="system.servicemodel.channels\requestchannelbase.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\announcementchannelendpointelementcollection.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\announcementendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\announcementendpointelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\contracttypenameelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\contracttypenameelementcollection.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\discoveryclientelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\discoveryclientsettingselement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\discoveryendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\discoveryendpointelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\discoveryversionconverter.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\dynamicendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\dynamicendpointelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\endpointdiscoveryelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\findcriteriaelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\scopeelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\scopeelementcollection.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\servicediscoveryelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\udpannouncementendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\udpannouncementendpointelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\udpdiscoveryendpointcollectionelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\udpdiscoveryendpointelement.cs" />
+    <Compile Include="system.servicemodel.discovery.configuration\udptransportsettingselement.cs" />
+    <Compile Include="system.servicemodel.discovery.udp\udpchannelfactory.cs" />
+    <Compile Include="system.servicemodel.discovery.udp\udpchannellistener.cs" />
+    <Compile Include="system.servicemodel.discovery.udp\udpduplexchannel.cs" />
+    <Compile Include="system.servicemodel.discovery.udp\udptransportbindingelement.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\announcementclient11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\discoverymessagesequence11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\discoveryproxyclient11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\discoverytargetclient11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\endpointdiscoverymetadata11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\findcriteria11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\iannouncementcontract11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\idiscoveryproxycontract11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\idiscoverytargetcontract11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\messagecontracts11.cs" />
+    <Compile Include="system.servicemodel.discovery.version11\resolvecriteria11.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\announcementclientapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\discoverymessagesequenceapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\discoveryproxyclientapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\discoverytargetclientapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\endpointdiscoverymetadataapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\findcriteriaapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\iannouncementcontractapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\idiscoveryproxycontractapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\idiscoverytargetcontractapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\messagecontractsapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versionapril2005\resolvecriteriaapril2005.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\announcementclientcd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\discoverymessagesequencecd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\discoveryproxyclientcd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\discoverytargetclientcd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\endpointdiscoverymetadatacd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\findcriteriacd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\iannouncementcontractcd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\idiscoveryproxycontractcd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\idiscoverytargetcontractcd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\messagecontractscd1.cs" />
+    <Compile Include="system.servicemodel.discovery.versioncd1\resolvecriteriacd1.cs" />
+    <Compile Include="system.servicemodel.discovery\announcementclient.cs" />
+    <Compile Include="system.servicemodel.discovery\announcementendpoint.cs" />
+    <Compile Include="system.servicemodel.discovery\announcementeventargs.cs" />
+    <Compile Include="system.servicemodel.discovery\announcementservice.cs" />
+    <Compile Include="system.servicemodel.discovery\discoverychanneldispatcher.cs" />
+    <Compile Include="system.servicemodel.discovery\discoverychannelfactory.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryclient.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryclientbindingelement.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryendpoint.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryendpointprovider.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryendpointpublisherbehavior.cs" />
+    <Compile Include="system.servicemodel.discovery\discoverymessagesequence.cs" />
+    <Compile Include="system.servicemodel.discovery\discoverymessagesequencegenerator.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryoperationcontextextension.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryproxy.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryrequestchannel.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryservice.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryserviceextension.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryversion.cs" />
+    <Compile Include="system.servicemodel.discovery\discoveryviauribehavior.cs" />
+    <Compile Include="system.servicemodel.discovery\dynamicendpoint.cs" />
+    <Compile Include="system.servicemodel.discovery\endpointdiscoverybehavior.cs" />
+    <Compile Include="system.servicemodel.discovery\endpointdiscoverymetadata.cs" />
+    <Compile Include="system.servicemodel.discovery\findcompletedeventargs.cs" />
+    <Compile Include="system.servicemodel.discovery\findcriteria.cs" />
+    <Compile Include="system.servicemodel.discovery\findprogresschangedeventargs.cs" />
+    <Compile Include="system.servicemodel.discovery\findrequestcontext.cs" />
+    <Compile Include="system.servicemodel.discovery\findresponse.cs" />
+    <Compile Include="system.servicemodel.discovery\resolvecompletedeventargs.cs" />
+    <Compile Include="system.servicemodel.discovery\resolvecriteria.cs" />
+    <Compile Include="system.servicemodel.discovery\resolveresponse.cs" />
+    <Compile Include="system.servicemodel.discovery\servicediscoverybehavior.cs" />
+    <Compile Include="system.servicemodel.discovery\servicediscoverymode.cs" />
+    <Compile Include="system.servicemodel.discovery\udpannouncementendpoint.cs" />
+    <Compile Include="system.servicemodel.discovery\udpdiscoveryendpoint.cs" />
+    <Compile Include="system.servicemodel.discovery\udptransportsettings.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -75,13 +151,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -127,4 +200,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Mono.Debugger.Soft-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,7 +43,83 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\dtest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="mono.debugger.soft\absentinformationexception.cs" />
+    <Compile Include="mono.debugger.soft\appdomaincreateevent.cs" />
+    <Compile Include="mono.debugger.soft\appdomainmirror.cs" />
+    <Compile Include="mono.debugger.soft\appdomainunloadevent.cs" />
+    <Compile Include="mono.debugger.soft\arraymirror.cs" />
+    <Compile Include="mono.debugger.soft\assemblyloadevent.cs" />
+    <Compile Include="mono.debugger.soft\assemblyloadeventrequest.cs" />
+    <Compile Include="mono.debugger.soft\assemblymirror.cs" />
+    <Compile Include="mono.debugger.soft\assemblyunloadevent.cs" />
+    <Compile Include="mono.debugger.soft\breakpointevent.cs" />
+    <Compile Include="mono.debugger.soft\breakpointeventrequest.cs" />
+    <Compile Include="mono.debugger.soft\connection.cs" />
+    <Compile Include="mono.debugger.soft\customattributedatamirror.cs" />
+    <Compile Include="mono.debugger.soft\customattributenamedargumentmirror.cs" />
+    <Compile Include="mono.debugger.soft\customattributetypedargumentmirror.cs" />
+    <Compile Include="mono.debugger.soft\dataconverter.cs" />
+    <Compile Include="mono.debugger.soft\enummirror.cs" />
+    <Compile Include="mono.debugger.soft\event.cs" />
+    <Compile Include="mono.debugger.soft\eventqueueimpl.cs" />
+    <Compile Include="mono.debugger.soft\eventrequest.cs" />
+    <Compile Include="mono.debugger.soft\eventset.cs" />
+    <Compile Include="mono.debugger.soft\eventtype.cs" />
+    <Compile Include="mono.debugger.soft\exceptionevent.cs" />
+    <Compile Include="mono.debugger.soft\exceptioneventrequest.cs" />
+    <Compile Include="mono.debugger.soft\fieldinfomirror.cs" />
+    <Compile Include="mono.debugger.soft\iinvokeasyncresult.cs" />
+    <Compile Include="mono.debugger.soft\ilexceptionhandler.cs" />
+    <Compile Include="mono.debugger.soft\ilinstruction.cs" />
+    <Compile Include="mono.debugger.soft\ilinterpreter.cs" />
+    <Compile Include="mono.debugger.soft\imirror.cs" />
+    <Compile Include="mono.debugger.soft\interfacemappingmirror.cs" />
+    <Compile Include="mono.debugger.soft\invalidstackframeexception.cs" />
+    <Compile Include="mono.debugger.soft\invocationexception.cs" />
+    <Compile Include="mono.debugger.soft\invokeoptions.cs" />
+    <Compile Include="mono.debugger.soft\itargetprocess.cs" />
+    <Compile Include="mono.debugger.soft\localvariable.cs" />
+    <Compile Include="mono.debugger.soft\location.cs" />
+    <Compile Include="mono.debugger.soft\methodbodymirror.cs" />
+    <Compile Include="mono.debugger.soft\methodentryevent.cs" />
+    <Compile Include="mono.debugger.soft\methodentryeventrequest.cs" />
+    <Compile Include="mono.debugger.soft\methodexitevent.cs" />
+    <Compile Include="mono.debugger.soft\methodexiteventrequest.cs" />
+    <Compile Include="mono.debugger.soft\methodmirror.cs" />
+    <Compile Include="mono.debugger.soft\mirror.cs" />
+    <Compile Include="mono.debugger.soft\modulemirror.cs" />
+    <Compile Include="mono.debugger.soft\objectcollectedexception.cs" />
+    <Compile Include="mono.debugger.soft\objectmirror.cs" />
+    <Compile Include="mono.debugger.soft\parameterinfomirror.cs" />
+    <Compile Include="mono.debugger.soft\pointervalue.cs" />
+    <Compile Include="mono.debugger.soft\primitivevalue.cs" />
+    <Compile Include="mono.debugger.soft\propertyinfomirror.cs" />
+    <Compile Include="mono.debugger.soft\stackframe.cs" />
+    <Compile Include="mono.debugger.soft\stepevent.cs" />
+    <Compile Include="mono.debugger.soft\stepeventrequest.cs" />
+    <Compile Include="mono.debugger.soft\stringmirror.cs" />
+    <Compile Include="mono.debugger.soft\structmirror.cs" />
+    <Compile Include="mono.debugger.soft\suspendpolicy.cs" />
+    <Compile Include="mono.debugger.soft\threaddeathevent.cs" />
+    <Compile Include="mono.debugger.soft\threadmirror.cs" />
+    <Compile Include="mono.debugger.soft\threadstartevent.cs" />
+    <Compile Include="mono.debugger.soft\typeloadevent.cs" />
+    <Compile Include="mono.debugger.soft\typeloadeventrequest.cs" />
+    <Compile Include="mono.debugger.soft\typemirror.cs" />
+    <Compile Include="mono.debugger.soft\userbreakevent.cs" />
+    <Compile Include="mono.debugger.soft\userlogevent.cs" />
+    <Compile Include="mono.debugger.soft\value.cs" />
+    <Compile Include="mono.debugger.soft\virtualmachine.cs" />
+    <Compile Include="mono.debugger.soft\virtualmachinemanager.cs" />
+    <Compile Include="mono.debugger.soft\vmdeathevent.cs" />
+    <Compile Include="mono.debugger.soft\vmdisconnectedexception.cs" />
+    <Compile Include="mono.debugger.soft\vmdisconnectevent.cs" />
+    <Compile Include="mono.debugger.soft\vmmismatchexception.cs" />
+    <Compile Include="mono.debugger.soft\vmstartevent.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -54,13 +129,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -90,4 +162,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

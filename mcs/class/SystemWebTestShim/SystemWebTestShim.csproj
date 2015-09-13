@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="SystemWebTestShim\Adapters.cs" />
     <Compile Include="SystemWebTestShim\BuildManager.cs" />

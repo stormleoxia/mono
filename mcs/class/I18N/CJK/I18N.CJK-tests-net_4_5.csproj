@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,7 +44,25 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\I18N.CJK.Test.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\assembly\assemblyinfo.cs">
+      <Link>assemblyinfo.cs</Link>
+    </Compile>
+    <Compile Include="codetable.cs" />
+    <Compile Include="cp51932.cs" />
+    <Compile Include="cp932.cs" />
+    <Compile Include="cp936.cs" />
+    <Compile Include="cp949.cs" />
+    <Compile Include="cp950.cs" />
+    <Compile Include="dbcsconvert.cs" />
+    <Compile Include="dbcsencoding.cs" />
+    <Compile Include="gb18030encoding.cs" />
+    <Compile Include="gb18030source.cs" />
+    <Compile Include="iso2022jp.cs" />
+    <Compile Include="jisconvert.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -54,13 +72,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -99,4 +114,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

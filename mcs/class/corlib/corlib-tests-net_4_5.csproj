@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,505 +44,2224 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\aggregateexception.cs">
+      <Link>System/aggregateexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\arraysegment.cs">
+      <Link>System/arraysegment.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\bitconverter.cs">
+      <Link>System/bitconverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\boolean.cs">
+      <Link>System/boolean.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\byte.cs">
+      <Link>System/byte.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\char.cs">
+      <Link>System/char.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\arraylist.cs">
+      <Link>System.Collections/arraylist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\bitarray.cs">
+      <Link>System.Collections/bitarray.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\caseinsensitivecomparer.cs">
+      <Link>System.Collections/caseinsensitivecomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\caseinsensitivehashcodeprovider.cs">
+      <Link>System.Collections/caseinsensitivehashcodeprovider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\collectionbase.cs">
+      <Link>System.Collections/collectionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\comparer.cs">
+      <Link>System.Collections/comparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\compatiblecomparer.cs">
+      <Link>System.Collections/compatiblecomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\concurrentdictionary.cs">
+      <Link>System.Collections.Concurrent/concurrentdictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\concurrentqueue.cs">
+      <Link>System.Collections.Concurrent/concurrentqueue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\concurrentstack.cs">
+      <Link>System.Collections.Concurrent/concurrentstack.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\iproducerconsumercollection.cs">
+      <Link>System.Collections.Concurrent/iproducerconsumercollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\orderablepartitioner.cs">
+      <Link>System.Collections.Concurrent/orderablepartitioner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\partitioner.cs">
+      <Link>System.Collections.Concurrent/partitioner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\concurrent\partitionerstatic.cs">
+      <Link>System.Collections.Concurrent/partitionerstatic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\dictionarybase.cs">
+      <Link>System.Collections/dictionarybase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\dictionaryentry.cs">
+      <Link>System.Collections/dictionaryentry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\emptyreadonlydictionaryinternal.cs">
+      <Link>System.Collections/emptyreadonlydictionaryinternal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\debugview.cs">
+      <Link>System.Collections.Generic/debugview.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\dictionary.cs">
+      <Link>System.Collections.Generic/dictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\icollection.cs">
+      <Link>System.Collections.Generic/icollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\icomparer.cs">
+      <Link>System.Collections.Generic/icomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\idictionary.cs">
+      <Link>System.Collections.Generic/idictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ienumerable.cs">
+      <Link>System.Collections.Generic/ienumerable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ienumerator.cs">
+      <Link>System.Collections.Generic/ienumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\iequalitycomparer.cs">
+      <Link>System.Collections.Generic/iequalitycomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ilist.cs">
+      <Link>System.Collections.Generic/ilist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlycollection.cs">
+      <Link>System.Collections.Generic/ireadonlycollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlydictionary.cs">
+      <Link>System.Collections.Generic/ireadonlydictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlylist.cs">
+      <Link>System.Collections.Generic/ireadonlylist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\keynotfoundexception.cs">
+      <Link>System.Collections.Generic/keynotfoundexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\keyvaluepair.cs">
+      <Link>System.Collections.Generic/keyvaluepair.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\list.cs">
+      <Link>System.Collections.Generic/list.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\hashtable.cs">
+      <Link>System.Collections/hashtable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\icollection.cs">
+      <Link>System.Collections/icollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\icomparer.cs">
+      <Link>System.Collections/icomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\idictionary.cs">
+      <Link>System.Collections/idictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\idictionaryenumerator.cs">
+      <Link>System.Collections/idictionaryenumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ienumerable.cs">
+      <Link>System.Collections/ienumerable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ienumerator.cs">
+      <Link>System.Collections/ienumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\iequalitycomparer.cs">
+      <Link>System.Collections/iequalitycomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ihashcodeprovider.cs">
+      <Link>System.Collections/ihashcodeprovider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ilist.cs">
+      <Link>System.Collections/ilist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\istructuralcomparable.cs">
+      <Link>System.Collections/istructuralcomparable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\istructuralequatable.cs">
+      <Link>System.Collections/istructuralequatable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\keyvaluepairs.cs">
+      <Link>System.Collections/keyvaluepairs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\listdictionaryinternal.cs">
+      <Link>System.Collections/listdictionaryinternal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\collection.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\keyedcollection.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\readonlycollection.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\readonlydictionary.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\queue.cs">
+      <Link>System.Collections/queue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\readonlycollectionbase.cs">
+      <Link>System.Collections/readonlycollectionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\sortedlist.cs">
+      <Link>System.Collections/sortedlist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\stack.cs">
+      <Link>System.Collections/stack.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\structuralcomparisons.cs">
+      <Link>System.Collections/structuralcomparisons.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\convert.cs">
+      <Link>System/convert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetime.cs">
+      <Link>System/datetime.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetimekind.cs">
+      <Link>System/datetimekind.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetimeoffset.cs">
+      <Link>System/datetimeoffset.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\dayofweek.cs">
+      <Link>System/dayofweek.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\dbnull.cs">
+      <Link>System/dbnull.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\decimal.cs">
+      <Link>System/decimal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assert.cs">
+      <Link>System.Diagnostics/assert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assertfilter.cs">
+      <Link>System.Diagnostics/assertfilter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assertfilters.cs">
+      <Link>System.Diagnostics/assertfilters.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\contracts\contracts.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\contracts\contractsbcl.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\empty.cs">
+      <Link>System/empty.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\bidicategory.cs">
+      <Link>System.Globalization/bidicategory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\calendar.cs">
+      <Link>System.Globalization/calendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\calendardata.cs">
+      <Link>System.Globalization/calendardata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\charunicodeinfo.cs">
+      <Link>System.Globalization/charunicodeinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\chineselunisolarcalendar.cs">
+      <Link>System.Globalization/chineselunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformat.cs">
+      <Link>System.Globalization/datetimeformat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformatinfo.cs">
+      <Link>System.Globalization/datetimeformatinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformatinfoscanner.cs">
+      <Link>System.Globalization/datetimeformatinfoscanner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeparse.cs">
+      <Link>System.Globalization/datetimeparse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\daylighttime.cs">
+      <Link>System.Globalization/daylighttime.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\eastasianlunisolarcalendar.cs">
+      <Link>System.Globalization/eastasianlunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\globalizationassembly.cs">
+      <Link>System.Globalization/globalizationassembly.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\gregoriancalendar.cs">
+      <Link>System.Globalization/gregoriancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\gregoriancalendarhelper.cs">
+      <Link>System.Globalization/gregoriancalendarhelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hebrewcalendar.cs">
+      <Link>System.Globalization/hebrewcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hebrewnumber.cs">
+      <Link>System.Globalization/hebrewnumber.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hijricalendar.cs">
+      <Link>System.Globalization/hijricalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\japanesecalendar.cs">
+      <Link>System.Globalization/japanesecalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\japaneselunisolarcalendar.cs">
+      <Link>System.Globalization/japaneselunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\juliancalendar.cs">
+      <Link>System.Globalization/juliancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\koreancalendar.cs">
+      <Link>System.Globalization/koreancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\koreanlunisolarcalendar.cs">
+      <Link>System.Globalization/koreanlunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\persiancalendar.cs">
+      <Link>System.Globalization/persiancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\taiwancalendar.cs">
+      <Link>System.Globalization/taiwancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\taiwanlunisolarcalendar.cs">
+      <Link>System.Globalization/taiwanlunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\thaibuddhistcalendar.cs">
+      <Link>System.Globalization/thaibuddhistcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\timespanformat.cs">
+      <Link>System.Globalization/timespanformat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\timespanparse.cs">
+      <Link>System.Globalization/timespanparse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\umalquracalendar.cs">
+      <Link>System.Globalization/umalquracalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\guid.cs">
+      <Link>System/guid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int16.cs">
+      <Link>System/int16.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int32.cs">
+      <Link>System/int32.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int64.cs">
+      <Link>System/int64.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\bufferedstream.cs">
+      <Link>System.IO/bufferedstream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\memorystream.cs">
+      <Link>System.IO/memorystream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stream.cs">
+      <Link>System.IO/stream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\streamreader.cs">
+      <Link>System.IO/streamreader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\streamwriter.cs">
+      <Link>System.IO/streamwriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stringreader.cs">
+      <Link>System.IO/stringreader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stringwriter.cs">
+      <Link>System.IO/stringwriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\textreader.cs">
+      <Link>System.IO/textreader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\textwriter.cs">
+      <Link>System.IO/textwriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\__error.cs">
+      <Link>System.IO/__error.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\lazy.cs">
+      <Link>System/lazy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\memberaccessexception.cs">
+      <Link>System/memberaccessexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\methodaccessexception.cs">
+      <Link>System/methodaccessexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\midpointrounding.cs">
+      <Link>System/midpointrounding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingfieldexception.cs">
+      <Link>System/missingfieldexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingmemberexception.cs">
+      <Link>System/missingmemberexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingmethodexception.cs">
+      <Link>System/missingmethodexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\number.cs">
+      <Link>System/number.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\progress.cs">
+      <Link>System/progress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\random.cs">
+      <Link>System/random.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\resid.cs">
+      <Link>System/resid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\accessedthroughpropertyattribute.cs">
+      <Link>System.Runtime.CompilerServices/accessedthroughpropertyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\assemblyattributesgohere.cs">
+      <Link>System.Runtime.CompilerServices/assemblyattributesgohere.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\assemblysettingattributes.cs">
+      <Link>System.Runtime.CompilerServices/assemblysettingattributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\asyncmethodbuilder.cs">
+      <Link>System.Runtime.CompilerServices/asyncmethodbuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\asyncstatemachineattribute.cs">
+      <Link>System.Runtime.CompilerServices/asyncstatemachineattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\callerfilepathattribute.cs">
+      <Link>System.Runtime.CompilerServices/callerfilepathattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\callerlinenumberattribute.cs">
+      <Link>System.Runtime.CompilerServices/callerlinenumberattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\callermembernameattribute.cs">
+      <Link>System.Runtime.CompilerServices/callermembernameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\callingconvention.cs">
+      <Link>System.Runtime.CompilerServices/callingconvention.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilationrelaxations.cs">
+      <Link>System.Runtime.CompilerServices/compilationrelaxations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilergeneratedattribute.cs">
+      <Link>System.Runtime.CompilerServices/compilergeneratedattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilerglobalscopeattribute.cs">
+      <Link>System.Runtime.CompilerServices/compilerglobalscopeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilermarshaloverride.cs">
+      <Link>System.Runtime.CompilerServices/compilermarshaloverride.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\customconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/customconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\datetimeconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/datetimeconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\decimalconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/decimalconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\decoratednameattribute.cs">
+      <Link>System.Runtime.CompilerServices/decoratednameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\discardableattribute.cs">
+      <Link>System.Runtime.CompilerServices/discardableattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\extensionattribute.cs">
+      <Link>System.Runtime.CompilerServices/extensionattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\fixedaddressvaluetypeattribute.cs">
+      <Link>System.Runtime.CompilerServices/fixedaddressvaluetypeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\fixedbufferattribute.cs">
+      <Link>System.Runtime.CompilerServices/fixedbufferattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\hascopysemanticsattribute.cs">
+      <Link>System.Runtime.CompilerServices/hascopysemanticsattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iasyncstatemachine.cs">
+      <Link>System.Runtime.CompilerServices/iasyncstatemachine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\idispatchconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/idispatchconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\indexernameattribute.cs">
+      <Link>System.Runtime.CompilerServices/indexernameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\inotifycompletion.cs">
+      <Link>System.Runtime.CompilerServices/inotifycompletion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\internalsvisibletoattribute.cs">
+      <Link>System.Runtime.CompilerServices/internalsvisibletoattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isboxed.cs">
+      <Link>System.Runtime.CompilerServices/isboxed.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isbyvalue.cs">
+      <Link>System.Runtime.CompilerServices/isbyvalue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isconst.cs">
+      <Link>System.Runtime.CompilerServices/isconst.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iscopyconstructed.cs">
+      <Link>System.Runtime.CompilerServices/iscopyconstructed.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isexplicitlydereferenced.cs">
+      <Link>System.Runtime.CompilerServices/isexplicitlydereferenced.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isimplicitlydereferenced.cs">
+      <Link>System.Runtime.CompilerServices/isimplicitlydereferenced.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isjitintrinsic.cs">
+      <Link>System.Runtime.CompilerServices/isjitintrinsic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\islong.cs">
+      <Link>System.Runtime.CompilerServices/islong.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\ispinned.cs">
+      <Link>System.Runtime.CompilerServices/ispinned.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\issignunspecifiedbyte.cs">
+      <Link>System.Runtime.CompilerServices/issignunspecifiedbyte.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isudtreturn.cs">
+      <Link>System.Runtime.CompilerServices/isudtreturn.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isvolatile.cs">
+      <Link>System.Runtime.CompilerServices/isvolatile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iteratorstatemachineattribute.cs">
+      <Link>System.Runtime.CompilerServices/iteratorstatemachineattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iunknownconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/iunknownconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\methodimplattribute.cs">
+      <Link>System.Runtime.CompilerServices/methodimplattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\nativecppclassattribute.cs">
+      <Link>System.Runtime.CompilerServices/nativecppclassattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\referenceassemblyattribute.cs">
+      <Link>System.Runtime.CompilerServices/referenceassemblyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\requiredattributeattribute.cs">
+      <Link>System.Runtime.CompilerServices/requiredattributeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\runtimecompatibilityattribute.cs">
+      <Link>System.Runtime.CompilerServices/runtimecompatibilityattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\runtimewrappedexception.cs">
+      <Link>System.Runtime.CompilerServices/runtimewrappedexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\scopelessenumattribute.cs">
+      <Link>System.Runtime.CompilerServices/scopelessenumattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\specialnameattribute.cs">
+      <Link>System.Runtime.CompilerServices/specialnameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\statemachineattribute.cs">
+      <Link>System.Runtime.CompilerServices/statemachineattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\suppressildasmattribute.cs">
+      <Link>System.Runtime.CompilerServices/suppressildasmattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\suppressmergecheckattribute.cs">
+      <Link>System.Runtime.CompilerServices/suppressmergecheckattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\taskawaiter.cs">
+      <Link>System.Runtime.CompilerServices/taskawaiter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\typedependencyattribute.cs">
+      <Link>System.Runtime.CompilerServices/typedependencyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\typeforwardedfromattribute.cs">
+      <Link>System.Runtime.CompilerServices/typeforwardedfromattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\typeforwardedtoattribute.cs">
+      <Link>System.Runtime.CompilerServices/typeforwardedtoattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\unsafevaluetypeattribute.cs">
+      <Link>System.Runtime.CompilerServices/unsafevaluetypeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\yieldawaitable.cs">
+      <Link>System.Runtime.CompilerServices/yieldawaitable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\versioning\binarycompatibility.cs">
+      <Link>System.Runtime.Versioning/binarycompatibility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\versioning\targetframeworkid.cs">
+      <Link>System.Runtime.Versioning/targetframeworkid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\sbyte.cs">
+      <Link>System/sbyte.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\stringcomparer.cs">
+      <Link>System/stringcomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\stringfreezingattribute.cs">
+      <Link>System/stringfreezingattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\asciiencoding.cs">
+      <Link>System.Text/asciiencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\codepageencoding.cs">
+      <Link>System.Text/codepageencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoder.cs">
+      <Link>System.Text/decoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderbestfitfallback.cs">
+      <Link>System.Text/decoderbestfitfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderexceptionfallback.cs">
+      <Link>System.Text/decoderexceptionfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderfallback.cs">
+      <Link>System.Text/decoderfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decodernls.cs">
+      <Link>System.Text/decodernls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderreplacementfallback.cs">
+      <Link>System.Text/decoderreplacementfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoder.cs">
+      <Link>System.Text/encoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderbestfitfallback.cs">
+      <Link>System.Text/encoderbestfitfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderexceptionfallback.cs">
+      <Link>System.Text/encoderexceptionfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderfallback.cs">
+      <Link>System.Text/encoderfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encodernls.cs">
+      <Link>System.Text/encodernls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderreplacementfallback.cs">
+      <Link>System.Text/encoderreplacementfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoding.cs">
+      <Link>System.Text/encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encodinginfo.cs">
+      <Link>System.Text/encodinginfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\mlangcodepageencoding.cs">
+      <Link>System.Text/mlangcodepageencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\stringbuildercache.cs">
+      <Link>System.Text/stringbuildercache.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\surrogateencoder.cs">
+      <Link>System.Text/surrogateencoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\unicodeencoding.cs">
+      <Link>System.Text/unicodeencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf32encoding.cs">
+      <Link>System.Text/utf32encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf7encoding.cs">
+      <Link>System.Text/utf7encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf8encoding.cs">
+      <Link>System.Text/utf8encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\abandonedmutexexception.cs">
+      <Link>System.Threading/abandonedmutexexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\apartmentstate.cs">
+      <Link>System.Threading/apartmentstate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\autoresetevent.cs">
+      <Link>System.Threading/autoresetevent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\cancellationtoken.cs">
+      <Link>System.Threading/cancellationtoken.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\cancellationtokenregistration.cs">
+      <Link>System.Threading/cancellationtokenregistration.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\cancellationtokensource.cs">
+      <Link>System.Threading/cancellationtokensource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\countdownevent.cs">
+      <Link>System.Threading/countdownevent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\eventresetmode.cs">
+      <Link>System.Threading/eventresetmode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\lazyinitializer.cs">
+      <Link>System.Threading/lazyinitializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\manualresetevent.cs">
+      <Link>System.Threading/manualresetevent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\manualreseteventslim.cs">
+      <Link>System.Threading/manualreseteventslim.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\parameterizedthreadstart.cs">
+      <Link>System.Threading/parameterizedthreadstart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\semaphoreslim.cs">
+      <Link>System.Threading/semaphoreslim.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\sendorpostcallback.cs">
+      <Link>System.Threading/sendorpostcallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\spinlock.cs">
+      <Link>System.Threading/spinlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\spinwait.cs">
+      <Link>System.Threading/spinwait.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\synchronizationlockexception.cs">
+      <Link>System.Threading/synchronizationlockexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\beginendawaitableadapter.cs">
+      <Link>System.Threading.Tasks/beginendawaitableadapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\concurrentexclusiveschedulerpair.cs">
+      <Link>System.Threading.Tasks/concurrentexclusiveschedulerpair.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\future.cs">
+      <Link>System.Threading.Tasks/future.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\futurefactory.cs">
+      <Link>System.Threading.Tasks/futurefactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\parallel.cs">
+      <Link>System.Threading.Tasks/parallel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\parallelloopstate.cs">
+      <Link>System.Threading.Tasks/parallelloopstate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\parallelrangemanager.cs">
+      <Link>System.Threading.Tasks/parallelrangemanager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\producerconsumerqueues.cs">
+      <Link>System.Threading.Tasks/producerconsumerqueues.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\task.cs">
+      <Link>System.Threading.Tasks/task.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskcanceledexception.cs">
+      <Link>System.Threading.Tasks/taskcanceledexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskcompletionsource.cs">
+      <Link>System.Threading.Tasks/taskcompletionsource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskcontinuation.cs">
+      <Link>System.Threading.Tasks/taskcontinuation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskexceptionholder.cs">
+      <Link>System.Threading.Tasks/taskexceptionholder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskfactory.cs">
+      <Link>System.Threading.Tasks/taskfactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskscheduler.cs">
+      <Link>System.Threading.Tasks/taskscheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\taskschedulerexception.cs">
+      <Link>System.Threading.Tasks/taskschedulerexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\tasktoapm.cs">
+      <Link>System.Threading.Tasks/tasktoapm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\tasks\threadpooltaskscheduler.cs">
+      <Link>System.Threading.Tasks/threadpooltaskscheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadpriority.cs">
+      <Link>System.Threading/threadpriority.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstart.cs">
+      <Link>System.Threading/threadstart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstartexception.cs">
+      <Link>System.Threading/threadstartexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstate.cs">
+      <Link>System.Threading/threadstate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstateexception.cs">
+      <Link>System.Threading/threadstateexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\timeout.cs">
+      <Link>System.Threading/timeout.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\waithandlecannotbeopenedexception.cs">
+      <Link>System.Threading/waithandlecannotbeopenedexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\throwhelper.cs">
+      <Link>System/throwhelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\timespan.cs">
+      <Link>System/timespan.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\tuple.cs">
+      <Link>System/tuple.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint16.cs">
+      <Link>System/uint16.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint32.cs">
+      <Link>System/uint32.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint64.cs">
+      <Link>System/uint64.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\unityserializationholder.cs">
+      <Link>System/unityserializationholder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\version.cs">
+      <Link>System/version.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\__hresults.cs">
+      <Link>System/__hresults.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="..\mono.parallel\mono.threading\atomicboolean.cs" />
+    <Compile Include="..\mono.security\mono.math.prime.generator\nextprimefinder.cs">
+      <Link>nextprimefinder.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.math.prime.generator\primegeneratorbase.cs">
+      <Link>primegeneratorbase.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.math.prime.generator\sequentialsearchprimegeneratorbase.cs">
+      <Link>sequentialsearchprimegeneratorbase.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.math.prime\confidencefactor.cs" />
+    <Compile Include="..\mono.security\mono.math.prime\primalitytests.cs" />
+    <Compile Include="..\mono.security\mono.math\biginteger.cs" />
+    <Compile Include="..\mono.security\mono.security.authenticode\authenticodebase.cs" />
+    <Compile Include="..\mono.security\mono.security.authenticode\authenticodedeformatter.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\arc4managed.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\cryptoconvert.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\cryptotools.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\keypairpersistence.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\md2.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\md2managed.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\md4.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\md4managed.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\pkcs1.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\pkcs8.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\rc4.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\rsamanaged.cs" />
+    <Compile Include="..\mono.security\mono.security.cryptography\symmetrictransform.cs" />
+    <Compile Include="..\mono.security\mono.security.x509.extensions\basicconstraintsextension.cs" />
+    <Compile Include="..\mono.security\mono.security.x509.extensions\keyusageextension.cs" />
+    <Compile Include="..\mono.security\mono.security.x509.extensions\subjectkeyidentifierextension.cs" />
+    <Compile Include="..\mono.security\mono.security.x509\pkcs12.cs">
+      <Link>pkcs12.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x501name.cs">
+      <Link>x501name.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509certificate.cs">
+      <Link>x509certificate.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509certificatecollection.cs">
+      <Link>x509certificatecollection.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509chain.cs">
+      <Link>x509chain.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509chainstatusflags.cs">
+      <Link>x509chainstatusflags.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509crl.cs">
+      <Link>x509crl.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509extension.cs">
+      <Link>x509extension.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509extensions.cs">
+      <Link>x509extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509store.cs">
+      <Link>x509store.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509storemanager.cs">
+      <Link>x509storemanager.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x509stores.cs">
+      <Link>x509stores.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security.x509\x520attributes.cs">
+      <Link>x520attributes.cs</Link>
+    </Compile>
+    <Compile Include="..\mono.security\mono.security\asn1.cs" />
+    <Compile Include="..\mono.security\mono.security\asn1convert.cs" />
+    <Compile Include="..\mono.security\mono.security\bitconverterle.cs" />
+    <Compile Include="..\mono.security\mono.security\pkcs7.cs" />
+    <Compile Include="..\mono.security\mono.security\strongname.cs" />
+    <Compile Include="..\system\system.threading\semaphorefullexception.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="microsoft.win32.safehandles\criticalhandleminusoneisinvalid.cs" />
+    <Compile Include="microsoft.win32.safehandles\criticalhandlezeroorminusoneisinvalid.cs" />
+    <Compile Include="microsoft.win32.safehandles\safefilehandle.cs" />
+    <Compile Include="microsoft.win32.safehandles\safehandleminusoneisinvalid.cs" />
+    <Compile Include="microsoft.win32.safehandles\safehandlezeroorminusoneisinvalid.cs" />
+    <Compile Include="microsoft.win32.safehandles\saferegistryhandle.cs" />
+    <Compile Include="microsoft.win32.safehandles\safewaithandle.cs" />
+    <Compile Include="microsoft.win32\iregistryapi.cs" />
+    <Compile Include="microsoft.win32\registry.cs" />
+    <Compile Include="microsoft.win32\registryhive.cs" />
+    <Compile Include="microsoft.win32\registrykey.cs" />
+    <Compile Include="microsoft.win32\registrykeypermissioncheck.cs" />
+    <Compile Include="microsoft.win32\registryoptions.cs" />
+    <Compile Include="microsoft.win32\registryvaluekind.cs" />
+    <Compile Include="microsoft.win32\registryvalueoptions.cs" />
+    <Compile Include="microsoft.win32\registryview.cs" />
+    <Compile Include="microsoft.win32\unixregistryapi.cs" />
+    <Compile Include="microsoft.win32\win32registryapi.cs" />
+    <Compile Include="microsoft.win32\win32resultcode.cs" />
+    <Compile Include="mono.globalization.unicode\codepointindexer.cs" />
+    <Compile Include="mono.globalization.unicode\mscompatunicodetable.cs" />
+    <Compile Include="mono.globalization.unicode\mscompatunicodetableutil.cs" />
+    <Compile Include="mono.globalization.unicode\normalization.cs" />
+    <Compile Include="mono.globalization.unicode\normalizationtableutil.cs" />
+    <Compile Include="mono.globalization.unicode\simplecollator.cs" />
+    <Compile Include="mono.globalization.unicode\sortkey.cs" />
+    <Compile Include="mono.globalization.unicode\sortkeybuffer.cs" />
+    <Compile Include="mono.interop\cominteropproxy.cs" />
+    <Compile Include="mono.interop\idispatch.cs" />
+    <Compile Include="mono.interop\iunknown.cs" />
+    <Compile Include="mono.security.cryptography\dsamanaged.cs" />
+    <Compile Include="mono.security.cryptography\hmacalgorithm.cs" />
+    <Compile Include="mono.security.cryptography\macalgorithm.cs" />
+    <Compile Include="mono.security\strongnamemanager.cs" />
+    <Compile Include="mono.security\uri.cs" />
+    <Compile Include="mono.xml\securityparser.cs" />
+    <Compile Include="mono.xml\smallxmlparser.cs" />
     <Compile Include="Mono\DataConverter.cs" />
-    <Compile Include="Test\Microsoft.Win32\RegistryKeyTest.cs" />
-    <Compile Include="Test\Mono\DataConvertTest.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\CollectionStressTestHelper.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\ConcurrentDictionaryTests.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\ConcurrentQueueTests.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\ConcurrentStackTests.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\ParallelConcurrentQueueTests.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\ParallelConcurrentStackTests.cs" />
-    <Compile Include="Test\System.Collections.Concurrent\PartitionerTests.cs" />
-    <Compile Include="Test\System.Collections.Generic\ComparerTest.cs" />
-    <Compile Include="Test\System.Collections.Generic\DictionaryTest.cs" />
-    <Compile Include="Test\System.Collections.Generic\EqualityComparerTest.cs" />
-    <Compile Include="Test\System.Collections.Generic\IListTest.cs" />
-    <Compile Include="Test\System.Collections.Generic\ListTest.cs" />
-    <Compile Include="Test\System.Collections.ObjectModel\CollectionTest.cs" />
-    <Compile Include="Test\System.Collections.ObjectModel\KeyedCollectionTest.cs" />
-    <Compile Include="Test\System.Collections.ObjectModel\ReadOnlyCollectionTest.cs" />
-    <Compile Include="Test\System.Collections\ArrayListTest.cs" />
-    <Compile Include="Test\System.Collections\BitArrayTest.cs" />
-    <Compile Include="Test\System.Collections\CaseInsensitiveComparerTest.cs" />
-    <Compile Include="Test\System.Collections\CaseInsensitiveHashCodeProviderTest.cs" />
-    <Compile Include="Test\System.Collections\CollectionBaseTest.cs" />
-    <Compile Include="Test\System.Collections\ComparerTest.cs" />
-    <Compile Include="Test\System.Collections\DictionaryBaseTest.cs" />
-    <Compile Include="Test\System.Collections\DictionaryEntryTest.cs" />
-    <Compile Include="Test\System.Collections\HashtableTest.cs" />
-    <Compile Include="Test\System.Collections\NewArrayListTest.cs" />
-    <Compile Include="Test\System.Collections\QueueTest.cs" />
-    <Compile Include="Test\System.Collections\ReadOnlyCollectionBaseTest.cs" />
-    <Compile Include="Test\System.Collections\SortedListTest.cs" />
-    <Compile Include="Test\System.Collections\StackTest.cs" />
-    <Compile Include="Test\System.Collections\StructuralComparisonsTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\ContractAssertTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\ContractAssumeTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\ContractCollectionMethodsTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\ContractHelperTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\ContractMarkerMethodsTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\ContractMustUseRewriterTest.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\Helpers\RunAgainstReferenceAttribute.cs" />
-    <Compile Include="Test\System.Diagnostics.Contracts\Helpers\TestContractBase.cs" />
-    <Compile Include="Test\System.Diagnostics\DebuggerDisplayAttributeTest.cs" />
-    <Compile Include="Test\System.Diagnostics\DebuggerTypeProxyAttribute.cs" />
-    <Compile Include="Test\System.Diagnostics\StackFrameCas.cs" />
-    <Compile Include="Test\System.Diagnostics\StackFrameTest.cs" />
-    <Compile Include="Test\System.Diagnostics\StackTraceCas.cs" />
-    <Compile Include="Test\System.Diagnostics\StackTraceTest.cs" />
-    <Compile Include="Test\System.Globalization\CalendarTest.cs" />
-    <Compile Include="Test\System.Globalization\CompareInfoTest.cs" />
-    <Compile Include="Test\System.Globalization\CultureInfoTest.cs" />
-    <Compile Include="Test\System.Globalization\DateTimeFormatInfoTest.cs" />
-    <Compile Include="Test\System.Globalization\DaylightTimeTest.cs" />
-    <Compile Include="Test\System.Globalization\EastAsianLunisolarCalendarTest.cs" />
-    <Compile Include="Test\System.Globalization\IdnMappingTest.cs" />
-    <Compile Include="Test\System.Globalization\NumberFormatInfoTest.cs" />
-    <Compile Include="Test\System.Globalization\RegionInfoTest.cs" />
-    <Compile Include="Test\System.Globalization\SortKeyTest.cs" />
-    <Compile Include="Test\System.Globalization\StringInfoTest.cs" />
-    <Compile Include="Test\System.Globalization\TextInfoTest.cs" />
-    <Compile Include="Test\System.IO.IsolatedStorage\IsolatedStorageFileCas.cs" />
-    <Compile Include="Test\System.IO.IsolatedStorage\IsolatedStorageFileStreamCas.cs" />
-    <Compile Include="Test\System.IO.IsolatedStorage\IsolatedStorageFileStreamTest.cs" />
-    <Compile Include="Test\System.IO.IsolatedStorage\IsolatedStorageFileTest.cs" />
-    <Compile Include="Test\System.IO.IsolatedStorage\IsolatedStorageTest.cs" />
-    <Compile Include="Test\System.IO\BinaryReaderTest.cs" />
-    <Compile Include="Test\System.IO\BinaryWriterTest.cs" />
-    <Compile Include="Test\System.IO\BufferedStreamTest.cs" />
-    <Compile Include="Test\System.IO\DirectoryCas.cs" />
-    <Compile Include="Test\System.IO\DirectoryInfoTest.cs" />
-    <Compile Include="Test\System.IO\DirectoryTest.cs" />
-    <Compile Include="Test\System.IO\FileInfoTest.cs" />
-    <Compile Include="Test\System.IO\FileLoadExceptionCas.cs" />
-    <Compile Include="Test\System.IO\FileNotFoundExceptionCas.cs" />
-    <Compile Include="Test\System.IO\FileNotFoundExceptionTest.cs" />
-    <Compile Include="Test\System.IO\FileStreamCas.cs" />
-    <Compile Include="Test\System.IO\FileStreamTest.cs" />
-    <Compile Include="Test\System.IO\FileSystemInfoTest.cs" />
-    <Compile Include="Test\System.IO\FileTest.cs" />
-    <Compile Include="Test\System.IO\MemoryStreamTest.cs" />
-    <Compile Include="Test\System.IO\PathCas.cs" />
-    <Compile Include="Test\System.IO\PathTest.cs" />
-    <Compile Include="Test\System.IO\StreamCas.cs" />
-    <Compile Include="Test\System.IO\StreamHelperTest.cs" />
-    <Compile Include="Test\System.IO\StreamReaderTest.cs" />
-    <Compile Include="Test\System.IO\StreamTest.cs" />
-    <Compile Include="Test\System.IO\StreamWriterTest.cs" />
-    <Compile Include="Test\System.IO\StringReaderTest.cs" />
-    <Compile Include="Test\System.IO\StringWriterTest.cs" />
-    <Compile Include="Test\System.IO\TextReaderTest.cs" />
-    <Compile Include="Test\System.IO\TextWriterTest.cs" />
-    <Compile Include="Test\System.IO\UnmanagedMemoryStreamTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\AssemblyBuilderAccessTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\AssemblyBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\ConstructorBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\ConstructorOnTypeBuilderInstTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\CustomAttributeBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\DerivedTypesTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\DynamicILInfoTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\DynamicMethodTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\EnumBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\EventBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\FieldBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\GenericTypeParameterBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\ILGeneratorTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\MethodBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\MethodOnTypeBuilderInstTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\MethodRentalCas.cs" />
-    <Compile Include="Test\System.Reflection.Emit\MethodRentalTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\ModuleBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\ParameterBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\PropertyBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\SignatureHelperTest.cs" />
-    <Compile Include="Test\System.Reflection.Emit\TypeBuilderTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyAlgorithmIdAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyCas.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyConfigurationAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyCopyrightAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyCultureAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyDelaySignAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyDescriptionAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyFileVersionAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyInformationalVersionAttributeTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyNameCas.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyNameTest.cs" />
-    <Compile Include="Test\System.Reflection\AssemblyTest.cs" />
-    <Compile Include="Test\System.Reflection\BinderTests.cs" />
-    <Compile Include="Test\System.Reflection\ConstructorInfoTest.cs" />
-    <Compile Include="Test\System.Reflection\CustomAttributeDataTest.cs" />
-    <Compile Include="Test\System.Reflection\EventInfoTest.cs" />
-    <Compile Include="Test\System.Reflection\FieldInfoTest.cs" />
-    <Compile Include="Test\System.Reflection\IntrospectionExtensionsTest.cs" />
-    <Compile Include="Test\System.Reflection\MethodBaseTest.cs" />
-    <Compile Include="Test\System.Reflection\MethodInfoTest.cs" />
-    <Compile Include="Test\System.Reflection\ModuleCas.cs" />
-    <Compile Include="Test\System.Reflection\ModuleTest.cs" />
-    <Compile Include="Test\System.Reflection\MonoGenericClassTest.cs" />
-    <Compile Include="Test\System.Reflection\ParameterInfoTest.cs" />
-    <Compile Include="Test\System.Reflection\PropertyInfoTest.cs" />
-    <Compile Include="Test\System.Reflection\ReflectedTypeTest.cs" />
-    <Compile Include="Test\System.Reflection\StrongNameKeyPairCas.cs" />
-    <Compile Include="Test\System.Reflection\StrongNameKeyPairTest.cs" />
-    <Compile Include="Test\System.Reflection\TypeDelegatorTest.cs" />
-    <Compile Include="Test\System.Resources\ResourceManagerTest.cs" />
-    <Compile Include="Test\System.Resources\ResourceReaderCas.cs" />
-    <Compile Include="Test\System.Resources\ResourceReaderTest.cs" />
-    <Compile Include="Test\System.Resources\ResourceSetCas.cs" />
-    <Compile Include="Test\System.Resources\ResourceSetTest.cs" />
-    <Compile Include="Test\System.Resources\ResourceWriterTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\AsyncVoidMethodBuilderTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\ConditionalWeakTableTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\InternalsVisibleToAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\RuntimeHelpersTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\RuntimeWrappedExceptionCas.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\RuntimeWrappedExceptionTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\TaskAwaiterTest.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\TaskAwaiterTest_T.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\YieldAwaitableTest.cs" />
-    <Compile Include="Test\System.Runtime.ExceptionServices\ExceptionDispatchInfoTest.cs" />
-    <Compile Include="Test\System.Runtime.InteropServices\ExternalExceptionTest.cs" />
-    <Compile Include="Test\System.Runtime.InteropServices\GCHandleTest.cs" />
-    <Compile Include="Test\System.Runtime.InteropServices\MarshalTest.cs" />
-    <Compile Include="Test\System.Runtime.InteropServices\RuntimeEnvironmentCas.cs" />
-    <Compile Include="Test\System.Runtime.InteropServices\RuntimeEnvironmentTest.cs" />
-    <Compile Include="Test\System.Runtime.InteropServices\SafeHandleTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting.Channels\ChannelServicesTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting.Contexts\SynchronizationAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting.Messaging\CallContextTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting.Metadata.W3cXsd2001\SoapHexBinaryTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting\ContextTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting\SoapServicesTest.cs" />
-    <Compile Include="Test\System.Runtime.Remoting\SynchronizationAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization.Formatters.Binary\BinaryFormatterCas.cs" />
-    <Compile Include="Test\System.Runtime.Serialization.Formatters.Binary\BinaryFormatterTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\ArraySerializationTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\FormatterServicesTests.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\ObjectIDGeneratorTests.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\ObjectManagerTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\SerializationBinderTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\SerializationCallbackTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\SerializationInfoTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\SerializationTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\SerializationTest2.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\ResourceConsumptionAttributeCas.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\ResourceConsumptionAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\ResourceExposureAttributeCas.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\ResourceExposureAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\TargetFrameworkAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\VersioningHelperCas.cs" />
-    <Compile Include="Test\System.Runtime.Versioning\VersioningHelperTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\AuthorizationRuleTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\CommonAceTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\CommonAclTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\CommonObjectSecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\CommonSecurityDescriptorTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\CryptoKeyAccessRuleTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\DirectoryObjectSecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\DirectorySecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\DiscretionaryAclTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\EventWaitHandleSecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\FileSecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\MutexAccessRuleTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\MutexSecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\ObjectAceTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\ObjectSecurity_TTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\ObjectSecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\RawAclTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\RawSecurityDescriptorTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\RegistrySecurityTest.cs" />
-    <Compile Include="Test\System.Security.AccessControl\SystemAclTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography.X509Certificates\X509CapiTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography.X509Certificates\X509CertificateCas.cs" />
-    <Compile Include="Test\System.Security.Cryptography.X509Certificates\X509CertificateTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography.X509Certificates\X509SpcTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\AesCfbTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\AllTests2.cs" />
-    <Compile Include="Test\System.Security.Cryptography\AsymmetricAlgorithmTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CfbTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CipherModeTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CryptoAPITransformCas.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CryptoConfigCas.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CryptoConfigTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CryptoStreamTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CspProviderFlagsTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DesCfbTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DESCryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DESTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DSACryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DSASignatureDeformatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DSASignatureFormatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\DSATest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\FromBase64Transform.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HashAlgorithmTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HMACMD5Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HMACRIPEMD160Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HMACSHA1Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HMACSHA256Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HMACSHA384Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\HMACSHA512Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\KeyedHashAlgorithmTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\MACTripleDESTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\MD5Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\PaddingModeTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\PasswordDeriveBytesTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\PKCS1MaskGenerationMethodTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RandomNumberGeneratorTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\Rc2CfbTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RC2CryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RC2Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\Rfc2898DeriveBytesTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RijndaelCfbTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RijndaelManagedTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RijndaelTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RIPEMD160ManagedTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RIPEMD160Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RNGCryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSACryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSAOAEPKeyExchangeDeformatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSAOAEPKeyExchangeFormatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSAPKCS1KeyExchangeDeformatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSAPKCS1KeyExchangeFormatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSAPKCS1SignatureDeformatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSAPKCS1SignatureFormatterTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\RSATest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA1CryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA1Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA256ManagedTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA256Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA384ManagedTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA384Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA512ManagedTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA512Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SignatureDescriptionTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SymmetricAlgorithm2Test.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SymmetricAlgorithmTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SymmetricAlgorithmTransformTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\ToBase64TransformTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\TripleDesCfbTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\TripleDESCryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\TripleDESTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\CodeAccessSecurityAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\EnvironmentPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\EnvironmentPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\FileDialogPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\FileDialogPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\FileIOPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\FileIOPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\GacIdentityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\GacIdentityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\HostProtectionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\IBuiltInPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\IsolatedStorageFilePermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\IsolatedStorageFilePermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\IsolatedStoragePermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\KeyContainerPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\PermissionSetAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\PrincipalPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\PrincipalPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\PublisherIdentityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\PublisherIdentityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\ReflectionPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\ReflectionPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\RegistryPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\RegistryPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\SecurityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\SecurityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\SiteIdentityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\SiteIdentityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\StrongNameIdentityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\StrongNameIdentityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\StrongNamePublicKeyBlobTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\UIPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\UIPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\UrlIdentityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\UrlIdentityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\ZoneIdentityPermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Permissions\ZoneIdentityPermissionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\AllMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\ApplicationDirectoryMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\ApplicationDirectoryTest.cs" />
-    <Compile Include="Test\System.Security.Policy\ApplicationSecurityManagerCas.cs" />
-    <Compile Include="Test\System.Security.Policy\ApplicationSecurityManagerTest.cs" />
-    <Compile Include="Test\System.Security.Policy\ApplicationTrustTest.cs" />
-    <Compile Include="Test\System.Security.Policy\CodeGroupTest.cs" />
-    <Compile Include="Test\System.Security.Policy\EvidenceTest.cs" />
-    <Compile Include="Test\System.Security.Policy\FileCodeGroupTest.cs" />
-    <Compile Include="Test\System.Security.Policy\FirstMatchCodeGroupTest.cs" />
-    <Compile Include="Test\System.Security.Policy\GacMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\GacTest.cs" />
-    <Compile Include="Test\System.Security.Policy\HashMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\HashTest.cs" />
-    <Compile Include="Test\System.Security.Policy\IBuiltInEvidenceTest.cs" />
-    <Compile Include="Test\System.Security.Policy\NetCodeGroupTest.cs" />
-    <Compile Include="Test\System.Security.Policy\PermissionRequestEvidenceTest.cs" />
-    <Compile Include="Test\System.Security.Policy\PolicyLevelTest.cs" />
-    <Compile Include="Test\System.Security.Policy\PolicyStatementTest.cs" />
-    <Compile Include="Test\System.Security.Policy\PublisherMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\PublisherTest.cs" />
-    <Compile Include="Test\System.Security.Policy\SiteMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\SiteTest.cs" />
-    <Compile Include="Test\System.Security.Policy\StrongNameMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\StrongNameTest.cs" />
-    <Compile Include="Test\System.Security.Policy\UnionCodeGroupTest.cs" />
-    <Compile Include="Test\System.Security.Policy\UrlMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\UrlTest.cs" />
-    <Compile Include="Test\System.Security.Policy\ZoneMembershipConditionTest.cs" />
-    <Compile Include="Test\System.Security.Policy\ZoneTest.cs" />
-    <Compile Include="Test\System.Security.Principal\GenericIdentityTest.cs" />
-    <Compile Include="Test\System.Security.Principal\GenericPrincipalTest.cs" />
-    <Compile Include="Test\System.Security.Principal\NTAccountTest.cs" />
-    <Compile Include="Test\System.Security.Principal\SecurityIdentifierTest.cs" />
-    <Compile Include="Test\System.Security.Principal\WindowsIdentityTest.cs" />
-    <Compile Include="Test\System.Security.Principal\WindowsPrincipalTest.cs" />
-    <Compile Include="Test\System.Security\CodeAccessPermissionCas.cs" />
-    <Compile Include="Test\System.Security\CodeAccessPermissionTest.cs" />
-    <Compile Include="Test\System.Security\HostSecurityManagerTest.cs" />
-    <Compile Include="Test\System.Security\NamedPermissionSetTest.cs" />
-    <Compile Include="Test\System.Security\PermissionSetCas.cs" />
-    <Compile Include="Test\System.Security\PermissionSetTest.cs" />
-    <Compile Include="Test\System.Security\SecureStringCas.cs" />
-    <Compile Include="Test\System.Security\SecureStringTest.cs" />
-    <Compile Include="Test\System.Security\SecurityContextCas.cs" />
-    <Compile Include="Test\System.Security\SecurityContextTest.cs" />
-    <Compile Include="Test\System.Security\SecurityCriticalAttributeTest.cs" />
-    <Compile Include="Test\System.Security\SecurityElementTest.cs" />
-    <Compile Include="Test\System.Security\SecurityExceptionCas.cs" />
-    <Compile Include="Test\System.Security\SecurityExceptionTest.cs" />
-    <Compile Include="Test\System.Security\SecurityManagerCas.cs" />
-    <Compile Include="Test\System.Security\SecurityManagerTest.cs" />
-    <Compile Include="Test\System.Security\SecurityStateTest.cs" />
-    <Compile Include="Test\System.Security\SecurityTransparentAttributeTest.cs" />
-    <Compile Include="Test\System.Text\ASCIIEncodingTest.cs" />
-    <Compile Include="Test\System.Text\DecoderReplacementFallbackBufferTest.cs" />
-    <Compile Include="Test\System.Text\DecoderReplacementFallbackTest.cs" />
-    <Compile Include="Test\System.Text\DecoderTest.cs" />
-    <Compile Include="Test\System.Text\EncoderReplacementFallbackBufferTest.cs" />
-    <Compile Include="Test\System.Text\EncoderReplacementFallbackTest.cs" />
-    <Compile Include="Test\System.Text\EncoderTest.cs" />
-    <Compile Include="Test\System.Text\EncodingInfoTest.cs" />
-    <Compile Include="Test\System.Text\EncodingTest.cs" />
-    <Compile Include="Test\System.Text\StringBuilderTest.cs" />
-    <Compile Include="Test\System.Text\TestEncoding.cs" />
-    <Compile Include="Test\System.Text\UnicodeEncodingTest.cs" />
-    <Compile Include="Test\System.Text\UTF32EncodingTest.cs" />
-    <Compile Include="Test\System.Text\UTF7EncodingTest.cs" />
-    <Compile Include="Test\System.Text\UTF8EncodingTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks\ConcurrentExclusiveSchedulerPairTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks\ParallelTestHelper.cs" />
-    <Compile Include="Test\System.Threading.Tasks\ParallelTests.cs" />
-    <Compile Include="Test\System.Threading.Tasks\Task_T_Test.cs" />
-    <Compile Include="Test\System.Threading.Tasks\TaskCompletionSourceTests.cs" />
-    <Compile Include="Test\System.Threading.Tasks\TaskFactoryTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks\TaskFactoryTest_T.cs" />
-    <Compile Include="Test\System.Threading.Tasks\TaskSchedulerTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks\TaskTest.cs" />
-    <Compile Include="Test\System.Threading\AutoResetEventTest.cs" />
-    <Compile Include="Test\System.Threading\CancellationTokenSourceTest.cs" />
-    <Compile Include="Test\System.Threading\CancellationTokenTests.cs" />
-    <Compile Include="Test\System.Threading\CompressedStackCas.cs" />
-    <Compile Include="Test\System.Threading\CompressedStackTest.cs" />
-    <Compile Include="Test\System.Threading\CountdownEventTests.cs" />
-    <Compile Include="Test\System.Threading\EventWaitHandleTest.cs" />
-    <Compile Include="Test\System.Threading\ExecutionContextCas.cs" />
-    <Compile Include="Test\System.Threading\ExecutionContextTest.cs" />
-    <Compile Include="Test\System.Threading\InterlockedTest.cs" />
-    <Compile Include="Test\System.Threading\LazyInitializerTest.cs" />
-    <Compile Include="Test\System.Threading\ManualResetEventSlimTests.cs" />
-    <Compile Include="Test\System.Threading\MonitorTest.cs" />
-    <Compile Include="Test\System.Threading\MutexCas.cs" />
-    <Compile Include="Test\System.Threading\MutexTest.cs" />
-    <Compile Include="Test\System.Threading\ReaderWriterLockTest.cs" />
-    <Compile Include="Test\System.Threading\SemaphoreSlimTests.cs" />
-    <Compile Include="Test\System.Threading\SpinLockTests.cs" />
-    <Compile Include="Test\System.Threading\ThreadCas.cs" />
-    <Compile Include="Test\System.Threading\ThreadLocalTests.cs" />
-    <Compile Include="Test\System.Threading\ThreadPoolTest.cs" />
-    <Compile Include="Test\System.Threading\ThreadTest.cs" />
-    <Compile Include="Test\System.Threading\TimerTest.cs" />
-    <Compile Include="Test\System.Threading\VolatileTest.cs" />
-    <Compile Include="Test\System.Threading\WaitHandleCas.cs" />
-    <Compile Include="Test\System.Threading\WaitHandleTest.cs" />
-    <Compile Include="Test\System\ActivatorCas.cs" />
-    <Compile Include="Test\System\ActivatorTest.cs" />
-    <Compile Include="Test\System\AggregateExceptionTests.cs" />
-    <Compile Include="Test\System\AppDomainCas.cs" />
-    <Compile Include="Test\System\AppDomainManagerTest.cs" />
-    <Compile Include="Test\System\AppDomainSetupTest.cs" />
-    <Compile Include="Test\System\AppDomainTest.cs" />
-    <Compile Include="Test\System\ApplicationIdentityTest.cs" />
-    <Compile Include="Test\System\ApplicationIdTest.cs" />
-    <Compile Include="Test\System\ArgumentExceptionTest.cs" />
-    <Compile Include="Test\System\ArraySegmentTest.cs" />
-    <Compile Include="Test\System\ArraySortArgChecks.cs" />
-    <Compile Include="Test\System\ArrayTest.cs" />
-    <Compile Include="Test\System\AttributeTest.cs" />
-    <Compile Include="Test\System\BadImageFormatExceptionCas.cs" />
-    <Compile Include="Test\System\BadImageFormatExceptionTest.cs" />
-    <Compile Include="Test\System\BitConverterTest.cs" />
-    <Compile Include="Test\System\BooleanTest.cs" />
-    <Compile Include="Test\System\BufferTest.cs" />
-    <Compile Include="Test\System\ByteTest.cs" />
-    <Compile Include="Test\System\CharCategoryTest.cs" />
-    <Compile Include="Test\System\CharEnumeratorTest.cs" />
-    <Compile Include="Test\System\CharTest.cs" />
-    <Compile Include="Test\System\ConsoleCas.cs" />
-    <Compile Include="Test\System\ConsoleTest.cs" />
-    <Compile Include="Test\System\ConvertTest.cs" />
-    <Compile Include="Test\System\DateTimeOffsetTest.cs" />
-    <Compile Include="Test\System\DateTimeTest.cs" />
-    <Compile Include="Test\System\DecimalFormatterTest.cs" />
-    <Compile Include="Test\System\DecimalTest.cs" />
-    <Compile Include="Test\System\DecimalTest2.cs" />
-    <Compile Include="Test\System\DelegateTest.cs" />
-    <Compile Include="Test\System\DoubleFormatterTest.cs" />
-    <Compile Include="Test\System\DoubleTest.cs" />
-    <Compile Include="Test\System\EnumTest.cs" />
-    <Compile Include="Test\System\EnvironmentCas.cs" />
-    <Compile Include="Test\System\EnvironmentTest.cs" />
-    <Compile Include="Test\System\ExceptionCas.cs" />
-    <Compile Include="Test\System\ExceptionTest.cs" />
-    <Compile Include="Test\System\FloatingPointFormatterTest.cs" />
-    <Compile Include="Test\System\GuidTest.cs" />
-    <Compile Include="Test\System\Int16Test.cs" />
-    <Compile Include="Test\System\Int32Test.cs" />
-    <Compile Include="Test\System\Int64Test.cs" />
-    <Compile Include="Test\System\IntegerFormatterTest.cs" />
-    <Compile Include="Test\System\IntegerTryParse.cs" />
-    <Compile Include="Test\System\IntPtrTest.cs" />
-    <Compile Include="Test\System\LazyTest.cs" />
-    <Compile Include="Test\System\MarshalByRefObjectCas.cs" />
-    <Compile Include="Test\System\MathTest.cs" />
-    <Compile Include="Test\System\ModuleHandleTest.cs" />
-    <Compile Include="Test\System\MulticastDelegate.cs" />
-    <Compile Include="Test\System\NullableTest.cs" />
-    <Compile Include="Test\System\NumberFormatterTest.cs" />
-    <Compile Include="Test\System\ObjectTest.cs" />
-    <Compile Include="Test\System\ObsoleteAttributeTest.cs" />
-    <Compile Include="Test\System\RandomTest.cs" />
-    <Compile Include="Test\System\ResolveEventArgsTest.cs" />
-    <Compile Include="Test\System\RuntimeFieldHandleTest.cs" />
-    <Compile Include="Test\System\RuntimeMethodHandleCas.cs" />
-    <Compile Include="Test\System\RuntimeMethodHandleTest.cs" />
-    <Compile Include="Test\System\RuntimeTypeHandleTest.cs" />
-    <Compile Include="Test\System\SByteTest.cs" />
-    <Compile Include="Test\System\SingleFormatterTest.cs" />
-    <Compile Include="Test\System\SingleTest.cs" />
-    <Compile Include="Test\System\StringComparerTest.cs" />
-    <Compile Include="Test\System\StringTest.cs" />
-    <Compile Include="Test\System\TimeSpanTest.cs" />
-    <Compile Include="Test\System\TimeZoneTest.cs" />
-    <Compile Include="Test\System\TupleTest.cs" />
-    <Compile Include="Test\System\TypedReferenceCas.cs" />
-    <Compile Include="Test\System\TypeTest.cs" />
-    <Compile Include="Test\System\UInt16Test.cs" />
-    <Compile Include="Test\System\UInt32Test.cs" />
-    <Compile Include="Test\System\UInt64Test.cs" />
-    <Compile Include="Test\System\UIntPtrTest.cs" />
-    <Compile Include="Test\System\ValueTypeTest.cs" />
-    <Compile Include="Test\System\VersionTest.cs" />
-    <Compile Include="Test\System\WeakReferenceTest.cs" />  </ItemGroup>
+    <Compile Include="mono\runtime.cs" />
+    <Compile Include="referencesources\appdomain.cs" />
+    <Compile Include="referencesources\array.cs" />
+    <Compile Include="referencesources\bcldebug.cs" />
+    <Compile Include="referencesources\calendardata.cs" />
+    <Compile Include="referencesources\clrconfig.cs" />
+    <Compile Include="referencesources\compatibilityswitches.cs" />
+    <Compile Include="referencesources\culturedata.cs" />
+    <Compile Include="referencesources\encodingdataitem.cs" />
+    <Compile Include="referencesources\encodingtable.cs" />
+    <Compile Include="referencesources\environment.cs" />
+    <Compile Include="referencesources\executioncontext.cs" />
+    <Compile Include="referencesources\hashhelpers.cs" />
+    <Compile Include="referencesources\jithelpers.cs" />
+    <Compile Include="referencesources\parsenumbers.cs" />
+    <Compile Include="referencesources\timezoneinfooptions.cs" />
+    <Compile Include="referencesources\__consolestream.cs" />
+    <Compile Include="system.collections.concurrent\concurrentorderedlist.cs" />
+    <Compile Include="system.collections.generic\comparer.cs" />
+    <Compile Include="system.collections.generic\equalitycomparer.cs" />
+    <Compile Include="system.collections\hashprimenumbers.cs" />
+    <Compile Include="system.configuration.assemblies\assemblyhash.cs" />
+    <Compile Include="system.configuration.assemblies\assemblyhashalgorithm.cs" />
+    <Compile Include="system.configuration.assemblies\assemblyversioncompatibility.cs" />
+    <Compile Include="system.configuration.assemblies\processorid.cs" />
+    <Compile Include="system.deployment.internal\internalactivationcontexthelper.cs" />
+    <Compile Include="system.deployment.internal\internalapplicationidentityhelper.cs" />
+    <Compile Include="system.diagnostics.codeanalysis\suppressmessageattribute.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolbinder.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolbinder1.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymboldocument.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymboldocumentwriter.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolmethod.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolnamespace.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolreader.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolscope.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolvariable.cs" />
+    <Compile Include="system.diagnostics.symbolstore\isymbolwriter.cs" />
+    <Compile Include="system.diagnostics.symbolstore\symaddresskind.cs" />
+    <Compile Include="system.diagnostics.symbolstore\symboltoken.cs" />
+    <Compile Include="system.diagnostics.symbolstore\symdocumenttype.cs" />
+    <Compile Include="system.diagnostics.symbolstore\symlanguagetype.cs" />
+    <Compile Include="system.diagnostics.symbolstore\symlanguagevendor.cs" />
+    <Compile Include="system.diagnostics.tracing\eventattribute.cs" />
+    <Compile Include="system.diagnostics.tracing\eventcommand.cs" />
+    <Compile Include="system.diagnostics.tracing\eventcommandeventargs.cs" />
+    <Compile Include="system.diagnostics.tracing\eventkeywords.cs" />
+    <Compile Include="system.diagnostics.tracing\eventlevel.cs" />
+    <Compile Include="system.diagnostics.tracing\eventsource.cs" />
+    <Compile Include="system.diagnostics.tracing\eventsourceattribute.cs" />
+    <Compile Include="system.diagnostics.tracing\noneventattribute.cs" />
+    <Compile Include="system.diagnostics\conditionalattribute.cs" />
+    <Compile Include="system.diagnostics\debuggableattribute.cs" />
+    <Compile Include="system.diagnostics\debugger.cs" />
+    <Compile Include="system.diagnostics\debuggerbrowsableattribute.cs" />
+    <Compile Include="system.diagnostics\debuggerbrowsablestate.cs" />
+    <Compile Include="system.diagnostics\debuggerdisplayattribute.cs" />
+    <Compile Include="system.diagnostics\debuggerhiddenattribute.cs" />
+    <Compile Include="system.diagnostics\debuggernonusercodeattribute.cs" />
+    <Compile Include="system.diagnostics\debuggerstepperboundaryattribute.cs" />
+    <Compile Include="system.diagnostics\debuggerstepthroughattribute.cs" />
+    <Compile Include="system.diagnostics\debuggertypeproxyattribute.cs" />
+    <Compile Include="system.diagnostics\debuggervisualizerattribute.cs" />
+    <Compile Include="system.diagnostics\stackframe.cs" />
+    <Compile Include="system.diagnostics\stacktrace.cs" />
+    <Compile Include="system.globalization\calendaralgorithmtype.cs" />
+    <Compile Include="system.globalization\calendarweekrule.cs" />
+    <Compile Include="system.globalization\compareinfo.cs" />
+    <Compile Include="system.globalization\compareoptions.cs" />
+    <Compile Include="system.globalization\cultureinfo.cs" />
+    <Compile Include="system.globalization\culturenotfoundexception.cs" />
+    <Compile Include="system.globalization\culturetypes.cs" />
+    <Compile Include="system.globalization\datetimeformatinfo.cs" />
+    <Compile Include="system.globalization\datetimestyles.cs" />
+    <Compile Include="system.globalization\digitshapes.cs" />
+    <Compile Include="system.globalization\gregoriancalendartypes.cs" />
+    <Compile Include="system.globalization\idnmapping.cs" />
+    <Compile Include="system.globalization\numberformatinfo.cs" />
+    <Compile Include="system.globalization\numberstyles.cs" />
+    <Compile Include="system.globalization\regioninfo.cs" />
+    <Compile Include="system.globalization\regioninfo.monotouch.cs" />
+    <Compile Include="system.globalization\sortversion.cs" />
+    <Compile Include="system.globalization\stringinfo.cs" />
+    <Compile Include="system.globalization\textelementenumerator.cs" />
+    <Compile Include="system.globalization\textinfo.cs" />
+    <Compile Include="system.globalization\unicodecategory.cs" />
+    <Compile Include="system.io.isolatedstorage\inormalizeforisolatedstorage.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstorage.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstorageexception.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstoragefile.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstoragefileenumerator.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstoragefilestream.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstoragescope.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstoragesecurityoptions.cs" />
+    <Compile Include="system.io.isolatedstorage\isolatedstoragesecuritystate.cs" />
+    <Compile Include="system.io\binaryreader.cs" />
+    <Compile Include="system.io\binarywriter.cs" />
+    <Compile Include="system.io\directory.cs" />
+    <Compile Include="system.io\directoryinfo.cs" />
+    <Compile Include="system.io\directorynotfoundexception.cs" />
+    <Compile Include="system.io\driveinfo.cs" />
+    <Compile Include="system.io\drivenotfoundexception.cs" />
+    <Compile Include="system.io\drivetype.cs" />
+    <Compile Include="system.io\endofstreamexception.cs" />
+    <Compile Include="system.io\file.cs" />
+    <Compile Include="system.io\fileaccess.cs" />
+    <Compile Include="system.io\fileattributes.cs" />
+    <Compile Include="system.io\fileinfo.cs" />
+    <Compile Include="system.io\fileloadexception.cs" />
+    <Compile Include="system.io\filemode.cs" />
+    <Compile Include="system.io\filenotfoundexception.cs" />
+    <Compile Include="system.io\fileoptions.cs" />
+    <Compile Include="system.io\fileshare.cs" />
+    <Compile Include="system.io\filestream.cs" />
+    <Compile Include="system.io\filestreamasyncresult.cs" />
+    <Compile Include="system.io\filesysteminfo.cs" />
+    <Compile Include="system.io\ioexception.cs" />
+    <Compile Include="system.io\logcattextwriter.cs" />
+    <Compile Include="system.io\monofiletype.cs" />
+    <Compile Include="system.io\monoio.cs" />
+    <Compile Include="system.io\monoioerror.cs" />
+    <Compile Include="system.io\monoiostat.cs" />
+    <Compile Include="system.io\path.cs" />
+    <Compile Include="system.io\pathtoolongexception.cs" />
+    <Compile Include="system.io\searchoption.cs" />
+    <Compile Include="system.io\searchpattern.cs" />
+    <Compile Include="system.io\seekorigin.cs" />
+    <Compile Include="system.io\unexceptionalstreamreader.cs" />
+    <Compile Include="system.io\unexceptionalstreamwriter.cs" />
+    <Compile Include="system.io\unmanagedmemoryaccessor.cs" />
+    <Compile Include="system.io\unmanagedmemorystream.cs" />
+    <Compile Include="system.reflection.emit\assemblybuilder.cs" />
+    <Compile Include="system.reflection.emit\assemblybuilderaccess.cs" />
+    <Compile Include="system.reflection.emit\constructorbuilder.cs" />
+    <Compile Include="system.reflection.emit\constructorontypebuilderinst.cs" />
+    <Compile Include="system.reflection.emit\customattributebuilder.cs" />
+    <Compile Include="system.reflection.emit\derivedtypes.cs" />
+    <Compile Include="system.reflection.emit\dynamicilinfo.cs" />
+    <Compile Include="system.reflection.emit\dynamicmethod.cs" />
+    <Compile Include="system.reflection.emit\enumbuilder.cs" />
+    <Compile Include="system.reflection.emit\eventbuilder.cs" />
+    <Compile Include="system.reflection.emit\eventontypebuilderinst.cs" />
+    <Compile Include="system.reflection.emit\eventtoken.cs" />
+    <Compile Include="system.reflection.emit\fieldbuilder.cs" />
+    <Compile Include="system.reflection.emit\fieldontypebuilderinst.cs" />
+    <Compile Include="system.reflection.emit\fieldtoken.cs" />
+    <Compile Include="system.reflection.emit\flowcontrol.cs" />
+    <Compile Include="system.reflection.emit\generictypeparameterbuilder.cs" />
+    <Compile Include="system.reflection.emit\ilgenerator.cs" />
+    <Compile Include="system.reflection.emit\label.cs" />
+    <Compile Include="system.reflection.emit\localbuilder.cs" />
+    <Compile Include="system.reflection.emit\methodbuilder.cs" />
+    <Compile Include="system.reflection.emit\methodontypebuilderinst.cs" />
+    <Compile Include="system.reflection.emit\methodrental.cs" />
+    <Compile Include="system.reflection.emit\methodtoken.cs" />
+    <Compile Include="system.reflection.emit\modulebuilder.cs" />
+    <Compile Include="system.reflection.emit\monoarraymethod.cs" />
+    <Compile Include="system.reflection.emit\opcode.cs" />
+    <Compile Include="system.reflection.emit\opcodenames.cs" />
+    <Compile Include="system.reflection.emit\opcodes.cs" />
+    <Compile Include="system.reflection.emit\opcodetype.cs" />
+    <Compile Include="system.reflection.emit\operandtype.cs" />
+    <Compile Include="system.reflection.emit\packingsize.cs" />
+    <Compile Include="system.reflection.emit\parameterbuilder.cs" />
+    <Compile Include="system.reflection.emit\parametertoken.cs" />
+    <Compile Include="system.reflection.emit\pefilekinds.cs" />
+    <Compile Include="system.reflection.emit\propertybuilder.cs" />
+    <Compile Include="system.reflection.emit\propertyontypebuilderinst.cs" />
+    <Compile Include="system.reflection.emit\propertytoken.cs" />
+    <Compile Include="system.reflection.emit\signaturehelper.cs" />
+    <Compile Include="system.reflection.emit\signaturetoken.cs" />
+    <Compile Include="system.reflection.emit\stackbehaviour.cs" />
+    <Compile Include="system.reflection.emit\stringtoken.cs" />
+    <Compile Include="system.reflection.emit\typebuilder.cs" />
+    <Compile Include="system.reflection.emit\typetoken.cs" />
+    <Compile Include="system.reflection.emit\unmanagedmarshal.cs" />
+    <Compile Include="system.reflection\ambiguousmatchexception.cs" />
+    <Compile Include="system.reflection\assembly.cs" />
+    <Compile Include="system.reflection\assemblyalgorithmidattribute.cs" />
+    <Compile Include="system.reflection\assemblycompanyattribute.cs" />
+    <Compile Include="system.reflection\assemblyconfigurationattribute.cs" />
+    <Compile Include="system.reflection\assemblycontenttype.cs" />
+    <Compile Include="system.reflection\assemblycopyrightattribute.cs" />
+    <Compile Include="system.reflection\assemblycultureattribute.cs" />
+    <Compile Include="system.reflection\assemblydefaultaliasattribute.cs" />
+    <Compile Include="system.reflection\assemblydelaysignattribute.cs" />
+    <Compile Include="system.reflection\assemblydescriptionattribute.cs" />
+    <Compile Include="system.reflection\assemblyfileversionattribute.cs" />
+    <Compile Include="system.reflection\assemblyflagsattribute.cs" />
+    <Compile Include="system.reflection\assemblyinformationalversionattribute.cs" />
+    <Compile Include="system.reflection\assemblykeyfileattribute.cs" />
+    <Compile Include="system.reflection\assemblykeynameattribute.cs" />
+    <Compile Include="system.reflection\assemblymetadataattribute.cs" />
+    <Compile Include="system.reflection\assemblyname.cs" />
+    <Compile Include="system.reflection\assemblynameflags.cs" />
+    <Compile Include="system.reflection\assemblynameproxy.cs" />
+    <Compile Include="system.reflection\assemblyproductattribute.cs" />
+    <Compile Include="system.reflection\assemblysignaturekeyattribute.cs" />
+    <Compile Include="system.reflection\assemblytitleattribute.cs" />
+    <Compile Include="system.reflection\assemblytrademarkattribute.cs" />
+    <Compile Include="system.reflection\assemblyversionattribute.cs" />
+    <Compile Include="system.reflection\binder.cs" />
+    <Compile Include="system.reflection\bindingflags.cs" />
+    <Compile Include="system.reflection\callingconventions.cs" />
+    <Compile Include="system.reflection\constructorinfo.cs" />
+    <Compile Include="system.reflection\customattributedata.cs" />
+    <Compile Include="system.reflection\customattributeextensions.cs" />
+    <Compile Include="system.reflection\customattributeformatexception.cs" />
+    <Compile Include="system.reflection\customattributenamedargument.cs" />
+    <Compile Include="system.reflection\customattributetypedargument.cs" />
+    <Compile Include="system.reflection\defaultmemberattribute.cs" />
+    <Compile Include="system.reflection\eventattributes.cs" />
+    <Compile Include="system.reflection\eventinfo.cs" />
+    <Compile Include="system.reflection\exceptionhandlingclause.cs" />
+    <Compile Include="system.reflection\exceptionhandlingclauseoptions.cs" />
+    <Compile Include="system.reflection\fieldattributes.cs" />
+    <Compile Include="system.reflection\fieldinfo.cs" />
+    <Compile Include="system.reflection\genericparameterattributes.cs" />
+    <Compile Include="system.reflection\icustomattributeprovider.cs" />
+    <Compile Include="system.reflection\imagefilemachine.cs" />
+    <Compile Include="system.reflection\interfacemapping.cs" />
+    <Compile Include="system.reflection\introspectionextensions.cs" />
+    <Compile Include="system.reflection\invalidfiltercriteriaexception.cs" />
+    <Compile Include="system.reflection\ireflect.cs" />
+    <Compile Include="system.reflection\ireflectabletype.cs" />
+    <Compile Include="system.reflection\localvariableinfo.cs" />
+    <Compile Include="system.reflection\manifestresourceinfo.cs" />
+    <Compile Include="system.reflection\memberfilter.cs" />
+    <Compile Include="system.reflection\memberinfo.cs" />
+    <Compile Include="system.reflection\memberinfoserializationholder.cs" />
+    <Compile Include="system.reflection\membertypes.cs" />
+    <Compile Include="system.reflection\methodattributes.cs" />
+    <Compile Include="system.reflection\methodbase.cs" />
+    <Compile Include="system.reflection\methodbody.cs" />
+    <Compile Include="system.reflection\methodimplattributes.cs" />
+    <Compile Include="system.reflection\methodinfo.cs" />
+    <Compile Include="system.reflection\missing.cs" />
+    <Compile Include="system.reflection\module.cs" />
+    <Compile Include="system.reflection\moduleresolveeventhandler.cs" />
+    <Compile Include="system.reflection\monoassembly.cs" />
+    <Compile Include="system.reflection\monoevent.cs" />
+    <Compile Include="system.reflection\monofield.cs" />
+    <Compile Include="system.reflection\monogenericclass.cs" />
+    <Compile Include="system.reflection\monogenericmethod.cs" />
+    <Compile Include="system.reflection\monomethod.cs" />
+    <Compile Include="system.reflection\monomodule.cs" />
+    <Compile Include="system.reflection\monoparameterinfo.cs" />
+    <Compile Include="system.reflection\monoproperty.cs" />
+    <Compile Include="system.reflection\obfuscateassemblyattribute.cs" />
+    <Compile Include="system.reflection\obfuscationattribute.cs" />
+    <Compile Include="system.reflection\parameterattributes.cs" />
+    <Compile Include="system.reflection\parameterinfo.cs" />
+    <Compile Include="system.reflection\parametermodifier.cs" />
+    <Compile Include="system.reflection\pointer.cs" />
+    <Compile Include="system.reflection\portableexecutablekinds.cs" />
+    <Compile Include="system.reflection\processorarchitecture.cs" />
+    <Compile Include="system.reflection\propertyattributes.cs" />
+    <Compile Include="system.reflection\propertyinfo.cs" />
+    <Compile Include="system.reflection\reflectioncontext.cs" />
+    <Compile Include="system.reflection\reflectiontypeloadexception.cs" />
+    <Compile Include="system.reflection\resourceattributes.cs" />
+    <Compile Include="system.reflection\resourcelocation.cs" />
+    <Compile Include="system.reflection\runtimereflectionextensions.cs" />
+    <Compile Include="system.reflection\strongnamekeypair.cs" />
+    <Compile Include="system.reflection\targetexception.cs" />
+    <Compile Include="system.reflection\targetinvocationexception.cs" />
+    <Compile Include="system.reflection\targetparametercountexception.cs" />
+    <Compile Include="system.reflection\typeattributes.cs" />
+    <Compile Include="system.reflection\typedelegator.cs" />
+    <Compile Include="system.reflection\typefilter.cs" />
+    <Compile Include="system.reflection\typeinfo.cs" />
+    <Compile Include="system.resources\iresourcereader.cs" />
+    <Compile Include="system.resources\iresourcewriter.cs" />
+    <Compile Include="system.resources\missingmanifestresourceexception.cs" />
+    <Compile Include="system.resources\missingsatelliteassemblyexception.cs" />
+    <Compile Include="system.resources\neutralresourceslanguageattribute.cs" />
+    <Compile Include="system.resources\resourcemanager.cs" />
+    <Compile Include="system.resources\resourcereader.cs" />
+    <Compile Include="system.resources\resourceset.cs" />
+    <Compile Include="system.resources\resourcewriter.cs" />
+    <Compile Include="system.resources\runtimeresourceset.cs" />
+    <Compile Include="system.resources\satellitecontractversionattribute.cs" />
+    <Compile Include="system.resources\ultimateresourcefallbacklocation.cs" />
+    <Compile Include="system.resources\win32resources.cs" />
+    <Compile Include="system.runtime.compilerservices\conditionalweaktable.cs" />
+    <Compile Include="system.runtime.compilerservices\runtimehelpers.cs" />
+    <Compile Include="system.runtime.constrainedexecution\cer.cs" />
+    <Compile Include="system.runtime.constrainedexecution\consistency.cs" />
+    <Compile Include="system.runtime.constrainedexecution\criticialfinalizerobject.cs" />
+    <Compile Include="system.runtime.constrainedexecution\prepreparemethodattribute.cs" />
+    <Compile Include="system.runtime.constrainedexecution\reliabilitycontractattribute.cs" />
+    <Compile Include="system.runtime.exceptionservices\exceptiondispatchinfo.cs" />
+    <Compile Include="system.runtime.exceptionservices\firstchanceexceptioneventargs.cs" />
+    <Compile Include="system.runtime.exceptionservices\handleprocesscorruptedstateexceptionsattribute.cs" />
+    <Compile Include="system.runtime.hosting\activationarguments.cs" />
+    <Compile Include="system.runtime.hosting\applicationactivator.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\bindptr.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\bind_opts.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\callconv.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\connectdata.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\desckind.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\dispparams.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\elemdesc.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\excepinfo.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\filetime.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\funcdesc.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\funcflags.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\funckind.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ibindctx.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\iconnectionpoint.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\iconnectionpointcontainer.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\idldesc.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\idlflag.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ienumconnectionpoints.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ienumconnections.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ienummoniker.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ienumstring.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ienumvariant.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\imoniker.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\impltypeflags.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\invokekind.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\ipersistfile.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\irunningobjecttable.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\istream.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\itypecomp.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\itypeinfo.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\itypeinfo2.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\itypelib.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\itypelib2.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\libflags.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\paramdesc.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\paramflag.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\statstg.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\syskind.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\typeattr.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\typedesc.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\typeflags.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\typekind.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\typelibattr.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\vardesc.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\varflags.cs" />
+    <Compile Include="system.runtime.interopservices.comtypes\varkind.cs" />
+    <Compile Include="system.runtime.interopservices.expando\iexpando.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\defaultinterfaceattribute.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\designernamespaceresolveeventargs.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\eventregistrationtoken.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\eventregistrationtokentable.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\iactivationfactory.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\interfaceimplementedinversionattribute.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\namespaceresolveeventargs.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\readonlyarrayattribute.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\returnvaluenameattribute.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\windowsruntimemarshal.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\windowsruntimemetadata.cs" />
+    <Compile Include="system.runtime.interopservices.windowsruntime\writeonlyarrayattribute.cs" />
+    <Compile Include="system.runtime.interopservices\allowreversepinvokecallsattribute.cs" />
+    <Compile Include="system.runtime.interopservices\arraywithoffset.cs" />
+    <Compile Include="system.runtime.interopservices\assemblyregistrationflags.cs" />
+    <Compile Include="system.runtime.interopservices\automationproxyattribute.cs" />
+    <Compile Include="system.runtime.interopservices\bestfitmappingattribute.cs" />
+    <Compile Include="system.runtime.interopservices\bindptr.cs" />
+    <Compile Include="system.runtime.interopservices\bind_opts.cs" />
+    <Compile Include="system.runtime.interopservices\bstrwrapper.cs" />
+    <Compile Include="system.runtime.interopservices\callconv.cs" />
+    <Compile Include="system.runtime.interopservices\callingconvention.cs" />
+    <Compile Include="system.runtime.interopservices\charset.cs" />
+    <Compile Include="system.runtime.interopservices\classinterfaceattribute.cs" />
+    <Compile Include="system.runtime.interopservices\classinterfacetype.cs" />
+    <Compile Include="system.runtime.interopservices\coclassattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comaliasnameattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comcompatibleversionattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comconversionlossattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comdefaultinterfaceattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comeventinterfaceattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comexception.cs" />
+    <Compile Include="system.runtime.interopservices\comimportattribute.cs" />
+    <Compile Include="system.runtime.interopservices\cominterfacetype.cs" />
+    <Compile Include="system.runtime.interopservices\commembertype.cs" />
+    <Compile Include="system.runtime.interopservices\comregisterfunctionattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comsourceinterfacesattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comunregisterfunctionattribute.cs" />
+    <Compile Include="system.runtime.interopservices\comvisible.cs" />
+    <Compile Include="system.runtime.interopservices\connectdata.cs" />
+    <Compile Include="system.runtime.interopservices\criticalhandle.cs" />
+    <Compile Include="system.runtime.interopservices\currencywrapper.cs" />
+    <Compile Include="system.runtime.interopservices\defaultcharsetattribute.cs" />
+    <Compile Include="system.runtime.interopservices\defaultdllimportsearchpathsattribute.cs" />
+    <Compile Include="system.runtime.interopservices\desckind.cs" />
+    <Compile Include="system.runtime.interopservices\dispatchwrapper.cs" />
+    <Compile Include="system.runtime.interopservices\dispidattribute.cs" />
+    <Compile Include="system.runtime.interopservices\dispparams.cs" />
+    <Compile Include="system.runtime.interopservices\dllimportattribute.cs" />
+    <Compile Include="system.runtime.interopservices\dllimportsearchpath.cs" />
+    <Compile Include="system.runtime.interopservices\elemdesc.cs" />
+    <Compile Include="system.runtime.interopservices\errorwrapper.cs" />
+    <Compile Include="system.runtime.interopservices\excepinfo.cs" />
+    <Compile Include="system.runtime.interopservices\exportereventkind.cs" />
+    <Compile Include="system.runtime.interopservices\extensibleclassfactory.cs" />
+    <Compile Include="system.runtime.interopservices\externalexception.cs" />
+    <Compile Include="system.runtime.interopservices\fieldoffsetattribute.cs" />
+    <Compile Include="system.runtime.interopservices\filetime.cs" />
+    <Compile Include="system.runtime.interopservices\funcdesc.cs" />
+    <Compile Include="system.runtime.interopservices\funcflags.cs" />
+    <Compile Include="system.runtime.interopservices\funckind.cs" />
+    <Compile Include="system.runtime.interopservices\gchandle.cs" />
+    <Compile Include="system.runtime.interopservices\gchandletype.cs" />
+    <Compile Include="system.runtime.interopservices\guidattribute.cs" />
+    <Compile Include="system.runtime.interopservices\handleref.cs" />
+    <Compile Include="system.runtime.interopservices\icustomadapter.cs" />
+    <Compile Include="system.runtime.interopservices\icustomfactory.cs" />
+    <Compile Include="system.runtime.interopservices\icustommarshaler.cs" />
+    <Compile Include="system.runtime.interopservices\idispatchimplattribute.cs" />
+    <Compile Include="system.runtime.interopservices\idispatchimpltype.cs" />
+    <Compile Include="system.runtime.interopservices\idldesc.cs" />
+    <Compile Include="system.runtime.interopservices\idlflag.cs" />
+    <Compile Include="system.runtime.interopservices\ierrorinfo.cs" />
+    <Compile Include="system.runtime.interopservices\impltypeflags.cs" />
+    <Compile Include="system.runtime.interopservices\importedfromtypelibattribute.cs" />
+    <Compile Include="system.runtime.interopservices\importereventkind.cs" />
+    <Compile Include="system.runtime.interopservices\inattribute.cs" />
+    <Compile Include="system.runtime.interopservices\interfacetypeattribute.cs" />
+    <Compile Include="system.runtime.interopservices\invalidcomobjectexception.cs" />
+    <Compile Include="system.runtime.interopservices\invalidolevarianttypeexception.cs" />
+    <Compile Include="system.runtime.interopservices\invokekind.cs" />
+    <Compile Include="system.runtime.interopservices\iregistrationservices.cs" />
+    <Compile Include="system.runtime.interopservices\itypelibconverter.cs" />
+    <Compile Include="system.runtime.interopservices\itypelibexporternameprovider.cs" />
+    <Compile Include="system.runtime.interopservices\itypelibexporternotifysink.cs" />
+    <Compile Include="system.runtime.interopservices\itypelibimporternotifysink.cs" />
+    <Compile Include="system.runtime.interopservices\layoutkind.cs" />
+    <Compile Include="system.runtime.interopservices\lcidconversionattribute.cs" />
+    <Compile Include="system.runtime.interopservices\libflags.cs" />
+    <Compile Include="system.runtime.interopservices\managederrorinfo.cs" />
+    <Compile Include="system.runtime.interopservices\marshal.cs" />
+    <Compile Include="system.runtime.interopservices\marshalasattribute.cs" />
+    <Compile Include="system.runtime.interopservices\marshaldirectiveexception.cs" />
+    <Compile Include="system.runtime.interopservices\objectcreationdelegate.cs" />
+    <Compile Include="system.runtime.interopservices\optionalattribute.cs" />
+    <Compile Include="system.runtime.interopservices\outattribute.cs" />
+    <Compile Include="system.runtime.interopservices\paramdesc.cs" />
+    <Compile Include="system.runtime.interopservices\paramflag.cs" />
+    <Compile Include="system.runtime.interopservices\preservesigattribute.cs" />
+    <Compile Include="system.runtime.interopservices\primaryinteropassemblyattribute.cs" />
+    <Compile Include="system.runtime.interopservices\progidattribute.cs" />
+    <Compile Include="system.runtime.interopservices\registrationclasscontext.cs" />
+    <Compile Include="system.runtime.interopservices\registrationconnectiontype.cs" />
+    <Compile Include="system.runtime.interopservices\registrationservices.cs" />
+    <Compile Include="system.runtime.interopservices\runtimeenvironment.cs" />
+    <Compile Include="system.runtime.interopservices\safearrayrankmismatchexception.cs" />
+    <Compile Include="system.runtime.interopservices\safearraytypemismatchexception.cs" />
+    <Compile Include="system.runtime.interopservices\safebuffer.cs" />
+    <Compile Include="system.runtime.interopservices\safehandle.cs" />
+    <Compile Include="system.runtime.interopservices\sehexception.cs" />
+    <Compile Include="system.runtime.interopservices\setwin32contextinidispatchattribute.cs" />
+    <Compile Include="system.runtime.interopservices\statstg.cs" />
+    <Compile Include="system.runtime.interopservices\structlayoutattribute.cs" />
+    <Compile Include="system.runtime.interopservices\syskind.cs" />
+    <Compile Include="system.runtime.interopservices\typeattr.cs" />
+    <Compile Include="system.runtime.interopservices\typedesc.cs" />
+    <Compile Include="system.runtime.interopservices\typeflags.cs" />
+    <Compile Include="system.runtime.interopservices\typeidentifierattribute.cs" />
+    <Compile Include="system.runtime.interopservices\typekind.cs" />
+    <Compile Include="system.runtime.interopservices\typelibattr.cs" />
+    <Compile Include="system.runtime.interopservices\typelibconverter.cs" />
+    <Compile Include="system.runtime.interopservices\typelibexporterflags.cs" />
+    <Compile Include="system.runtime.interopservices\typelibfuncattribute.cs" />
+    <Compile Include="system.runtime.interopservices\typelibfuncflags.cs" />
+    <Compile Include="system.runtime.interopservices\typelibimportclassattribute.cs" />
+    <Compile Include="system.runtime.interopservices\typelibimporterflags.cs" />
+    <Compile Include="system.runtime.interopservices\typelibtypeattribute.cs" />
+    <Compile Include="system.runtime.interopservices\typelibtypeflags.cs" />
+    <Compile Include="system.runtime.interopservices\typelibvarattribute.cs" />
+    <Compile Include="system.runtime.interopservices\typelibvarflags.cs" />
+    <Compile Include="system.runtime.interopservices\typelibversionattribute.cs" />
+    <Compile Include="system.runtime.interopservices\ucomibindctx.cs" />
+    <Compile Include="system.runtime.interopservices\ucomiconnectionpoint.cs" />
+    <Compile Include="system.runtime.interopservices\ucomiconnectionpointcontainer.cs" />
+    <Compile Include="system.runtime.interopservices\ucomienumconnectionpoints.cs" />
+    <Compile Include="system.runtime.interopservices\ucomienumconnections.cs" />
+    <Compile Include="system.runtime.interopservices\ucomienummoniker.cs" />
+    <Compile Include="system.runtime.interopservices\ucomienumstring.cs" />
+    <Compile Include="system.runtime.interopservices\ucomienumvariant.cs" />
+    <Compile Include="system.runtime.interopservices\ucomimoniker.cs" />
+    <Compile Include="system.runtime.interopservices\ucomipersistfile.cs" />
+    <Compile Include="system.runtime.interopservices\ucomirunningobjecttable.cs" />
+    <Compile Include="system.runtime.interopservices\ucomistream.cs" />
+    <Compile Include="system.runtime.interopservices\ucomitypecomp.cs" />
+    <Compile Include="system.runtime.interopservices\ucomitypeinfo.cs" />
+    <Compile Include="system.runtime.interopservices\ucomitypelib.cs" />
+    <Compile Include="system.runtime.interopservices\unknownwrapper.cs" />
+    <Compile Include="system.runtime.interopservices\unmanagedfunctionpointerattribute.cs" />
+    <Compile Include="system.runtime.interopservices\unmanagedtype.cs" />
+    <Compile Include="system.runtime.interopservices\vardesc.cs" />
+    <Compile Include="system.runtime.interopservices\varenum.cs" />
+    <Compile Include="system.runtime.interopservices\varflags.cs" />
+    <Compile Include="system.runtime.interopservices\variantwrapper.cs" />
+    <Compile Include="system.runtime.interopservices\_activator.cs" />
+    <Compile Include="system.runtime.interopservices\_assembly.cs" />
+    <Compile Include="system.runtime.interopservices\_assemblybuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_assemblyname.cs" />
+    <Compile Include="system.runtime.interopservices\_attribute.cs" />
+    <Compile Include="system.runtime.interopservices\_constructorbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_constructorinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_customattributebuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_enumbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_eventbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_eventinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_exception.cs" />
+    <Compile Include="system.runtime.interopservices\_fieldbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_fieldinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_ilgenerator.cs" />
+    <Compile Include="system.runtime.interopservices\_localbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_memberinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_methodbase.cs" />
+    <Compile Include="system.runtime.interopservices\_methodbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_methodinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_methodrental.cs" />
+    <Compile Include="system.runtime.interopservices\_module.cs" />
+    <Compile Include="system.runtime.interopservices\_modulebuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_parameterbuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_parameterinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_propertybuilder.cs" />
+    <Compile Include="system.runtime.interopservices\_propertyinfo.cs" />
+    <Compile Include="system.runtime.interopservices\_signaturehelper.cs" />
+    <Compile Include="system.runtime.interopservices\_thread.cs" />
+    <Compile Include="system.runtime.interopservices\_type.cs" />
+    <Compile Include="system.runtime.interopservices\_typebuilder.cs" />
+    <Compile Include="system.runtime.remoting.activation\activationservices.cs" />
+    <Compile Include="system.runtime.remoting.activation\activatorlevel.cs" />
+    <Compile Include="system.runtime.remoting.activation\appdomainlevelactivator.cs" />
+    <Compile Include="system.runtime.remoting.activation\constructionlevelactivator.cs" />
+    <Compile Include="system.runtime.remoting.activation\contextlevelactivator.cs" />
+    <Compile Include="system.runtime.remoting.activation\iactivator.cs" />
+    <Compile Include="system.runtime.remoting.activation\iconstructioncallmessage.cs" />
+    <Compile Include="system.runtime.remoting.activation\iconstructionreturnmessage.cs" />
+    <Compile Include="system.runtime.remoting.activation\remoteactivationattribute.cs" />
+    <Compile Include="system.runtime.remoting.activation\remoteactivator.cs" />
+    <Compile Include="system.runtime.remoting.activation\urlattribute.cs" />
+    <Compile Include="system.runtime.remoting.channels\aggregatedictionary.cs" />
+    <Compile Include="system.runtime.remoting.channels\basechannelobjectwithproperties.cs" />
+    <Compile Include="system.runtime.remoting.channels\basechannelsinkwithproperties.cs" />
+    <Compile Include="system.runtime.remoting.channels\basechannelwithproperties.cs" />
+    <Compile Include="system.runtime.remoting.channels\channeldatastore.cs" />
+    <Compile Include="system.runtime.remoting.channels\channelservices.cs" />
+    <Compile Include="system.runtime.remoting.channels\channelsinkstackentry.cs" />
+    <Compile Include="system.runtime.remoting.channels\clientchannelsinkstack.cs" />
+    <Compile Include="system.runtime.remoting.channels\crossappdomainchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels\ichannel.cs" />
+    <Compile Include="system.runtime.remoting.channels\ichanneldatastore.cs" />
+    <Compile Include="system.runtime.remoting.channels\ichannelreceiver.cs" />
+    <Compile Include="system.runtime.remoting.channels\ichannelreceiverhook.cs" />
+    <Compile Include="system.runtime.remoting.channels\ichannelsender.cs" />
+    <Compile Include="system.runtime.remoting.channels\ichannelsinkbase.cs" />
+    <Compile Include="system.runtime.remoting.channels\iclientchannelsink.cs" />
+    <Compile Include="system.runtime.remoting.channels\iclientchannelsinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\iclientchannelsinkstack.cs" />
+    <Compile Include="system.runtime.remoting.channels\iclientformattersink.cs" />
+    <Compile Include="system.runtime.remoting.channels\iclientformattersinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\iclientresponsechannelsinkstack.cs" />
+    <Compile Include="system.runtime.remoting.channels\isecurablechannel.cs" />
+    <Compile Include="system.runtime.remoting.channels\iserverchannelsink.cs" />
+    <Compile Include="system.runtime.remoting.channels\iserverchannelsinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\iserverchannelsinkstack.cs" />
+    <Compile Include="system.runtime.remoting.channels\iserverformattersinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\iserverresponsechannelsinkstack.cs" />
+    <Compile Include="system.runtime.remoting.channels\itransportheaders.cs" />
+    <Compile Include="system.runtime.remoting.channels\serverchannelsinkstack.cs" />
+    <Compile Include="system.runtime.remoting.channels\serverdispatchsink.cs" />
+    <Compile Include="system.runtime.remoting.channels\serverdispatchsinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\serverprocessing.cs" />
+    <Compile Include="system.runtime.remoting.channels\sinkproviderdata.cs" />
+    <Compile Include="system.runtime.remoting.channels\transportheaders.cs" />
+    <Compile Include="system.runtime.remoting.contexts\context.cs" />
+    <Compile Include="system.runtime.remoting.contexts\contextattribute.cs" />
+    <Compile Include="system.runtime.remoting.contexts\contextproperty.cs" />
+    <Compile Include="system.runtime.remoting.contexts\crosscontextchannel.cs" />
+    <Compile Include="system.runtime.remoting.contexts\crosscontextdelegate.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontextattribute.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontextproperty.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontextpropertyactivator.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontributeclientcontextsink.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontributedynamicsink.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontributeenvoysink.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontributeobjectsink.cs" />
+    <Compile Include="system.runtime.remoting.contexts\icontributeservercontextsink.cs" />
+    <Compile Include="system.runtime.remoting.contexts\idynamicmessagesink.cs" />
+    <Compile Include="system.runtime.remoting.contexts\idynamicproperty.cs" />
+    <Compile Include="system.runtime.remoting.contexts\synchronizationattribute.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\clientsponsor.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\ilease.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\isponsor.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\lease.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\leasemanager.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\leasesink.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\leasestate.cs" />
+    <Compile Include="system.runtime.remoting.lifetime\lifetimeservices.cs" />
+    <Compile Include="system.runtime.remoting.messaging\arginfo.cs" />
+    <Compile Include="system.runtime.remoting.messaging\asyncresult.cs" />
+    <Compile Include="system.runtime.remoting.messaging\cadmessages.cs" />
+    <Compile Include="system.runtime.remoting.messaging\callcontext.cs" />
+    <Compile Include="system.runtime.remoting.messaging\clientcontextterminatorsink.cs" />
+    <Compile Include="system.runtime.remoting.messaging\constructioncall.cs" />
+    <Compile Include="system.runtime.remoting.messaging\constructioncalldictionary.cs" />
+    <Compile Include="system.runtime.remoting.messaging\constructionresponse.cs" />
+    <Compile Include="system.runtime.remoting.messaging\envoyterminatorsink.cs" />
+    <Compile Include="system.runtime.remoting.messaging\errormessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\header.cs" />
+    <Compile Include="system.runtime.remoting.messaging\headerhandler.cs" />
+    <Compile Include="system.runtime.remoting.messaging\iinternalmessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\imessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\imessagectrl.cs" />
+    <Compile Include="system.runtime.remoting.messaging\imessagesink.cs" />
+    <Compile Include="system.runtime.remoting.messaging\imethodcallmessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\imethodmessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\imethodreturnmessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\internalmessagewrapper.cs" />
+    <Compile Include="system.runtime.remoting.messaging\iremotingformatter.cs" />
+    <Compile Include="system.runtime.remoting.messaging\iserializationrootobject.cs" />
+    <Compile Include="system.runtime.remoting.messaging\logicalcallcontext.cs" />
+    <Compile Include="system.runtime.remoting.messaging\messagesurrogatefilter.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methodcall.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methodcalldictionary.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methodcallmessagewrapper.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methoddictionary.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methodresponse.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methodreturndictionary.cs" />
+    <Compile Include="system.runtime.remoting.messaging\methodreturnmessagewrapper.cs" />
+    <Compile Include="system.runtime.remoting.messaging\monomethodmessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\onewayattribute.cs" />
+    <Compile Include="system.runtime.remoting.messaging\remotingsurrogate.cs" />
+    <Compile Include="system.runtime.remoting.messaging\remotingsurrogateselector.cs" />
+    <Compile Include="system.runtime.remoting.messaging\returnmessage.cs" />
+    <Compile Include="system.runtime.remoting.messaging\servercontextterminatorsink.cs" />
+    <Compile Include="system.runtime.remoting.messaging\serverobjectterminatorsink.cs" />
+    <Compile Include="system.runtime.remoting.messaging\stackbuildersink.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\isoapxsd.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapanyuri.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapbase64binary.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapdate.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapdatetime.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapday.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapduration.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapentities.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapentity.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soaphelper.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soaphexbinary.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapid.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapidref.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapidrefs.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapinteger.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soaplanguage.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapmonth.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapmonthday.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapname.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapncname.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnegativeinteger.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnmtoken.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnmtokens.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnonnegativeinteger.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnonpositiveinteger.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnormalizedstring.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapnotation.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soappositiveinteger.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapqname.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soaptime.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soaptoken.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapyear.cs" />
+    <Compile Include="system.runtime.remoting.metadata.w3cxsd2001\soapyearmonth.cs" />
+    <Compile Include="system.runtime.remoting.metadata\soapattribute.cs" />
+    <Compile Include="system.runtime.remoting.metadata\soapfieldattribute.cs" />
+    <Compile Include="system.runtime.remoting.metadata\soapmethodattribute.cs" />
+    <Compile Include="system.runtime.remoting.metadata\soapoption.cs" />
+    <Compile Include="system.runtime.remoting.metadata\soapparameterattribute.cs" />
+    <Compile Include="system.runtime.remoting.metadata\soaptypeattribute.cs" />
+    <Compile Include="system.runtime.remoting.metadata\xmlfieldorderoption.cs" />
+    <Compile Include="system.runtime.remoting.proxies\proxyattribute.cs" />
+    <Compile Include="system.runtime.remoting.proxies\realproxy.cs" />
+    <Compile Include="system.runtime.remoting.proxies\remotingproxy.cs" />
+    <Compile Include="system.runtime.remoting.services\enterpriseserviceshelper.cs" />
+    <Compile Include="system.runtime.remoting.services\itrackinghandler.cs" />
+    <Compile Include="system.runtime.remoting.services\trackingservices.cs" />
+    <Compile Include="system.runtime.remoting\activatedclienttypeentry.cs" />
+    <Compile Include="system.runtime.remoting\activatedservicetypeentry.cs" />
+    <Compile Include="system.runtime.remoting\customerrorsmodes.cs" />
+    <Compile Include="system.runtime.remoting\envoyinfo.cs" />
+    <Compile Include="system.runtime.remoting\ichannelinfo.cs" />
+    <Compile Include="system.runtime.remoting\identity.cs" />
+    <Compile Include="system.runtime.remoting\ienvoyinfo.cs" />
+    <Compile Include="system.runtime.remoting\internalremotingservices.cs" />
+    <Compile Include="system.runtime.remoting\iobjecthandle.cs" />
+    <Compile Include="system.runtime.remoting\iremotingtypeinfo.cs" />
+    <Compile Include="system.runtime.remoting\objecthandle.cs" />
+    <Compile Include="system.runtime.remoting\objref.cs" />
+    <Compile Include="system.runtime.remoting\remotingconfiguration.cs" />
+    <Compile Include="system.runtime.remoting\remotingexception.cs" />
+    <Compile Include="system.runtime.remoting\remotingservices.cs" />
+    <Compile Include="system.runtime.remoting\remotingtimeoutexception.cs" />
+    <Compile Include="system.runtime.remoting\serverexception.cs" />
+    <Compile Include="system.runtime.remoting\serveridentity.cs" />
+    <Compile Include="system.runtime.remoting\soapservices.cs" />
+    <Compile Include="system.runtime.remoting\typeentry.cs" />
+    <Compile Include="system.runtime.remoting\typeinfo.cs" />
+    <Compile Include="system.runtime.remoting\wellknownclienttypeentry.cs" />
+    <Compile Include="system.runtime.remoting\wellknownobjectmode.cs" />
+    <Compile Include="system.runtime.remoting\wellknownservicetypeentry.cs" />
+    <Compile Include="system.runtime.serialization.formatters.binary\binarycommon.cs" />
+    <Compile Include="system.runtime.serialization.formatters.binary\binaryformatter.cs" />
+    <Compile Include="system.runtime.serialization.formatters.binary\codegenerator.cs" />
+    <Compile Include="system.runtime.serialization.formatters.binary\messageformatter.cs" />
+    <Compile Include="system.runtime.serialization.formatters.binary\objectreader.cs" />
+    <Compile Include="system.runtime.serialization.formatters.binary\objectwriter.cs" />
+    <Compile Include="system.runtime.serialization.formatters\formatterassemblystyle.cs" />
+    <Compile Include="system.runtime.serialization.formatters\formattertopobjectstyle.cs" />
+    <Compile Include="system.runtime.serialization.formatters\formattertypestyle.cs" />
+    <Compile Include="system.runtime.serialization.formatters\ifieldinfo.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalarraytypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalelementtypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalmembertypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalmembervaluee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalnamespacee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalobjectpositione.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalobjecttypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalparsestatee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalparsetypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalprimitivetypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalrm.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalserializertypee.cs" />
+    <Compile Include="system.runtime.serialization.formatters\internalst.cs" />
+    <Compile Include="system.runtime.serialization.formatters\isoapmessage.cs" />
+    <Compile Include="system.runtime.serialization.formatters\serverfault.cs" />
+    <Compile Include="system.runtime.serialization.formatters\soapfault.cs" />
+    <Compile Include="system.runtime.serialization.formatters\soapmessage.cs" />
+    <Compile Include="system.runtime.serialization.formatters\typefilterlevel.cs" />
+    <Compile Include="system.runtime.serialization\formatter.cs" />
+    <Compile Include="system.runtime.serialization\formatterconverter.cs" />
+    <Compile Include="system.runtime.serialization\formatterservices.cs" />
+    <Compile Include="system.runtime.serialization\ideserializationcallback.cs" />
+    <Compile Include="system.runtime.serialization\iformatter.cs" />
+    <Compile Include="system.runtime.serialization\iformatterconverter.cs" />
+    <Compile Include="system.runtime.serialization\iobjectreference.cs" />
+    <Compile Include="system.runtime.serialization\isafeserializationdata.cs" />
+    <Compile Include="system.runtime.serialization\iserializable.cs" />
+    <Compile Include="system.runtime.serialization\iserializationsurrogate.cs" />
+    <Compile Include="system.runtime.serialization\isurrogateselector.cs" />
+    <Compile Include="system.runtime.serialization\objectidgenerator.cs" />
+    <Compile Include="system.runtime.serialization\objectmanager.cs" />
+    <Compile Include="system.runtime.serialization\ondeserializedattribute.cs" />
+    <Compile Include="system.runtime.serialization\ondeserializingattribute.cs" />
+    <Compile Include="system.runtime.serialization\onserializedattribute.cs" />
+    <Compile Include="system.runtime.serialization\onserializingattribute.cs" />
+    <Compile Include="system.runtime.serialization\optionalfieldattribute.cs" />
+    <Compile Include="system.runtime.serialization\safeserializationeventargs.cs" />
+    <Compile Include="system.runtime.serialization\serializationbinder.cs" />
+    <Compile Include="system.runtime.serialization\serializationcallbacks.cs" />
+    <Compile Include="system.runtime.serialization\serializationentry.cs" />
+    <Compile Include="system.runtime.serialization\serializationexception.cs" />
+    <Compile Include="system.runtime.serialization\serializationinfo.cs" />
+    <Compile Include="system.runtime.serialization\serializationinfoenumerator.cs" />
+    <Compile Include="system.runtime.serialization\serializationobjectmanager.cs" />
+    <Compile Include="system.runtime.serialization\streamingcontext.cs" />
+    <Compile Include="system.runtime.serialization\streamingcontextstates.cs" />
+    <Compile Include="system.runtime.serialization\surrogateselector.cs" />
+    <Compile Include="system.runtime.versioning\compatibilityswitch.cs" />
+    <Compile Include="system.runtime.versioning\componentguaranteesattribute.cs" />
+    <Compile Include="system.runtime.versioning\componentguaranteesoptions.cs" />
+    <Compile Include="system.runtime.versioning\resourceconsumptionattribute.cs" />
+    <Compile Include="system.runtime.versioning\resourceexposureattribute.cs" />
+    <Compile Include="system.runtime.versioning\resourcescope.cs" />
+    <Compile Include="system.runtime.versioning\targetframeworkattribute.cs" />
+    <Compile Include="system.runtime.versioning\versioninghelper.cs" />
+    <Compile Include="system.runtime\assemblytargetedpatchbandattribute.cs" />
+    <Compile Include="system.runtime\gclargeobjectheapcompactionmode.cs" />
+    <Compile Include="system.runtime\gclatencymode.cs" />
+    <Compile Include="system.runtime\gcsettings.cs" />
+    <Compile Include="system.runtime\memoryfailpoint.cs" />
+    <Compile Include="system.runtime\targetedpatchingoptoutattribute.cs" />
+    <Compile Include="system.security.accesscontrol\accesscontrolactions.cs" />
+    <Compile Include="system.security.accesscontrol\accesscontrolmodification.cs" />
+    <Compile Include="system.security.accesscontrol\accesscontrolsections.cs" />
+    <Compile Include="system.security.accesscontrol\accesscontroltype.cs" />
+    <Compile Include="system.security.accesscontrol\accessrule.cs" />
+    <Compile Include="system.security.accesscontrol\accessrule_t.cs" />
+    <Compile Include="system.security.accesscontrol\aceenumerator.cs" />
+    <Compile Include="system.security.accesscontrol\aceflags.cs" />
+    <Compile Include="system.security.accesscontrol\acequalifier.cs" />
+    <Compile Include="system.security.accesscontrol\acetype.cs" />
+    <Compile Include="system.security.accesscontrol\auditflags.cs" />
+    <Compile Include="system.security.accesscontrol\auditrule.cs" />
+    <Compile Include="system.security.accesscontrol\auditrule_t.cs" />
+    <Compile Include="system.security.accesscontrol\authorizationrule.cs" />
+    <Compile Include="system.security.accesscontrol\authorizationrulecollection.cs" />
+    <Compile Include="system.security.accesscontrol\commonace.cs" />
+    <Compile Include="system.security.accesscontrol\commonacl.cs" />
+    <Compile Include="system.security.accesscontrol\commonobjectsecurity.cs" />
+    <Compile Include="system.security.accesscontrol\commonsecuritydescriptor.cs" />
+    <Compile Include="system.security.accesscontrol\compoundace.cs" />
+    <Compile Include="system.security.accesscontrol\compoundacetype.cs" />
+    <Compile Include="system.security.accesscontrol\controlflags.cs" />
+    <Compile Include="system.security.accesscontrol\cryptokeyaccessrule.cs" />
+    <Compile Include="system.security.accesscontrol\cryptokeyauditrule.cs" />
+    <Compile Include="system.security.accesscontrol\cryptokeyrights.cs" />
+    <Compile Include="system.security.accesscontrol\cryptokeysecurity.cs" />
+    <Compile Include="system.security.accesscontrol\customace.cs" />
+    <Compile Include="system.security.accesscontrol\directoryobjectsecurity.cs" />
+    <Compile Include="system.security.accesscontrol\directorysecurity.cs" />
+    <Compile Include="system.security.accesscontrol\discretionaryacl.cs" />
+    <Compile Include="system.security.accesscontrol\eventwaithandleaccessrule.cs" />
+    <Compile Include="system.security.accesscontrol\eventwaithandleauditrule.cs" />
+    <Compile Include="system.security.accesscontrol\eventwaithandlerights.cs" />
+    <Compile Include="system.security.accesscontrol\eventwaithandlesecurity.cs" />
+    <Compile Include="system.security.accesscontrol\filesecurity.cs" />
+    <Compile Include="system.security.accesscontrol\filesystemaccessrule.cs" />
+    <Compile Include="system.security.accesscontrol\filesystemauditrule.cs" />
+    <Compile Include="system.security.accesscontrol\filesystemrights.cs" />
+    <Compile Include="system.security.accesscontrol\filesystemsecurity.cs" />
+    <Compile Include="system.security.accesscontrol\genericace.cs" />
+    <Compile Include="system.security.accesscontrol\genericacl.cs" />
+    <Compile Include="system.security.accesscontrol\genericsecuritydescriptor.cs" />
+    <Compile Include="system.security.accesscontrol\inheritanceflags.cs" />
+    <Compile Include="system.security.accesscontrol\knownace.cs" />
+    <Compile Include="system.security.accesscontrol\mutexaccessrule.cs" />
+    <Compile Include="system.security.accesscontrol\mutexauditrule.cs" />
+    <Compile Include="system.security.accesscontrol\mutexrights.cs" />
+    <Compile Include="system.security.accesscontrol\mutexsecurity.cs" />
+    <Compile Include="system.security.accesscontrol\nativeobjectsecurity.cs" />
+    <Compile Include="system.security.accesscontrol\objectaccessrule.cs" />
+    <Compile Include="system.security.accesscontrol\objectace.cs" />
+    <Compile Include="system.security.accesscontrol\objectaceflags.cs" />
+    <Compile Include="system.security.accesscontrol\objectauditrule.cs" />
+    <Compile Include="system.security.accesscontrol\objectsecurity.cs" />
+    <Compile Include="system.security.accesscontrol\objectsecurity_t.cs" />
+    <Compile Include="system.security.accesscontrol\privilegenotheldexception.cs" />
+    <Compile Include="system.security.accesscontrol\propagationflags.cs" />
+    <Compile Include="system.security.accesscontrol\qualifiedace.cs" />
+    <Compile Include="system.security.accesscontrol\rawacl.cs" />
+    <Compile Include="system.security.accesscontrol\rawsecuritydescriptor.cs" />
+    <Compile Include="system.security.accesscontrol\registryaccessrule.cs" />
+    <Compile Include="system.security.accesscontrol\registryauditrule.cs" />
+    <Compile Include="system.security.accesscontrol\registryrights.cs" />
+    <Compile Include="system.security.accesscontrol\registrysecurity.cs" />
+    <Compile Include="system.security.accesscontrol\resourcetype.cs" />
+    <Compile Include="system.security.accesscontrol\sddlaccessright.cs" />
+    <Compile Include="system.security.accesscontrol\securityinfos.cs" />
+    <Compile Include="system.security.accesscontrol\systemacl.cs" />
+    <Compile Include="system.security.claims\claim.cs" />
+    <Compile Include="system.security.claims\claimsidentity.cs" />
+    <Compile Include="system.security.claims\claimsprincipal.cs" />
+    <Compile Include="system.security.claims\claimtypes.cs" />
+    <Compile Include="system.security.claims\claimvaluetypes.cs" />
+    <Compile Include="system.security.cryptography.x509certificates\x509certificate.cs" />
+    <Compile Include="system.security.cryptography.x509certificates\x509certificate20.cs" />
+    <Compile Include="system.security.cryptography.x509certificates\x509contenttype.cs" />
+    <Compile Include="system.security.cryptography.x509certificates\x509keystorageflags.cs" />
+    <Compile Include="system.security.cryptography\aes.cs" />
+    <Compile Include="system.security.cryptography\asymmetricalgorithm.cs" />
+    <Compile Include="system.security.cryptography\asymmetrickeyexchangedeformatter.cs" />
+    <Compile Include="system.security.cryptography\asymmetrickeyexchangeformatter.cs" />
+    <Compile Include="system.security.cryptography\asymmetricsignaturedeformatter.cs" />
+    <Compile Include="system.security.cryptography\asymmetricsignatureformatter.cs" />
+    <Compile Include="system.security.cryptography\base64constants.cs" />
+    <Compile Include="system.security.cryptography\ciphermode.cs" />
+    <Compile Include="system.security.cryptography\cryptoapitransform.cs" />
+    <Compile Include="system.security.cryptography\cryptoconfig.cs" />
+    <Compile Include="system.security.cryptography\cryptoconfig.fullaot.cs" />
+    <Compile Include="system.security.cryptography\cryptoconfig_2_1.cs" />
+    <Compile Include="system.security.cryptography\cryptographicexception.cs" />
+    <Compile Include="system.security.cryptography\cryptographicunexpectedoperationexcpetion.cs" />
+    <Compile Include="system.security.cryptography\cryptostream.cs" />
+    <Compile Include="system.security.cryptography\cryptostreammode.cs" />
+    <Compile Include="system.security.cryptography\cspkeycontainerinfo.cs" />
+    <Compile Include="system.security.cryptography\cspparameters.cs" />
+    <Compile Include="system.security.cryptography\cspproviderflags.cs" />
+    <Compile Include="system.security.cryptography\derivebytes.cs" />
+    <Compile Include="system.security.cryptography\des.cs" />
+    <Compile Include="system.security.cryptography\descryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\dsa.cs" />
+    <Compile Include="system.security.cryptography\dsacryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\dsaparameters.cs" />
+    <Compile Include="system.security.cryptography\dsasignaturedeformatter.cs" />
+    <Compile Include="system.security.cryptography\dsasignatureformatter.cs" />
+    <Compile Include="system.security.cryptography\frombase64transform.cs" />
+    <Compile Include="system.security.cryptography\hashalgorithm.cs" />
+    <Compile Include="system.security.cryptography\hmac.cs" />
+    <Compile Include="system.security.cryptography\hmacmd5.cs" />
+    <Compile Include="system.security.cryptography\hmacripemd160.cs" />
+    <Compile Include="system.security.cryptography\hmacsha1.cs" />
+    <Compile Include="system.security.cryptography\hmacsha256.cs" />
+    <Compile Include="system.security.cryptography\hmacsha384.cs" />
+    <Compile Include="system.security.cryptography\hmacsha512.cs" />
+    <Compile Include="system.security.cryptography\icryptotransform.cs" />
+    <Compile Include="system.security.cryptography\icspasymmetricalgorithm.cs" />
+    <Compile Include="system.security.cryptography\keyedhashalgorithm.cs" />
+    <Compile Include="system.security.cryptography\keynumber.cs" />
+    <Compile Include="system.security.cryptography\keysizes.cs" />
+    <Compile Include="system.security.cryptography\mactripledes.cs" />
+    <Compile Include="system.security.cryptography\maskgenerationmethod.cs" />
+    <Compile Include="system.security.cryptography\md5.cs" />
+    <Compile Include="system.security.cryptography\md5cryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\paddingmode.cs" />
+    <Compile Include="system.security.cryptography\passwordderivebytes.cs" />
+    <Compile Include="system.security.cryptography\pkcs1maskgenerationmethod.cs" />
+    <Compile Include="system.security.cryptography\randomnumbergenerator.cs" />
+    <Compile Include="system.security.cryptography\rc2.cs" />
+    <Compile Include="system.security.cryptography\rc2cryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\rfc2898derivebytes.cs" />
+    <Compile Include="system.security.cryptography\rijndael.cs" />
+    <Compile Include="system.security.cryptography\rijndaelmanaged.cs" />
+    <Compile Include="system.security.cryptography\rijndaelmanagedtransform.cs" />
+    <Compile Include="system.security.cryptography\ripemd160.cs" />
+    <Compile Include="system.security.cryptography\ripemd160managed.cs" />
+    <Compile Include="system.security.cryptography\rngcryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\rsa.cs" />
+    <Compile Include="system.security.cryptography\rsacryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\rsaoaepkeyexchangedeformatter.cs" />
+    <Compile Include="system.security.cryptography\rsaoaepkeyexchangeformatter.cs" />
+    <Compile Include="system.security.cryptography\rsaparameters.cs" />
+    <Compile Include="system.security.cryptography\rsapkcs1keyexchangedeformatter.cs" />
+    <Compile Include="system.security.cryptography\rsapkcs1keyexchangeformatter.cs" />
+    <Compile Include="system.security.cryptography\rsapkcs1signaturedeformatter.cs" />
+    <Compile Include="system.security.cryptography\rsapkcs1signatureformatter.cs" />
+    <Compile Include="system.security.cryptography\sha1.cs" />
+    <Compile Include="system.security.cryptography\sha1cryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\sha1managed.cs" />
+    <Compile Include="system.security.cryptography\sha256.cs" />
+    <Compile Include="system.security.cryptography\sha256managed.cs" />
+    <Compile Include="system.security.cryptography\sha384.cs" />
+    <Compile Include="system.security.cryptography\sha384managed.cs" />
+    <Compile Include="system.security.cryptography\sha512.cs" />
+    <Compile Include="system.security.cryptography\sha512managed.cs" />
+    <Compile Include="system.security.cryptography\shaconstants.cs" />
+    <Compile Include="system.security.cryptography\signaturedescription.cs" />
+    <Compile Include="system.security.cryptography\symmetricalgorithm.cs" />
+    <Compile Include="system.security.cryptography\tobase64transform.cs" />
+    <Compile Include="system.security.cryptography\tripledes.cs" />
+    <Compile Include="system.security.cryptography\tripledescryptoserviceprovider.cs" />
+    <Compile Include="system.security.permissions\codeaccesssecurityattribute.cs" />
+    <Compile Include="system.security.permissions\environmentpermission.cs" />
+    <Compile Include="system.security.permissions\environmentpermissionaccess.cs" />
+    <Compile Include="system.security.permissions\environmentpermissionattribute.cs" />
+    <Compile Include="System.Security.Permissions\FileDialogPermission.cs " />
+    <Compile Include="system.security.permissions\filedialogpermissionaccess.cs" />
+    <Compile Include="system.security.permissions\filedialogpermissionattribute.cs" />
+    <Compile Include="system.security.permissions\fileiopermission.cs" />
+    <Compile Include="system.security.permissions\fileiopermissionaccess.cs" />
+    <Compile Include="system.security.permissions\fileiopermissionattribute.cs" />
+    <Compile Include="system.security.permissions\gacidentitypermission.cs" />
+    <Compile Include="system.security.permissions\gacidentitypermissionattribute.cs" />
+    <Compile Include="system.security.permissions\hostprotectionattribute.cs" />
+    <Compile Include="system.security.permissions\hostprotectionpermission.cs" />
+    <Compile Include="system.security.permissions\hostprotectionresource.cs" />
+    <Compile Include="system.security.permissions\ibuiltinpermission.cs" />
+    <Compile Include="system.security.permissions\isolatedstoragecontainment.cs" />
+    <Compile Include="System.Security.Permissions\IsolatedStorageFilePermission.cs " />
+    <Compile Include="system.security.permissions\isolatedstoragefilepermissionattribute.cs" />
+    <Compile Include="system.security.permissions\isolatedstoragepermission.cs" />
+    <Compile Include="system.security.permissions\isolatedstoragepermissionattribute.cs" />
+    <Compile Include="system.security.permissions\iunrestrictedpermission.cs" />
+    <Compile Include="system.security.permissions\keycontainerpermission.cs" />
+    <Compile Include="system.security.permissions\keycontainerpermissionaccessentry.cs" />
+    <Compile Include="system.security.permissions\keycontainerpermissionaccessentrycollection.cs" />
+    <Compile Include="system.security.permissions\keycontainerpermissionaccessentryenumerator.cs" />
+    <Compile Include="system.security.permissions\keycontainerpermissionattribute.cs" />
+    <Compile Include="system.security.permissions\keycontainerpermissionflags.cs" />
+    <Compile Include="system.security.permissions\permissionsetattribute.cs" />
+    <Compile Include="system.security.permissions\permissionstate.cs" />
+    <Compile Include="System.Security.Permissions\PrincipalPermission.cs " />
+    <Compile Include="system.security.permissions\principalpermissionattribute.cs" />
+    <Compile Include="system.security.permissions\publisheridentitypermission.cs" />
+    <Compile Include="System.Security.Permissions\PublisherIdentityPermissionAttribute.cs " />
+    <Compile Include="system.security.permissions\reflectionpermission.cs" />
+    <Compile Include="system.security.permissions\reflectionpermissionattribute.cs" />
+    <Compile Include="system.security.permissions\reflectionpermissionflag.cs" />
+    <Compile Include="system.security.permissions\registrypermission.cs" />
+    <Compile Include="system.security.permissions\registrypermissionaccess.cs" />
+    <Compile Include="system.security.permissions\registrypermissionattribute.cs" />
+    <Compile Include="system.security.permissions\securityaction.cs" />
+    <Compile Include="system.security.permissions\securityattribute.cs" />
+    <Compile Include="system.security.permissions\securitypermission.cs" />
+    <Compile Include="system.security.permissions\securitypermissionattribute.cs" />
+    <Compile Include="system.security.permissions\securitypermissionflag.cs" />
+    <Compile Include="System.Security.Permissions\SiteIdentityPermission.cs " />
+    <Compile Include="system.security.permissions\siteidentitypermissionattribute.cs" />
+    <Compile Include="system.security.permissions\strongnameidentitypermission.cs" />
+    <Compile Include="system.security.permissions\strongnamepermissionattribute.cs" />
+    <Compile Include="system.security.permissions\strongnamepublickeyblob.cs" />
+    <Compile Include="System.Security.Permissions\UIPermission.cs " />
+    <Compile Include="system.security.permissions\uipermissionattribute.cs" />
+    <Compile Include="system.security.permissions\uipermissionclipboard.cs" />
+    <Compile Include="system.security.permissions\uipermissionwindow.cs" />
+    <Compile Include="system.security.permissions\urlidentitypermission.cs" />
+    <Compile Include="system.security.permissions\urlidentitypermissionattribute.cs" />
+    <Compile Include="system.security.permissions\zoneidentitypermission.cs" />
+    <Compile Include="system.security.permissions\zoneidentitypermissionattribute.cs" />
+    <Compile Include="system.security.policy\allmembershipcondition.cs" />
+    <Compile Include="system.security.policy\applicationdirectory.cs" />
+    <Compile Include="system.security.policy\applicationdirectorymembershipcondition.cs" />
+    <Compile Include="system.security.policy\applicationsecurityinfo.cs" />
+    <Compile Include="system.security.policy\applicationsecuritymanager.cs" />
+    <Compile Include="system.security.policy\applicationtrust.cs" />
+    <Compile Include="system.security.policy\applicationtrustcollection.cs" />
+    <Compile Include="system.security.policy\applicationtrustenumerator.cs" />
+    <Compile Include="system.security.policy\applicationversionmatch.cs" />
+    <Compile Include="system.security.policy\codeconnectaccess.cs" />
+    <Compile Include="system.security.policy\codegroup.cs" />
+    <Compile Include="system.security.policy\defaultpolicies.cs" />
+    <Compile Include="system.security.policy\evidence.cs" />
+    <Compile Include="system.security.policy\evidencebase.cs" />
+    <Compile Include="system.security.policy\filecodegroup.cs" />
+    <Compile Include="system.security.policy\firstmatchcodegroup.cs" />
+    <Compile Include="system.security.policy\gac.cs" />
+    <Compile Include="system.security.policy\gacmembershipcondition.cs" />
+    <Compile Include="system.security.policy\hash.cs" />
+    <Compile Include="system.security.policy\hashmembershipcondition.cs" />
+    <Compile Include="system.security.policy\iapplicationtrustmanager.cs" />
+    <Compile Include="system.security.policy\ibuiltinevidence.cs" />
+    <Compile Include="system.security.policy\iconstantmembershipcondition.cs" />
+    <Compile Include="system.security.policy\iidentitypermissionfactory.cs" />
+    <Compile Include="system.security.policy\imembershipcondition.cs" />
+    <Compile Include="system.security.policy\membershipconditionhelper.cs" />
+    <Compile Include="system.security.policy\monotrustmanager.cs" />
+    <Compile Include="system.security.policy\netcodegroup.cs" />
+    <Compile Include="system.security.policy\permissionrequestevidence.cs" />
+    <Compile Include="system.security.policy\policyexception.cs" />
+    <Compile Include="system.security.policy\policylevel.cs" />
+    <Compile Include="system.security.policy\policystatement.cs" />
+    <Compile Include="system.security.policy\policystatementattribute.cs" />
+    <Compile Include="system.security.policy\publisher.cs" />
+    <Compile Include="system.security.policy\publishermembershipcondition.cs" />
+    <Compile Include="system.security.policy\site.cs" />
+    <Compile Include="system.security.policy\sitemembershipcondition.cs" />
+    <Compile Include="system.security.policy\strongname.cs" />
+    <Compile Include="system.security.policy\strongnamemembershipcondition.cs" />
+    <Compile Include="system.security.policy\trustmanagercontext.cs" />
+    <Compile Include="system.security.policy\trustmanageruicontext.cs" />
+    <Compile Include="system.security.policy\unioncodegroup.cs" />
+    <Compile Include="system.security.policy\url.cs" />
+    <Compile Include="system.security.policy\urlmembershipcondition.cs" />
+    <Compile Include="system.security.policy\zone.cs" />
+    <Compile Include="system.security.policy\zonemembershipcondition.cs" />
+    <Compile Include="system.security.principal\genericidentity.cs" />
+    <Compile Include="system.security.principal\genericprincipal.cs" />
+    <Compile Include="system.security.principal\identitynotmappedexception.cs" />
+    <Compile Include="system.security.principal\identityreference.cs" />
+    <Compile Include="system.security.principal\identityreferencecollection.cs" />
+    <Compile Include="system.security.principal\iidentity.cs" />
+    <Compile Include="system.security.principal\iprincipal.cs" />
+    <Compile Include="system.security.principal\ntaccount.cs" />
+    <Compile Include="system.security.principal\principalpolicy.cs" />
+    <Compile Include="system.security.principal\securityidentifier.cs" />
+    <Compile Include="system.security.principal\tokenaccesslevels.cs" />
+    <Compile Include="system.security.principal\tokenimpersonationlevel.cs" />
+    <Compile Include="system.security.principal\wellknownaccount.cs" />
+    <Compile Include="system.security.principal\wellknownsidtype.cs" />
+    <Compile Include="system.security.principal\windowsaccounttype.cs" />
+    <Compile Include="system.security.principal\windowsbuiltinrole.cs" />
+    <Compile Include="system.security.principal\windowsidentity.cs" />
+    <Compile Include="system.security.principal\windowsimpersonationcontext.cs" />
+    <Compile Include="system.security.principal\windowsprincipal.cs" />
+    <Compile Include="system.security\allowpartiallytrustedcallersattribute.cs" />
+    <Compile Include="system.security\codeaccesspermission.cs" />
+    <Compile Include="system.security\hostprotectionexception.cs" />
+    <Compile Include="system.security\hostsecuritymanager.cs" />
+    <Compile Include="system.security\hostsecuritymanagerflags.cs" />
+    <Compile Include="system.security\ievidencefactory.cs" />
+    <Compile Include="system.security\ipermission.cs" />
+    <Compile Include="system.security\isecurityencodable.cs" />
+    <Compile Include="system.security\isecuritypolicyencodable.cs" />
+    <Compile Include="system.security\istackwalk.cs" />
+    <Compile Include="system.security\namedpermissionset.cs" />
+    <Compile Include="system.security\permissionbuilder.cs" />
+    <Compile Include="system.security\permissionset.cs" />
+    <Compile Include="system.security\policyleveltype.cs" />
+    <Compile Include="system.security\securestring.cs" />
+    <Compile Include="system.security\securitycontext.cs" />
+    <Compile Include="system.security\securitycontextsource.cs" />
+    <Compile Include="system.security\securitycriticalattribute.cs" />
+    <Compile Include="system.security\securitycriticalscope.cs" />
+    <Compile Include="system.security\securityelement.cs" />
+    <Compile Include="system.security\securityexception.cs" />
+    <Compile Include="system.security\securityframe.cs" />
+    <Compile Include="system.security\securitymanager.cs" />
+    <Compile Include="system.security\securitymanager_mobile.cs" />
+    <Compile Include="system.security\securityrulesattribute.cs" />
+    <Compile Include="system.security\securityruleset.cs" />
+    <Compile Include="system.security\securitysafecriticalattribute.cs" />
+    <Compile Include="system.security\securitystate.cs" />
+    <Compile Include="system.security\securitytransparentattribute.cs" />
+    <Compile Include="system.security\securitytreatassafeattribute.cs" />
+    <Compile Include="system.security\securityzone.cs" />
+    <Compile Include="system.security\suppressunmanagedcodesecurityattribute.cs" />
+    <Compile Include="system.security\unverifiablecodeattribute.cs" />
+    <Compile Include="system.security\verificationexception.cs" />
+    <Compile Include="system.security\xmlsyntaxexception.cs" />
+    <Compile Include="system.text\encodinghelper.cs" />
+    <Compile Include="system.text\latin1encoding.cs" />
+    <Compile Include="system.text\normalizationform.cs" />
+    <Compile Include="system.text\stringbuilder.cs" />
+    <Compile Include="system.threading.tasks\decoupledtask.cs" />
+    <Compile Include="system.threading.tasks\taskconstants.cs" />
+    <Compile Include="system.threading.tasks\taskconstants_t.cs" />
+    <Compile Include="system.threading\asyncflowcontrol.cs" />
+    <Compile Include="system.threading\compressedstack.cs" />
+    <Compile Include="system.threading\contextcallback.cs" />
+    <Compile Include="system.threading\eventwaithandle.cs" />
+    <Compile Include="system.threading\executioncontext.cs" />
+    <Compile Include="system.threading\hostexecutioncontext.cs" />
+    <Compile Include="system.threading\hostexecutioncontextmanager.cs" />
+    <Compile Include="system.threading\interlocked.cs" />
+    <Compile Include="system.threading\iocompletioncallback.cs" />
+    <Compile Include="system.threading\lockcookie.cs" />
+    <Compile Include="system.threading\lockqueue.cs" />
+    <Compile Include="system.threading\lockrecursionexception.cs" />
+    <Compile Include="system.threading\monitor.cs" />
+    <Compile Include="system.threading\mutex.cs" />
+    <Compile Include="system.threading\nameddataslot.cs" />
+    <Compile Include="system.threading\nativeeventcalls.cs" />
+    <Compile Include="system.threading\nativeoverlapped.cs" />
+    <Compile Include="system.threading\overlapped.cs" />
+    <Compile Include="system.threading\readerwriterlock.cs" />
+    <Compile Include="system.threading\registeredwaithandle.cs" />
+    <Compile Include="system.threading\synchronizationcontext.cs" />
+    <Compile Include="system.threading\thread.cs" />
+    <Compile Include="system.threading\threadabortexception.cs" />
+    <Compile Include="system.threading\threadinterruptedexception.cs" />
+    <Compile Include="system.threading\threadlocal.cs" />
+    <Compile Include="system.threading\threadpool.cs" />
+    <Compile Include="system.threading\timer.cs" />
+    <Compile Include="system.threading\timercallback.cs" />
+    <Compile Include="system.threading\volatile.cs" />
+    <Compile Include="system.threading\waitcallback.cs" />
+    <Compile Include="system.threading\waithandle.cs" />
+    <Compile Include="system.threading\waitortimercallback.cs" />
+    <Compile Include="system\accessviolationexception.cs" />
+    <Compile Include="system\action.cs" />
+    <Compile Include="system\activationcontext.cs" />
+    <Compile Include="system\activator.cs" />
+    <Compile Include="system\androidplatform.cs" />
+    <Compile Include="system\appdomain.cs" />
+    <Compile Include="system\appdomaininitializer.cs" />
+    <Compile Include="system\appdomainmanager.cs" />
+    <Compile Include="system\appdomainsetup.cs" />
+    <Compile Include="system\appdomainunloadedexception.cs" />
+    <Compile Include="system\applicationexception.cs" />
+    <Compile Include="system\applicationid.cs" />
+    <Compile Include="system\applicationidentity.cs" />
+    <Compile Include="system\argiterator.cs" />
+    <Compile Include="system\argumentexception.cs" />
+    <Compile Include="system\argumentnullexception.cs" />
+    <Compile Include="system\argumentoutofrangeexception.cs" />
+    <Compile Include="system\arithmeticexception.cs" />
+    <Compile Include="system\array.cs" />
+    <Compile Include="system\arraytypemismatchexception.cs" />
+    <Compile Include="system\assemblyloadeventargs.cs" />
+    <Compile Include="system\assemblyloadeventhandler.cs" />
+    <Compile Include="system\asynccallback.cs" />
+    <Compile Include="system\attribute.cs" />
+    <Compile Include="system\attributetargets.cs" />
+    <Compile Include="system\attributeusageattribute.cs" />
+    <Compile Include="system\badimageformatexception.cs" />
+    <Compile Include="system\buffer.cs" />
+    <Compile Include="system\cannotunloadappdomainexception.cs" />
+    <Compile Include="system\charenumerator.cs" />
+    <Compile Include="system\clscompliantattribute.cs" />
+    <Compile Include="system\comparison.cs" />
+    <Compile Include="system\console.cs" />
+    <Compile Include="system\console.ios.cs" />
+    <Compile Include="system\consolecanceleventargs.cs" />
+    <Compile Include="system\consolecanceleventhandler.cs" />
+    <Compile Include="system\consolecolor.cs" />
+    <Compile Include="system\consoledriver.cs" />
+    <Compile Include="system\consolekey.cs" />
+    <Compile Include="system\consolekeyinfo.cs" />
+    <Compile Include="system\consolemodifiers.cs" />
+    <Compile Include="system\consolespecialkey.cs" />
+    <Compile Include="system\contextboundobject.cs" />
+    <Compile Include="system\contextmarshalexception.cs" />
+    <Compile Include="system\contextstaticattribute.cs" />
+    <Compile Include="system\controlcharacters.cs" />
+    <Compile Include="system\converter.cs" />
+    <Compile Include="system\crossappdomaindelegate.cs" />
+    <Compile Include="system\cstreamreader.cs" />
+    <Compile Include="system\cstreamwriter.cs" />
+    <Compile Include="system\datamisalignedexception.cs" />
+    <Compile Include="system\delegate.cs" />
+    <Compile Include="system\delegateserializationholder.cs" />
+    <Compile Include="system\dividebyzeroexception.cs" />
+    <Compile Include="system\dllnotfoundexception.cs" />
+    <Compile Include="system\domainmanagerinitializationflags.cs" />
+    <Compile Include="system\double.cs" />
+    <Compile Include="system\duplicatewaitobjectexception.cs" />
+    <Compile Include="system\emptyarray.cs" />
+    <Compile Include="system\entrypointnotfoundexception.cs" />
+    <Compile Include="system\enum.cs" />
+    <Compile Include="system\environment.cs" />
+    <Compile Include="system\environmentvariabletarget.cs" />
+    <Compile Include="system\eventargs.cs" />
+    <Compile Include="system\eventhandler.cs" />
+    <Compile Include="system\exception.cs" />
+    <Compile Include="system\executionengineexception.cs" />
+    <Compile Include="system\fieldaccessexception.cs" />
+    <Compile Include="system\flagsattribute.cs" />
+    <Compile Include="system\formatexception.cs" />
+    <Compile Include="system\funcs.cs" />
+    <Compile Include="system\gc.cs" />
+    <Compile Include="system\gccollectionmode.cs" />
+    <Compile Include="system\gcnotificationstatus.cs" />
+    <Compile Include="system\guid.cs" />
+    <Compile Include="system\guid.monotouch.cs" />
+    <Compile Include="system\iappdomainsetup.cs" />
+    <Compile Include="system\iasyncresult.cs" />
+    <Compile Include="system\icloneable.cs" />
+    <Compile Include="system\icomparable.cs" />
+    <Compile Include="system\iconsoledriver.cs" />
+    <Compile Include="system\iconvertible.cs" />
+    <Compile Include="system\icustomformatter.cs" />
+    <Compile Include="system\idisposable.cs" />
+    <Compile Include="system\iequatable.cs" />
+    <Compile Include="system\iformatprovider.cs" />
+    <Compile Include="system\iformattable.cs" />
+    <Compile Include="system\indexoutofrangeexception.cs" />
+    <Compile Include="system\insufficientexecutionstackexception.cs" />
+    <Compile Include="system\insufficientmemoryexception.cs" />
+    <Compile Include="system\intptr.cs" />
+    <Compile Include="system\invalidcastexception.cs" />
+    <Compile Include="system\invalidoperationexception.cs" />
+    <Compile Include="system\invalidprogramexception.cs" />
+    <Compile Include="system\invalidtimezoneexception.cs" />
+    <Compile Include="system\iobservable.cs" />
+    <Compile Include="system\iobserver.cs" />
+    <Compile Include="system\iprogress.cs" />
+    <Compile Include="system\iserviceprovider.cs" />
+    <Compile Include="system\knownterminals.cs" />
+    <Compile Include="system\loaderoptimization.cs" />
+    <Compile Include="system\loaderoptimizationattribute.cs" />
+    <Compile Include="system\localdatastoreslot.cs" />
+    <Compile Include="system\marshalbyrefobject.cs" />
+    <Compile Include="system\math.cs" />
+    <Compile Include="system\modulehandle.cs" />
+    <Compile Include="system\monoasynccall.cs" />
+    <Compile Include="system\monocqitem.cs" />
+    <Compile Include="system\monocustomattrs.cs" />
+    <Compile Include="system\monolistitem.cs" />
+    <Compile Include="system\monotouchaothelper.cs" />
+    <Compile Include="system\monotype.cs" />
+    <Compile Include="system\mtathreadattribute.cs" />
+    <Compile Include="system\multicastdelegate.cs" />
+    <Compile Include="system\multicastnotsupportedexception.cs" />
+    <Compile Include="system\nonserializedattribute.cs" />
+    <Compile Include="system\notfinitenumberexception.cs" />
+    <Compile Include="system\notimplementedexception.cs" />
+    <Compile Include="system\notsupportedexception.cs" />
+    <Compile Include="system\nullable.cs" />
+    <Compile Include="system\nullconsoledriver.cs" />
+    <Compile Include="system\nullreferenceexception.cs" />
+    <Compile Include="system\numberformatter.cs" />
+    <Compile Include="system\object.cs" />
+    <Compile Include="system\objectdisposedexception.cs" />
+    <Compile Include="system\obsoleteattribute.cs" />
+    <Compile Include="system\operatingsystem.cs" />
+    <Compile Include="system\operationcanceledexception.cs" />
+    <Compile Include="system\outofmemoryexception.cs" />
+    <Compile Include="system\overflowexception.cs" />
+    <Compile Include="system\paramarrayattribute.cs" />
+    <Compile Include="system\platformid.cs" />
+    <Compile Include="system\platformnotsupportedexception.cs" />
+    <Compile Include="system\predicate.cs" />
+    <Compile Include="system\rankexception.cs" />
+    <Compile Include="system\resolveeventargs.cs" />
+    <Compile Include="system\resolveeventhandler.cs" />
+    <Compile Include="system\runtimeargumenthandle.cs" />
+    <Compile Include="system\runtimefieldhandle.cs" />
+    <Compile Include="system\runtimemethodhandle.cs" />
+    <Compile Include="system\runtimetypehandle.cs" />
+    <Compile Include="system\serializableattribute.cs" />
+    <Compile Include="system\single.cs" />
+    <Compile Include="system\stackoverflowexception.cs" />
+    <Compile Include="system\stathreadattribute.cs" />
+    <Compile Include="system\string.cs" />
+    <Compile Include="system\stringcomparison.cs" />
+    <Compile Include="system\stringsplitoptions.cs" />
+    <Compile Include="system\systemexception.cs" />
+    <Compile Include="system\terminfobooleans.cs" />
+    <Compile Include="system\terminfodriver.cs" />
+    <Compile Include="system\terminfonumbers.cs" />
+    <Compile Include="system\terminforeader.cs" />
+    <Compile Include="system\terminfostrings.cs" />
+    <Compile Include="system\threadstaticattribute.cs" />
+    <Compile Include="system\timeoutexception.cs" />
+    <Compile Include="system\timezone.cs" />
+    <Compile Include="system\timezoneinfo.adjustmentrule.cs" />
+    <Compile Include="system\timezoneinfo.android.cs" />
+    <Compile Include="system\timezoneinfo.cs" />
+    <Compile Include="system\timezoneinfo.monotouch.cs" />
+    <Compile Include="system\timezoneinfo.serialization.cs" />
+    <Compile Include="system\timezoneinfo.transitiontime.cs" />
+    <Compile Include="system\timezonenotfoundexception.cs" />
+    <Compile Include="system\type.cs" />
+    <Compile Include="system\typeaccessexception.cs" />
+    <Compile Include="system\typecode.cs" />
+    <Compile Include="system\typedreference.cs" />
+    <Compile Include="system\typeinitializationexception.cs" />
+    <Compile Include="system\typeloadexception.cs" />
+    <Compile Include="system\typespec.cs" />
+    <Compile Include="system\typeunloadedexception.cs" />
+    <Compile Include="system\uintptr.cs" />
+    <Compile Include="system\unauthorizedaccessexception.cs" />
+    <Compile Include="system\unhandledexceptioneventargs.cs" />
+    <Compile Include="system\unhandledexceptioneventhandler.cs" />
+    <Compile Include="system\valuetype.cs" />
+    <Compile Include="system\variant.cs" />
+    <Compile Include="system\void.cs" />
+    <Compile Include="system\weakreference.cs" />
+    <Compile Include="system\weakreference_t.cs" />
+    <Compile Include="system\windowsconsoledriver.cs" />
+    <Compile Include="system\_appdomain.cs" />
+    <Compile Include="system\__comobject.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -552,13 +2271,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -585,4 +2301,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

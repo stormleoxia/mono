@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Xml.Linq-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,26 +43,41 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Xml.Linq\ExtensionsTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XAttributeTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XDocumentTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XElementTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNamespaceTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNameTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNodeDocumentOrderComparerTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNodeEqualityComparerTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNodeNavigatorTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNodeReaderTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XNodeWriterTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XObjectTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XProcessingInstructionTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XStreamingElementTest.cs" />
-    <Compile Include="Test\System.Xml.Linq\XTextTest.cs" />
-    <Compile Include="Test\System.Xml.Schema\ExtensionsTest.cs" />
-    <Compile Include="Test\System.Xml.XPath\ExtensionsTest.cs" />
-    <Compile Include="Test\System.Xml.XPath\ExtensionsTest2.cs" />
-    <Compile Include="Test\System.Xml.XPath\ExtensionsTest3.cs" />
-    <Compile Include="Test\System.Xml.XPath\ExtensionsTest4.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.xml.linq\extensions.cs" />
+    <Compile Include="system.xml.linq\loadoptions.cs" />
+    <Compile Include="system.xml.linq\readeroptions.cs" />
+    <Compile Include="system.xml.linq\saveoptions.cs" />
+    <Compile Include="system.xml.linq\xattribute.cs" />
+    <Compile Include="system.xml.linq\xcdata.cs" />
+    <Compile Include="system.xml.linq\xcomment.cs" />
+    <Compile Include="system.xml.linq\xcontainer.cs" />
+    <Compile Include="system.xml.linq\xdeclaration.cs" />
+    <Compile Include="system.xml.linq\xdocument.cs" />
+    <Compile Include="system.xml.linq\xdocumenttype.cs" />
+    <Compile Include="system.xml.linq\xelement.cs" />
+    <Compile Include="system.xml.linq\xiterators.cs" />
+    <Compile Include="system.xml.linq\xname.cs" />
+    <Compile Include="system.xml.linq\xnamespace.cs" />
+    <Compile Include="system.xml.linq\xnode.cs" />
+    <Compile Include="system.xml.linq\xnodedocumentordercomparer.cs" />
+    <Compile Include="system.xml.linq\xnodeequalitycomparer.cs" />
+    <Compile Include="system.xml.linq\xnodenavigator.cs" />
+    <Compile Include="system.xml.linq\xnodereader.cs" />
+    <Compile Include="system.xml.linq\xnodewriter.cs" />
+    <Compile Include="system.xml.linq\xobject.cs" />
+    <Compile Include="system.xml.linq\xobjectchange.cs" />
+    <Compile Include="system.xml.linq\xobjectchangeeventargs.cs" />
+    <Compile Include="system.xml.linq\xprocessinginstruction.cs" />
+    <Compile Include="system.xml.linq\xstreamingelement.cs" />
+    <Compile Include="system.xml.linq\xtext.cs" />
+    <Compile Include="system.xml.linq\xutil.cs" />
+    <Compile Include="system.xml.schema\extensions.cs" />
+    <Compile Include="system.xml.xpath\extensions.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -73,13 +87,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -109,4 +120,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

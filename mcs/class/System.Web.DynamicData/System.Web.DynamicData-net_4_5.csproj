@@ -43,9 +43,15 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\Locale.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Locale.cs">
+      <Link>Locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="System.Web.DynamicData.ModelProviders\AssociationDirection.cs" />
     <Compile Include="System.Web.DynamicData.ModelProviders\AssociationProvider.cs" />

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Microsoft.Build.Framework-tests-net_3_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,23 +43,71 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\Microsoft.Build.Framework\BuildErrorEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\BuildEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\BuildEventContextTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\BuildFinishedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\BuildMessageEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\BuildStartedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\BuildWarningEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\ExternalProjectFinishedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\ExternalProjectStartedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\LoggerExceptionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\ProjectFinishedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\ProjectStartedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\TargetFinishedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\TargetStartedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\TaskCommandLineEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\TaskFinishedEventArgsTest.cs" />
-    <Compile Include="Test\Microsoft.Build.Framework\TaskStartedEventArgsTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="..\..\tools\xbuild\xbuildconsts.cs">
+      <Link>xbuildconsts.cs</Link>
+    </Compile>
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="microsoft.build.framework\anyeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\buildengineresult.cs" />
+    <Compile Include="microsoft.build.framework\builderroreventargs.cs" />
+    <Compile Include="microsoft.build.framework\builderroreventhandler.cs" />
+    <Compile Include="microsoft.build.framework\buildeventargs.cs" />
+    <Compile Include="microsoft.build.framework\buildeventcontext.cs" />
+    <Compile Include="microsoft.build.framework\buildfinishedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\buildfinishedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\buildmessageeventargs.cs" />
+    <Compile Include="microsoft.build.framework\buildmessageeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\buildstartedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\buildstartedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\buildstatuseventargs.cs" />
+    <Compile Include="microsoft.build.framework\buildstatuseventhandler.cs" />
+    <Compile Include="microsoft.build.framework\buildwarningeventargs.cs" />
+    <Compile Include="microsoft.build.framework\buildwarningeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\custombuildeventargs.cs" />
+    <Compile Include="microsoft.build.framework\custombuildeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\externalprojectfinishedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\externalprojectstartedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\ibuildengine.cs" />
+    <Compile Include="microsoft.build.framework\ibuildengine2.cs" />
+    <Compile Include="microsoft.build.framework\ibuildengine3.cs" />
+    <Compile Include="microsoft.build.framework\ibuildengine4.cs" />
+    <Compile Include="microsoft.build.framework\icancelabletask.cs" />
+    <Compile Include="microsoft.build.framework\ieventredirector.cs" />
+    <Compile Include="microsoft.build.framework\ieventsource.cs" />
+    <Compile Include="microsoft.build.framework\iforwardinglogger.cs" />
+    <Compile Include="microsoft.build.framework\ilogger.cs" />
+    <Compile Include="microsoft.build.framework\inodelogger.cs" />
+    <Compile Include="microsoft.build.framework\itask.cs" />
+    <Compile Include="microsoft.build.framework\itaskfactory.cs" />
+    <Compile Include="microsoft.build.framework\itaskfactory2.cs" />
+    <Compile Include="microsoft.build.framework\itaskhost.cs" />
+    <Compile Include="microsoft.build.framework\itaskitem.cs" />
+    <Compile Include="microsoft.build.framework\itaskitem2.cs" />
+    <Compile Include="microsoft.build.framework\lazyformattedbuildeventargs.cs" />
+    <Compile Include="microsoft.build.framework\loadinseparateappdomainattribute.cs" />
+    <Compile Include="microsoft.build.framework\loggerexception.cs" />
+    <Compile Include="microsoft.build.framework\loggerverbosity.cs" />
+    <Compile Include="microsoft.build.framework\messageimportance.cs" />
+    <Compile Include="microsoft.build.framework\outputattribute.cs" />
+    <Compile Include="microsoft.build.framework\projectfinishedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\projectfinishedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\projectstartedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\projectstartedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\registeredtaskobjectlifetime.cs" />
+    <Compile Include="microsoft.build.framework\requiredattribute.cs" />
+    <Compile Include="microsoft.build.framework\targetfinishedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\targetfinishedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\targetstartedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\targetstartedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\taskcommandlineeventargs.cs" />
+    <Compile Include="microsoft.build.framework\taskfinishedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\taskfinishedeventhandler.cs" />
+    <Compile Include="microsoft.build.framework\taskpropertyinfo.cs" />
+    <Compile Include="microsoft.build.framework\taskstartedeventargs.cs" />
+    <Compile Include="microsoft.build.framework\taskstartedeventhandler.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -70,13 +117,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -94,4 +138,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

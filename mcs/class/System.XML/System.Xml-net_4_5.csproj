@@ -43,7 +43,9 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\..\external\referencesource\System.Xml\System\Xml\Bits.cs" />
+    <Compile Include="..\..\..\external\referencesource\System.Xml\System\Xml\Bits.cs">
+      <Link>System.Xml/Bits.cs</Link>
+    </Compile>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
@@ -103,6 +105,8 @@
     <Compile Include="Mono.Xml.Xsl\GenericOutputter.cs" />
     <Compile Include="Mono.Xml.Xsl\HtmlEmitter.cs" />
     <Compile Include="Mono.Xml.Xsl\MSXslScriptManager.cs" />
+    <Compile Include="Mono.Xml.Xsl\net_4_5_PatternParser.cs" />
+    <Compile Include="Mono.Xml.Xsl\net_4_5_PatternTokenizer.cs" />
     <Compile Include="Mono.Xml.Xsl\Outputter.cs" />
     <Compile Include="Mono.Xml.Xsl\ScriptCompilerInfo.cs" />
     <Compile Include="Mono.Xml.Xsl\TextEmitter.cs" />
@@ -322,6 +326,7 @@
     <Compile Include="System.Xml.XPath\Expression.cs" />
     <Compile Include="System.Xml.XPath\Iterator.cs" />
     <Compile Include="System.Xml.XPath\IXPathNavigable.cs" />
+    <Compile Include="System.Xml.XPath\net_4_5_Parser.cs" />
     <Compile Include="System.Xml.XPath\Tokenizer.cs" />
     <Compile Include="System.Xml.XPath\XmlCaseOrder.cs" />
     <Compile Include="System.Xml.XPath\XmlDataType.cs" />
@@ -433,9 +438,6 @@
     <Compile Include="System.Xml\XmlWriterSettings.cs" />
     <Compile Include="System.Xml\XQueryConvert.cs" />
     <Compile Include="System.Xml\XsdDateTime2.cs" />
-    <Compile Include="Mono.Xml.Xsl\net_4_5_PatternParser.cs" />
-    <Compile Include="Mono.Xml.Xsl\net_4_5_PatternTokenizer.cs" />
-    <Compile Include="System.Xml.XPath\net_4_5_Parser.cs" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

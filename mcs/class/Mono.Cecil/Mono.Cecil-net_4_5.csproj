@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,7 +18,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,33 +49,87 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Code.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\CodeReader.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\CodeWriter.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Document.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\ExceptionHandler.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\ILProcessor.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Instruction.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\MethodBody.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\OpCode.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\OpCodes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\SequencePoint.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Symbols.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\VariableDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\VariableReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\BlobHeap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Buffers.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\CodedIndex.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\ElementType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\GuidHeap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Heap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\MetadataToken.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Row.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\StringHeap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\TableHeap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\TokenType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\UserStringHeap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Utilities.cs" />
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Code.cs">
+      <Link>Code.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\CodeReader.cs">
+      <Link>CodeReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\CodeWriter.cs">
+      <Link>CodeWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Document.cs">
+      <Link>Document.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\ExceptionHandler.cs">
+      <Link>ExceptionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\ILProcessor.cs">
+      <Link>ILProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Instruction.cs">
+      <Link>Instruction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\MethodBody.cs">
+      <Link>MethodBody.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\OpCode.cs">
+      <Link>OpCode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\OpCodes.cs">
+      <Link>OpCodes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\SequencePoint.cs">
+      <Link>SequencePoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\Symbols.cs">
+      <Link>Symbols.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\VariableDefinition.cs">
+      <Link>VariableDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Cil\VariableReference.cs">
+      <Link>VariableReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\BlobHeap.cs">
+      <Link>BlobHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Buffers.cs">
+      <Link>Buffers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\CodedIndex.cs">
+      <Link>CodedIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\ElementType.cs">
+      <Link>ElementType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\GuidHeap.cs">
+      <Link>GuidHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Heap.cs">
+      <Link>Heap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\MetadataToken.cs">
+      <Link>MetadataToken.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Row.cs">
+      <Link>Row.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\StringHeap.cs">
+      <Link>StringHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\TableHeap.cs">
+      <Link>TableHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\TokenType.cs">
+      <Link>TokenType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\UserStringHeap.cs">
+      <Link>UserStringHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil.Metadata\Utilities.cs">
+      <Link>Utilities.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\cecil\Mono.Cecil.PE\BinaryStreamReader.cs" />
     <Compile Include="..\..\..\external\cecil\Mono.Cecil.PE\BinaryStreamWriter.cs" />
     <Compile Include="..\..\..\external\cecil\Mono.Cecil.PE\ByteBuffer.cs" />
@@ -87,96 +140,275 @@
     <Compile Include="..\..\..\external\cecil\Mono.Cecil.PE\ImageWriter.cs" />
     <Compile Include="..\..\..\external\cecil\Mono.Cecil.PE\Section.cs" />
     <Compile Include="..\..\..\external\cecil\Mono.Cecil.PE\TextMap.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ArrayType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyFlags.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyHashAlgorithm.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyInfo.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyLinkedResource.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyNameDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyNameReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyReader.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyWriter.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\BaseAssemblyResolver.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\CallSite.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\CustomAttribute.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\DefaultAssemblyResolver.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EmbeddedResource.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EventAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EventDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EventReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ExportedType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FieldAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FieldDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FieldReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FileAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FunctionPointerType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericInstanceMethod.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericInstanceType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericParameter.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericParameterAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IConstantProvider.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ICustomAttributeProvider.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IGenericInstance.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IGenericParameterProvider.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMarshalInfoProvider.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMemberDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMetadataScope.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMetadataTokenProvider.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMethodSignature.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\Import.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\LinkedResource.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ManifestResourceAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MarshalInfo.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MemberDefinitionCollection.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MemberReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MetadataResolver.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MetadataSystem.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodCallingConvention.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodImplAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodReturnType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodSemanticsAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodSpecification.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\Modifiers.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ModuleDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ModuleKind.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ModuleReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\NativeType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterDefinitionCollection.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PinnedType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PInvokeAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PInvokeInfo.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PointerType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PropertyAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PropertyDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PropertyReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ReferenceType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\Resource.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\SecurityDeclaration.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\SentinelType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TargetRuntime.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeAttributes.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeDefinition.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeDefinitionCollection.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeParser.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeReference.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeSpecification.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeSystem.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Cecil\VariantType.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Collections.Generic\Collection.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Collections.Generic\ReadOnlyCollection.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Security.Cryptography\CryptoConvert.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono.Security.Cryptography\CryptoService.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono\Actions.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono\Empty.cs" />
-    <Compile Include="..\..\..\external\cecil\Mono\Funcs.cs" />
-    <Compile Include="..\..\..\external\cecil\System.Runtime.CompilerServices\ExtensionAttribute.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ArrayType.cs">
+      <Link>ArrayType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyDefinition.cs">
+      <Link>AssemblyDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyFlags.cs">
+      <Link>AssemblyFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyHashAlgorithm.cs">
+      <Link>AssemblyHashAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyLinkedResource.cs">
+      <Link>AssemblyLinkedResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyNameDefinition.cs">
+      <Link>AssemblyNameDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyNameReference.cs">
+      <Link>AssemblyNameReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyReader.cs">
+      <Link>AssemblyReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\AssemblyWriter.cs">
+      <Link>AssemblyWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\BaseAssemblyResolver.cs">
+      <Link>BaseAssemblyResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\CallSite.cs">
+      <Link>CallSite.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\CustomAttribute.cs">
+      <Link>CustomAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\DefaultAssemblyResolver.cs">
+      <Link>DefaultAssemblyResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EmbeddedResource.cs">
+      <Link>EmbeddedResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EventAttributes.cs">
+      <Link>EventAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EventDefinition.cs">
+      <Link>EventDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\EventReference.cs">
+      <Link>EventReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ExportedType.cs">
+      <Link>ExportedType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FieldAttributes.cs">
+      <Link>FieldAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FieldDefinition.cs">
+      <Link>FieldDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FieldReference.cs">
+      <Link>FieldReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FileAttributes.cs">
+      <Link>FileAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\FunctionPointerType.cs">
+      <Link>FunctionPointerType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericInstanceMethod.cs">
+      <Link>GenericInstanceMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericInstanceType.cs">
+      <Link>GenericInstanceType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericParameter.cs">
+      <Link>GenericParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\GenericParameterAttributes.cs">
+      <Link>GenericParameterAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IConstantProvider.cs">
+      <Link>IConstantProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ICustomAttributeProvider.cs">
+      <Link>ICustomAttributeProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IGenericInstance.cs">
+      <Link>IGenericInstance.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IGenericParameterProvider.cs">
+      <Link>IGenericParameterProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMarshalInfoProvider.cs">
+      <Link>IMarshalInfoProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMemberDefinition.cs">
+      <Link>IMemberDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMetadataScope.cs">
+      <Link>IMetadataScope.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMetadataTokenProvider.cs">
+      <Link>IMetadataTokenProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\IMethodSignature.cs">
+      <Link>IMethodSignature.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\Import.cs">
+      <Link>Import.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\LinkedResource.cs">
+      <Link>LinkedResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ManifestResourceAttributes.cs">
+      <Link>ManifestResourceAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MarshalInfo.cs">
+      <Link>MarshalInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MemberDefinitionCollection.cs">
+      <Link>MemberDefinitionCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MemberReference.cs">
+      <Link>MemberReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MetadataResolver.cs">
+      <Link>MetadataResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MetadataSystem.cs">
+      <Link>MetadataSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodAttributes.cs">
+      <Link>MethodAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodCallingConvention.cs">
+      <Link>MethodCallingConvention.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodDefinition.cs">
+      <Link>MethodDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodImplAttributes.cs">
+      <Link>MethodImplAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodReference.cs">
+      <Link>MethodReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodReturnType.cs">
+      <Link>MethodReturnType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodSemanticsAttributes.cs">
+      <Link>MethodSemanticsAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\MethodSpecification.cs">
+      <Link>MethodSpecification.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\Modifiers.cs">
+      <Link>Modifiers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ModuleDefinition.cs">
+      <Link>ModuleDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ModuleKind.cs">
+      <Link>ModuleKind.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ModuleReference.cs">
+      <Link>ModuleReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\NativeType.cs">
+      <Link>NativeType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterAttributes.cs">
+      <Link>ParameterAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterDefinition.cs">
+      <Link>ParameterDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterDefinitionCollection.cs">
+      <Link>ParameterDefinitionCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ParameterReference.cs">
+      <Link>ParameterReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PinnedType.cs">
+      <Link>PinnedType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PInvokeAttributes.cs">
+      <Link>PInvokeAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PInvokeInfo.cs">
+      <Link>PInvokeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PointerType.cs">
+      <Link>PointerType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PropertyAttributes.cs">
+      <Link>PropertyAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PropertyDefinition.cs">
+      <Link>PropertyDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\PropertyReference.cs">
+      <Link>PropertyReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\ReferenceType.cs">
+      <Link>ReferenceType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\Resource.cs">
+      <Link>Resource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\SecurityDeclaration.cs">
+      <Link>SecurityDeclaration.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\SentinelType.cs">
+      <Link>SentinelType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TargetRuntime.cs">
+      <Link>TargetRuntime.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeAttributes.cs">
+      <Link>TypeAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeDefinition.cs">
+      <Link>TypeDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeDefinitionCollection.cs">
+      <Link>TypeDefinitionCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeParser.cs">
+      <Link>TypeParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeReference.cs">
+      <Link>TypeReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeSpecification.cs">
+      <Link>TypeSpecification.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\TypeSystem.cs">
+      <Link>TypeSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Cecil\VariantType.cs">
+      <Link>VariantType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Collections.Generic\Collection.cs">
+      <Link>Collection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Collections.Generic\ReadOnlyCollection.cs">
+      <Link>ReadOnlyCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Security.Cryptography\CryptoConvert.cs">
+      <Link>CryptoConvert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono.Security.Cryptography\CryptoService.cs">
+      <Link>CryptoService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono\Actions.cs">
+      <Link>Actions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono\Empty.cs">
+      <Link>Empty.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\Mono\Funcs.cs">
+      <Link>Funcs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\cecil\System.Runtime.CompilerServices\ExtensionAttribute.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -186,17 +418,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -213,4 +440,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

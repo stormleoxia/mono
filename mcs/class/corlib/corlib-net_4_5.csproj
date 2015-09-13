@@ -50,318 +50,908 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\__hresults.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\AggregateException.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\arraysegment.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\bitconverter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\boolean.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\byte.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\char.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\arraylist.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\bitarray.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\caseinsensitivecomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\caseinsensitivehashcodeprovider.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\collectionbase.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\comparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\compatiblecomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\ConcurrentDictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\ConcurrentQueue.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\ConcurrentStack.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\IProducerConsumerCollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\OrderablePartitioner.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\Partitioner.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\PartitionerStatic.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\dictionarybase.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\dictionaryentry.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\emptyreadonlydictionaryinternal.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\debugview.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\dictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\icollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\icomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\idictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ienumerable.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ienumerator.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\iequalitycomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ilist.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlycollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlydictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlylist.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\keynotfoundexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\keyvaluepair.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\list.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\hashtable.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\icollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\icomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\idictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\idictionaryenumerator.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ienumerable.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ienumerator.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\iequalitycomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ihashcodeprovider.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ilist.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\istructuralcomparable.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\istructuralequatable.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\keyvaluepairs.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\listdictionaryinternal.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\__hresults.cs">
+      <Link>System/__hresults.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\AggregateException.cs">
+      <Link>System/AggregateException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\arraysegment.cs">
+      <Link>System/arraysegment.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\bitconverter.cs">
+      <Link>System/bitconverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\boolean.cs">
+      <Link>System/boolean.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\byte.cs">
+      <Link>System/byte.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\char.cs">
+      <Link>System/char.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\arraylist.cs">
+      <Link>System.Collections/arraylist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\bitarray.cs">
+      <Link>System.Collections/bitarray.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\caseinsensitivecomparer.cs">
+      <Link>System.Collections/caseinsensitivecomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\caseinsensitivehashcodeprovider.cs">
+      <Link>System.Collections/caseinsensitivehashcodeprovider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\collectionbase.cs">
+      <Link>System.Collections/collectionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\comparer.cs">
+      <Link>System.Collections/comparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\compatiblecomparer.cs">
+      <Link>System.Collections/compatiblecomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\ConcurrentDictionary.cs">
+      <Link>System.Collections.Concurrent/ConcurrentDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\ConcurrentQueue.cs">
+      <Link>System.Collections.Concurrent/ConcurrentQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\ConcurrentStack.cs">
+      <Link>System.Collections.Concurrent/ConcurrentStack.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\IProducerConsumerCollection.cs">
+      <Link>System.Collections.Concurrent/IProducerConsumerCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\OrderablePartitioner.cs">
+      <Link>System.Collections.Concurrent/OrderablePartitioner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\Partitioner.cs">
+      <Link>System.Collections.Concurrent/Partitioner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\Concurrent\PartitionerStatic.cs">
+      <Link>System.Collections.Concurrent/PartitionerStatic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\dictionarybase.cs">
+      <Link>System.Collections/dictionarybase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\dictionaryentry.cs">
+      <Link>System.Collections/dictionaryentry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\emptyreadonlydictionaryinternal.cs">
+      <Link>System.Collections/emptyreadonlydictionaryinternal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\debugview.cs">
+      <Link>System.Collections.Generic/debugview.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\dictionary.cs">
+      <Link>System.Collections.Generic/dictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\icollection.cs">
+      <Link>System.Collections.Generic/icollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\icomparer.cs">
+      <Link>System.Collections.Generic/icomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\idictionary.cs">
+      <Link>System.Collections.Generic/idictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ienumerable.cs">
+      <Link>System.Collections.Generic/ienumerable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ienumerator.cs">
+      <Link>System.Collections.Generic/ienumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\iequalitycomparer.cs">
+      <Link>System.Collections.Generic/iequalitycomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ilist.cs">
+      <Link>System.Collections.Generic/ilist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlycollection.cs">
+      <Link>System.Collections.Generic/ireadonlycollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlydictionary.cs">
+      <Link>System.Collections.Generic/ireadonlydictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\ireadonlylist.cs">
+      <Link>System.Collections.Generic/ireadonlylist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\keynotfoundexception.cs">
+      <Link>System.Collections.Generic/keynotfoundexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\keyvaluepair.cs">
+      <Link>System.Collections.Generic/keyvaluepair.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\generic\list.cs">
+      <Link>System.Collections.Generic/list.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\hashtable.cs">
+      <Link>System.Collections/hashtable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\icollection.cs">
+      <Link>System.Collections/icollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\icomparer.cs">
+      <Link>System.Collections/icomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\idictionary.cs">
+      <Link>System.Collections/idictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\idictionaryenumerator.cs">
+      <Link>System.Collections/idictionaryenumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ienumerable.cs">
+      <Link>System.Collections/ienumerable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ienumerator.cs">
+      <Link>System.Collections/ienumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\iequalitycomparer.cs">
+      <Link>System.Collections/iequalitycomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ihashcodeprovider.cs">
+      <Link>System.Collections/ihashcodeprovider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\ilist.cs">
+      <Link>System.Collections/ilist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\istructuralcomparable.cs">
+      <Link>System.Collections/istructuralcomparable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\istructuralequatable.cs">
+      <Link>System.Collections/istructuralequatable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\keyvaluepairs.cs">
+      <Link>System.Collections/keyvaluepairs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\listdictionaryinternal.cs">
+      <Link>System.Collections/listdictionaryinternal.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\collection.cs" />
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\keyedcollection.cs" />
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\readonlycollection.cs" />
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\objectmodel\readonlydictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\queue.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\readonlycollectionbase.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\sortedlist.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\stack.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\structuralcomparisons.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\convert.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetime.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetimekind.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetimeoffset.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\dayofweek.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\dbnull.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\decimal.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assert.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assertfilter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assertfilters.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\queue.cs">
+      <Link>System.Collections/queue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\readonlycollectionbase.cs">
+      <Link>System.Collections/readonlycollectionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\sortedlist.cs">
+      <Link>System.Collections/sortedlist.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\stack.cs">
+      <Link>System.Collections/stack.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\collections\structuralcomparisons.cs">
+      <Link>System.Collections/structuralcomparisons.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\convert.cs">
+      <Link>System/convert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetime.cs">
+      <Link>System/datetime.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetimekind.cs">
+      <Link>System/datetimekind.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\datetimeoffset.cs">
+      <Link>System/datetimeoffset.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\dayofweek.cs">
+      <Link>System/dayofweek.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\dbnull.cs">
+      <Link>System/dbnull.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\decimal.cs">
+      <Link>System/decimal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assert.cs">
+      <Link>System.Diagnostics/assert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assertfilter.cs">
+      <Link>System.Diagnostics/assertfilter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\assertfilters.cs">
+      <Link>System.Diagnostics/assertfilters.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\contracts\contracts.cs" />
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\diagnostics\contracts\contractsbcl.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\empty.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\bidicategory.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\calendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\calendardata.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\charunicodeinfo.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\chineselunisolarcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformat.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformatinfo.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformatinfoscanner.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeparse.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\daylighttime.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\eastasianlunisolarcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\globalizationassembly.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\gregoriancalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\gregoriancalendarhelper.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hebrewcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hebrewnumber.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hijricalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\japanesecalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\japaneselunisolarcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\juliancalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\koreancalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\koreanlunisolarcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\Persiancalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\taiwancalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\taiwanlunisolarcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\thaibuddhistcalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\timespanformat.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\timespanparse.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\umalquracalendar.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\guid.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int16.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int32.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int64.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\__error.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\bufferedstream.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\memorystream.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stream.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\streamreader.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\streamwriter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stringreader.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stringwriter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\textreader.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\textwriter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\Lazy.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\memberaccessexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\methodaccessexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\midpointrounding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingfieldexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingmemberexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingmethodexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\number.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\progress.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\random.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\resid.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\accessedthroughpropertyattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\assemblyattributesgohere.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\assemblysettingattributes.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\AsyncMethodBuilder.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\AsyncStateMachineAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\CallerFilePathAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\CallerLineNumberAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\CallerMemberNameAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\callingconvention.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilationrelaxations.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilergeneratedattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilerglobalscopeattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilermarshaloverride.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\customconstantattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\datetimeconstantattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\decimalconstantattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\decoratednameattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\discardableattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\extensionattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\fixedaddressvaluetypeattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\fixedbufferattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\hascopysemanticsattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\IAsyncStateMachine.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\idispatchconstantattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\indexernameattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\INotifyCompletion.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\internalsvisibletoattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isboxed.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isbyvalue.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isconst.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iscopyconstructed.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isexplicitlydereferenced.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isimplicitlydereferenced.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isjitintrinsic.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\islong.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\ispinned.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\issignunspecifiedbyte.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isudtreturn.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isvolatile.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\IteratorStateMachineAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iunknownconstantattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\methodimplattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\nativecppclassattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\ReferenceAssemblyAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\requiredattributeattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\RuntimeCompatibilityAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\RuntimeWrappedException.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\scopelessenumattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\specialnameattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\StateMachineAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\suppressildasmattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\suppressmergecheckattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\TaskAwaiter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\typedependencyattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\TypeForwardedFromAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\TypeForwardedToAttribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\unsafevaluetypeattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\YieldAwaitable.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\versioning\binarycompatibility.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\versioning\targetframeworkid.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\sbyte.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\stringcomparer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\stringfreezingattribute.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\asciiencoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\codepageencoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoder.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderbestfitfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderexceptionfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decodernls.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderreplacementfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoder.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderbestfitfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderexceptionfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encodernls.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderreplacementfallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encodinginfo.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\mlangcodepageencoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\stringbuildercache.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\surrogateencoder.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\unicodeencoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf32encoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf7encoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf8encoding.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\abandonedmutexexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\apartmentstate.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\autoresetevent.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CancellationToken.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CancellationTokenRegistration.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CancellationTokenSource.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CountdownEvent.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\eventresetmode.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\LazyInitializer.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\manualresetevent.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\ManualResetEventSlim.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\parameterizedthreadstart.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\SemaphoreSlim.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\sendorpostcallback.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\SpinLock.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\SpinWait.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\synchronizationlockexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\BeginEndAwaitableAdapter.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ConcurrentExclusiveSchedulerPair.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\Future.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\FutureFactory.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\Parallel.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ParallelLoopState.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ParallelRangeManager.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ProducerConsumerQueues.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\Task.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskCanceledException.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskCompletionSource.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskContinuation.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskExceptionHolder.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskFactory.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskScheduler.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskSchedulerException.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskToApm.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ThreadPoolTaskScheduler.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadpriority.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstart.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstartexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstate.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstateexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\timeout.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\waithandlecannotbeopenedexception.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\throwhelper.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\timespan.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\tuple.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint16.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint32.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint64.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\unityserializationholder.cs" />
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\version.cs" />
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\empty.cs">
+      <Link>System/empty.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\bidicategory.cs">
+      <Link>System.Globalization/bidicategory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\calendar.cs">
+      <Link>System.Globalization/calendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\calendardata.cs">
+      <Link>System.Globalization/calendardata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\charunicodeinfo.cs">
+      <Link>System.Globalization/charunicodeinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\chineselunisolarcalendar.cs">
+      <Link>System.Globalization/chineselunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformat.cs">
+      <Link>System.Globalization/datetimeformat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformatinfo.cs">
+      <Link>System.Globalization/datetimeformatinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeformatinfoscanner.cs">
+      <Link>System.Globalization/datetimeformatinfoscanner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\datetimeparse.cs">
+      <Link>System.Globalization/datetimeparse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\daylighttime.cs">
+      <Link>System.Globalization/daylighttime.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\eastasianlunisolarcalendar.cs">
+      <Link>System.Globalization/eastasianlunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\globalizationassembly.cs">
+      <Link>System.Globalization/globalizationassembly.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\gregoriancalendar.cs">
+      <Link>System.Globalization/gregoriancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\gregoriancalendarhelper.cs">
+      <Link>System.Globalization/gregoriancalendarhelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hebrewcalendar.cs">
+      <Link>System.Globalization/hebrewcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hebrewnumber.cs">
+      <Link>System.Globalization/hebrewnumber.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\hijricalendar.cs">
+      <Link>System.Globalization/hijricalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\japanesecalendar.cs">
+      <Link>System.Globalization/japanesecalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\japaneselunisolarcalendar.cs">
+      <Link>System.Globalization/japaneselunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\juliancalendar.cs">
+      <Link>System.Globalization/juliancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\koreancalendar.cs">
+      <Link>System.Globalization/koreancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\koreanlunisolarcalendar.cs">
+      <Link>System.Globalization/koreanlunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\Persiancalendar.cs">
+      <Link>System.Globalization/Persiancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\taiwancalendar.cs">
+      <Link>System.Globalization/taiwancalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\taiwanlunisolarcalendar.cs">
+      <Link>System.Globalization/taiwanlunisolarcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\thaibuddhistcalendar.cs">
+      <Link>System.Globalization/thaibuddhistcalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\timespanformat.cs">
+      <Link>System.Globalization/timespanformat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\timespanparse.cs">
+      <Link>System.Globalization/timespanparse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\globalization\umalquracalendar.cs">
+      <Link>System.Globalization/umalquracalendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\guid.cs">
+      <Link>System/guid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int16.cs">
+      <Link>System/int16.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int32.cs">
+      <Link>System/int32.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\int64.cs">
+      <Link>System/int64.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\__error.cs">
+      <Link>System.IO/__error.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\bufferedstream.cs">
+      <Link>System.IO/bufferedstream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\memorystream.cs">
+      <Link>System.IO/memorystream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stream.cs">
+      <Link>System.IO/stream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\streamreader.cs">
+      <Link>System.IO/streamreader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\streamwriter.cs">
+      <Link>System.IO/streamwriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stringreader.cs">
+      <Link>System.IO/stringreader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\stringwriter.cs">
+      <Link>System.IO/stringwriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\textreader.cs">
+      <Link>System.IO/textreader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\io\textwriter.cs">
+      <Link>System.IO/textwriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\Lazy.cs">
+      <Link>System/Lazy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\memberaccessexception.cs">
+      <Link>System/memberaccessexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\methodaccessexception.cs">
+      <Link>System/methodaccessexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\midpointrounding.cs">
+      <Link>System/midpointrounding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingfieldexception.cs">
+      <Link>System/missingfieldexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingmemberexception.cs">
+      <Link>System/missingmemberexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\missingmethodexception.cs">
+      <Link>System/missingmethodexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\number.cs">
+      <Link>System/number.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\progress.cs">
+      <Link>System/progress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\random.cs">
+      <Link>System/random.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\resid.cs">
+      <Link>System/resid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\accessedthroughpropertyattribute.cs">
+      <Link>System.Runtime.CompilerServices/accessedthroughpropertyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\assemblyattributesgohere.cs">
+      <Link>System.Runtime.CompilerServices/assemblyattributesgohere.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\assemblysettingattributes.cs">
+      <Link>System.Runtime.CompilerServices/assemblysettingattributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\AsyncMethodBuilder.cs">
+      <Link>System.Runtime.CompilerServices/AsyncMethodBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\AsyncStateMachineAttribute.cs">
+      <Link>System.Runtime.CompilerServices/AsyncStateMachineAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\CallerFilePathAttribute.cs">
+      <Link>System.Runtime.CompilerServices/CallerFilePathAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\CallerLineNumberAttribute.cs">
+      <Link>System.Runtime.CompilerServices/CallerLineNumberAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\CallerMemberNameAttribute.cs">
+      <Link>System.Runtime.CompilerServices/CallerMemberNameAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\callingconvention.cs">
+      <Link>System.Runtime.CompilerServices/callingconvention.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilationrelaxations.cs">
+      <Link>System.Runtime.CompilerServices/compilationrelaxations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilergeneratedattribute.cs">
+      <Link>System.Runtime.CompilerServices/compilergeneratedattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilerglobalscopeattribute.cs">
+      <Link>System.Runtime.CompilerServices/compilerglobalscopeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\compilermarshaloverride.cs">
+      <Link>System.Runtime.CompilerServices/compilermarshaloverride.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\customconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/customconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\datetimeconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/datetimeconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\decimalconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/decimalconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\decoratednameattribute.cs">
+      <Link>System.Runtime.CompilerServices/decoratednameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\discardableattribute.cs">
+      <Link>System.Runtime.CompilerServices/discardableattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\extensionattribute.cs">
+      <Link>System.Runtime.CompilerServices/extensionattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\fixedaddressvaluetypeattribute.cs">
+      <Link>System.Runtime.CompilerServices/fixedaddressvaluetypeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\fixedbufferattribute.cs">
+      <Link>System.Runtime.CompilerServices/fixedbufferattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\hascopysemanticsattribute.cs">
+      <Link>System.Runtime.CompilerServices/hascopysemanticsattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\IAsyncStateMachine.cs">
+      <Link>System.Runtime.CompilerServices/IAsyncStateMachine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\idispatchconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/idispatchconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\indexernameattribute.cs">
+      <Link>System.Runtime.CompilerServices/indexernameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\INotifyCompletion.cs">
+      <Link>System.Runtime.CompilerServices/INotifyCompletion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\internalsvisibletoattribute.cs">
+      <Link>System.Runtime.CompilerServices/internalsvisibletoattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isboxed.cs">
+      <Link>System.Runtime.CompilerServices/isboxed.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isbyvalue.cs">
+      <Link>System.Runtime.CompilerServices/isbyvalue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isconst.cs">
+      <Link>System.Runtime.CompilerServices/isconst.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iscopyconstructed.cs">
+      <Link>System.Runtime.CompilerServices/iscopyconstructed.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isexplicitlydereferenced.cs">
+      <Link>System.Runtime.CompilerServices/isexplicitlydereferenced.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isimplicitlydereferenced.cs">
+      <Link>System.Runtime.CompilerServices/isimplicitlydereferenced.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isjitintrinsic.cs">
+      <Link>System.Runtime.CompilerServices/isjitintrinsic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\islong.cs">
+      <Link>System.Runtime.CompilerServices/islong.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\ispinned.cs">
+      <Link>System.Runtime.CompilerServices/ispinned.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\issignunspecifiedbyte.cs">
+      <Link>System.Runtime.CompilerServices/issignunspecifiedbyte.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isudtreturn.cs">
+      <Link>System.Runtime.CompilerServices/isudtreturn.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\isvolatile.cs">
+      <Link>System.Runtime.CompilerServices/isvolatile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\IteratorStateMachineAttribute.cs">
+      <Link>System.Runtime.CompilerServices/IteratorStateMachineAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\iunknownconstantattribute.cs">
+      <Link>System.Runtime.CompilerServices/iunknownconstantattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\methodimplattribute.cs">
+      <Link>System.Runtime.CompilerServices/methodimplattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\nativecppclassattribute.cs">
+      <Link>System.Runtime.CompilerServices/nativecppclassattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\ReferenceAssemblyAttribute.cs">
+      <Link>System.Runtime.CompilerServices/ReferenceAssemblyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\requiredattributeattribute.cs">
+      <Link>System.Runtime.CompilerServices/requiredattributeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\RuntimeCompatibilityAttribute.cs">
+      <Link>System.Runtime.CompilerServices/RuntimeCompatibilityAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\RuntimeWrappedException.cs">
+      <Link>System.Runtime.CompilerServices/RuntimeWrappedException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\scopelessenumattribute.cs">
+      <Link>System.Runtime.CompilerServices/scopelessenumattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\specialnameattribute.cs">
+      <Link>System.Runtime.CompilerServices/specialnameattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\StateMachineAttribute.cs">
+      <Link>System.Runtime.CompilerServices/StateMachineAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\suppressildasmattribute.cs">
+      <Link>System.Runtime.CompilerServices/suppressildasmattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\suppressmergecheckattribute.cs">
+      <Link>System.Runtime.CompilerServices/suppressmergecheckattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\TaskAwaiter.cs">
+      <Link>System.Runtime.CompilerServices/TaskAwaiter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\typedependencyattribute.cs">
+      <Link>System.Runtime.CompilerServices/typedependencyattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\TypeForwardedFromAttribute.cs">
+      <Link>System.Runtime.CompilerServices/TypeForwardedFromAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\TypeForwardedToAttribute.cs">
+      <Link>System.Runtime.CompilerServices/TypeForwardedToAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\unsafevaluetypeattribute.cs">
+      <Link>System.Runtime.CompilerServices/unsafevaluetypeattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\compilerservices\YieldAwaitable.cs">
+      <Link>System.Runtime.CompilerServices/YieldAwaitable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\versioning\binarycompatibility.cs">
+      <Link>System.Runtime.Versioning/binarycompatibility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\runtime\versioning\targetframeworkid.cs">
+      <Link>System.Runtime.Versioning/targetframeworkid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\sbyte.cs">
+      <Link>System/sbyte.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\stringcomparer.cs">
+      <Link>System/stringcomparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\stringfreezingattribute.cs">
+      <Link>System/stringfreezingattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\asciiencoding.cs">
+      <Link>System.Text/asciiencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\codepageencoding.cs">
+      <Link>System.Text/codepageencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoder.cs">
+      <Link>System.Text/decoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderbestfitfallback.cs">
+      <Link>System.Text/decoderbestfitfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderexceptionfallback.cs">
+      <Link>System.Text/decoderexceptionfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderfallback.cs">
+      <Link>System.Text/decoderfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decodernls.cs">
+      <Link>System.Text/decodernls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\decoderreplacementfallback.cs">
+      <Link>System.Text/decoderreplacementfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoder.cs">
+      <Link>System.Text/encoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderbestfitfallback.cs">
+      <Link>System.Text/encoderbestfitfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderexceptionfallback.cs">
+      <Link>System.Text/encoderexceptionfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderfallback.cs">
+      <Link>System.Text/encoderfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encodernls.cs">
+      <Link>System.Text/encodernls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoderreplacementfallback.cs">
+      <Link>System.Text/encoderreplacementfallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encoding.cs">
+      <Link>System.Text/encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\encodinginfo.cs">
+      <Link>System.Text/encodinginfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\mlangcodepageencoding.cs">
+      <Link>System.Text/mlangcodepageencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\stringbuildercache.cs">
+      <Link>System.Text/stringbuildercache.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\surrogateencoder.cs">
+      <Link>System.Text/surrogateencoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\unicodeencoding.cs">
+      <Link>System.Text/unicodeencoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf32encoding.cs">
+      <Link>System.Text/utf32encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf7encoding.cs">
+      <Link>System.Text/utf7encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\text\utf8encoding.cs">
+      <Link>System.Text/utf8encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\abandonedmutexexception.cs">
+      <Link>System.Threading/abandonedmutexexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\apartmentstate.cs">
+      <Link>System.Threading/apartmentstate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\autoresetevent.cs">
+      <Link>System.Threading/autoresetevent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CancellationToken.cs">
+      <Link>System.Threading/CancellationToken.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CancellationTokenRegistration.cs">
+      <Link>System.Threading/CancellationTokenRegistration.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CancellationTokenSource.cs">
+      <Link>System.Threading/CancellationTokenSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\CountdownEvent.cs">
+      <Link>System.Threading/CountdownEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\eventresetmode.cs">
+      <Link>System.Threading/eventresetmode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\LazyInitializer.cs">
+      <Link>System.Threading/LazyInitializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\manualresetevent.cs">
+      <Link>System.Threading/manualresetevent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\ManualResetEventSlim.cs">
+      <Link>System.Threading/ManualResetEventSlim.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\parameterizedthreadstart.cs">
+      <Link>System.Threading/parameterizedthreadstart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\SemaphoreSlim.cs">
+      <Link>System.Threading/SemaphoreSlim.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\sendorpostcallback.cs">
+      <Link>System.Threading/sendorpostcallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\SpinLock.cs">
+      <Link>System.Threading/SpinLock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\SpinWait.cs">
+      <Link>System.Threading/SpinWait.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\synchronizationlockexception.cs">
+      <Link>System.Threading/synchronizationlockexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\BeginEndAwaitableAdapter.cs">
+      <Link>System.Threading.Tasks/BeginEndAwaitableAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ConcurrentExclusiveSchedulerPair.cs">
+      <Link>System.Threading.Tasks/ConcurrentExclusiveSchedulerPair.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\Future.cs">
+      <Link>System.Threading.Tasks/Future.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\FutureFactory.cs">
+      <Link>System.Threading.Tasks/FutureFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\Parallel.cs">
+      <Link>System.Threading.Tasks/Parallel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ParallelLoopState.cs">
+      <Link>System.Threading.Tasks/ParallelLoopState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ParallelRangeManager.cs">
+      <Link>System.Threading.Tasks/ParallelRangeManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ProducerConsumerQueues.cs">
+      <Link>System.Threading.Tasks/ProducerConsumerQueues.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\Task.cs">
+      <Link>System.Threading.Tasks/Task.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskCanceledException.cs">
+      <Link>System.Threading.Tasks/TaskCanceledException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskCompletionSource.cs">
+      <Link>System.Threading.Tasks/TaskCompletionSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskContinuation.cs">
+      <Link>System.Threading.Tasks/TaskContinuation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskExceptionHolder.cs">
+      <Link>System.Threading.Tasks/TaskExceptionHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskFactory.cs">
+      <Link>System.Threading.Tasks/TaskFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskScheduler.cs">
+      <Link>System.Threading.Tasks/TaskScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskSchedulerException.cs">
+      <Link>System.Threading.Tasks/TaskSchedulerException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\TaskToApm.cs">
+      <Link>System.Threading.Tasks/TaskToApm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\Tasks\ThreadPoolTaskScheduler.cs">
+      <Link>System.Threading.Tasks/ThreadPoolTaskScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadpriority.cs">
+      <Link>System.Threading/threadpriority.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstart.cs">
+      <Link>System.Threading/threadstart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstartexception.cs">
+      <Link>System.Threading/threadstartexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstate.cs">
+      <Link>System.Threading/threadstate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\threadstateexception.cs">
+      <Link>System.Threading/threadstateexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\timeout.cs">
+      <Link>System.Threading/timeout.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\threading\waithandlecannotbeopenedexception.cs">
+      <Link>System.Threading/waithandlecannotbeopenedexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\throwhelper.cs">
+      <Link>System/throwhelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\timespan.cs">
+      <Link>System/timespan.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\tuple.cs">
+      <Link>System/tuple.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint16.cs">
+      <Link>System/uint16.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint32.cs">
+      <Link>System/uint32.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\uint64.cs">
+      <Link>System/uint64.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\unityserializationholder.cs">
+      <Link>System/unityserializationholder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\version.cs">
+      <Link>System/version.cs</Link>
+    </Compile>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
     <Compile Include="..\Mono.Parallel\Mono.Threading\AtomicBoolean.cs" />
-    <Compile Include="..\Mono.Security\Mono.Math.Prime.Generator\NextPrimeFinder.cs" />
-    <Compile Include="..\Mono.Security\Mono.Math.Prime.Generator\PrimeGeneratorBase.cs" />
-    <Compile Include="..\Mono.Security\Mono.Math.Prime.Generator\SequentialSearchPrimeGeneratorBase.cs" />
+    <Compile Include="..\Mono.Security\Mono.Math.Prime.Generator\NextPrimeFinder.cs">
+      <Link>NextPrimeFinder.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Math.Prime.Generator\PrimeGeneratorBase.cs">
+      <Link>PrimeGeneratorBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Math.Prime.Generator\SequentialSearchPrimeGeneratorBase.cs">
+      <Link>SequentialSearchPrimeGeneratorBase.cs</Link>
+    </Compile>
     <Compile Include="..\Mono.Security\Mono.Math.Prime\ConfidenceFactor.cs" />
     <Compile Include="..\Mono.Security\Mono.Math.Prime\PrimalityTests.cs" />
-    <Compile Include="..\Mono.Security\Mono.Math\BigInteger.cs" />
+    <Compile Include="..\Mono.Security\Mono.Math\BigInteger.cs">
+      <Link>BigInteger.cs</Link>
+    </Compile>
     <Compile Include="..\Mono.Security\Mono.Security.Authenticode\AuthenticodeBase.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.Authenticode\AuthenticodeDeformatter.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\ARC4Managed.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoConvert.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoTools.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\KeyPairPersistence.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD2.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD2Managed.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD4.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD4Managed.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\PKCS1.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\PKCS8.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\RC4.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\RSAManaged.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\SymmetricTransform.cs" />
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\ARC4Managed.cs">
+      <Link>Mono.Security.Cryptography/ARC4Managed.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoConvert.cs">
+      <Link>Mono.Security.Cryptography/CryptoConvert.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoTools.cs">
+      <Link>Mono.Security.Cryptography/CryptoTools.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\KeyPairPersistence.cs">
+      <Link>Mono.Security.Cryptography/KeyPairPersistence.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD2.cs">
+      <Link>Mono.Security.Cryptography/MD2.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD2Managed.cs">
+      <Link>Mono.Security.Cryptography/MD2Managed.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD4.cs">
+      <Link>Mono.Security.Cryptography/MD4.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\MD4Managed.cs">
+      <Link>Mono.Security.Cryptography/MD4Managed.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\PKCS1.cs">
+      <Link>Mono.Security.Cryptography/PKCS1.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\PKCS8.cs">
+      <Link>Mono.Security.Cryptography/PKCS8.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\RC4.cs">
+      <Link>Mono.Security.Cryptography/RC4.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\RSAManaged.cs">
+      <Link>Mono.Security.Cryptography/RSAManaged.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\SymmetricTransform.cs">
+      <Link>Mono.Security.Cryptography/SymmetricTransform.cs</Link>
+    </Compile>
     <Compile Include="..\Mono.Security\Mono.Security.X509.Extensions\BasicConstraintsExtension.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509.Extensions\KeyUsageExtension.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509.Extensions\SubjectKeyIdentifierExtension.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\PKCS12.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X501Name.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Certificate.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509CertificateCollection.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Chain.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509ChainStatusFlags.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509CRL.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Extension.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Extensions.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Store.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509StoreManager.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Stores.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X520Attributes.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security\ASN1.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security\ASN1Convert.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security\BitConverterLE.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security\PKCS7.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security\StrongName.cs" />
-    <Compile Include="..\System\System.Threading\SemaphoreFullException.cs" />
+    <Compile Include="..\Mono.Security\Mono.Security.X509\PKCS12.cs">
+      <Link>PKCS12.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X501Name.cs">
+      <Link>X501Name.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Certificate.cs">
+      <Link>X509Certificate.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509CertificateCollection.cs">
+      <Link>X509CertificateCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Chain.cs">
+      <Link>X509Chain.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509ChainStatusFlags.cs">
+      <Link>X509ChainStatusFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509CRL.cs">
+      <Link>X509CRL.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Extension.cs">
+      <Link>X509Extension.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Extensions.cs">
+      <Link>X509Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Store.cs">
+      <Link>X509Store.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509StoreManager.cs">
+      <Link>X509StoreManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Stores.cs">
+      <Link>X509Stores.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X520Attributes.cs">
+      <Link>X520Attributes.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security\ASN1.cs">
+      <Link>Mono.Security/ASN1.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security\ASN1Convert.cs">
+      <Link>Mono.Security/ASN1Convert.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security\BitConverterLE.cs">
+      <Link>Mono.Security/BitConverterLE.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security\PKCS7.cs">
+      <Link>Mono.Security/PKCS7.cs</Link>
+    </Compile>
+    <Compile Include="..\Mono.Security\Mono.Security\StrongName.cs">
+      <Link>Mono.Security/StrongName.cs</Link>
+    </Compile>
+    <Compile Include="..\System\System.Threading\SemaphoreFullException.cs">
+      <Link>System.Threading/SemaphoreFullException.cs</Link>
+    </Compile>
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="Microsoft.Win32.SafeHandles\CriticalHandleMinusOneIsInvalid.cs" />
     <Compile Include="Microsoft.Win32.SafeHandles\CriticalHandleZeroOrMinusOneIsInvalid.cs" />
@@ -1340,7 +1930,7 @@
     <Compile Include="System.Security.Permissions\EnvironmentPermission.cs" />
     <Compile Include="System.Security.Permissions\EnvironmentPermissionAccess.cs" />
     <Compile Include="System.Security.Permissions\EnvironmentPermissionAttribute.cs" />
-    <Compile Include="System.Security.Permissions\FileDialogPermission.cs" />
+    <Compile Include="System.Security.Permissions\FileDialogPermission.cs " />
     <Compile Include="System.Security.Permissions\FileDialogPermissionAccess.cs" />
     <Compile Include="System.Security.Permissions\FileDialogPermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\FileIOPermission.cs" />
@@ -1353,7 +1943,7 @@
     <Compile Include="System.Security.Permissions\HostProtectionResource.cs" />
     <Compile Include="System.Security.Permissions\IBuiltInPermission.cs" />
     <Compile Include="System.Security.Permissions\IsolatedStorageContainment.cs" />
-    <Compile Include="System.Security.Permissions\IsolatedStorageFilePermission.cs" />
+    <Compile Include="System.Security.Permissions\IsolatedStorageFilePermission.cs " />
     <Compile Include="System.Security.Permissions\IsolatedStorageFilePermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\IsolatedStoragePermission.cs" />
     <Compile Include="System.Security.Permissions\IsolatedStoragePermissionAttribute.cs" />
@@ -1366,10 +1956,10 @@
     <Compile Include="System.Security.Permissions\KeyContainerPermissionFlags.cs" />
     <Compile Include="System.Security.Permissions\PermissionSetAttribute.cs" />
     <Compile Include="System.Security.Permissions\PermissionState.cs" />
-    <Compile Include="System.Security.Permissions\PrincipalPermission.cs" />
+    <Compile Include="System.Security.Permissions\PrincipalPermission.cs " />
     <Compile Include="System.Security.Permissions\PrincipalPermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\PublisherIdentityPermission.cs" />
-    <Compile Include="System.Security.Permissions\PublisherIdentityPermissionAttribute.cs" />
+    <Compile Include="System.Security.Permissions\PublisherIdentityPermissionAttribute.cs " />
     <Compile Include="System.Security.Permissions\ReflectionPermission.cs" />
     <Compile Include="System.Security.Permissions\ReflectionPermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\ReflectionPermissionFlag.cs" />
@@ -1381,12 +1971,12 @@
     <Compile Include="System.Security.Permissions\SecurityPermission.cs" />
     <Compile Include="System.Security.Permissions\SecurityPermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\SecurityPermissionFlag.cs" />
-    <Compile Include="System.Security.Permissions\SiteIdentityPermission.cs" />
+    <Compile Include="System.Security.Permissions\SiteIdentityPermission.cs " />
     <Compile Include="System.Security.Permissions\SiteIdentityPermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\StrongNameIdentityPermission.cs" />
     <Compile Include="System.Security.Permissions\StrongNamePermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\StrongNamePublicKeyBlob.cs" />
-    <Compile Include="System.Security.Permissions\UIPermission.cs" />
+    <Compile Include="System.Security.Permissions\UIPermission.cs " />
     <Compile Include="System.Security.Permissions\UIPermissionAttribute.cs" />
     <Compile Include="System.Security.Permissions\UIPermissionClipboard.cs" />
     <Compile Include="System.Security.Permissions\UIPermissionWindow.cs" />

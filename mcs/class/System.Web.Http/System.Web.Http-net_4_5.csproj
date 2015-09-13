@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -19,7 +18,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <SignAssembly>true</SignAssembly>
     <DelaySign>true</DelaySign>
   </PropertyGroup>
@@ -51,21 +50,51 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\..\external\aspnetwebstack\src\AptcaCommonAssemblyInfo.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\CommonWebApiResources.Designer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\DictionaryExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\Error.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\HttpMethodHelper.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\PrefixContainer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\TaskHelpers.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\TaskHelpersExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\CommonAssemblyInfo.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\RS.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\AcceptVerbsAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ActionNameAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\AllowAnonymousAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ApiController.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\AuthorizeAttribute.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\AptcaCommonAssemblyInfo.cs">
+      <Link>AptcaCommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\CommonWebApiResources.Designer.cs">
+      <Link>CommonWebApiResources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\DictionaryExtensions.cs">
+      <Link>DictionaryExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\Error.cs">
+      <Link>Error.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\HttpMethodHelper.cs">
+      <Link>HttpMethodHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\PrefixContainer.cs">
+      <Link>PrefixContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\TaskHelpers.cs">
+      <Link>TaskHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\Common\TaskHelpersExtensions.cs">
+      <Link>TaskHelpersExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\RS.cs">
+      <Link>RS.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\AcceptVerbsAttribute.cs">
+      <Link>AcceptVerbsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ActionNameAttribute.cs">
+      <Link>ActionNameAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\AllowAnonymousAttribute.cs">
+      <Link>AllowAnonymousAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ApiController.cs">
+      <Link>ApiController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\AuthorizeAttribute.cs">
+      <Link>AuthorizeAttribute.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Controllers\ApiControllerActionInvoker.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Controllers\ApiControllerActionSelector.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Controllers\HttpActionBinding.cs" />
@@ -92,24 +121,60 @@
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dependencies\EmptyResolver.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dependencies\IDependencyResolver.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dependencies\IDependencyScope.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiDescription.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiExplorer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiExplorerSettingsAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiParameterDescription.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiParameterSource.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\IApiExplorer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\IDocumentationProvider.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultAssembliesResolver.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultHttpControllerActivator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultHttpControllerSelector.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultHttpControllerTypeResolver.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\ExceptionSurrogate.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\HttpControllerDispatcher.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\HttpControllerTypeCache.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IAssembliesResolver.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IHttpControllerActivator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IHttpControllerSelector.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IHttpControllerTypeResolver.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiDescription.cs">
+      <Link>ApiDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiExplorer.cs">
+      <Link>ApiExplorer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiExplorerSettingsAttribute.cs">
+      <Link>ApiExplorerSettingsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiParameterDescription.cs">
+      <Link>ApiParameterDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\ApiParameterSource.cs">
+      <Link>ApiParameterSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\IApiExplorer.cs">
+      <Link>IApiExplorer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Description\IDocumentationProvider.cs">
+      <Link>IDocumentationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultAssembliesResolver.cs">
+      <Link>DefaultAssembliesResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultHttpControllerActivator.cs">
+      <Link>DefaultHttpControllerActivator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultHttpControllerSelector.cs">
+      <Link>DefaultHttpControllerSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\DefaultHttpControllerTypeResolver.cs">
+      <Link>DefaultHttpControllerTypeResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\ExceptionSurrogate.cs">
+      <Link>ExceptionSurrogate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\HttpControllerDispatcher.cs">
+      <Link>HttpControllerDispatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\HttpControllerTypeCache.cs">
+      <Link>HttpControllerTypeCache.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IAssembliesResolver.cs">
+      <Link>IAssembliesResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IHttpControllerActivator.cs">
+      <Link>IHttpControllerActivator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IHttpControllerSelector.cs">
+      <Link>IHttpControllerSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Dispatcher\IHttpControllerTypeResolver.cs">
+      <Link>IHttpControllerTypeResolver.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Filters\ActionDescriptorFilterProvider.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Filters\ActionFilterAttribute.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Filters\AuthorizationFilterAttribute.cs" />
@@ -126,40 +191,104 @@
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Filters\IExceptionFilter.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Filters\IFilter.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Filters\IFilterProvider.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\FromBodyAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\FromUriAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\GlobalSuppressions.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\FromBodyAttribute.cs">
+      <Link>FromBodyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\FromUriAttribute.cs">
+      <Link>FromUriAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Hosting\HttpPipelineFactory.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Hosting\HttpPropertyKeys.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpBindNeverAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpBindRequiredAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpConfiguration.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpDeleteAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpGetAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpHeadAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpOptionsAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpPatchAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpPostAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpPutAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpRequestMessageExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpResponseException.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpResponseMessageExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpRouteCollection.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpRouteCollectionExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpServer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\IncludeErrorDetailPolicy.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\CollectionModelBinderUtil.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\DataTypeUtil.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\HttpActionContextExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\HttpParameterBindingExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\MemberInfoExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\ParameterInfoExtensions.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\TypeActivator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\TypeDescriptorHelper.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\TypeHelper.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\UriQueryUtility.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\ModelMetadata.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\ModelMetadataProvider.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpBindNeverAttribute.cs">
+      <Link>HttpBindNeverAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpBindRequiredAttribute.cs">
+      <Link>HttpBindRequiredAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpConfiguration.cs">
+      <Link>HttpConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpDeleteAttribute.cs">
+      <Link>HttpDeleteAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpGetAttribute.cs">
+      <Link>HttpGetAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpHeadAttribute.cs">
+      <Link>HttpHeadAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpOptionsAttribute.cs">
+      <Link>HttpOptionsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpPatchAttribute.cs">
+      <Link>HttpPatchAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpPostAttribute.cs">
+      <Link>HttpPostAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpPutAttribute.cs">
+      <Link>HttpPutAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpRequestMessageExtensions.cs">
+      <Link>HttpRequestMessageExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpResponseException.cs">
+      <Link>HttpResponseException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpResponseMessageExtensions.cs">
+      <Link>HttpResponseMessageExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpRouteCollection.cs">
+      <Link>HttpRouteCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpRouteCollectionExtensions.cs">
+      <Link>HttpRouteCollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\HttpServer.cs">
+      <Link>HttpServer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\IncludeErrorDetailPolicy.cs">
+      <Link>IncludeErrorDetailPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\CollectionModelBinderUtil.cs">
+      <Link>CollectionModelBinderUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\DataTypeUtil.cs">
+      <Link>DataTypeUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\HttpActionContextExtensions.cs">
+      <Link>HttpActionContextExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\HttpParameterBindingExtensions.cs">
+      <Link>HttpParameterBindingExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\MemberInfoExtensions.cs">
+      <Link>MemberInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\ParameterInfoExtensions.cs">
+      <Link>ParameterInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\TypeActivator.cs">
+      <Link>TypeActivator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\TypeDescriptorHelper.cs">
+      <Link>TypeDescriptorHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\TypeHelper.cs">
+      <Link>TypeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Internal\UriQueryUtility.cs">
+      <Link>UriQueryUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\ModelMetadata.cs">
+      <Link>ModelMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\ModelMetadataProvider.cs">
+      <Link>ModelMetadataProvider.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\Providers\AssociatedMetadataProvider.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\Providers\CachedDataAnnotationsMetadataAttributes.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Metadata\Providers\CachedDataAnnotationsModelMetadata.cs" />
@@ -211,19 +340,45 @@
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ModelBinding\ModelErrorCollection.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ModelBinding\ModelState.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ModelBinding\ModelStateDictionary.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\NonActionAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Properties\AssemblyInfo.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Properties\SRResources.Designer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\DynamicQueryable.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ODataQueryDeserializer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ParseException.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\QueryComposer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\QueryResolver.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\QueryValidator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ServiceQuery.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ServiceQueryPart.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\QueryableAttribute.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\RouteParameter.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\NonActionAttribute.cs">
+      <Link>NonActionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Properties\AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Properties\SRResources.Designer.cs">
+      <Link>Properties/SRResources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\DynamicQueryable.cs">
+      <Link>DynamicQueryable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ODataQueryDeserializer.cs">
+      <Link>ODataQueryDeserializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ParseException.cs">
+      <Link>ParseException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\QueryComposer.cs">
+      <Link>QueryComposer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\QueryResolver.cs">
+      <Link>QueryResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\QueryValidator.cs">
+      <Link>QueryValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ServiceQuery.cs">
+      <Link>ServiceQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Query\ServiceQueryPart.cs">
+      <Link>ServiceQueryPart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\QueryableAttribute.cs">
+      <Link>QueryableAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\RouteParameter.cs">
+      <Link>RouteParameter.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Routing\BoundRouteTemplate.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Routing\HttpMethodConstraint.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Routing\HttpParsedRoute.cs" />
@@ -247,7 +402,9 @@
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Routing\UriPathExtensionMapping.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Routing\UrlHelper.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Services\DefaultServices.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ServicesExtensions.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ServicesExtensions.cs">
+      <Link>ServicesExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Tracing\FormattingUtilities.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Tracing\IFormatterTracer.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Tracing\ITraceManager.cs" />
@@ -284,16 +441,36 @@
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Tracing\Tracers\MessageHandlerTracer.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Tracing\Tracers\RequestMessageHandlerTracer.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Tracing\Tracers\XmlMediaTypeFormatterTracer.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\DefaultBodyModelValidator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\IBodyModelValidator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelStateFormatterLogger.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidatedEventArgs.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidatingEventArgs.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidationNode.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidationRequiredMemberSelector.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidationResult.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidator.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidatorProvider.cs" />
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\DefaultBodyModelValidator.cs">
+      <Link>DefaultBodyModelValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\IBodyModelValidator.cs">
+      <Link>IBodyModelValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelStateFormatterLogger.cs">
+      <Link>ModelStateFormatterLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidatedEventArgs.cs">
+      <Link>ModelValidatedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidatingEventArgs.cs">
+      <Link>ModelValidatingEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidationNode.cs">
+      <Link>ModelValidationNode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidationRequiredMemberSelector.cs">
+      <Link>ModelValidationRequiredMemberSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidationResult.cs">
+      <Link>ModelValidationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidator.cs">
+      <Link>ModelValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\ModelValidatorProvider.cs">
+      <Link>ModelValidatorProvider.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\Providers\AssociatedValidatorProvider.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\Providers\DataAnnotationsModelValidatorProvider.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\Validation\Providers\DataMemberModelValidatorProvider.cs" />
@@ -314,7 +491,8 @@
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ValueProviders\Providers\RouteDataValueProviderFactory.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ValueProviders\ValueProviderAttribute.cs" />
     <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ValueProviders\ValueProviderFactory.cs" />
-    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ValueProviders\ValueProviderResult.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\aspnetwebstack\src\System.Web.Http\ValueProviders\ValueProviderResult.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -324,17 +502,12 @@
   -->
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PreBuildEvent>
     <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PreBuildEvent>
-
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -391,4 +564,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

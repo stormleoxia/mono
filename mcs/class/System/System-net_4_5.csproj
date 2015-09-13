@@ -63,21 +63,51 @@
     <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\generic\throwhelper.cs" />
     <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\objectmodel\observablecollection.cs" />
     <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\objectmodel\readonlyobservablecollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\bitvector32.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\casesensitivestringdictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\collectionsutil.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\fixedstringlookup.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\hybriddictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\inotifycollectionchanged.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\iordereddictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\listdictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\nameobjectcollectionbase.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\namevaluecollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\notifycollectionchangedeventargs.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\ordereddictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\stringcollection.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\stringdictionary.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\stringdictionarywithcomparer.cs" />
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\bitvector32.cs">
+      <Link>bitvector32.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\casesensitivestringdictionary.cs">
+      <Link>casesensitivestringdictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\collectionsutil.cs">
+      <Link>collectionsutil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\fixedstringlookup.cs">
+      <Link>fixedstringlookup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\hybriddictionary.cs">
+      <Link>hybriddictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\inotifycollectionchanged.cs">
+      <Link>inotifycollectionchanged.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\iordereddictionary.cs">
+      <Link>iordereddictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\listdictionary.cs">
+      <Link>listdictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\nameobjectcollectionbase.cs">
+      <Link>nameobjectcollectionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\namevaluecollection.cs">
+      <Link>namevaluecollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\notifycollectionchangedeventargs.cs">
+      <Link>notifycollectionchangedeventargs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\ordereddictionary.cs">
+      <Link>ordereddictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\stringcollection.cs">
+      <Link>stringcollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\stringdictionary.cs">
+      <Link>stringdictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\compmod\system\collections\specialized\stringdictionarywithcomparer.cs">
+      <Link>stringdictionarywithcomparer.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\referencesource\System\compmod\system\componentmodel\AddingNewEventArgs.cs" />
     <Compile Include="..\..\..\external\referencesource\System\compmod\system\componentmodel\AddingNewEventHandler.cs" />
     <Compile Include="..\..\..\external\referencesource\System\compmod\system\componentmodel\AmbientValueAttribute.cs" />
@@ -387,13 +417,23 @@
     <Compile Include="..\..\..\external\referencesource\System\regex\system\text\regularexpressions\RegexRunnerFactory.cs" />
     <Compile Include="..\..\..\external\referencesource\System\regex\system\text\regularexpressions\RegexTree.cs" />
     <Compile Include="..\..\..\external\referencesource\System\regex\system\text\regularexpressions\RegexWriter.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\security\system\security\permissions\typedescriptorpermission.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\services\timers\system\timers\ElapsedEventHandler.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\services\timers\system\timers\Timer.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\services\timers\system\timers\TimersDescriptionAttribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\System\security\system\security\permissions\typedescriptorpermission.cs">
+      <Link>System.Security.Permissions/typedescriptorpermission.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\services\timers\system\timers\ElapsedEventHandler.cs">
+      <Link>System.Timers/ElapsedEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\services\timers\system\timers\Timer.cs">
+      <Link>System.Timers/Timer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System\services\timers\system\timers\TimersDescriptionAttribute.cs">
+      <Link>System.Timers/TimersDescriptionAttribute.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\referencesource\System\sys\system\collections\concurrent\BlockingCollection.cs" />
     <Compile Include="..\..\..\external\referencesource\System\sys\system\collections\concurrent\ConcurrentBag.cs" />
-    <Compile Include="..\..\..\external\referencesource\System\sys\system\threading\Barrier.cs" />
+    <Compile Include="..\..\..\external\referencesource\System\sys\system\threading\Barrier.cs">
+      <Link>System.Threading/Barrier.cs</Link>
+    </Compile>
     <Compile Include="..\..\build\common\SR.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="Microsoft.CSharp\CSharpCodeCompiler.cs" />

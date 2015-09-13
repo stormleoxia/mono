@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Runtime.Serialization-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,38 +43,87 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Runtime.Serialization\AttributesTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\Bug242Test.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\Bug2843Test.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\Bug3258Test.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\Bug666333Test.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\Bug675144Test.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\Bug695203Test.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\CollectionSerialization.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\DataContractResolverTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\DataContractSerializerTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\DataContractSerializerTest_DuplicateQName.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\DataContractSerializerTest_InvalidCharacters.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\DataContractSerializerTest_NullableWithDictionary.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\KnownTypeAttributeTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\WsdlHelper.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\XmlObjectSerializerTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\XsdDataContractExporterTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\XsdDataContractExporterTest2.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\XsdDataContractImporterTest.cs" />
-    <Compile Include="Test\System.Runtime.Serialization\XsdDataContractImporterTest2.cs" />
-    <Compile Include="Test\System.Xml\UniqueIdTest.cs" />
-    <Compile Include="Test\System.Xml\XmlBinaryDictionaryReaderTest.cs" />
-    <Compile Include="Test\System.Xml\XmlBinaryDictionaryWriterTest.cs" />
-    <Compile Include="Test\System.Xml\XmlBinaryWriterSessionTest.cs" />
-    <Compile Include="Test\System.Xml\XmlDictionaryReaderAbstractTest.cs" />
-    <Compile Include="Test\System.Xml\XmlDictionaryReaderQuotasTest.cs" />
-    <Compile Include="Test\System.Xml\XmlDictionaryStringTest.cs" />
-    <Compile Include="Test\System.Xml\XmlDictionaryTest.cs" />
-    <Compile Include="Test\System.Xml\XmlDictionaryWriterTest.cs" />
-    <Compile Include="Test\System.Xml\XmlMtomDictionaryWriterTest.cs" />
-    <Compile Include="Test\System.Xml\XmlSimpleDictionaryWriterTest.cs" />
-    <Compile Include="Test\XmlComparer.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\system.runtime.serialization\system\runtime\serialization\collectiondatacontractattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.serialization\system\runtime\serialization\contractnamespaceattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.runtime.serialization\system\runtime\serialization\datacontractattribute.cs" />
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\datacontractjsonserializer.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\datacontractjsonserializersettings.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\ixmljsonreaderinitializer.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\ixmljsonwriterinitializer.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\jsonreader.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\jsonreaderwriterfactory.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\jsonserializationreader.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\jsonserializationwriter.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\jsonwriter.cs" />
+    <Compile Include="..\system.servicemodel.web\system.runtime.serialization.json\typemap.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.runtime.serialization.configuration\datacontractserializersection.cs" />
+    <Compile Include="system.runtime.serialization.configuration\declaredtypeelement.cs" />
+    <Compile Include="system.runtime.serialization.configuration\declaredtypeelementcollection.cs" />
+    <Compile Include="system.runtime.serialization.configuration\parameterelement.cs" />
+    <Compile Include="system.runtime.serialization.configuration\parameterelementcollection.cs" />
+    <Compile Include="system.runtime.serialization.configuration\serializationsectiongroup.cs" />
+    <Compile Include="system.runtime.serialization.configuration\typeelement.cs" />
+    <Compile Include="system.runtime.serialization.configuration\typeelementcollection.cs" />
+    <Compile Include="system.runtime.serialization\datacontractresolver.cs" />
+    <Compile Include="system.runtime.serialization\datacontractserializer.cs" />
+    <Compile Include="system.runtime.serialization\datacontractserializersettings.cs" />
+    <Compile Include="system.runtime.serialization\datamemberattribute.cs" />
+    <Compile Include="system.runtime.serialization\datetimeformat.cs" />
+    <Compile Include="system.runtime.serialization\emittypeinformation.cs" />
+    <Compile Include="system.runtime.serialization\enummemberattribute.cs" />
+    <Compile Include="system.runtime.serialization\exportoptions.cs" />
+    <Compile Include="system.runtime.serialization\extensiondataobject.cs" />
+    <Compile Include="system.runtime.serialization\idatacontractsurrogate.cs" />
+    <Compile Include="system.runtime.serialization\iextensibledataobject.cs" />
+    <Compile Include="system.runtime.serialization\ignoredatamemberattribute.cs" />
+    <Compile Include="system.runtime.serialization\importoptions.cs" />
+    <Compile Include="system.runtime.serialization\invaliddatacontractexception.cs" />
+    <Compile Include="system.runtime.serialization\knowntypeattribute.cs" />
+    <Compile Include="system.runtime.serialization\knowntypecollection.cs" />
+    <Compile Include="system.runtime.serialization\netdatacontractserializer.cs" />
+    <Compile Include="system.runtime.serialization\serializationmap.cs" />
+    <Compile Include="system.runtime.serialization\serializationmap.xsdexporter.cs" />
+    <Compile Include="system.runtime.serialization\xmlformatterdeserializer.cs" />
+    <Compile Include="system.runtime.serialization\xmlformatterserializer.cs" />
+    <Compile Include="system.runtime.serialization\xmlobjectserializer.cs" />
+    <Compile Include="system.runtime.serialization\xmlserializableservices.cs" />
+    <Compile Include="system.runtime.serialization\xsddatacontractexporter.cs" />
+    <Compile Include="system.runtime.serialization\xsddatacontractimporter.cs" />
+    <Compile Include="system.xml\ifragmentcapablexmldictionarywriter.cs" />
+    <Compile Include="system.xml\istreamprovider.cs" />
+    <Compile Include="system.xml\ixmlbinaryreaderinitializer.cs" />
+    <Compile Include="system.xml\ixmlbinarywriterinitializer.cs" />
+    <Compile Include="system.xml\ixmldictionary.cs" />
+    <Compile Include="system.xml\ixmlmtomreaderinitializer.cs" />
+    <Compile Include="system.xml\ixmlmtomwriterinitializer.cs" />
+    <Compile Include="system.xml\ixmlutf8readerinitializer.cs" />
+    <Compile Include="system.xml\ixmlutf8writerinitializer.cs" />
+    <Compile Include="system.xml\onxmldictionaryreaderclose.cs" />
+    <Compile Include="system.xml\uniqueid.cs" />
+    <Compile Include="system.xml\xmlbinarydictionaryreader.cs" />
+    <Compile Include="system.xml\xmlbinarydictionarywriter.cs" />
+    <Compile Include="system.xml\xmlbinarydictionarywriterautogen.cs" />
+    <Compile Include="system.xml\xmlbinaryformat.cs" />
+    <Compile Include="system.xml\xmlbinaryreadersession.cs" />
+    <Compile Include="system.xml\xmlbinarywritersession.cs" />
+    <Compile Include="system.xml\xmlc14nwriter.cs" />
+    <Compile Include="system.xml\xmlcanonicalwriter.cs" />
+    <Compile Include="system.xml\xmldictionary.cs" />
+    <Compile Include="system.xml\xmldictionaryreader.cs" />
+    <Compile Include="system.xml\xmldictionaryreaderautogen.cs" />
+    <Compile Include="system.xml\xmldictionaryreaderquotas.cs" />
+    <Compile Include="system.xml\xmldictionarystring.cs" />
+    <Compile Include="system.xml\xmldictionarywriter.cs" />
+    <Compile Include="system.xml\xmldictionarywriterautogen.cs" />
+    <Compile Include="system.xml\xmlmtomdictionaryreader.cs" />
+    <Compile Include="system.xml\xmlmtomdictionarywriter.cs" />
+    <Compile Include="system.xml\xmlsimpledictionaryreader.cs" />
+    <Compile Include="system.xml\xmlsimpledictionarywriter.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -85,13 +133,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -148,4 +193,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

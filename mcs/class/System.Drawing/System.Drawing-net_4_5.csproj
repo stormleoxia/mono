@@ -52,7 +52,7 @@
     <Compile Include="System.Drawing.Design\IPropertyValueUIService.cs" />
     <Compile Include="System.Drawing.Design\IToolboxItemProvider.cs" />
     <Compile Include="System.Drawing.Design\IToolboxService.cs" />
-    <Compile Include="System.Drawing.Design\IToolboxUser.cs" />
+    <Compile Include="System.Drawing.Design\IToolboxUser.cs " />
     <Compile Include="System.Drawing.Design\PaintValueEventArgs.cs" />
     <Compile Include="System.Drawing.Design\PropertyValueItem.cs" />
     <Compile Include="System.Drawing.Design\PropertyValueUIHandler.cs" />

@@ -85,10 +85,18 @@
     <Compile Include="..\..\..\external\referencesource\System.Runtime.Caching\System\Caching\SafeBitVector32.cs" />
     <Compile Include="..\..\..\external\referencesource\System.Runtime.Caching\System\Caching\SafeRegistryHandle.cs" />
     <Compile Include="..\..\..\external\referencesource\System.Runtime.Caching\System\Caching\SqlChangeMonitor.cs" />
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\Locale.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
-    <Compile Include="..\System.Web\System.Web.Configuration_2.0\NullableStringValidator.cs" />
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Locale.cs">
+      <Link>Locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Web\System.Web.Configuration_2.0\NullableStringValidator.cs">
+      <Link>NullableStringValidator.cs</Link>
+    </Compile>
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="ReferenceSources\CacheEntryCollection.cs" />
     <Compile Include="ReferenceSources\CacheExpires.cs" />

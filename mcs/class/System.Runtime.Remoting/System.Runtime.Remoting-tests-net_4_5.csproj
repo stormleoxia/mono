@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Runtime.Remoting-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,26 +43,74 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\ActivationTests.cs" />
-    <Compile Include="Test\AsyncCalls.cs" />
-    <Compile Include="Test\BaseCalls.cs" />
-    <Compile Include="Test\CallSeq.cs" />
-    <Compile Include="Test\ContextHookAttribute.cs" />
-    <Compile Include="Test\ContextsTest.cs" />
-    <Compile Include="Test\CrossDomainCalls.cs" />
-    <Compile Include="Test\DelegateCalls.cs" />
-    <Compile Include="Test\GenericTest.cs" />
-    <Compile Include="Test\HttpBugTests.cs" />
-    <Compile Include="Test\HttpCalls.cs" />
-    <Compile Include="Test\HttpServerChannelTests.cs" />
-    <Compile Include="Test\IpcCalls.cs" />
-    <Compile Include="Test\IpcChannelTest.cs" />
-    <Compile Include="Test\ReflectionCalls.cs" />
-    <Compile Include="Test\RemotingServicesTest.cs" />
-    <Compile Include="Test\ServerObject.cs" />
-    <Compile Include="Test\SyncCalls.cs" />
-    <Compile Include="Test\System.Runtime.Remoting.Channels.Tcp\TcpChannelTest.cs" />
-    <Compile Include="Test\TcpCalls.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\aggregatedictionary.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpclientchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpclienttransportsink.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpclienttransportsinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpremotinghandler.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpremotinghandlerfactory.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpserverchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\httpservertransportsink.cs" />
+    <Compile Include="system.runtime.remoting.channels.http\remotinghttplistener.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.unix\ipcchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.unix\ipcclientchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.unix\ipcserverchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.unix\unixchannelloader.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\ipcchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\ipcchannelhelper.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\ipcclientchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\ipcserverchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\ipctransport.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\namedpipeclient.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\namedpipeexception.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\namedpipehelper.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\namedpipelistener.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\namedpipesocket.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc.win32\namedpipestream.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc\ipcchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc\ipcclientchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.ipc\ipcserverchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpclientchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpclienttransportsink.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpclienttransportsinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpconnectionpool.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpmessageio.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpserverchannel.cs" />
+    <Compile Include="system.runtime.remoting.channels.tcp\tcpservertransportsink.cs" />
+    <Compile Include="system.runtime.remoting.channels\binaryclientformattersink.cs" />
+    <Compile Include="system.runtime.remoting.channels\binaryclientformattersinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\binarycore.cs" />
+    <Compile Include="system.runtime.remoting.channels\binaryserverformattersink.cs" />
+    <Compile Include="system.runtime.remoting.channels\binaryserverformattersinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\channelcore.cs" />
+    <Compile Include="system.runtime.remoting.channels\commontransportkeys.cs" />
+    <Compile Include="system.runtime.remoting.channels\iauthorizeremotingconnection.cs" />
+    <Compile Include="system.runtime.remoting.channels\remotingthreadpool.cs" />
+    <Compile Include="system.runtime.remoting.channels\soapclientformattersink.cs" />
+    <Compile Include="system.runtime.remoting.channels\soapclientformattersinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\soapcore.cs" />
+    <Compile Include="system.runtime.remoting.channels\soapmessageformatter.cs" />
+    <Compile Include="system.runtime.remoting.channels\soapserverformattersink.cs" />
+    <Compile Include="system.runtime.remoting.channels\soapserverformattersinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.channels\socketcachepolicy.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\metadata.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\metadatacodegenerator.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\metadataexporter.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\sdlchannelsink.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\sdlchannelsinkprovider.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\sdltype.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\servicetype.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\sudsgeneratorexception.cs" />
+    <Compile Include="system.runtime.remoting.metadataservices\sudsparserexception.cs" />
+    <Compile Include="system.runtime.remoting.services\remotingclientproxy.cs" />
+    <Compile Include="system.runtime.remoting.services\remotingservice.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -73,13 +120,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -117,4 +161,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

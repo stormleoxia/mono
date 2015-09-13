@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,92 +44,510 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\corlib\Test\System.Security.Cryptography\HashAlgorithmTest.cs" />
-    <Compile Include="..\corlib\Test\System.Security.Cryptography\SHA1Test.cs" />
-    <Compile Include="..\corlib\Test\System.Security.Cryptography\SHA256Test.cs" />
-    <Compile Include="..\corlib\Test\System.Security.Cryptography\SHA384Test.cs" />
-    <Compile Include="..\corlib\Test\System.Security.Cryptography\SHA512Test.cs" />
-    <Compile Include="Test\System.Collections.Generic\HashSetTest.cs" />
-    <Compile Include="Test\System.IO.MemoryMappedFiles\MemoryMappedFileTest.cs" />
-    <Compile Include="Test\System.IO.Pipes\PipeSecurityTest.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Add.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_AddChecked.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_And.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_AndAlso.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_ArrayIndex.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_ArrayLength.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Bind.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Call.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Coalesce.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Condition.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Constant.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Convert.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Divide.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_ElementInit.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Equal.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_ExclusiveOr.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Field.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_GreaterThan.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_GreaterThanOrEqual.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Invoke.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Lambda.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_LeftShift.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_LessThan.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_LessThanOrEqual.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Lift.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_ListBind.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_ListInit.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_MakeBinary.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_MemberBind.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_MemberInit.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Modulo.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Multiply.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_MultiplyChecked.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Negate.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_New.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_NewArrayBounds.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_NewArrayInit.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Not.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_NotEqual.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Or.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_OrElse.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Power.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Property.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_PropertyOrField.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Quote.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_RightShift.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Subtract.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_SubtractChecked.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_TypeAs.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_TypeIs.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_UnaryPlus.cs" />
-    <Compile Include="Test\System.Linq.Expressions\ExpressionTest_Utils.cs" />
-    <Compile Include="Test\System.Linq\EnumerableAsQueryableTest.cs" />
-    <Compile Include="Test\System.Linq\EnumerableFixture.cs" />
-    <Compile Include="Test\System.Linq\EnumerableMoreTest.cs" />
-    <Compile Include="Test\System.Linq\EnumerableTest.cs" />
-    <Compile Include="Test\System.Linq\LookupTest.cs" />
-    <Compile Include="Test\System.Linq\ParallelEnumerableTests.cs" />
-    <Compile Include="Test\System.Linq\ParallelTestHelper.cs" />
-    <Compile Include="Test\System.Runtime.CompilerServices\DynamicAttributeTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\AesCryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\AesManagedTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CngAlgorithmGroupTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\CngAlgorithmTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\MD5CngTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA1CngTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA256CngTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA256CryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA384CngTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA384CryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA512CngTest.cs" />
-    <Compile Include="Test\System.Security.Cryptography\SHA512CryptoServiceProviderTest.cs" />
-    <Compile Include="Test\System.Threading.Tasks\TaskExtensionsTests.cs" />
-    <Compile Include="Test\System.Threading\ReaderWriterLockSlimTest.cs" />
-    <Compile Include="Test\System\TimeZoneInfo.AdjustmentRuleTest.cs" />
-    <Compile Include="Test\System\TimeZoneInfo.TransitionTimeTest.cs" />
-    <Compile Include="Test\System\TimeZoneInfoTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\system.core\microsoft\scripting\utils\action.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\microsoft\scripting\utils\extension.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\microsoft\scripting\utils\function.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\microsoft\scripting\utils\strongbox.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\collections\generic\bithelper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\collections\generic\hashset.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\collections\generic\hashsetdebugview.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\collections\generic\hashsetequalitycomparer.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\funcandaction.cs">
+      <Link>System/funcandaction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\invalidtimezoneexception.cs">
+      <Link>System/invalidtimezoneexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\io\enums.cs">
+      <Link>enums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\io\memorymappedfiles\enums.cs">
+      <Link>System.IO.MemoryMappedFiles/enums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\io\memorymappedfiles\memorymappedfilesecurity.cs">
+      <Link>System.IO.MemoryMappedFiles/memorymappedfilesecurity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallelenumerable.cs">
+      <Link>System.Linq/parallelenumerable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallelexecutionmode.cs">
+      <Link>System.Linq/parallelexecutionmode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallelmergeoptions.cs">
+      <Link>System.Linq/parallelmergeoptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\channels\asynchronouschannel.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\channels\synchronouschannel.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\aggregationminmaxhelpers.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\emptyenumerable.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\enumerablewrapperweaktostrong.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\iparallelpartitionable.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\orderedparallelquery.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\parallelenumerablewrapper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\parallelquery.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\queryaggregationoptions.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\rangeenumerable.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\enumerables\repeatenumerable.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\arraymergehelper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\asynchronouschannelmergeenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\defaultmergehelper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\imergehelper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\mergeenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\mergeexecutor.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\orderpreservingmergehelper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\orderpreservingpipeliningmergehelper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\merging\synchronouschannelmergeenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\hashrepartitionenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\hashrepartitionstream.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\ipartitionedstreamrecipient.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\orderedhashrepartitionenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\orderedhashrepartitionstream.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\partitioneddatasource.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\partitionedstream.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\partitioning\unorderedhashrepartitionstream.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\associativeaggregationoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binaryqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\exceptqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\groupjoinqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\hashjoinqueryoperatorenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\intersectqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\joinqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\unionqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\binary\zipqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\countaggregationoperator.cs">
+      <Link>countaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\decimalaverageaggregationoperator.cs">
+      <Link>decimalaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\decimalminmaxaggregationoperator.cs">
+      <Link>decimalminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\decimalsumaggregationoperator.cs">
+      <Link>decimalsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\doubleaverageaggregationoperator.cs">
+      <Link>doubleaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\doubleminmaxaggregationoperator.cs">
+      <Link>doubleminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\doublesumaggregationoperator.cs">
+      <Link>doublesumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\floataverageaggregationoperator.cs">
+      <Link>floataverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\floatminmaxaggregationoperator.cs">
+      <Link>floatminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\floatsumaggregationoperator.cs">
+      <Link>floatsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\inlinedaggregationoperator.cs">
+      <Link>inlinedaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\inlinedaggregationoperatorenumerator.cs">
+      <Link>inlinedaggregationoperatorenumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\intaverageaggregationoperator.cs">
+      <Link>intaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\intminmaxaggregationoperator.cs">
+      <Link>intminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\intsumaggregationoperator.cs">
+      <Link>intsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\longaverageaggregationoperator.cs">
+      <Link>longaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\longcountaggregationoperator.cs">
+      <Link>longcountaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\longminmaxaggregationoperator.cs">
+      <Link>longminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\longsumaggregationoperator.cs">
+      <Link>longsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullabledecimalaverageaggregationoperator.cs">
+      <Link>nullabledecimalaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullabledecimalminmaxaggregationoperator.cs">
+      <Link>nullabledecimalminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullabledecimalsumaggregationoperator.cs">
+      <Link>nullabledecimalsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullabledoubleaverageaggregationoperator.cs">
+      <Link>nullabledoubleaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullabledoubleminmaxaggregationoperator.cs">
+      <Link>nullabledoubleminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullabledoublesumaggregationoperator.cs">
+      <Link>nullabledoublesumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullablefloataverageaggregationoperator.cs">
+      <Link>nullablefloataverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullablefloatminmaxaggregationoperator.cs">
+      <Link>nullablefloatminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullablefloatsumaggregationoperator.cs">
+      <Link>nullablefloatsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullableintaverageaggregationoperator.cs">
+      <Link>nullableintaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullableintminmaxaggregationoperator.cs">
+      <Link>nullableintminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullableintsumaggregationoperator.cs">
+      <Link>nullableintsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullablelongaverageaggregationoperator.cs">
+      <Link>nullablelongaverageaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullablelongminmaxaggregationoperator.cs">
+      <Link>nullablelongminmaxaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\inlined\nullablelongsumaggregationoperator.cs">
+      <Link>nullablelongsumaggregationoperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\listqueryresults.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\options\orderingqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\options\queryexecutionoption.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\ordinalindexstate.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\partitionedstreammerger.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\partitionerqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\queryopeningenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\queryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\queryoperatorenumerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\queryresults.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\querysettings.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\scanqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unaryqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\anyallsearchoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\concatqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\containssearchoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\defaultifemptyqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\distinctqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\elementatqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\firstqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\foralloperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\groupbyqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\indexedselectqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\indexedwherequeryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\lastqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\reversequeryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\selectmanyqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\selectqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\singlequeryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\sortqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\takeorskipqueryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\takeorskipwhilequeryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\queryoperators\unary\wherequeryoperator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\cancellationstate.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\orderpreservingpipeliningspoolingtask.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\orderpreservingspoolingtask.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\querylifecycle.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\querytask.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\querytaskgroupstate.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\scheduling.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\spoolingtask.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\scheduling\spoolingtaskbase.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\cancellableenumerable.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\exceptionaggregator.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\exchangeutilities.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\fixedmaxheap.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\growingarray.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\hashlookup.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\intvalueevent.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\listchunk.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\lookup.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\pair.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\paircomparer.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\reversecomparer.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\shared.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\sorting.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\tracehelpers.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\util.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\wrapper.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\linq\parallel\utils\wrapperequalitycomparer.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\runtime\compilerservices\dynamicattribute.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\runtime\compilerservices\executionscope.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\security\cryptography\aes.cs">
+      <Link>System.Security.Cryptography/aes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\security\cryptography\aesmanaged.cs">
+      <Link>System.Security.Cryptography/aesmanaged.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\threading\readerwriterlockslim\lockrecursionexception.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\threading\readerwriterlockslim\readerwriterlockslim.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\threading\tasks\taskextensions.cs" />
+    <Compile Include="..\..\..\external\referencesource\system.core\system\timezoneinfo.cs">
+      <Link>System/timezoneinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\system.core\system\timezonenotfoundexception.cs">
+      <Link>System/timezonenotfoundexception.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\sr.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\binaryoperationbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\bindingrestrictions.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\callinfo.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\callsite.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\callsitebinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\callsitehelpers.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\callsiteops.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\convertbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\createinstancebinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\deleteindexbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\deletememberbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\dynamicmetaobject.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\dynamicmetaobjectbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\dynamicobject.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\expandoclass.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\expandoobject.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\getindexbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\getmemberbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\idynamicmetaobjectprovider.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\iinvokeongetbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\invokebinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\invokememberbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\rulecache.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\setindexbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\setmemberbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\unaryoperationbinder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\actions\updatedelegates.generated.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\binaryexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\blockexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\catchblock.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\conditionalexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\constantexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\debuginfoexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\debugviewwriter.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\defaultexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\dynamicexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\elementinit.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\expression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\expression.debuggerproxy.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\expressionstringbuilder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\expressiontype.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\expressionvisitor.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\gotoexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\iargumentprovider.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\indexexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\invocationexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\labelexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\labeltarget.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\lambdaexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\listargumentprovider.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\listinitexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\loopexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\memberassignment.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\memberbinding.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\memberexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\memberinitexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\memberlistbinding.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\membermemberbinding.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\methodcallexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\newarrayexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\newexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\parameterexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\runtimevariablesexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\switchcase.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\switchexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\symboldocumentinfo.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\tryexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\typebinaryexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\typeutils.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\ast\unaryexpression.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\analyzedtree.cs">
+      <Link>analyzedtree.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\assemblygen.cs">
+      <Link>assemblygen.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\boundconstants.cs">
+      <Link>boundconstants.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\closure.cs">
+      <Link>closure.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\compilerscope.cs">
+      <Link>compilerscope.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\compilerscope.storage.cs">
+      <Link>compilerscope.storage.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\constantcheck.cs">
+      <Link>constantcheck.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\debuginfogenerator.cs">
+      <Link>debuginfogenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\delegatehelpers.cs">
+      <Link>delegatehelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\delegatehelpers.generated.cs">
+      <Link>delegatehelpers.generated.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\expressionquoter.cs">
+      <Link>expressionquoter.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\hoistedlocals.cs">
+      <Link>hoistedlocals.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\ilgen.cs">
+      <Link>ilgen.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\keyedqueue.cs">
+      <Link>keyedqueue.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\labelinfo.cs">
+      <Link>labelinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.address.cs">
+      <Link>lambdacompiler.address.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.binary.cs">
+      <Link>lambdacompiler.binary.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.controlflow.cs">
+      <Link>lambdacompiler.controlflow.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.cs">
+      <Link>lambdacompiler.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.expressions.cs">
+      <Link>lambdacompiler.expressions.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.generated.cs">
+      <Link>lambdacompiler.generated.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.lambda.cs">
+      <Link>lambdacompiler.lambda.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.logical.cs">
+      <Link>lambdacompiler.logical.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.statements.cs">
+      <Link>lambdacompiler.statements.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\lambdacompiler.unary.cs">
+      <Link>lambdacompiler.unary.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\offsettrackingilgenerator.cs">
+      <Link>offsettrackingilgenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\runtimevariablelist.cs">
+      <Link>runtimevariablelist.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\set.cs">
+      <Link>set.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\stackspiller.bindings.cs">
+      <Link>stackspiller.bindings.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\stackspiller.cs">
+      <Link>stackspiller.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\stackspiller.generated.cs">
+      <Link>stackspiller.generated.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\stackspiller.temps.cs">
+      <Link>stackspiller.temps.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\symboldocumentgenerator.cs">
+      <Link>symboldocumentgenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\symbolguids.cs">
+      <Link>symbolguids.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\compiler\variablebinder.cs">
+      <Link>variablebinder.cs</Link>
+    </Compile>
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\cachedict.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\collectionextensions.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\contractutils.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\exceptionfactory.generated.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\helpers.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\iruntimevariables.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\readonlycollectionbuilder.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\readonlydictionary.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\referenceequalitycomparer.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\reflectionutils.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\truereadonlycollection.cs" />
+    <Compile Include="..\dlr\runtime\microsoft.scripting.core\utils\typeextensions.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="microsoft.win32.safehandles\safememorymappedfilehandle.cs" />
+    <Compile Include="microsoft.win32.safehandles\safememorymappedviewhandle.cs" />
+    <Compile Include="microsoft.win32.safehandles\safepipehandle.cs" />
+    <Compile Include="referencesources\set.cs" />
+    <Compile Include="referencesources\sr.cs" />
+    <Compile Include="system.io.memorymappedfiles\memorymappedfile.cs" />
+    <Compile Include="system.io.memorymappedfiles\memorymappedviewaccessor.cs" />
+    <Compile Include="system.io.memorymappedfiles\memorymappedviewstream.cs" />
+    <Compile Include="system.io.pipes\anonymouspipeclientstream.cs" />
+    <Compile Include="system.io.pipes\anonymouspipeserverstream.cs" />
+    <Compile Include="system.io.pipes\namedpipeclientstream.cs" />
+    <Compile Include="system.io.pipes\namedpipeserverstream.cs" />
+    <Compile Include="system.io.pipes\pipeaccessrights.cs" />
+    <Compile Include="system.io.pipes\pipeaccessrule.cs" />
+    <Compile Include="system.io.pipes\pipeauditrule.cs" />
+    <Compile Include="system.io.pipes\pipedirection.cs" />
+    <Compile Include="system.io.pipes\pipeinterfaces.cs" />
+    <Compile Include="system.io.pipes\pipeoptions.cs" />
+    <Compile Include="system.io.pipes\pipesecurity.cs" />
+    <Compile Include="system.io.pipes\pipestream.cs" />
+    <Compile Include="system.io.pipes\pipestreamimpersonationworker.cs" />
+    <Compile Include="system.io.pipes\pipetransmissionmode.cs" />
+    <Compile Include="system.io.pipes\pipeunix.cs" />
+    <Compile Include="system.io.pipes\pipewin32.cs" />
+    <Compile Include="system.linq.expressions\dynamicexpressionvisitor.cs" />
+    <Compile Include="system.linq.expressions\expressiontransformer.cs" />
+    <Compile Include="system.linq.expressions\extensions.cs" />
+    <Compile Include="system.linq\check.cs" />
+    <Compile Include="system.linq\enumerable.cs" />
+    <Compile Include="system.linq\enumerableexecutor.cs" />
+    <Compile Include="system.linq\enumerableexecutor_t.cs" />
+    <Compile Include="system.linq\enumerablequery.cs" />
+    <Compile Include="system.linq\enumerablequery_t.cs" />
+    <Compile Include="system.linq\grouping.cs" />
+    <Compile Include="system.linq\igrouping.cs" />
+    <Compile Include="system.linq\ilookup_t.cs" />
+    <Compile Include="system.linq\iorderedenumerable_t.cs" />
+    <Compile Include="system.linq\iorderedqueryable.cs" />
+    <Compile Include="system.linq\iorderedqueryable_t.cs" />
+    <Compile Include="system.linq\iqueryable.cs" />
+    <Compile Include="system.linq\iqueryable_t.cs" />
+    <Compile Include="system.linq\iqueryprovider.cs" />
+    <Compile Include="system.linq\lookup.cs" />
+    <Compile Include="system.linq\orderedenumerable.cs" />
+    <Compile Include="system.linq\orderedsequence.cs" />
+    <Compile Include="system.linq\queryable.cs" />
+    <Compile Include="system.linq\queryableenumerable.cs" />
+    <Compile Include="system.linq\queryabletransformer.cs" />
+    <Compile Include="system.linq\quicksort.cs" />
+    <Compile Include="system.linq\sortcontext.cs" />
+    <Compile Include="system.linq\sortdirection.cs" />
+    <Compile Include="system.linq\sortsequencecontext.cs" />
+    <Compile Include="system.security.cryptography\aescryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\aestransform.cs" />
+    <Compile Include="system.security.cryptography\cngalgorithm.cs" />
+    <Compile Include="system.security.cryptography\cngalgorithmgroup.cs" />
+    <Compile Include="system.security.cryptography\md5cng.cs" />
+    <Compile Include="system.security.cryptography\sha1cng.cs" />
+    <Compile Include="system.security.cryptography\sha256cng.cs" />
+    <Compile Include="system.security.cryptography\sha256cryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\sha384cng.cs" />
+    <Compile Include="system.security.cryptography\sha384cryptoserviceprovider.cs" />
+    <Compile Include="system.security.cryptography\sha512cng.cs" />
+    <Compile Include="system.security.cryptography\sha512cryptoserviceprovider.cs" />
+    <Compile Include="system\util.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -139,13 +557,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -171,4 +586,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

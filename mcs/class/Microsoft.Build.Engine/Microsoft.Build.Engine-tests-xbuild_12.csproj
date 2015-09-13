@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Microsoft.Build.Engine-tests-xbuild_12</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,36 +43,90 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\Microsoft.Build.Tasks\Test\Microsoft.Build.Tasks\TestMessageLogger.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildChooseTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildItemGroupCollectionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildItemGroupTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildItemTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildPropertyGroupCollectionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildPropertyGroupTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildPropertyTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\BuildTaskTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\ConsoleLoggerTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\Consts.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\EngineTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\ImportCollectionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\ImportTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\InternalLoggerExceptionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\InvalidProjectFileExceptionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\ProjectTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\TargetCollectionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\TargetTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\TestNamespaceManager.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\UsingTaskCollectionTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\UsingTaskTest.cs" />
-    <Compile Include="Test\Microsoft.Build.BuildEngine\UtilitiesTest.cs" />
-    <Compile Include="Test\various\Build.cs" />
-    <Compile Include="Test\various\Conditions.cs" />
-    <Compile Include="Test\various\DefaultTasks.cs" />
-    <Compile Include="Test\various\EvaluationOrder.cs" />
-    <Compile Include="Test\various\Items.cs" />
-    <Compile Include="Test\various\ProjectElement.cs" />
-    <Compile Include="Test\various\Properties.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="..\..\tools\xbuild\solutionparser.cs">
+      <Link>solutionparser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\tools\xbuild\xbuildconsts.cs">
+      <Link>xbuildconsts.cs</Link>
+    </Compile>
+    <Compile Include="..\microsoft.build.framework\mono.xbuild.framework\assemblyloadinfo.cs">
+      <Link>assemblyloadinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\microsoft.build.utilities\mono.xbuild.utilities\msbuildutils.cs" />
+    <Compile Include="..\microsoft.build.utilities\mono.xbuild.utilities\reservednameutils.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="microsoft.build.buildengine\batchingimplbase.cs" />
+    <Compile Include="microsoft.build.buildengine\buildchoose.cs" />
+    <Compile Include="microsoft.build.buildengine\buildengine.cs" />
+    <Compile Include="microsoft.build.buildengine\builditem.cs" />
+    <Compile Include="microsoft.build.buildengine\builditemgroup.cs" />
+    <Compile Include="microsoft.build.buildengine\builditemgroupcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\buildproperty.cs" />
+    <Compile Include="microsoft.build.buildengine\buildpropertygroup.cs" />
+    <Compile Include="microsoft.build.buildengine\buildpropertygroupcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\buildsettings.cs" />
+    <Compile Include="microsoft.build.buildengine\buildtask.cs" />
+    <Compile Include="microsoft.build.buildengine\buildtaskitem.cs" />
+    <Compile Include="microsoft.build.buildengine\buildtaskitemgroup.cs" />
+    <Compile Include="microsoft.build.buildengine\buildtaskpropertygroup.cs" />
+    <Compile Include="microsoft.build.buildengine\buildwhen.cs" />
+    <Compile Include="microsoft.build.buildengine\changetype.cs" />
+    <Compile Include="microsoft.build.buildengine\colorresetter.cs" />
+    <Compile Include="microsoft.build.buildengine\colorsetter.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionandexpression.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionexpression.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionfactorexpresion.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionfunctionexpression.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionnotexpression.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionorexpression.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionparser.cs" />
+    <Compile Include="microsoft.build.buildengine\conditionrelationalexpression.cs" />
+    <Compile Include="microsoft.build.buildengine\conditiontokenizer.cs" />
+    <Compile Include="microsoft.build.buildengine\consolelogger.cs" />
+    <Compile Include="microsoft.build.buildengine\directoryscanner.cs" />
+    <Compile Include="microsoft.build.buildengine\engine.cs" />
+    <Compile Include="microsoft.build.buildengine\eventsource.cs" />
+    <Compile Include="microsoft.build.buildengine\expression.cs" />
+    <Compile Include="microsoft.build.buildengine\expressioncollection.cs" />
+    <Compile Include="microsoft.build.buildengine\expressionevaluationexception.cs" />
+    <Compile Include="microsoft.build.buildengine\expressionparseexception.cs" />
+    <Compile Include="microsoft.build.buildengine\filelogger.cs" />
+    <Compile Include="microsoft.build.buildengine\groupingcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\ibuildtask.cs" />
+    <Compile Include="microsoft.build.buildengine\import.cs" />
+    <Compile Include="microsoft.build.buildengine\importcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\importedproject.cs" />
+    <Compile Include="microsoft.build.buildengine\internalloggerexception.cs" />
+    <Compile Include="microsoft.build.buildengine\invalidprojectfileexception.cs" />
+    <Compile Include="microsoft.build.buildengine\ireference.cs" />
+    <Compile Include="microsoft.build.buildengine\itemreference.cs" />
+    <Compile Include="microsoft.build.buildengine\logextensions.cs" />
+    <Compile Include="microsoft.build.buildengine\memberinvocationreference.cs" />
+    <Compile Include="microsoft.build.buildengine\metadatareference.cs" />
+    <Compile Include="microsoft.build.buildengine\predefinedpropertyfunctions.cs" />
+    <Compile Include="microsoft.build.buildengine\project.cs" />
+    <Compile Include="microsoft.build.buildengine\projectloadsettings.cs" />
+    <Compile Include="microsoft.build.buildengine\propertyposition.cs" />
+    <Compile Include="microsoft.build.buildengine\propertyreference.cs" />
+    <Compile Include="microsoft.build.buildengine\target.cs" />
+    <Compile Include="microsoft.build.buildengine\targetbatchingimpl.cs" />
+    <Compile Include="microsoft.build.buildengine\targetcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\taskbatchingimpl.cs" />
+    <Compile Include="microsoft.build.buildengine\taskdatabase.cs" />
+    <Compile Include="microsoft.build.buildengine\taskengine.cs" />
+    <Compile Include="microsoft.build.buildengine\taskexecutionmode.cs" />
+    <Compile Include="microsoft.build.buildengine\token.cs" />
+    <Compile Include="microsoft.build.buildengine\toolset.cs" />
+    <Compile Include="microsoft.build.buildengine\toolsetcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\toolsetdefinitionlocations.cs" />
+    <Compile Include="microsoft.build.buildengine\unknowntoolsversionexception.cs" />
+    <Compile Include="microsoft.build.buildengine\usingtask.cs" />
+    <Compile Include="microsoft.build.buildengine\usingtaskcollection.cs" />
+    <Compile Include="microsoft.build.buildengine\utilities.cs" />
+    <Compile Include="microsoft.build.buildengine\writehandler.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -83,13 +136,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -119,4 +169,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

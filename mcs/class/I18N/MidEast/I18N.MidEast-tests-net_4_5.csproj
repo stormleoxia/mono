@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,7 +44,20 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\I18N.MidEast.Test.cs" />  </ItemGroup>
+    <Compile Include="..\..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\assembly\assemblyinfo.cs">
+      <Link>assemblyinfo.cs</Link>
+    </Compile>
+    <Compile Include="cp1254.cs" />
+    <Compile Include="cp1255.cs" />
+    <Compile Include="cp1256.cs" />
+    <Compile Include="cp28596.cs" />
+    <Compile Include="cp28598.cs" />
+    <Compile Include="cp28599.cs" />
+    <Compile Include="cp38598.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -54,13 +67,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -82,4 +92,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Net.Http-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,39 +43,61 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Net.Http.Headers\AuthenticationHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\CacheControlHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\ContentDispositionHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\ContentRangeHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\EntityTagHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\HttpHeadersTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\HttpHeaderValueCollection.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\MediaTypeHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\MediaTypeWithQualityHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\NameValueHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\NameValueWithParametersHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\ProductHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\ProductInfoHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\RangeConditionHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\RangeHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\RangeItemHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\RetryConditionHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\StringWithQualityHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\TransferCodingHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\TransferCodingWithQualityHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\ViaHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http.Headers\WarningHeaderValueTest.cs" />
-    <Compile Include="Test\System.Net.Http\ByteArrayContentTest.cs" />
-    <Compile Include="Test\System.Net.Http\FormUrlEncodedContentTest.cs" />
-    <Compile Include="Test\System.Net.Http\HttpClientHandlerTest.cs" />
-    <Compile Include="Test\System.Net.Http\HttpClientTest.cs" />
-    <Compile Include="Test\System.Net.Http\HttpMethodTest.cs" />
-    <Compile Include="Test\System.Net.Http\HttpRequestMessageTest.cs" />
-    <Compile Include="Test\System.Net.Http\HttpResponseMessageTest.cs" />
-    <Compile Include="Test\System.Net.Http\MultipartContentTest.cs" />
-    <Compile Include="Test\System.Net.Http\MultipartFormDataContentTest.cs" />
-    <Compile Include="Test\System.Net.Http\StreamContentTest.cs" />
-    <Compile Include="Test\System.Net.Http\StringContentTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.net.http.headers\authenticationheadervalue.cs" />
+    <Compile Include="system.net.http.headers\cachecontrolheadervalue.cs" />
+    <Compile Include="system.net.http.headers\collectionextensions.cs" />
+    <Compile Include="system.net.http.headers\collectionparser.cs" />
+    <Compile Include="system.net.http.headers\contentdispositionheadervalue.cs" />
+    <Compile Include="system.net.http.headers\contentrangeheadervalue.cs" />
+    <Compile Include="system.net.http.headers\entitytagheadervalue.cs" />
+    <Compile Include="system.net.http.headers\hashcodecalculator.cs" />
+    <Compile Include="system.net.http.headers\headerinfo.cs" />
+    <Compile Include="system.net.http.headers\httpcontentheaders.cs" />
+    <Compile Include="system.net.http.headers\httpheaderkind.cs" />
+    <Compile Include="system.net.http.headers\httpheaders.cs" />
+    <Compile Include="system.net.http.headers\httpheadervaluecollection.cs" />
+    <Compile Include="system.net.http.headers\httprequestheaders.cs" />
+    <Compile Include="system.net.http.headers\httpresponseheaders.cs" />
+    <Compile Include="system.net.http.headers\lexer.cs" />
+    <Compile Include="system.net.http.headers\mediatypeheadervalue.cs" />
+    <Compile Include="system.net.http.headers\mediatypewithqualityheadervalue.cs" />
+    <Compile Include="system.net.http.headers\namevalueheadervalue.cs" />
+    <Compile Include="system.net.http.headers\namevaluewithparametersheadervalue.cs" />
+    <Compile Include="system.net.http.headers\parser.cs" />
+    <Compile Include="system.net.http.headers\productheadervalue.cs" />
+    <Compile Include="system.net.http.headers\productinfoheadervalue.cs" />
+    <Compile Include="system.net.http.headers\qualityvalue.cs" />
+    <Compile Include="system.net.http.headers\rangeconditionheadervalue.cs" />
+    <Compile Include="system.net.http.headers\rangeheadervalue.cs" />
+    <Compile Include="system.net.http.headers\rangeitemheadervalue.cs" />
+    <Compile Include="system.net.http.headers\retryconditionheadervalue.cs" />
+    <Compile Include="system.net.http.headers\stringwithqualityheadervalue.cs" />
+    <Compile Include="system.net.http.headers\transfercodingheadervalue.cs" />
+    <Compile Include="system.net.http.headers\transfercodingwithqualityheadervalue.cs" />
+    <Compile Include="system.net.http.headers\viaheadervalue.cs" />
+    <Compile Include="system.net.http.headers\warningheadervalue.cs" />
+    <Compile Include="system.net.http\bytearraycontent.cs" />
+    <Compile Include="system.net.http\clientcertificateoption.cs" />
+    <Compile Include="system.net.http\delegatinghandler.cs" />
+    <Compile Include="system.net.http\formurlencodedcontent.cs" />
+    <Compile Include="system.net.http\httpclient.cs" />
+    <Compile Include="system.net.http\httpclienthandler.cs" />
+    <Compile Include="system.net.http\httpcompletionoption.cs" />
+    <Compile Include="system.net.http\httpcontent.cs" />
+    <Compile Include="system.net.http\httpmessagehandler.cs" />
+    <Compile Include="system.net.http\httpmessageinvoker.cs" />
+    <Compile Include="system.net.http\httpmethod.cs" />
+    <Compile Include="system.net.http\httprequestexception.cs" />
+    <Compile Include="system.net.http\httprequestmessage.cs" />
+    <Compile Include="system.net.http\httpresponsemessage.cs" />
+    <Compile Include="system.net.http\messageprocessinghandler.cs" />
+    <Compile Include="system.net.http\multipartcontent.cs" />
+    <Compile Include="system.net.http\multipartformdatacontent.cs" />
+    <Compile Include="system.net.http\streamcontent.cs" />
+    <Compile Include="system.net.http\stringcontent.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -86,13 +107,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -118,4 +136,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

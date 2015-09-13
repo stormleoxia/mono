@@ -43,10 +43,18 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
-    <Compile Include="..\System.ServiceModel\System.ServiceModel.Activation\ServiceHostFactory.cs" />
-    <Compile Include="..\System.ServiceModel\System.ServiceModel\ServiceHostingEnvironment.cs" />
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\System.ServiceModel\System.ServiceModel.Activation\ServiceHostFactory.cs">
+      <Link>ServiceHostFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\System.ServiceModel\System.ServiceModel\ServiceHostingEnvironment.cs">
+      <Link>ServiceHostingEnvironment.cs</Link>
+    </Compile>
     <Compile Include="Assembly\AssemblyInfo.cs" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

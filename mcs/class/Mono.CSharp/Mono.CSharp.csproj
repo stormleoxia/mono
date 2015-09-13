@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
     <Compile Include="..\..\mcs\anonymous.cs">
       <Link>anonymous.cs</Link>
     </Compile>
@@ -100,6 +101,7 @@
     <Compile Include="..\..\mcs\convert.cs">
       <Link>convert.cs</Link>
     </Compile>
+    <Compile Include="..\..\mcs\cs-parser.cs" />
     <Compile Include="..\..\mcs\cs-tokenizer.cs">
       <Link>cs-tokenizer.cs</Link>
     </Compile>
@@ -108,9 +110,6 @@
     </Compile>
     <Compile Include="..\..\mcs\delegate.cs">
       <Link>delegate.cs</Link>
-    </Compile>
-    <Compile Include="..\..\mcs\doc-bootstrap.cs">
-      <Link>doc-bootstrap.cs</Link>
     </Compile>
     <Compile Include="..\..\mcs\doc.cs">
       <Link>doc.cs</Link>
@@ -214,22 +213,15 @@
     <Compile Include="..\..\tools\monop\outline.cs">
       <Link>outline.cs</Link>
     </Compile>
-    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoConvert.cs">
-      <Link>CryptoConvert.cs</Link>
-    </Compile>
-    <Compile Include="cs-parser.cs" />
-    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolFile.cs">
-      <Link>MonoSymbolFile.cs</Link>
-    </Compile>
-    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolTable.cs">
-      <Link>MonoSymbolTable.cs</Link>
-    </Compile>
-    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolWriter.cs">
-      <Link>MonoSymbolWriter.cs</Link>
-    </Compile>
-    <Compile Include="..\Mono.CompilerServices.SymbolWriter\SourceMethodBuilder.cs">
-      <Link>SourceMethodBuilder.cs</Link>
-    </Compile>
+    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolFile.cs" />
+    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolFile.cs" />
+    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolTable.cs" />
+    <Compile Include="..\Mono.CompilerServices.SymbolWriter\MonoSymbolTable.cs" />
+    <Compile Include="..\Mono.CompilerServices.SymbolWriter\SourceMethodBuilder.cs" />
+    <Compile Include="..\Mono.CompilerServices.SymbolWriter\SourceMethodBuilder.cs" />
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoConvert.cs" />
+    <Compile Include="..\Mono.Security\Mono.Security.Cryptography\CryptoConvert.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

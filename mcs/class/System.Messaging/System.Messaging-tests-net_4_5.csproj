@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Messaging-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,16 +43,61 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\System.Messaging\AdminTest.cs" />
-    <Compile Include="Test\System.Messaging\AsyncPeekTest.cs" />
-    <Compile Include="Test\System.Messaging\AsyncReceiveTest.cs" />
-    <Compile Include="Test\System.Messaging\BasicMessagingTest.cs" />
-    <Compile Include="Test\System.Messaging\MessageEnumeratorTest.cs" />
-    <Compile Include="Test\System.Messaging\MessageQueuePermissionAttributeTest.cs" />
-    <Compile Include="Test\System.Messaging\MQUtil.cs" />
-    <Compile Include="Test\System.Messaging\PeekTest.cs" />
-    <Compile Include="Test\System.Messaging\SelectorTest.cs" />
-    <Compile Include="Test\System.Messaging\TransactionMessagingTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="..\..\build\common\monotodoattribute.cs" />
+    <Compile Include="assembly\assemblyinfo.cs" />
+    <Compile Include="system.messaging.design\messageformatterconverter.cs" />
+    <Compile Include="system.messaging.design\messagequeueconverter.cs" />
+    <Compile Include="system.messaging.design\queuepathdialog.cs" />
+    <Compile Include="system.messaging.design\queuepatheditor.cs" />
+    <Compile Include="system.messaging.design\timeoutconverter.cs" />
+    <Compile Include="system.messaging\accesscontrolentry.cs" />
+    <Compile Include="system.messaging\accesscontrolentrytype.cs" />
+    <Compile Include="system.messaging\accesscontrollist.cs" />
+    <Compile Include="system.messaging\acknowledgetypes.cs" />
+    <Compile Include="system.messaging\acknowledgment.cs" />
+    <Compile Include="system.messaging\activexmessageformatter.cs" />
+    <Compile Include="system.messaging\binarymessageformatter.cs" />
+    <Compile Include="system.messaging\cryptographicprovidertype.cs" />
+    <Compile Include="system.messaging\defaultpropertiestosend.cs" />
+    <Compile Include="system.messaging\encryptionalgorithm.cs" />
+    <Compile Include="system.messaging\encryptionrequired.cs" />
+    <Compile Include="system.messaging\genericaccessrights.cs" />
+    <Compile Include="system.messaging\hashalgorithm.cs" />
+    <Compile Include="system.messaging\imessageformatter.cs" />
+    <Compile Include="system.messaging\message.cs" />
+    <Compile Include="system.messaging\messageenumerator.cs" />
+    <Compile Include="system.messaging\messagepriority.cs" />
+    <Compile Include="system.messaging\messagepropertyfilter.cs" />
+    <Compile Include="system.messaging\messagequeue.cs" />
+    <Compile Include="system.messaging\messagequeueaccesscontrolentry.cs" />
+    <Compile Include="system.messaging\messagequeueaccessrights.cs" />
+    <Compile Include="system.messaging\messagequeuecriteria.cs" />
+    <Compile Include="system.messaging\messagequeueenumerator.cs" />
+    <Compile Include="system.messaging\messagequeueerrorcode.cs" />
+    <Compile Include="system.messaging\messagequeueexception.cs" />
+    <Compile Include="system.messaging\messagequeueinstaller.cs" />
+    <Compile Include="system.messaging\messagequeuepermission.cs" />
+    <Compile Include="system.messaging\messagequeuepermissionaccess.cs" />
+    <Compile Include="system.messaging\messagequeuepermissionattribute.cs" />
+    <Compile Include="system.messaging\messagequeuepermissionentry.cs" />
+    <Compile Include="system.messaging\messagequeuepermissionentrycollection.cs" />
+    <Compile Include="system.messaging\messagequeuetransaction.cs" />
+    <Compile Include="system.messaging\messagequeuetransactionstatus.cs" />
+    <Compile Include="system.messaging\messagequeuetransactiontype.cs" />
+    <Compile Include="system.messaging\messagetype.cs" />
+    <Compile Include="system.messaging\messagingdescriptionattribute.cs" />
+    <Compile Include="system.messaging\peekcompletedeventargs.cs" />
+    <Compile Include="system.messaging\peekcompletedeventhandler.cs" />
+    <Compile Include="system.messaging\queueaccessmode.cs" />
+    <Compile Include="system.messaging\receivecompletedeventargs.cs" />
+    <Compile Include="system.messaging\receivecompletedeventhandler.cs" />
+    <Compile Include="system.messaging\standardaccessrights.cs" />
+    <Compile Include="system.messaging\trustee.cs" />
+    <Compile Include="system.messaging\trusteetype.cs" />
+    <Compile Include="system.messaging\xmlmessageformatter.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -63,13 +107,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -121,4 +162,3 @@
     </EmbeddedResource>
   </ItemGroup>
 </Project>
-

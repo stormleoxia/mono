@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\Mono.Posix-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,16 +43,64 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Test\Mono.Unix.Native\RealTimeSignumTests.cs" />
-    <Compile Include="Test\Mono.Unix.Native\StdlibTest.cs" />
-    <Compile Include="Test\Mono.Unix\ReadlinkTest.cs" />
-    <Compile Include="Test\Mono.Unix\StdioFileStreamTest.cs" />
-    <Compile Include="Test\Mono.Unix\UnixEncodingTest.cs" />
-    <Compile Include="Test\Mono.Unix\UnixGroupTest.cs" />
-    <Compile Include="Test\Mono.Unix\UnixMarshalTest.cs" />
-    <Compile Include="Test\Mono.Unix\UnixPathTest.cs" />
-    <Compile Include="Test\Mono.Unix\UnixSignalTest.cs" />
-    <Compile Include="Test\Mono.Unix\UnixUserTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs" />
+    <Compile Include="..\..\build\common\locale.cs" />
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="Mono.Posix\Catalog.cs" />
+    <Compile Include="Mono.Posix\PeerCred.cs" />
+    <Compile Include="Mono.Posix\Syscall.cs" />
+    <Compile Include="Mono.Posix\UnixEndPoint.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixBinaryClientFormatterSink.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixBinaryClientFormatterSinkProvider.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixBinaryCore.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixBinaryServerFormatterSink.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixBinaryServerFormatterSinkProvider.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixChannel.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixClientChannel.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixClientTransportSink.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixClientTransportSinkProvider.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixConnectionPool.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixMessageIO.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixServerChannel.cs" />
+    <Compile Include="Mono.Remoting.Channels.Unix\UnixServerTransportSink.cs" />
+    <Compile Include="Mono.Unix.Native\CdeclFunction.cs" />
+    <Compile Include="Mono.Unix.Native\FileNameMarshaler.cs" />
+    <Compile Include="Mono.Unix.Native\MapAttribute.cs" />
+    <Compile Include="Mono.Unix.Native\NativeConvert.cs" />
+    <Compile Include="Mono.Unix.Native\NativeConvert.generated.cs" />
+    <Compile Include="Mono.Unix.Native\RealTimeSignum.cs" />
+    <Compile Include="Mono.Unix.Native\Stdlib.cs" />
+    <Compile Include="Mono.Unix.Native\Syscall.cs" />
+    <Compile Include="Mono.Unix.Native\TypeAttributes.cs" />
+    <Compile Include="Mono.Unix\AbstractUnixEndPoint.cs" />
+    <Compile Include="Mono.Unix\Catalog.cs" />
+    <Compile Include="Mono.Unix\FileAccessPattern.cs" />
+    <Compile Include="Mono.Unix\FileAccessPermissions.cs" />
+    <Compile Include="Mono.Unix\FileHandleOperations.cs" />
+    <Compile Include="Mono.Unix\FileSpecialAttributes.cs" />
+    <Compile Include="Mono.Unix\FileTypes.cs" />
+    <Compile Include="Mono.Unix\PeerCred.cs" />
+    <Compile Include="Mono.Unix\StdioFileStream.cs" />
+    <Compile Include="Mono.Unix\UnixClient.cs" />
+    <Compile Include="Mono.Unix\UnixDirectoryInfo.cs" />
+    <Compile Include="Mono.Unix\UnixDriveInfo.cs" />
+    <Compile Include="Mono.Unix\UnixEncoding.cs" />
+    <Compile Include="Mono.Unix\UnixEndPoint.cs" />
+    <Compile Include="Mono.Unix\UnixEnvironment.cs" />
+    <Compile Include="Mono.Unix\UnixFileInfo.cs" />
+    <Compile Include="Mono.Unix\UnixFileSystemInfo.cs" />
+    <Compile Include="Mono.Unix\UnixGroupInfo.cs" />
+    <Compile Include="Mono.Unix\UnixIOException.cs" />
+    <Compile Include="Mono.Unix\UnixListener.cs" />
+    <Compile Include="Mono.Unix\UnixMarshal.cs" />
+    <Compile Include="Mono.Unix\UnixPath.cs" />
+    <Compile Include="Mono.Unix\UnixPipes.cs" />
+    <Compile Include="Mono.Unix\UnixProcess.cs" />
+    <Compile Include="Mono.Unix\UnixSignal.cs" />
+    <Compile Include="Mono.Unix\UnixStream.cs" />
+    <Compile Include="Mono.Unix\UnixSymbolicLinkInfo.cs" />
+    <Compile Include="Mono.Unix\UnixUserInfo.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -63,13 +110,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -95,4 +139,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-

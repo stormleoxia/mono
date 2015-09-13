@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,6 @@
     <OutputPath>bin\Debug\System.Data.Services-tests-net_4_5</OutputPath>
     <NoStdLib>True</NoStdLib>
     <NoConfig>False</NoConfig>
-    
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
     </RootNamespace>
@@ -44,18 +43,88 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="..\System.Web.DynamicData\Test\Common\AssertExtensions.cs" />
-    <Compile Include="Test\.\ChangeInterceptorAttributeTests.cs" />
-    <Compile Include="Test\.\DataServiceExceptionTests.cs" />
-    <Compile Include="Test\.\DataServiceTests.cs" />
-    <Compile Include="Test\.\ETagAttributeTests.cs" />
-    <Compile Include="Test\.\ExpandSegmentCollectionTests.cs" />
-    <Compile Include="Test\.\ExpandSegmentTests.cs" />
-    <Compile Include="Test\.\IgnorePropertiesAttributeTests.cs" />
-    <Compile Include="Test\.\MimeTypeAttributeTests.cs" />
-    <Compile Include="Test\.\QueryInterceptorAttributeTests.cs" />
-    <Compile Include="Test\.\System.Data.Services.Providers\DataServiceProviderMethodsTest.cs" />
-    <Compile Include="Test\.\System.Data.Services.Providers\ResourceTypeTest.cs" />  </ItemGroup>
+    <Compile Include="..\..\build\common\consts.cs">
+      <Link>consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\locale.cs">
+      <Link>locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\monotodoattribute.cs">
+      <Link>monotodoattribute.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`1.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`10.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`11.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`12.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`13.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`2.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`3.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`4.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`5.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`6.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`7.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`8.cs" />
+    <Compile Include="system.data.services.internal\expandedwrapper`9.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper0.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper1.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper2.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper3.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper4.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper5.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper6.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper7.cs" />
+    <Compile Include="system.data.services.internal\projectedwrapper8.cs" />
+    <Compile Include="system.data.services.internal\projectedwrappermany.cs" />
+    <Compile Include="system.data.services.internal\projectedwrappermanyend.cs" />
+    <Compile Include="system.data.services.providers\dataserviceprovidermethods.cs" />
+    <Compile Include="system.data.services.providers\idataservicemetadataprovider.cs" />
+    <Compile Include="system.data.services.providers\idataservicepagingprovider.cs" />
+    <Compile Include="system.data.services.providers\idataservicequeryprovider.cs" />
+    <Compile Include="system.data.services.providers\idataservicestreamprovider.cs" />
+    <Compile Include="system.data.services.providers\idataserviceupdateprovider.cs" />
+    <Compile Include="system.data.services.providers\opentypemethods.cs" />
+    <Compile Include="system.data.services.providers\resourceassociationset.cs" />
+    <Compile Include="system.data.services.providers\resourceassociationsetend.cs" />
+    <Compile Include="system.data.services.providers\resourceproperty.cs" />
+    <Compile Include="system.data.services.providers\resourcepropertykind.cs" />
+    <Compile Include="system.data.services.providers\resourceset.cs" />
+    <Compile Include="system.data.services.providers\resourcetype.cs" />
+    <Compile Include="system.data.services.providers\resourcetypekind.cs" />
+    <Compile Include="system.data.services.providers\serviceoperation.cs" />
+    <Compile Include="system.data.services.providers\serviceoperationparameter.cs" />
+    <Compile Include="system.data.services.providers\serviceoperationresultkind.cs" />
+    <Compile Include="System.Data.Services\ChangeInterceptorAttribute.cs" />
+    <Compile Include="System.Data.Services\DataService.cs" />
+    <Compile Include="system.data.services\dataservicebehavior.cs" />
+    <Compile Include="system.data.services\dataserviceconfiguration.cs" />
+    <Compile Include="System.Data.Services\DataServiceException.cs" />
+    <Compile Include="System.Data.Services\DataServiceHost.cs" />
+    <Compile Include="System.Data.Services\DataServiceHostFactory.cs" />
+    <Compile Include="system.data.services\dataserviceoperationcontext.cs" />
+    <Compile Include="system.data.services\dataserviceprocessingpipeline.cs" />
+    <Compile Include="system.data.services\dataserviceprocessingpipelineeventargs.cs" />
+    <Compile Include="System.Data.Services\EntitySetRights.cs" />
+    <Compile Include="System.Data.Services\ETagAttribute.cs" />
+    <Compile Include="System.Data.Services\ExpandSegment.cs" />
+    <Compile Include="System.Data.Services\ExpandSegmentCollection.cs" />
+    <Compile Include="System.Data.Services\HandleExceptionArgs.cs" />
+    <Compile Include="System.Data.Services\IDataServiceConfiguration.cs" />
+    <Compile Include="System.Data.Services\IDataServiceHost.cs" />
+    <Compile Include="system.data.services\idataservicehost2.cs" />
+    <Compile Include="System.Data.Services\IExpandedResult.cs" />
+    <Compile Include="System.Data.Services\IExpandProvider.cs" />
+    <Compile Include="System.Data.Services\IgnorePropertiesAttribute.cs" />
+    <Compile Include="System.Data.Services\IRequestHandler.cs" />
+    <Compile Include="System.Data.Services\IUpdatable.cs" />
+    <Compile Include="System.Data.Services\MimeTypeAttribute.cs" />
+    <Compile Include="System.Data.Services\ProcessRequestArgs.cs" />
+    <Compile Include="System.Data.Services\QueryInterceptorAttribute.cs" />
+    <Compile Include="System.Data.Services\ServiceOperationRights.cs" />
+    <Compile Include="System.Data.Services\SingleResultAttribute.cs" />
+    <Compile Include="System.Data.Services\UpdateOperations.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -65,13 +134,10 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-
     </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
-
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -97,4 +163,3 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 </Project>
-
