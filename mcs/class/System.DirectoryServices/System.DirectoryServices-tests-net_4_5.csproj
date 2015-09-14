@@ -197,11 +197,11 @@
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.DirectoryServices\System.DirectoryServices-net_4_5.csproj">
+    <ProjectReference Include="System.DirectoryServices-net_4_5.csproj">
       <Project>{EC4E43E7-63C0-4D64-8B7A-E00C097872A5}</Project>
-      <Name>System.DirectoryServices\System.DirectoryServices-net_4_5</Name>
+      <Name>System.DirectoryServices-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
       <Project>{5C605B73-19DA-4FB7-AB39-C7EF9A8B19FE}</Project>
@@ -209,7 +209,7 @@
     </ProjectReference>
     <ProjectReference Include="..\Novell.Directory.Ldap\Novell.Directory.Ldap-net_4_5.csproj">
       <Project>{E6070FFA-2CBA-4C24-99C1-63A4F5052821}</Project>
-      <Name>Novell.Directory.Ldap\Novell.Directory.Ldap-net_4_5</Name>
+      <Name>Novell.Directory.Ldap-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

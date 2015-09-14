@@ -139,15 +139,15 @@
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Mono.Debugger.Soft\Mono.Debugger.Soft-net_4_5.csproj">
+    <ProjectReference Include="Mono.Debugger.Soft-net_4_5.csproj">
       <Project>{7DFAE255-C562-4F72-8DE4-4D578491A10A}</Project>
-      <Name>Mono.Debugger.Soft\Mono.Debugger.Soft-net_4_5</Name>
+      <Name>Mono.Debugger.Soft-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Cecil\Mono.Cecil-net_4_5.csproj">
       <Project>{F6DD456E-ADE4-419D-997F-41ECA0CE79F7}</Project>
-      <Name>Mono.Cecil\Mono.Cecil-net_4_5</Name>
+      <Name>Mono.Cecil-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
       <Project>{5C605B73-19DA-4FB7-AB39-C7EF9A8B19FE}</Project>
@@ -155,7 +155,7 @@
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
       <Project>{D92530F4-3F2B-4351-BD21-9D6BEE6D2A4E}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+      <Name>System.Core-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

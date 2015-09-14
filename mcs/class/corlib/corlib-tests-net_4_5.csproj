@@ -2279,17 +2279,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
-    <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
+    <ProjectReference Include="..\Mono.Posix\Mono.Posix-net_4_5.csproj">
+      <Project>{85a9b29b-58ff-4fbe-8998-b0a89ac22880}</Project>
+      <Name>Mono.Posix-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
+      <Project>{d92530f4-3f2b-4351-bd21-9d6bee6d2a4e}</Project>
+      <Name>System.Core-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mono.Posix\Mono.Posix-net_4_0.csproj">
-      <Project>{E9A655D1-EE99-467A-8F4B-CAC80E0E65BE}</Project>
-      <Name>Mono.Posix\Mono.Posix-net_4_0</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{8B53B0E9-E0CA-4378-8C57-F85D518871D3}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

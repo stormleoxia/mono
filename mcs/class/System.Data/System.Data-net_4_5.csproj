@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <NoWarn>1699,649</NoWarn>
     <Optimize>false</Optimize>
-    <DefineConstants>TRACE;DEBUG;NET_4_0;NET_4_5;MONO</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NET_2_0;NET_4_0;NET_4_5;MONO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>

@@ -95,11 +95,11 @@
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Mono.Messaging\Mono.Messaging-net_4_5.csproj">
+    <ProjectReference Include="Mono.Messaging-net_4_5.csproj">
       <Project>{DDCC93B5-9425-4E9A-95DC-3400D0028508}</Project>
-      <Name>Mono.Messaging\Mono.Messaging-net_4_5</Name>
+      <Name>Mono.Messaging-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
       <Project>{5C605B73-19DA-4FB7-AB39-C7EF9A8B19FE}</Project>
@@ -107,7 +107,7 @@
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
       <Project>{D52A2CEA-245E-4877-950E-3EAC5F541B8E}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_5</Name>
+      <Name>System.Configuration-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Messaging\System.Messaging-net_4_0.csproj">
       <Project>{5854BF27-FC35-44F5-BE59-580900694E32}</Project>

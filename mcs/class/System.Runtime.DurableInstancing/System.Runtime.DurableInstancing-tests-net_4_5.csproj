@@ -88,11 +88,11 @@
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Runtime.DurableInstancing\System.Runtime.DurableInstancing-net_4_5.csproj">
+    <ProjectReference Include="System.Runtime.DurableInstancing-net_4_5.csproj">
       <Project>{04DAD425-06C0-481B-9787-D2D4BFF196F5}</Project>
-      <Name>System.Runtime.DurableInstancing\System.Runtime.DurableInstancing-net_4_5</Name>
+      <Name>System.Runtime.DurableInstancing-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
       <Project>{5C605B73-19DA-4FB7-AB39-C7EF9A8B19FE}</Project>
@@ -104,15 +104,15 @@
     </ProjectReference>
     <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_5.csproj">
       <Project>{08FF4C26-9C12-433D-AE90-43370046387A}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_4_5</Name>
+      <Name>System.Runtime.Serialization-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
       <Project>{D92530F4-3F2B-4351-BD21-9D6BEE6D2A4E}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+      <Name>System.Core-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Xml.Linq\System.Xml.Linq-net_4_5.csproj">
       <Project>{8328796E-8A15-4972-8F1E-2F15E7D57C42}</Project>
-      <Name>System.Xml.Linq\System.Xml.Linq-net_4_5</Name>
+      <Name>System.Xml.Linq-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

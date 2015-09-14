@@ -159,11 +159,11 @@
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Security\System.Security-net_4_5.csproj">
+    <ProjectReference Include="System.Security-net_4_5.csproj">
       <Project>{B55E59B2-31CA-438B-ADB8-4B9A9A547830}</Project>
-      <Name>System.Security\System.Security-net_4_5</Name>
+      <Name>System.Security-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-1.csproj">
       <Project>{6822DF7D-F859-4F02-9946-F138AA756A0E}</Project>
@@ -171,11 +171,11 @@
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5.csproj">
       <Project>{2951DEC2-4393-4A78-83F9-42EB39CB708F}</Project>
-      <Name>System.XML\System.Xml-net_4_5</Name>
+      <Name>System.Xml-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Security\Mono.Security-net_4_5.csproj">
       <Project>{D68D4FED-CA32-4800-A628-58BAE485562C}</Project>
-      <Name>Mono.Security\Mono.Security-net_4_5</Name>
+      <Name>Mono.Security-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

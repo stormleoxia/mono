@@ -91,11 +91,11 @@
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ServiceProcess\System.ServiceProcess-net_4_5.csproj">
+    <ProjectReference Include="System.ServiceProcess-net_4_5.csproj">
       <Project>{FE889BD6-43E6-435E-90CE-A39F65A4AA5A}</Project>
-      <Name>System.ServiceProcess\System.ServiceProcess-net_4_5</Name>
+      <Name>System.ServiceProcess-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
       <Project>{5C605B73-19DA-4FB7-AB39-C7EF9A8B19FE}</Project>
@@ -103,11 +103,11 @@
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration.Install\System.Configuration.Install-net_4_5.csproj">
       <Project>{E6E1740E-37DD-487C-8947-F1C0612D4738}</Project>
-      <Name>System.Configuration.Install\System.Configuration.Install-net_4_5</Name>
+      <Name>System.Configuration.Install-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\Managed.Windows.Forms\System.Windows.Forms-net_4_5.csproj">
       <Project>{B102F27C-1A07-487F-BA5B-D5155D201112}</Project>
-      <Name>Managed.Windows.Forms\System.Windows.Forms-net_4_5</Name>
+      <Name>System.Windows.Forms-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

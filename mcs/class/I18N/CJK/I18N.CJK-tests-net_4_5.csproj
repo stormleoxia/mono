@@ -80,17 +80,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="..\lib\net_4_5\nunit.framework.dll" />
-    <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
+    <ProjectReference Include="..\..\corlib\corlib-net_4_5.csproj">
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\I18N\Common\I18N-net_4_5.csproj">
+    <ProjectReference Include="..\Common\I18N-net_4_5.csproj">
       <Project>{C337A9A4-3797-4339-AD23-493DF062CD76}</Project>
-      <Name>Common\I18N-net_4_5</Name>
+      <Name>I18N-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\I18N\CJK\I18N.CJK-net_4_5.csproj">
+    <ProjectReference Include="I18N.CJK-net_4_5.csproj">
       <Project>{E1E28FDB-826D-4FEB-B3B9-3FF98BD2E43F}</Project>
-      <Name>CJK\I18N.CJK-net_4_5</Name>
+      <Name>I18N.CJK-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
