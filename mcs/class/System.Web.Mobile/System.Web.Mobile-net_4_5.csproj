@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Library</OutputType>
+    <NoWarn>1699</NoWarn>
+    <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
+    <NoStdLib>True</NoStdLib>
+    <NoConfig>True</NoConfig>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectGuid>{48F4216C-E958-4F96-8C9F-09DE83517698}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <NoWarn>1699</NoWarn>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <NoWarn>1699</NoWarn>
+    <Optimize>true</Optimize>
+    <DefineConstants>NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;NET_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- Set AddAdditionalExplicitAssemblyReferences to false, otherwise if targetting .NET4.0, 
+  Microsoft.NETFramework.props will force a dependency on the assembly System.Core. This
+  is a problem to compile the Mono mscorlib.dll -->
+  <PropertyGroup>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\GlobalSuppressions2.cs">
+      <Link>GlobalSuppressions2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\ConfigurationSectionHelper.cs">
+      <Link>System.Web.Mobile\ConfigurationSectionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\CookielessData.cs">
+      <Link>System.Web.Mobile\CookielessData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\DeviceFilterDictionary.cs">
+      <Link>System.Web.Mobile\DeviceFilterDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\DeviceFiltersSection.cs">
+      <Link>System.Web.Mobile\DeviceFiltersSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\ErrorHandlerModule.cs">
+      <Link>System.Web.Mobile\ErrorHandlerModule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\MobileCapabilities.cs">
+      <Link>System.Web.Mobile\MobileCapabilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\MobileDeviceCapabilitiesSectionHandler.cs">
+      <Link>System.Web.Mobile\MobileDeviceCapabilitiesSectionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\MobileErrorInfo.cs">
+      <Link>System.Web.Mobile\MobileErrorInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\MobileFormsAuthentication.cs">
+      <Link>System.Web.Mobile\MobileFormsAuthentication.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\MobileRedirect.cs">
+      <Link>System.Web.Mobile\MobileRedirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\Mobile\UrlPath.cs">
+      <Link>System.Web.Mobile\UrlPath.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlCalendarAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlCalendarAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlCommandAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlCommandAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlFormAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlFormAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlImageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlImageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlLinkAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlLinkAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlMobileTextWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlMobileTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlPageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlPageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlPhoneCallAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlPhoneCallAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlSelectionListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlSelectionListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ChtmlTextBoxAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ChtmlTextBoxAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\ControlAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\ControlAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\EmptyTextWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\EmptyTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlCalendarAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlCalendarAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlCommandAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlCommandAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlControlAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlControlAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlFormAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlFormAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlImageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlImageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlLabelAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlLabelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlLinkAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlLinkAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlLiteralTextAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlLiteralTextAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlMobileTextWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlMobileTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlObjectListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlObjectListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlPageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlPageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlPanelAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlPanelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlPhoneCallAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlPhoneCallAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlSelectionListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlSelectionListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlTextBoxAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlTextBoxAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlTextViewAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlTextViewAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlValidationSummaryAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlValidationSummaryAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\HtmlValidatorAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\HtmlValidatorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\MobileTextWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\MobileTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\MultiPartWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\MultiPartWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\UpWmlMobileTextWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\UpWmlMobileTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\UpWmlPageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\UpWmlPageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlCalendarAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlCalendarAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlCommandAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlCommandAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlControlAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlControlAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlFormAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlFormAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlImageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlImageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlLabelAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlLabelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlLinkAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlLinkAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlLiteralTextAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlLiteralTextAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlMobileTextWriter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlMobileTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlObjectListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlObjectListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlPageAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlPageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlPanelAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlPanelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlPhoneCallAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlPhoneCallAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlPostFieldType.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlPostFieldType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlSelectionListAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlSelectionListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlTextBoxAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlTextBoxAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlTextViewAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlTextViewAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlValidationSummaryAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlValidationSummaryAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\WmlValidatorAdapter.cs">
+      <Link>System.Web.MobileControls.Adapters\WmlValidatorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\Constants.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicCalendarAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicCalendarAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicCommandAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicCommandAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicControlAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicControlAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicFormAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicFormAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicImageAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicImageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicLabelAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicLabelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicLinkAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicLinkAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicListAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicLiteralTextAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicLiteralTextAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicObjectListAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicObjectListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicPageAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicPageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicPanelAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicPanelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicPhoneCallAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicPhoneCallAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicSelectionListAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicSelectionListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicTextBoxAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicTextBoxAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicTextViewAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicTextViewAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicValidationSummaryAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicValidationSummaryAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlBasicValidatorAdapter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlBasicValidatorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlCssHandler.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlCssHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlMobileTextWriter.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlMobileTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Adapters\XhtmlAdapters\XhtmlStyleClass.cs">
+      <Link>System.Web.UI.MobileControls.Adapters.XhtmlAdapters\XhtmlStyleClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\AdRotator.cs">
+      <Link>System.Web.UI.MobileControls\AdRotator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ArrayListCollectionBase.cs">
+      <Link>System.Web.UI.MobileControls\ArrayListCollectionBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\BaseValidator.cs">
+      <Link>System.Web.UI.MobileControls\BaseValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Calendar.cs">
+      <Link>System.Web.UI.MobileControls\Calendar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Command.cs">
+      <Link>System.Web.UI.MobileControls\Command.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\CompareValidator.cs">
+      <Link>System.Web.UI.MobileControls\CompareValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\CompileLiteralTextParser.cs">
+      <Link>System.Web.UI.MobileControls\CompileLiteralTextParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Constants.cs">
+      <Link>System.Web.UI.MobileControls\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ControlPager.cs">
+      <Link>System.Web.UI.MobileControls\ControlPager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ControlsConfig.cs">
+      <Link>System.Web.UI.MobileControls\ControlsConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\CustomValidator.cs">
+      <Link>System.Web.UI.MobileControls\CustomValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DataSourceHelper.cs">
+      <Link>System.Web.UI.MobileControls\DataSourceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DesignerAdapterAttribute.cs">
+      <Link>System.Web.UI.MobileControls\DesignerAdapterAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DesignerDeviceConfig.cs">
+      <Link>System.Web.UI.MobileControls\DesignerDeviceConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerAdapterUtil.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerAdapterUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerAdRotatorAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerAdRotatorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerCalendarAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerCalendarAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerCommandAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerCommandAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerImageAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerImageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerLabelAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerLabelAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerLinkAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerLinkAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerListAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerObjectListAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerObjectListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerSelectionListAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerSelectionListAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerTextBoxAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerTextBoxAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerTextViewAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerTextViewAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerTextWriter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerValidationSummaryAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerValidationSummaryAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\DesignerValidatorAdapter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\DesignerValidatorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Adapters\MSHTMLHostUtil.cs">
+      <Link>System.Web.UI.Design.MobileControls.Adapters\MSHTMLHostUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\AdRotatorDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\AdRotatorDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\AppliedDeviceFiltersDialog.cs">
+      <Link>System.Web.UI.MobileControls.Design\AppliedDeviceFiltersDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\AppliedDeviceFiltersEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\AppliedDeviceFiltersEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\BaseTemplatedMobileComponentEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\BaseTemplatedMobileComponentEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\BaseValidatorDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\BaseValidatorDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\CalendarDataBindingHandler.cs">
+      <Link>System.Web.UI.MobileControls.Design\CalendarDataBindingHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\CalendarDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\CalendarDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\CommandCollectionEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\CommandCollectionEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\CommandDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\CommandDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Constants.cs">
+      <Link>System.Web.UI.MobileControls.Design\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ContainmentStatus.cs">
+      <Link>System.Web.UI.MobileControls.Design\ContainmentStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\ChoiceConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\ChoiceConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\DataFieldConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\DataFieldConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\DataMemberConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\DataMemberConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\DefaultCommandConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\DefaultCommandConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\FontNameConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\FontNameConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\FormConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\FormConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\NavigateUrlConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\NavigateUrlConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\StyleConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\StyleConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\StyleReferenceConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\StyleReferenceConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Converters\ValidatedMobileControlConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Converters\ValidatedMobileControlConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\DesignerCapabilities.cs">
+      <Link>System.Web.UI.MobileControls.Design\DesignerCapabilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\DesignerForm.cs">
+      <Link>System.Web.UI.MobileControls.Design\DesignerForm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\DeviceFilterEditorDialog.cs">
+      <Link>System.Web.UI.MobileControls.Design\DeviceFilterEditorDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\DeviceSpecificDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\DeviceSpecificDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\DeviceSpecificDialogCachedState.cs">
+      <Link>System.Web.UI.MobileControls.Design\DeviceSpecificDialogCachedState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ExternDll.cs">
+      <Link>System.Web.UI.MobileControls.Design\ExternDll.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\FieldCollectionEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\FieldCollectionEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\FormDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\FormDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\IDeviceSpecificChoiceDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\IDeviceSpecificChoiceDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\IDeviceSpecificDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\IDeviceSpecificDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\IListDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\IListDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ImageDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\ImageDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ImageUrlEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\ImageUrlEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\IMobileDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\IMobileDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\IMobileWebFormServices.cs">
+      <Link>System.Web.UI.MobileControls.Design\IMobileWebFormServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\IRefreshableDeviceSpecificEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\IRefreshableDeviceSpecificEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ItemCollectionEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\ItemCollectionEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\LabelDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\LabelDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\LinkDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\LinkDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ListComponentEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\ListComponentEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ListComponentEditorPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\ListComponentEditorPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ListDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\ListDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ListGeneralPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\ListGeneralPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ListItemsPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\ListItemsPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileComponentEditorPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileComponentEditorPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileContainerDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileContainerDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileControlDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileControlDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileControlPersister.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileControlPersister.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileResource.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileTemplatedControlDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileTemplatedControlDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileUITypeEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileUITypeEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\MobileUserControlDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\MobileUserControlDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\NativeMethods.cs">
+      <Link>System.Web.UI.MobileControls.Design\NativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ObjectListCommandsPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\ObjectListCommandsPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ObjectListComponentEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\ObjectListComponentEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ObjectListDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\ObjectListDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ObjectListFieldsPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\ObjectListFieldsPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ObjectListGeneralPage.cs">
+      <Link>System.Web.UI.MobileControls.Design\ObjectListGeneralPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\PanelDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\PanelDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\PhoneCallDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\PhoneCallDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\PropertyOverridesDialog.cs">
+      <Link>System.Web.UI.MobileControls.Design\PropertyOverridesDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\PropertyOverridesTypeEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\PropertyOverridesTypeEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\SafeNativeMethods.cs">
+      <Link>System.Web.UI.MobileControls.Design\SafeNativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\SelectionListComponentEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\SelectionListComponentEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\SelectionListDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\SelectionListDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\StylesEditorDialog.cs">
+      <Link>System.Web.UI.MobileControls.Design\StylesEditorDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\StyleSheetComponentEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\StyleSheetComponentEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\StyleSheetDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\StyleSheetDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\StyleSheetRefUrlEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\StyleSheetRefUrlEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\TableFieldsEditor.cs">
+      <Link>System.Web.UI.MobileControls.Design\TableFieldsEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\TemplatingOptionsDialog.cs">
+      <Link>System.Web.UI.MobileControls.Design\TemplatingOptionsDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\TextBoxDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\TextBoxDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\TextViewDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\TextViewDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\DefaultDialogButtons.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\DefaultDialogButtons.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\DesignerUtility.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\DesignerUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\EditableTreeList.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\EditableTreeList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\FileReader.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\FileReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\GenericUI.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\GenericUI.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\GroupLabel.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\GroupLabel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\HeaderLabel.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\HeaderLabel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\HeaderPanel.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\HeaderPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\ImageCreator.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\ImageCreator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\InterchangeableLists.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\InterchangeableLists.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\MSHTMLHost.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\MSHTMLHost.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\TemporaryBitmapFile.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\TemporaryBitmapFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\UnsettableComboBox.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\UnsettableComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\WbmpConverter.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\WbmpConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\Util\WebConfigManager.cs">
+      <Link>System.Web.UI.Design.MobileControls.Util\WebConfigManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\ValidationSummaryDesigner.cs">
+      <Link>System.Web.UI.MobileControls.Design\ValidationSummaryDesigner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DeviceOverridableAttribute.cs">
+      <Link>System.Web.UI.MobileControls\DeviceOverridableAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DeviceSpecific.cs">
+      <Link>System.Web.UI.MobileControls\DeviceSpecific.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DeviceSpecificChoice.cs">
+      <Link>System.Web.UI.MobileControls\DeviceSpecificChoice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\DeviceSpecificChoiceCollection.cs">
+      <Link>System.Web.UI.MobileControls\DeviceSpecificChoiceCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ErrorFormatterPage.cs">
+      <Link>System.Web.UI.MobileControls\ErrorFormatterPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\FactoryGenerator.cs">
+      <Link>System.Web.UI.MobileControls\FactoryGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\FontInfo.cs">
+      <Link>System.Web.UI.MobileControls\FontInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Form.cs">
+      <Link>System.Web.UI.MobileControls\Form.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\IControlAdapter.cs">
+      <Link>System.Web.UI.MobileControls\IControlAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\IListControl.cs">
+      <Link>System.Web.UI.MobileControls\IListControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Image.cs">
+      <Link>System.Web.UI.MobileControls\Image.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\IndividualDeviceConfig.cs">
+      <Link>System.Web.UI.MobileControls\IndividualDeviceConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\IObjectListFieldCollection.cs">
+      <Link>System.Web.UI.MobileControls\IObjectListFieldCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\IPageAdapter.cs">
+      <Link>System.Web.UI.MobileControls\IPageAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ItemPager.cs">
+      <Link>System.Web.UI.MobileControls\ItemPager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ITemplateable.cs">
+      <Link>System.Web.UI.MobileControls\ITemplateable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Label.cs">
+      <Link>System.Web.UI.MobileControls\Label.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Link.cs">
+      <Link>System.Web.UI.MobileControls\Link.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\List.cs">
+      <Link>System.Web.UI.MobileControls\List.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ListCommandEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\ListCommandEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ListCommandEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\ListCommandEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ListControlBuilder.cs">
+      <Link>System.Web.UI.MobileControls\ListControlBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ListDataBindEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\ListDataBindEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ListDataBindEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\ListDataBindEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ListDataHelper.cs">
+      <Link>System.Web.UI.MobileControls\ListDataHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\LiteralLink.cs">
+      <Link>System.Web.UI.MobileControls\LiteralLink.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\LiteralText.cs">
+      <Link>System.Web.UI.MobileControls\LiteralText.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\LiteralTextContainerControlBuilder.cs">
+      <Link>System.Web.UI.MobileControls\LiteralTextContainerControlBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\LiteralTextParser.cs">
+      <Link>System.Web.UI.MobileControls\LiteralTextParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\LoadItemsEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\LoadItemsEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\LoadItemsEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\LoadItemsEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileCategoryAttribute.cs">
+      <Link>System.Web.UI.MobileControls\MobileCategoryAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileControl.cs">
+      <Link>System.Web.UI.MobileControls\MobileControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileControlBuilder.cs">
+      <Link>System.Web.UI.MobileControls\MobileControlBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileControlsSection.cs">
+      <Link>System.Web.UI.MobileControls\MobileControlsSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileControlsSectionHandler.cs">
+      <Link>System.Web.UI.MobileControls\MobileControlsSectionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileControlsSectionHelper.cs">
+      <Link>System.Web.UI.MobileControls\MobileControlsSectionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileListItem.cs">
+      <Link>System.Web.UI.MobileControls\MobileListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileListItemCollection.cs">
+      <Link>System.Web.UI.MobileControls\MobileListItemCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobilePage.cs">
+      <Link>System.Web.UI.MobileControls\MobilePage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileSysDescriptionAttribute.cs">
+      <Link>System.Web.UI.MobileControls\MobileSysDescriptionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\MobileUserControl.cs">
+      <Link>System.Web.UI.MobileControls\MobileUserControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectList.cs">
+      <Link>System.Web.UI.MobileControls\ObjectList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListCommand.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListCommandCollection.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListCommandCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListCommandEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListCommandEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListCommandEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListCommandEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListDataBindEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListDataBindEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListDataBindEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListDataBindEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListField.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListFieldCollection.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListFieldCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListItem.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListItemCollection.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListItemCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListSelectEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListSelectEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListSelectEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListSelectEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListShowCommandsEventArgs.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListShowCommandsEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListShowCommandsEventHandler.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListShowCommandsEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ObjectListTitleAttribute.cs">
+      <Link>System.Web.UI.MobileControls\ObjectListTitleAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\PagedControl.cs">
+      <Link>System.Web.UI.MobileControls\PagedControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\PagerStyle.cs">
+      <Link>System.Web.UI.MobileControls\PagerStyle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Panel.cs">
+      <Link>System.Web.UI.MobileControls\Panel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\PersistNameAttribute.cs">
+      <Link>System.Web.UI.MobileControls\PersistNameAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\PhoneCall.cs">
+      <Link>System.Web.UI.MobileControls\PhoneCall.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\RangeValidator.cs">
+      <Link>System.Web.UI.MobileControls\RangeValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\RegularExpressionValidator.cs">
+      <Link>System.Web.UI.MobileControls\RegularExpressionValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\RequiredFieldValidator.cs">
+      <Link>System.Web.UI.MobileControls\RequiredFieldValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\RuntimeLiteralTextParser.cs">
+      <Link>System.Web.UI.MobileControls\RuntimeLiteralTextParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\SelectionList.cs">
+      <Link>System.Web.UI.MobileControls\SelectionList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\SessionViewState.cs">
+      <Link>System.Web.UI.MobileControls\SessionViewState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Style.cs">
+      <Link>System.Web.UI.MobileControls\Style.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\StyleSheet.cs">
+      <Link>System.Web.UI.MobileControls\StyleSheet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\TemplateContainer.cs">
+      <Link>System.Web.UI.MobileControls\TemplateContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\TextBox.cs">
+      <Link>System.Web.UI.MobileControls\TextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\TextControl.cs">
+      <Link>System.Web.UI.MobileControls\TextControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\TextView.cs">
+      <Link>System.Web.UI.MobileControls\TextView.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\TextViewElement.cs">
+      <Link>System.Web.UI.MobileControls\TextViewElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\UniqueSet.cs">
+      <Link>System.Web.UI.MobileControls\UniqueSet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\ValidationSummary.cs">
+      <Link>System.Web.UI.MobileControls\ValidationSummary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Locale.cs">
+      <Link>Locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyRef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="System.Web.Mobile\SR.cs" />
+    <Compile Include="System.Web.UI.Design.MobileControls\SR.cs" />
+    <Compile Include="System.Web.UI.MobileControls.Adapters\SR.cs" />
+    <Compile Include="System.Web.UI.Design.MobileControls.Util\SimpleParser.cs" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
+    </PreBuildEvent>
+    <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
+    </PreBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
+    </PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../corlib/corlib-net_4_5.csproj">
+      <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
+      <Name>corlib-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System/System-net_4_5.csproj">
+      <Project>{FFAC0B73-D997-493B-9C62-27656CD858BB}</Project>
+      <Name>System-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System.Core/System.Core-net_4_5.csproj">
+      <Project>{D92530F4-3F2B-4351-BD21-9D6BEE6D2A4E}</Project>
+      <Name>System.Core-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System.Data/System.Data-net_4_5.csproj">
+      <Project>{9A33954F-57A8-4D75-B1D8-0F81808A0DD4}</Project>
+      <Name>System.Data-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System.Drawing/System.Drawing-net_4_5.csproj">
+      <Project>{CB1CB976-AA54-4553-B0E7-05665B199EC4}</Project>
+      <Name>System.Drawing-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System.Web/System.Web-net_4_5.csproj">
+      <Project>{B489C3DE-3ED3-4EDC-B42B-82B38E101857}</Project>
+      <Name>System.Web-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System.Web.Extensions/System.Web.Extensions-net_4_5.csproj">
+      <Project>{74D281D8-F725-4D79-B218-2DFCCFD44FA2}</Project>
+      <Name>System.Web.Extensions-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Managed.Windows.Forms\System.Windows.Forms-net_4_5.csproj">
+      <Project>{b102f27c-1a07-487f-ba5b-d5155d201112}</Project>
+      <Name>System.Windows.Forms-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
+      <Project>{d52a2cea-245e-4877-950e-3eac5f541b8e}</Project>
+      <Name>System.Configuration-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data.Entity\System.Data.Entity-net_4_5.csproj">
+      <Project>{e902cd82-23ac-456b-9f4b-51cc193275f8}</Project>
+      <Name>System.Data.Entity-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Design\System.Design-net_4_5.csproj">
+      <Project>{D4E6A482-761B-4B41-8B63-C930CA84D268}</Project>
+      <Name>System.Design-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Drawing.Design\System.Drawing.Design-net_4_5.csproj">
+      <Project>{daebd561-068a-4730-9f8c-98ec20ddee78}</Project>
+      <Name>System.Drawing.Design-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.XML\System.Xml-net_4_5.csproj">
+      <Project>{2951dec2-4393-4a78-83f9-42eb39cb708f}</Project>
+      <Name>System.Xml-net_4_5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.RegularExpressions">
+      <HintPath>..\lib\net_4_5\System.Web.RegularExpressions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
