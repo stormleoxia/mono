@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Configuration.Assemblies;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace System.Web.RegularExpressions_gen_net_4_5
+namespace System.Web.RegularExpressions_gen
 {
     internal class Program
     {
@@ -119,7 +120,6 @@ namespace System.Web.RegularExpressions_gen_net_4_5
             }
         };
 
-
         private static void Main(string[] args)
         {
             try
@@ -133,18 +133,44 @@ namespace System.Web.RegularExpressions_gen_net_4_5
                         AssemblyNamespace,
                         true));
                 }
-
-                AssemblyName assemblyName = new AssemblyName(AssemblyNamespace + ", " +
-                                                          "Version=" +
-                                                          Consts.MonoVersion + ", " +
-                                                          "Culture=" +
-                                                          "neutral" + ", " +
-                                                          "PublicKeyToken=" +
-                                                         "null");
-                /*using (var stream = File.Open("../../../mono.snk", FileMode.Open))
+                string firstArgument = null;
+                if (args.Length > 0)
                 {
-                    assemblyName.KeyPair = new StrongNameKeyPair(stream);
-                }*/
+                    firstArgument = args[0];
+                }
+                else
+                {
+                    Console.WriteLine("No KeyPair file provided: no signing possible.");
+                }
+                StrongNameKeyPair keyPair = null;
+                if (!string.IsNullOrEmpty(firstArgument))
+                {
+                    if (File.Exists(firstArgument))
+                    {
+                        Console.WriteLine("Using {0} as KeyPair file for {1}", firstArgument, AssemblyNamespace);
+                        using (var stream = File.Open(firstArgument, FileMode.Open))
+                        {
+                            keyPair = new StrongNameKeyPair(stream);
+                        }
+                    }
+                    else
+                    {
+                        Console.Error.WriteLine(firstArgument + " doesn't exists.");
+                    }
+                }
+                AssemblyName assemblyName = new AssemblyName(AssemblyNamespace + ", " +
+                                                             "Version=" +
+                                                             Consts.MonoVersion + ", " +
+                                                             "Culture=" +
+                                                             "neutral" + ", " +
+                                                             "PublicKeyToken=" +
+                                                             "null");
+                if (keyPair != null)
+                {
+                    assemblyName.KeyPair = keyPair;
+                    assemblyName.HashAlgorithm = AssemblyHashAlgorithm.SHA512;                    
+                    assemblyName.SetPublicKeyToken(assemblyName.GetPublicKeyToken());
+                }
                 Regex.CompileToAssembly(compilationInfos.ToArray(), assemblyName);
             }
             catch (Exception e)

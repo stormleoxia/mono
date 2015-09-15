@@ -242,6 +242,8 @@ net_4_5_parallel_dirs := \
 	System.Data.DataSetExtensions	\
 	System.Json.Microsoft \
 	System.Web.Entity \
+	System.Web.RegularExpressions \
+	System.Web.Mobile \
 	System.Threading.Tasks.Dataflow \
 	System.ComponentModel.Composition.4.5 \
 	System.IO.Compression \
