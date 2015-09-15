@@ -601,9 +601,6 @@
     <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\SelectionListDesigner.cs">
       <Link>System.Web.UI.MobileControls.Design\SelectionListDesigner.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\StylesEditorDialog.cs">
-      <Link>System.Web.UI.MobileControls.Design\StylesEditorDialog.cs</Link>
-    </Compile>
     <Compile Include="..\..\..\external\referencesource\System.Web.Mobile\UI\MobileControls\Design\StyleSheetComponentEditor.cs">
       <Link>System.Web.UI.MobileControls.Design\StyleSheetComponentEditor.cs</Link>
     </Compile>
@@ -925,6 +922,7 @@
     <Compile Include="System.Web.UI.Design.MobileControls\SR.cs" />
     <Compile Include="System.Web.UI.MobileControls.Adapters\SR.cs" />
     <Compile Include="System.Web.UI.Design.MobileControls.Util\SimpleParser.cs" />
+    <Compile Include="System.Web.UI.MobileControls.Design\StylesEditorDialog.cs" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

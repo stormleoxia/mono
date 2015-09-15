@@ -2,7 +2,7 @@ thisdir = class/System.Web.RegularExpressions
 SUBDIRS =
 include ../../build/rules.make
 
-LIBRARY = System.Web.RegularExpressions-gen.exe
+PROGRAM = System.Web.RegularExpressions-gen.exe
 
 LIB_MCS_FLAGS = \
 	-unsafe \
@@ -10,6 +10,14 @@ LIB_MCS_FLAGS = \
 	-r:$(corlib)	 			\
 	-r:System.dll
 	
+include ../../build/executable.make
 
-include ../../build/library.make
-
+all:System.Web.RegularExpressions.dll
+	echo "Remove generator"
+	rm -f ../lib/net_4_5/System.Web.RegularExpressions-gen.exe ../lib/net_4_5/System.Web.RegularExpressions-gen.exe.mdb
+	
+System.Web.RegularExpressions.dll: all-local
+	echo "Generate Library"
+	../../../runtime/mono-wrapper ../lib/net_4_5/System.Web.RegularExpressions-gen.exe ../mono.snk
+	echo "Sign Generated Library"
+	../../../runtime/mono-wrapper ../lib/build/sn.exe -R System.Web.RegularExpressions.dll ../mono.snk
