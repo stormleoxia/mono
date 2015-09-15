@@ -222,6 +222,8 @@ net_4_5_dirs := \
 	System.Json.Microsoft \
 	System.Data.Entity \
 	System.Web.Entity \
+	System.Web.RegularExpressions \
+	System.Web.Mobile \
 	monodoc	\
 	System.Threading.Tasks.Dataflow \
 	System.ComponentModel.Composition.4.5 \

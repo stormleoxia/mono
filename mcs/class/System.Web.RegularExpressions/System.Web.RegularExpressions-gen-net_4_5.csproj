@@ -1,24 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3DA9335-0F4D-45A1-B545-E2101F2DF304}</ProjectGuid>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <OutputType>Exe</OutputType>
+    <NoStdLib>True</NoStdLib>
+    <NoConfig>True</NoConfig>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Web.RegularExpressions_gen_net_4_5</RootNamespace>
-    <AssemblyName>System.Web.RegularExpressions-gen-net_4_5</AssemblyName>
+    <RootNamespace>System.Web.RegularExpressions_gen</RootNamespace>
+    <AssemblyName>System.Web.RegularExpressions-gen</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <ProjectGuid>{C3DA9335-0F4D-45A1-B545-E2101F2DF304}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;NET_4_5;NET_4_0</DefineConstants>
+    <OutputPath>..\lib\net_4_5\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NET_4_0;NET_4_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -27,10 +30,14 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>TRACE;NET_4_0;NET_4_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs">
       <Link>Consts.cs</Link>
@@ -42,28 +49,15 @@
       <Link>MonoTODOAttribute.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Assembly\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mono.Security\Mono.Security-net_4_5.csproj">
-      <Project>{d68d4fed-ca32-4800-a628-58bae485562c}</Project>
-      <Name>Mono.Security-net_4_5</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System\System-net_4_5.csproj">
-      <Project>{ffac0b73-d997-493b-9c62-27656cd858bb}</Project>
-      <Name>System-net_4_5</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>del $(TargetDir)System.Web.RegularExpressions.dll</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>
-cd $(TargetDir)
-$(TargetPath)
-REM $(ProjectDir)..\lib\build\sn.exe -R System.Web.RegularExpressions.dll $(ProjectDir)..\mono.snk
-REM copy System.Web.RegularExpressions.dll $(ProjectDir)..\lib\net_4_5</PostBuildEvent>
+    <PostBuildEvent>cd $(ProjectDir)
+sh post_build.sh
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -72,4 +66,17 @@ REM copy System.Web.RegularExpressions.dll $(ProjectDir)..\lib\net_4_5</PostBuil
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="../corlib/corlib-net_4_5.csproj">
+      <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
+      <Name>corlib-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="../System/System-net_4_5.csproj">
+      <Project>{ffac0b73-d997-493b-9c62-27656cd858bb}</Project>
+      <Name>System-net_4_5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
 </Project>
