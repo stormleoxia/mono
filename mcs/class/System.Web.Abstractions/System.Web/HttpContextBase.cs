@@ -35,6 +35,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Permissions;
 using System.Security.Principal;
 using System.Web.Caching;
+using System.Web.Instrumentation;
 using System.Web.Profile;
 using System.Web.SessionState;
 
@@ -45,7 +46,9 @@ namespace System.Web
 	[AspNetHostingPermission (SecurityAction.InheritanceDemand, Level = AspNetHostingPermissionLevel.Minimal)]
 	public abstract class HttpContextBase : IServiceProvider
 	{
-		void NotImplemented ()
+            private PageInstrumentationService _pageInstrumentationService;
+
+            void NotImplemented ()
 		{
 			throw new NotImplementedException ();
 		}
@@ -73,6 +76,8 @@ namespace System.Web
 		public virtual bool IsPostNotification { get { NotImplemented (); return false; } }
 
 		public virtual IDictionary Items { get { NotImplemented (); return null; } }
+
+        public virtual PageInstrumentationService PageInstrumentation {  get { return _pageInstrumentationService ?? (_pageInstrumentationService = new PageInstrumentationService ()); } }
 
 		public virtual IHttpHandler PreviousHandler { get { NotImplemented (); return null; } }
 
