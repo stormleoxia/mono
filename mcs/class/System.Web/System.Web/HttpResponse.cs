@@ -627,8 +627,13 @@ namespace System.Web
 		{
 			// does nothing in Mono
 		}
-		
-		public void End ()
+
+	    public void DisableUserCache()
+	    {
+            // does nothing in Mono
+	    }
+
+	    public void End ()
 		{
 			if (context == null)
 				return;

@@ -217,8 +217,13 @@ namespace System.Web
 			NotImplemented ();
 		}
 
+        public virtual void DisableUserCache()
+        {
+            NotImplemented ();
+        }
 
-		public virtual void End ()
+
+        public virtual void End ()
 		{
 			NotImplemented ();
 		}
