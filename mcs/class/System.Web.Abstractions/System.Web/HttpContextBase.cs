@@ -77,9 +77,8 @@ namespace System.Web
 
 		public virtual IDictionary Items { get { NotImplemented (); return null; } }
 
-        public virtual PageInstrumentationService PageInstrumentation {  get { return _pageInstrumentationService ?? (_pageInstrumentationService = new PageInstrumentationService ()); } }
+        public virtual PageInstrumentationService PageInstrumentation { get { NotImplemented (); return null; } set { NotImplemented (); } }
 
-		public virtual IHttpHandler PreviousHandler { get { NotImplemented (); return null; } }
 
 		public virtual ProfileBase Profile { get { NotImplemented (); return null; } }
 
