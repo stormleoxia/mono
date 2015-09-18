@@ -35,6 +35,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Permissions;
 using System.Security.Principal;
 using System.Web.Caching;
+using System.Web.Instrumentation;
 using System.Web.Profile;
 using System.Web.SessionState;
 
@@ -103,6 +104,10 @@ namespace System.Web
 		public override IDictionary Items {
 			get { return w.Items; }
 		}
+
+        public override PageInstrumentationService PageInstrumentation {
+            get { return w.PageInstrumentation; }
+        }
 
 		public override IHttpHandler PreviousHandler {
 			get { return w.PreviousHandler; }

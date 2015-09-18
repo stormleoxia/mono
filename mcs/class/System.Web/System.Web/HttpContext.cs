@@ -89,7 +89,7 @@ namespace System.Web
 		internal static Assembly AppGlobalResourcesAssembly;
 		ProfileBase profile = null;
 		LinkedList<IHttpHandler> handlers;
-	    private PageInstrumentationService _pageInstrumentationService;
+	    private PageInstrumentationService pageInstrumentationService;
 
 	    static DefaultResourceProviderFactory DefaultProviderFactory {
 			get {
@@ -228,15 +228,11 @@ namespace System.Web
 		}
 
         // System.Web.HttpContext
-        public PageInstrumentationService PageInstrumentation
-        {
-            get
-            {
-                if (this._pageInstrumentationService == null)
-                {
-                    this._pageInstrumentationService = new PageInstrumentationService();
-                }
-                return this._pageInstrumentationService;
+        public PageInstrumentationService PageInstrumentation {
+            get {
+                if (pageInstrumentationService == null)
+                    pageInstrumentationService = new PageInstrumentationService ();                
+                return pageInstrumentationService;
             }
         }
 
