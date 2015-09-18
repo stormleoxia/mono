@@ -21,3 +21,4 @@ System.Web.RegularExpressions.dll: all-local
 	../../../runtime/mono-wrapper ../lib/net_4_5/System.Web.RegularExpressions-gen.exe ../mono.snk
 	echo "Sign Generated Library"
 	../../../runtime/mono-wrapper ../lib/build/sn.exe -R System.Web.RegularExpressions.dll ../mono.snk
+	mv System.Web.RegularExpressions.dll ../lib/net_4_5/
