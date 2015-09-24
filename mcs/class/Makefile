@@ -221,6 +221,7 @@ net_4_5_dirs := \
 	System.Data.Services \
 	System.Json.Microsoft \
 	System.Data.Entity \
+	System.Data.Entity.Design \
 	System.Web.Entity \
 	System.Web.RegularExpressions \
 	System.Web.Mobile \

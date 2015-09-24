@@ -10,7 +10,7 @@
     <NoStdLib>True</NoStdLib>
     <NoConfig>True</NoConfig>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -277,6 +277,10 @@
       <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
       <Name>corlib-net_4_5</Name>
     </ProjectReference>
+    <ProjectReference Include="..\System.Data.DataSetExtensions\System.Data.DataSetExtensions-net_4_5.csproj">
+      <Project>{9d2dbcba-6c1e-405b-bcba-20406ea9501f}</Project>
+      <Name>System.Data.DataSetExtensions-net_4_5</Name>
+    </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5.csproj">
       <Project>{FFAC0B73-D997-493B-9C62-27656CD858BB}</Project>
       <Name>System-net_4_5</Name>
@@ -326,10 +330,7 @@
       <Name>Microsoft.Build.Utilities-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="System.Data.Entity.Design\" />
-    <Folder Include="System.Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>

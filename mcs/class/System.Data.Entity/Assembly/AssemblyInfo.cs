@@ -65,3 +65,6 @@ using System.Runtime.InteropServices;
 
 [assembly: ComVisible (false)]
 
+[assembly: AllowPartiallyTrustedCallers]
+
+[assembly: InternalsVisibleTo ("System.Data.Entity.Design, PublicKey=00000000000000000400000000000000")]
