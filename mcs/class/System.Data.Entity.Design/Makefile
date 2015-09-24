@@ -13,7 +13,8 @@ LIB_MCS_FLAGS = -r:System.dll \
 		-r:System.Configuration.dll \
 		-r:Microsoft.Build.Utilities.v4.0.dll \
 		-r:System.Web.dll \
-		-r:System.Data.Entity \
+		-r:System.Data.Entity.dll \
+		-r:System.Data.DataSetExtensions.dll \
 		-warn:2
 
 RESOURCE_STRINGS = ../../../external/referencesource/System.Data.Entity.Design/System.Data.Entity.Design.txt

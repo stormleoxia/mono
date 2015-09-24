@@ -241,6 +241,7 @@ net_4_5_parallel_dirs := \
 	System.Data.Entity \
 	System.Data.DataSetExtensions	\
 	System.Json.Microsoft \
+	System.Data.Entity.Design \
 	System.Web.Entity \
 	System.Web.RegularExpressions \
 	System.Web.Mobile \
