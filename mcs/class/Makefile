@@ -241,7 +241,6 @@ net_4_5_parallel_dirs := \
 	System.Data.Entity \
 	System.Data.DataSetExtensions	\
 	System.Json.Microsoft \
-	System.Data.Entity.Design \
 	System.Web.Entity \
 	System.Web.RegularExpressions \
 	System.Web.Mobile \
@@ -261,6 +260,7 @@ net_4_5_parallel_dirs := \
 xbuild_2_0_dirs := \
 	Microsoft.Build.Framework	\
 	Microsoft.Build.Utilities	\
+	System.Data.Entity.Design       \
 	Microsoft.Build.Engine		\
 	Mono.XBuild.Tasks		\
 	Microsoft.Build.Tasks
