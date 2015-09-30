@@ -3148,8 +3148,8 @@ namespace System
 		{
 			Copy (sourceArray, sourceIndex, destinationArray, destinationIndex, length);
 		}
-
-		#region Unsafe array operations
+        
+        #region Unsafe array operations
 
 		//
 		// Loads array index with no safety checks (JIT intristics)

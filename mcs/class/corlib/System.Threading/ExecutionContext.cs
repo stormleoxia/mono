@@ -86,9 +86,11 @@ namespace System.Threading {
 
 		internal ExecutionContext ()
 		{
+            m_localValues = new Dictionary<IAsyncLocal, object>();
+            m_localChangeNotifications = emptyArray;
 		}
 
-		private ExecutionContext (ExecutionContext ec)
+		private ExecutionContext (ExecutionContext ec) : this (ec.m_localValues, ec.m_localChangeNotifications)
 		{
 			CloneData (ec);
 

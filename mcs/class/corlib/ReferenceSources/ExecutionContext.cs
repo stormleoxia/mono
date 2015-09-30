@@ -28,7 +28,8 @@ namespace System.Threading
 		}
 
 		private static readonly ExecutionContext s_dummyDefaultEC = new ExecutionContext();
-		static internal ExecutionContext PreAllocatedDefault
+
+	    static internal ExecutionContext PreAllocatedDefault
 		{
 			[SecuritySafeCritical]
 			get {

@@ -61,5 +61,9 @@ namespace Mono {
 
 		[MethodImplAttribute (MethodImplOptions.InternalCall)]
 		public static extern bool SetGCAllowSynchronousMajor (bool flag);
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+		internal extern static int GetPid_internal ();
+
 	}
 }

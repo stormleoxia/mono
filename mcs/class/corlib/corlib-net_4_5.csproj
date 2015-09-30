@@ -50,6 +50,150 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\AppContext\AppContext.cs">
+      <Link>System.AppContext\AppContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\AppContext\AppContextDefaultValues.cs">
+      <Link>System.AppContext\AppContextDefaultValues.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\AppContext\AppContextDefaultValues.Defaults.Central.cs">
+      <Link>System.AppContext\AppContextDefaultValues.Defaults.Central.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\AppContext\AppContextDefaultValues.Defaults.cs">
+      <Link>System.AppContext\AppContextDefaultValues.Defaults.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\AppContext\AppContextSwitches.cs">
+      <Link>System.AppContext\AppContextSwitches.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Collections\Generic\ArraySortHelper.cs">
+      <Link>System.Collections.Generic\ArraySortHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\ActivityTracker.cs">
+      <Link>System.Diagnostics.Tracing\ActivityTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\EventActivityOptions.cs">
+      <Link>System.Diagnostics.Tracing\EventActivityOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\EventDescriptor.cs">
+      <Link>System.Diagnostics.Tracing\EventDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\EventProvider.cs">
+      <Link>System.Diagnostics.Tracing\EventProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\EventSource.cs">
+      <Link>System.Diagnostics.Tracing\EventSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\EventSourceException.cs">
+      <Link>System.Diagnostics.Tracing\EventSourceException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\StubEnvironment.cs">
+      <Link>System.Diagnostics.Tracing\StubEnvironment.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\ArrayTypeInfo.cs">
+      <Link>System.Diagnostics.Tracing\ArrayTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\ConcurrentSet.cs">
+      <Link>System.Diagnostics.Tracing\ConcurrentSet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\ConcurrentSetItem.cs">
+      <Link>System.Diagnostics.Tracing\ConcurrentSetItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\DataCollector.cs">
+      <Link>System.Diagnostics.Tracing\DataCollector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EmptyStruct.cs">
+      <Link>System.Diagnostics.Tracing\EmptyStruct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EnumerableTypeInfo.cs">
+      <Link>System.Diagnostics.Tracing\EnumerableTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EnumHelper.cs">
+      <Link>System.Diagnostics.Tracing\EnumHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventDataAttribute.cs">
+      <Link>System.Diagnostics.Tracing\EventDataAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventFieldAttribute.cs">
+      <Link>System.Diagnostics.Tracing\EventFieldAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventFieldFormat.cs">
+      <Link>System.Diagnostics.Tracing\EventFieldFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventIgnoreAttribute.cs">
+      <Link>System.Diagnostics.Tracing\EventIgnoreAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventPayload.cs">
+      <Link>System.Diagnostics.Tracing\EventPayload.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventSourceActivity.cs">
+      <Link>System.Diagnostics.Tracing\EventSourceActivity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\EventSourceOptions.cs">
+      <Link>System.Diagnostics.Tracing\EventSourceOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\FieldMetadata.cs">
+      <Link>System.Diagnostics.Tracing\FieldMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\InvokeTypeInfo.cs">
+      <Link>System.Diagnostics.Tracing\InvokeTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\NameInfo.cs">
+      <Link>System.Diagnostics.Tracing\NameInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\PropertyAccessor.cs">
+      <Link>System.Diagnostics.Tracing\PropertyAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\PropertyAnalysis.cs">
+      <Link>System.Diagnostics.Tracing\PropertyAnalysis.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\SimpleEventTypes.cs">
+      <Link>System.Diagnostics.Tracing\SimpleEventTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\SimpleTypeInfos.cs">
+      <Link>System.Diagnostics.Tracing\SimpleTypeInfos.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\Statics.cs">
+      <Link>System.Diagnostics.Tracing\Statics.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingDataCollector.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingDataCollector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingDataType.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingDataType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingEventSource.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingEventSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingEventTraits.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingEventTraits.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingEventTypes.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingEventTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingMetadataCollector.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingMetadataCollector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingTypeInfo.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TraceLoggingTypeInfo_T.cs">
+      <Link>System.Diagnostics.Tracing\TraceLoggingTypeInfo_T.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\TraceLogging\TypeAnalysis.cs">
+      <Link>System.Diagnostics.Tracing\TypeAnalysis.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\Winmeta.cs">
+      <Link>System.Diagnostics.Tracing\Winmeta.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Threading\AsyncLocal.cs">
+      <Link>System.Threading\AsyncLocal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Threading\Tasks\AsyncCausalityTracer.cs">
+      <Link>System.Threading.Tasks\AsyncCausalityTracer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Threading\Tasks\TPLETWProvider.cs">
+      <Link>System.Threading.Tasks\TPLETWProvider.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\__hresults.cs">
       <Link>System/__hresults.cs</Link>
     </Compile>
@@ -970,6 +1114,7 @@
     <Compile Include="Microsoft.Win32\RegistryValueOptions.cs" />
     <Compile Include="Microsoft.Win32\RegistryView.cs" />
     <Compile Include="Microsoft.Win32\UnixRegistryApi.cs" />
+    <Compile Include="Microsoft.Win32\Win32Native.cs" />
     <Compile Include="Microsoft.Win32\Win32RegistryApi.cs" />
     <Compile Include="Microsoft.Win32\Win32ResultCode.cs" />
     <Compile Include="Mono.Globalization.Unicode\CodePointIndexer.cs" />
@@ -1034,14 +1179,6 @@
     <Compile Include="System.Diagnostics.SymbolStore\SymDocumentType.cs" />
     <Compile Include="System.Diagnostics.SymbolStore\SymLanguageType.cs" />
     <Compile Include="System.Diagnostics.SymbolStore\SymLanguageVendor.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventAttribute.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventCommand.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventCommandEventArgs.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventKeywords.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventLevel.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventSource.cs" />
-    <Compile Include="System.Diagnostics.Tracing\EventSourceAttribute.cs" />
-    <Compile Include="System.Diagnostics.Tracing\NonEventAttribute.cs" />
     <Compile Include="System.Diagnostics\ConditionalAttribute.cs" />
     <Compile Include="System.Diagnostics\DebuggableAttribute.cs" />
     <Compile Include="System.Diagnostics\Debugger.cs" />
@@ -2095,6 +2232,7 @@
     <Compile Include="System.Threading\CompressedStack.cs" />
     <Compile Include="System.Threading\ContextCallback.cs" />
     <Compile Include="System.Threading\EventWaitHandle.cs" />
+    <Compile Include="System.Threading\ExecutionContext.clr.cs" />
     <Compile Include="System.Threading\ExecutionContext.cs" />
     <Compile Include="System.Threading\HostExecutionContext.cs" />
     <Compile Include="System.Threading\HostExecutionContextManager.cs" />
@@ -2119,6 +2257,7 @@
     <Compile Include="System.Threading\ThreadPool.cs" />
     <Compile Include="System.Threading\Timer.cs" />
     <Compile Include="System.Threading\TimerCallback.cs" />
+    <Compile Include="System.Threading\UnsafeNativeMethods.cs" />
     <Compile Include="System.Threading\Volatile.cs" />
     <Compile Include="System.Threading\WaitCallback.cs" />
     <Compile Include="System.Threading\WaitHandle.cs" />
