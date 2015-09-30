@@ -56,7 +56,7 @@ namespace System.Web.RegularExpressions_gen
             },
             new[]
             {
-                "DatabindRegex", @"\G\s*<%\s*?#(?<encode>:)?(?<code>.*?)?%>\s*\z"
+                "DataBindRegex", @"\G\s*<%\s*?#(?<encode>:)?(?<code>.*?)?%>\s*\z"
             },
             new[]
             {
@@ -73,7 +73,7 @@ namespace System.Web.RegularExpressions_gen
             },
             new[]
             {
-                "ExpressionBuilderRegexPattern", "\\G\\s*<%\\s*\\$\\s*(?<code>.*)?%>\\s*\\z"
+                "ExpressionBuilderRegex", "\\G\\s*<%\\s*\\$\\s*(?<code>.*)?%>\\s*\\z"
             },
             new[]
             {
