@@ -8,6 +8,7 @@ System.Security.Cryptography/CryptographicAttribute.cs
 System.Security.Cryptography/CryptographicAttributeCollection.cs
 System.Security.Cryptography/CryptographicAttributeEnumerator.cs
 System.Security.Cryptography/DataProtectionScope.cs
+System.Security.Cryptography/DataProtector.cs
 System.Security.Cryptography/MemoryProtectionScope.cs
 System.Security.Cryptography/ProtectedData.cs
 System.Security.Cryptography/ProtectedMemory.cs
