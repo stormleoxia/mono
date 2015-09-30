@@ -19,6 +19,10 @@ namespace System.Web.RegularExpressions_gen
             },
             new[]
             {
+                "AspEncodedExprRegex", @"\G<%:(?<code>.*?)?%>"  
+            },            
+            new[]
+            {
                 "AspExprRegex", @"\G<%\s*?=(?<code>.*?)?%>"
             },
             new[]
@@ -114,6 +118,11 @@ namespace System.Web.RegularExpressions_gen
             {
                 "TextRegex", "\\G[^<]+"
             },
+            new[]
+            {
+                "TagRegex35", "\\G<(?<tagname>[\\w:\\.]+)(\\s+(?<attrname>\\w[-\\w:]*)(\\s*=\\s*\"(?<attrval>[^\"]*)\"|\\s*=\\s*'(?<attrval>[^']*)'|\\s*=\\s*(?<attrval><%#.*?%>)|\\s*=\\s*(?<attrval>[^\\s=/>]*)|(?<attrval>\\s*?)))*\\s*(?<empty>/)?>"
+  
+            },  
             new[]
             {
                 "WebResourceRegex", "<%\\s*=\\s*WebResource\\(\"(?<resourceName>[^\"]*)\"\\)\\s*%>"
