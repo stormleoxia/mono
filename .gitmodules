@@ -33,3 +33,6 @@
 [submodule "external/coreclr"]
 	path = external/coreclr
 	url = https://github.com/dotnet/coreclr.git
+[submodule "external/corefx"]
+	path = external/corefx
+	url = git@github.com:stormleoxia/corefx.git
