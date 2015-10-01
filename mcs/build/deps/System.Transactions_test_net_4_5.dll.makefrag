@@ -1,0 +1,4 @@
+System.Transactions_test_net_4_5.dll: Test\IntResourceManager.cs
+System.Transactions_test_net_4_5.dll: Test\AsyncTest.cs
+System.Transactions_test_net_4_5.dll: Test\TransactionScopeTest.cs
+System.Transactions_test_net_4_5.dll: Test\EnlistTest.cs

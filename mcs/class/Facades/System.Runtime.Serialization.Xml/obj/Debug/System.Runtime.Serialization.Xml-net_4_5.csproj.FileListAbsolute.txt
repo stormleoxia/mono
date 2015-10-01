@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Serialization.Xml.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Serialization.Xml.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Serialization.Xml\obj\Debug\System.Runtime.Serialization.Xml-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Serialization.Xml\obj\Debug\System.Runtime.Serialization.Xml.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Serialization.Xml\obj\Debug\System.Runtime.Serialization.Xml.pdb

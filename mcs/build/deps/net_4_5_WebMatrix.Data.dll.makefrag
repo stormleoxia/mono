@@ -1,0 +1,6 @@
+./../../class/lib/net_4_5/WebMatrix.Data.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/WebMatrix.Data.dll: ../../build/common/Locale.cs
+./../../class/lib/net_4_5/WebMatrix.Data.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/WebMatrix.Data.dll: WebMatrix.Data/ConnectionEventArgs.cs
+./../../class/lib/net_4_5/WebMatrix.Data.dll: WebMatrix.Data/DynamicRecord.cs
+./../../class/lib/net_4_5/WebMatrix.Data.dll: WebMatrix.Data/Database.cs

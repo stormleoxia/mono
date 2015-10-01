@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.EventBasedAsync.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.EventBasedAsync.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel.EventBasedAsync\obj\Release\System.ComponentModel.EventBasedAsync-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel.EventBasedAsync\obj\Release\System.ComponentModel.EventBasedAsync.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel.EventBasedAsync\obj\Release\System.ComponentModel.EventBasedAsync.pdb

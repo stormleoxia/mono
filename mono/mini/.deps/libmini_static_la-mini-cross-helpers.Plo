@@ -1,0 +1,4 @@
+libmini_static_la-mini-cross-helpers.lo: mini-cross-helpers.c \
+ ../../config.h
+
+../../config.h:

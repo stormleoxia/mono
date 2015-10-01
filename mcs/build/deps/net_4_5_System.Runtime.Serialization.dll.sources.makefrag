@@ -1,0 +1,4 @@
+../../build/deps/net_4_5_System.Runtime.Serialization.dll.sources: net_4_0_System.Runtime.Serialization.dll.sources
+net_4_0_System.Runtime.Serialization.dll.sources:
+../../build/deps/net_4_5_System.Runtime.Serialization.dll.sources: System.Runtime.Serialization.dll.sources
+System.Runtime.Serialization.dll.sources:

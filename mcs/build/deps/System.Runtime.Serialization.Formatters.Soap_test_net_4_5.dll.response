@@ -1,0 +1,5 @@
+Test\AssemblyInfo.cs
+Test\SoapFormatterTest.cs
+Test\SerializationTest.cs
+Test\SerializationCallbackTest.cs
+Test\InternalSoapValuesTest.cs

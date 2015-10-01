@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Net.Primitives.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Net.Primitives.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.Primitives\obj\Debug\System.Net.Primitives-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.Primitives\obj\Debug\System.Net.Primitives.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.Primitives\obj\Debug\System.Net.Primitives.pdb

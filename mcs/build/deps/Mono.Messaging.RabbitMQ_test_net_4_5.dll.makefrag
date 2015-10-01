@@ -1,0 +1,9 @@
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\FailuresTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\RabbitMQMessagingProviderTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\BinaryMessageFormatterTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\XmlMessageFormatterTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\TestUtils.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\MessageTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\MessagingContextPoolTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\MessageBaseTest.cs
+Mono.Messaging.RabbitMQ_test_net_4_5.dll: Test\Mono.Messaging.RabbitMQ\MessageEnumeratorExceptionTest.cs

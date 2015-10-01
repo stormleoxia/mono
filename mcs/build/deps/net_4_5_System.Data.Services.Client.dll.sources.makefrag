@@ -1,0 +1,4 @@
+../../build/deps/net_4_5_System.Data.Services.Client.dll.sources: net_4_0_System.Data.Services.Client.dll.sources
+net_4_0_System.Data.Services.Client.dll.sources:
+../../build/deps/net_4_5_System.Data.Services.Client.dll.sources: System.Data.Services.Client.dll.sources
+System.Data.Services.Client.dll.sources:

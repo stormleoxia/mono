@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Linq.Expressions.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Linq.Expressions.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Linq.Expressions\obj\Release\System.Linq.Expressions-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Linq.Expressions\obj\Release\System.Linq.Expressions.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Linq.Expressions\obj\Release\System.Linq.Expressions.pdb

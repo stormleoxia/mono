@@ -1,0 +1,7 @@
+Test\RdpPatternTests.cs
+Test\RelaxngDatatypeProviderTests.cs
+Test\RelaxngReaderTests.cs
+Test\RelaxngValidatingReaderTests.cs
+Test\XsdDatatypeTests.cs
+Test\RncTests.cs
+Test\NvdlValidatingReaderTests.cs

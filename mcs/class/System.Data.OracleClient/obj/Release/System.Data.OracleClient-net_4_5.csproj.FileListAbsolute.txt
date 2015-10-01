@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Data.OracleClient.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Data.OracleClient.pdb
+D:\Development\Applications\mono2\mcs\class\System.Data.OracleClient\obj\Release\System.Data.OracleClient-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Data.OracleClient\obj\Release\System.Data.OracleClient.dll
+D:\Development\Applications\mono2\mcs\class\System.Data.OracleClient\obj\Release\System.Data.OracleClient.pdb

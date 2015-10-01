@@ -1,0 +1,4 @@
+libmonoruntimesgen_static_la-metadata-cross-helpers.lo: \
+ metadata-cross-helpers.c ../../config.h
+
+../../config.h:

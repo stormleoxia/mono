@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Collections.Concurrent.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Collections.Concurrent.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Collections.Concurrent\obj\Debug\System.Collections.Concurrent-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Collections.Concurrent\obj\Debug\System.Collections.Concurrent.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Collections.Concurrent\obj\Debug\System.Collections.Concurrent.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Collections.Concurrent.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Collections.Concurrent.pdb
+E:\mono2\mcs\class\Facades\System.Collections.Concurrent\obj\Debug\System.Collections.Concurrent-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.Collections.Concurrent\obj\Debug\System.Collections.Concurrent.dll
+E:\mono2\mcs\class\Facades\System.Collections.Concurrent\obj\Debug\System.Collections.Concurrent.pdb

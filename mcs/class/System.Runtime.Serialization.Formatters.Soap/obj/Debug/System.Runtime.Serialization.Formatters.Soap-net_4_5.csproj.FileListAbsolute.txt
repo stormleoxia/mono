@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.Serialization.Formatters.Soap.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.Serialization.Formatters.Soap.pdb
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Serialization.Formatters.Soap\obj\Debug\System.Runtime.Serialization.Formatters.Soap-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Serialization.Formatters.Soap\obj\Debug\System.Runtime.Serialization.Formatters.Soap.dll
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Serialization.Formatters.Soap\obj\Debug\System.Runtime.Serialization.Formatters.Soap.pdb

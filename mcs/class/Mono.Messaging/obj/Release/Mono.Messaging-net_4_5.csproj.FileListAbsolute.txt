@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Messaging.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Messaging.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Messaging\obj\Release\Mono.Messaging-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Messaging\obj\Release\Mono.Messaging.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Messaging\obj\Release\Mono.Messaging.pdb
+E:\mono2\mcs\class\lib\net_4_5\Mono.Messaging.dll
+E:\mono2\mcs\class\lib\net_4_5\Mono.Messaging.pdb
+E:\mono2\mcs\class\Mono.Messaging\obj\Release\Mono.Messaging-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Mono.Messaging\obj\Release\Mono.Messaging.dll
+E:\mono2\mcs\class\Mono.Messaging\obj\Release\Mono.Messaging.pdb

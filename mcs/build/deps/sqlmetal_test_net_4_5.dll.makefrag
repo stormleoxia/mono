@@ -1,0 +1,4 @@
+sqlmetal_test_net_4_5.dll: Test\AssemblyInfo.cs
+sqlmetal_test_net_4_5.dll: Test\..\..\..\class\System.Data.Linq\src\DbMetal\Test\EnglishWordsTest.cs
+sqlmetal_test_net_4_5.dll: Test\..\..\..\class\System.Data.Linq\src\DbMetal\Test\FrenchWordsTest.cs
+sqlmetal_test_net_4_5.dll: Test\..\..\..\class\System.Data.Linq\src\DbMetal\Test\NameFormatterTest.cs

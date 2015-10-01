@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Build.Tasks.v4.0.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Build.Tasks.v4.0.pdb
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build.Tasks\obj\Release\Microsoft.Build.Tasks-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build.Tasks\obj\Release\Microsoft.Build.Tasks.v4.0.dll
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build.Tasks\obj\Release\Microsoft.Build.Tasks.v4.0.pdb

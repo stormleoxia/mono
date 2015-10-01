@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Build.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Build.pdb
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build\obj\Release\Microsoft.Build-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build\obj\Release\Microsoft.Build.dll
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build\obj\Release\Microsoft.Build.pdb

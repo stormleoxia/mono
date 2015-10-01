@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.DurableInstancing.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.DurableInstancing.pdb
+D:\Development\Applications\mono2\mcs\class\System.Runtime.DurableInstancing\obj\Release\System.Runtime.DurableInstancing-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Runtime.DurableInstancing\obj\Release\System.Runtime.DurableInstancing.dll
+D:\Development\Applications\mono2\mcs\class\System.Runtime.DurableInstancing\obj\Release\System.Runtime.DurableInstancing.pdb

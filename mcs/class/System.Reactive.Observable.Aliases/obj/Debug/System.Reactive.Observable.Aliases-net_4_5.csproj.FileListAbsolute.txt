@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.Observable.Aliases.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.Observable.Aliases.pdb
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Observable.Aliases\obj\Debug\System.Reactive.Observable.Aliases-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Observable.Aliases\obj\Debug\System.Reactive.Observable.Aliases.dll
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Observable.Aliases\obj\Debug\System.Reactive.Observable.Aliases.pdb

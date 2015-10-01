@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\System.IdentityModel\obj\Release\System.IdentityModel-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.IdentityModel.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.IdentityModel.pdb
+D:\Development\Applications\mono2\mcs\class\System.IdentityModel\obj\Release\System.IdentityModel.dll
+D:\Development\Applications\mono2\mcs\class\System.IdentityModel\obj\Release\System.IdentityModel.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.IdentityModel.dll
+E:\mono2\mcs\class\lib\net_4_5\System.IdentityModel.pdb
+E:\mono2\mcs\class\System.IdentityModel\obj\Release\System.IdentityModel-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.IdentityModel\obj\Release\System.IdentityModel.dll
+E:\mono2\mcs\class\System.IdentityModel\obj\Release\System.IdentityModel.pdb

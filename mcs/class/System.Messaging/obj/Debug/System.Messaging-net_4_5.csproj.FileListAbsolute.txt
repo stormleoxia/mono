@@ -1,0 +1,14 @@
+D:\Development\Applications\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging.MessageQueue.resources
+D:\Development\Applications\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging-net_4_5.csproj.GenerateResource.Cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Messaging.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Messaging.pdb
+D:\Development\Applications\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging.dll
+D:\Development\Applications\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Messaging.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Messaging.pdb
+E:\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging.MessageQueue.resources
+E:\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging-net_4_5.csproj.GenerateResource.Cache
+E:\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging.dll
+E:\mono2\mcs\class\System.Messaging\obj\Debug\System.Messaging.pdb

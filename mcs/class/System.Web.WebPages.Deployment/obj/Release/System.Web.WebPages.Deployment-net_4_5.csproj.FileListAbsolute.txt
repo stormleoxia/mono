@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\System.Web.WebPages.Deployment\obj\Release\System.Web.WebPages.Deployment-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.WebPages.Deployment.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.WebPages.Deployment.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.WebPages.Deployment\obj\Release\System.Web.WebPages.Deployment.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.WebPages.Deployment\obj\Release\System.Web.WebPages.Deployment.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Web.WebPages.Deployment.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Web.WebPages.Deployment.pdb
+E:\mono2\mcs\class\System.Web.WebPages.Deployment\obj\Release\System.Web.WebPages.Deployment-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Web.WebPages.Deployment\obj\Release\System.Web.WebPages.Deployment.dll
+E:\mono2\mcs\class\System.Web.WebPages.Deployment\obj\Release\System.Web.WebPages.Deployment.pdb

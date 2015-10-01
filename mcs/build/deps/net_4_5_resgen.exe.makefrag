@@ -1,0 +1,4 @@
+./../../class/lib/net_4_5/resgen.exe: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/resgen.exe: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/resgen.exe: ../../build/common/Locale.cs
+./../../class/lib/net_4_5/resgen.exe: monoresgen.cs

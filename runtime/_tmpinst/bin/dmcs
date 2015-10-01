@@ -1,0 +1,2 @@
+#! /bin/sh
+exec "/cygdrive/e/mono2/runtime/_tmpinst/bin/mono" "/cygdrive/e/mono2/mcs/class/lib/build/mcs.exe -sdk:4" "$@"

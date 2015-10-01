@@ -1,0 +1,4 @@
+Test\System.ServiceProcess\ServiceBaseTest.cs
+Test\System.ServiceProcess\ServiceControllerTest.cs
+Test\System.ServiceProcess\ServiceControllerPermissionAttributeTest.cs
+Test\System.ServiceProcess\ServiceControllerPermissionTest.cs

@@ -1,0 +1,1 @@
+E:\mono2\mcs\class\System.Data.DataSetExtensions\obj\Release\System.Data.DataSetExtensions-tests-net_4_5.csprojResolveAssemblyReference.cache

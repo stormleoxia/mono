@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\tools\msvc\sn\obj\Debug\sn.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\tools\security\sn.exe
+D:\Development\Applications\mono2\mcs\tools\security\sn.pdb
+D:\Development\Applications\mono2\mcs\tools\msvc\sn\obj\Debug\sn.exe
+D:\Development\Applications\mono2\mcs\tools\msvc\sn\obj\Debug\sn.pdb

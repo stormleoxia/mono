@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.PlatformServices.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.PlatformServices.pdb
+D:\Development\Applications\mono2\mcs\class\System.Reactive.PlatformServices\obj\Debug\System.Reactive.PlatformServices-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Reactive.PlatformServices\obj\Debug\System.Reactive.PlatformServices.dll
+D:\Development\Applications\mono2\mcs\class\System.Reactive.PlatformServices\obj\Debug\System.Reactive.PlatformServices.pdb

@@ -1,0 +1,12 @@
+Test\..\..\System.Web.DynamicData\Test\Common\AssertExtensions.cs
+Test\.\IgnorePropertiesAttributeTests.cs
+Test\.\QueryInterceptorAttributeTests.cs
+Test\.\DataServiceTests.cs
+Test\.\ExpandSegmentCollectionTests.cs
+Test\.\ExpandSegmentTests.cs
+Test\.\ChangeInterceptorAttributeTests.cs
+Test\.\MimeTypeAttributeTests.cs
+Test\.\DataServiceExceptionTests.cs
+Test\.\ETagAttributeTests.cs
+Test\.\System.Data.Services.Providers\DataServiceProviderMethodsTest.cs
+Test\.\System.Data.Services.Providers\ResourceTypeTest.cs

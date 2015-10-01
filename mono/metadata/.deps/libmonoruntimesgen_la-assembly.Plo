@@ -1,0 +1,393 @@
+libmonoruntimesgen_la-assembly.lo: assembly.c ../../config.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h \
+ ../../eglib/src/glib.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/string.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h \
+ ../../eglib/src/eglib-config.h ../../eglib/src/eglib-remap.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/errno.h assembly.h \
+ ../../mono/metadata/image.h ../../mono/utils/mono-publib.h image.h \
+ object-internals.h ../../mono/metadata/object.h \
+ ../../mono/metadata/class.h ../../mono/metadata/metadata.h \
+ ../../mono/metadata/blob.h ../../mono/metadata/row-indexes.h \
+ ../../mono/metadata/loader.h ../../mono/utils/mono-error.h \
+ ../../mono/metadata/threads.h ../../mono/metadata/appdomain.h \
+ ../../mono/metadata/reflection.h ../../mono/metadata/mempool.h \
+ ../../mono/metadata/class-internals.h \
+ ../../mono/metadata/metadata-internals.h \
+ ../../mono/metadata/domain-internals.h ../../mono/metadata/lock-tracer.h \
+ ../../mono/utils/mono-compiler.h ../../mono/utils/mono-codeman.h \
+ ../../mono/utils/mono-mutex.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/time.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winsock2.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/windows.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/windef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnt.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winerror.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/basetsd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/pshpack4.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/poppack.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wincon.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winbase.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wingdi.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winuser.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnls.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winver.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnetwk.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winreg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/reason.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winsvc.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/cderr.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/dde.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/ddeml.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/dlgs.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/imm.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/lzexpand.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/mmsystem.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/nb30.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpc.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpcdce.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/basetyps.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpcdcep.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpcnsi.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpcnterr.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/shellapi.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/pshpack2.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winperf.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/commdlg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/unknwn.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/objfwd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wtypes.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpcndr.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/rpcnsip.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/prsht.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winspool.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winsock.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/ole2.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/objbase.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/objidl.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/cguid.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/olectlid.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/oleauto.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/oaidl.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/oleidl.h \
+ ../../mono/metadata/mono-hash.h ../../mono/utils/mono-internal-hash.h \
+ ../../mono/io-layer/io-layer.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/psapi.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/shlobj.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/shlguid.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/commctrl.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/mswsock.h \
+ ../../mono/metadata/mempool-internals.h ../../mono/utils/mono-dl.h \
+ ../../mono/utils/mono-dl-fallback.h ../../mono/utils/monobitset.h \
+ ../../mono/utils/mono-property-hash.h ../../mono/utils/mono-value-hash.h \
+ ../../mono/utils/mono-compiler.h ../../mono/utils/mono-conc-hashtable.h \
+ ../../mono/metadata/wrapper-types.h ../../mono/metadata/threads-types.h \
+ ../../mono/utils/mono-membar.h ../../mono/utils/mono-stack-unwinding.h \
+ ../../mono/utils/mono-context.h ../../mono/utils/mono-sigcontext.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/unistd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/io.h process.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/getopt.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/signal.h \
+ ../../mono/utils/mono-machine.h ../../mono/utils/mono-tls.h \
+ ../../mono/metadata/tabledefs.h ../../mono/metadata/profiler-private.h \
+ ../../mono/metadata/profiler.h ../../mono/metadata/mono-endian.h \
+ ../../mono/metadata/mono-debug.h ../../mono/utils/mono-uri.h \
+ ../../mono/metadata/mono-config.h ../../mono/utils/mono-digest.h \
+ ../../mono/utils/mono-logger-internal.h ../../mono/utils/mono-logger.h \
+ ../../mono/utils/mono-path.h ../../mono/metadata/coree.h \
+ ../../mono/metadata/image.h ../../mono/metadata/cil-coff.h \
+ ../../mono/utils/mono-io-portability.h ../../mono/utils/atomic.h
+
+../../config.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h:
+
+../../eglib/src/glib.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/string.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h:
+
+../../eglib/src/eglib-config.h:
+
+../../eglib/src/eglib-remap.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/errno.h:
+
+assembly.h:
+
+../../mono/metadata/image.h:
+
+../../mono/utils/mono-publib.h:
+
+image.h:
+
+object-internals.h:
+
+../../mono/metadata/object.h:
+
+../../mono/metadata/class.h:
+
+../../mono/metadata/metadata.h:
+
+../../mono/metadata/blob.h:
+
+../../mono/metadata/row-indexes.h:
+
+../../mono/metadata/loader.h:
+
+../../mono/utils/mono-error.h:
+
+../../mono/metadata/threads.h:
+
+../../mono/metadata/appdomain.h:
+
+../../mono/metadata/reflection.h:
+
+../../mono/metadata/mempool.h:
+
+../../mono/metadata/class-internals.h:
+
+../../mono/metadata/metadata-internals.h:
+
+../../mono/metadata/domain-internals.h:
+
+../../mono/metadata/lock-tracer.h:
+
+../../mono/utils/mono-compiler.h:
+
+../../mono/utils/mono-codeman.h:
+
+../../mono/utils/mono-mutex.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/time.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winsock2.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/windows.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/windef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnt.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winerror.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/basetsd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/pshpack4.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/poppack.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wincon.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winbase.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wingdi.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winuser.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnls.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winver.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnetwk.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winreg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/reason.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winsvc.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/cderr.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/dde.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/ddeml.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/dlgs.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/imm.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/lzexpand.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/mmsystem.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/nb30.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpc.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpcdce.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/basetyps.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpcdcep.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpcnsi.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpcnterr.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/shellapi.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/pshpack2.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winperf.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/commdlg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/unknwn.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/objfwd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wtypes.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpcndr.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/rpcnsip.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/prsht.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winspool.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winsock.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/ole2.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/objbase.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/objidl.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/cguid.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/olectlid.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/oleauto.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/oaidl.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/oleidl.h:
+
+../../mono/metadata/mono-hash.h:
+
+../../mono/utils/mono-internal-hash.h:
+
+../../mono/io-layer/io-layer.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/psapi.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/shlobj.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/shlguid.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/commctrl.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/mswsock.h:
+
+../../mono/metadata/mempool-internals.h:
+
+../../mono/utils/mono-dl.h:
+
+../../mono/utils/mono-dl-fallback.h:
+
+../../mono/utils/monobitset.h:
+
+../../mono/utils/mono-property-hash.h:
+
+../../mono/utils/mono-value-hash.h:
+
+../../mono/utils/mono-compiler.h:
+
+../../mono/utils/mono-conc-hashtable.h:
+
+../../mono/metadata/wrapper-types.h:
+
+../../mono/metadata/threads-types.h:
+
+../../mono/utils/mono-membar.h:
+
+../../mono/utils/mono-stack-unwinding.h:
+
+../../mono/utils/mono-context.h:
+
+../../mono/utils/mono-sigcontext.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/unistd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/io.h:
+
+process.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/getopt.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/signal.h:
+
+../../mono/utils/mono-machine.h:
+
+../../mono/utils/mono-tls.h:
+
+../../mono/metadata/tabledefs.h:
+
+../../mono/metadata/profiler-private.h:
+
+../../mono/metadata/profiler.h:
+
+../../mono/metadata/mono-endian.h:
+
+../../mono/metadata/mono-debug.h:
+
+../../mono/utils/mono-uri.h:
+
+../../mono/metadata/mono-config.h:
+
+../../mono/utils/mono-digest.h:
+
+../../mono/utils/mono-logger-internal.h:
+
+../../mono/utils/mono-logger.h:
+
+../../mono/utils/mono-path.h:
+
+../../mono/metadata/coree.h:
+
+../../mono/metadata/image.h:
+
+../../mono/metadata/cil-coff.h:
+
+../../mono/utils/mono-io-portability.h:
+
+../../mono/utils/atomic.h:

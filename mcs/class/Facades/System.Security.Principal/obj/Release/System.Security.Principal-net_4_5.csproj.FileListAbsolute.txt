@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Security.Principal.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Security.Principal.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Security.Principal\obj\Release\System.Security.Principal-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Security.Principal\obj\Release\System.Security.Principal.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Security.Principal\obj\Release\System.Security.Principal.pdb

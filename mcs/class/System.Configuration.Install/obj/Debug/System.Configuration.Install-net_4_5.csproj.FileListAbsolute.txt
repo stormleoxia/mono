@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Configuration.Install.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Configuration.Install.pdb
+D:\Development\Applications\mono2\mcs\class\System.Configuration.Install\obj\Debug\System.Configuration.Install-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Configuration.Install\obj\Debug\System.Configuration.Install.dll
+D:\Development\Applications\mono2\mcs\class\System.Configuration.Install\obj\Debug\System.Configuration.Install.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Configuration.Install.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Configuration.Install.pdb
+E:\mono2\mcs\class\System.Configuration.Install\obj\Debug\System.Configuration.Install-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Configuration.Install\obj\Debug\System.Configuration.Install.dll
+E:\mono2\mcs\class\System.Configuration.Install\obj\Debug\System.Configuration.Install.pdb

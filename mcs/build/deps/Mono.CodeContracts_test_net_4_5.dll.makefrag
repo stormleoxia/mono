@@ -1,0 +1,2 @@
+Mono.CodeContracts_test_net_4_5.dll: Test\RewriteAndLoad.cs
+Mono.CodeContracts_test_net_4_5.dll: Test\TestCCRewrite.cs

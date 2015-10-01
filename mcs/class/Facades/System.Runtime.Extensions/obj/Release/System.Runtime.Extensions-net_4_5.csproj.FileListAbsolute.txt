@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Extensions.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Extensions.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Extensions\obj\Release\System.Runtime.Extensions-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Extensions\obj\Release\System.Runtime.Extensions.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Extensions\obj\Release\System.Runtime.Extensions.pdb

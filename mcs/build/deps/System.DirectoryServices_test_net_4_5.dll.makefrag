@@ -1,0 +1,6 @@
+System.DirectoryServices_test_net_4_5.dll: Test\System.DirectoryServices\DirectoryServicesPermissionAttributeTest.cs
+System.DirectoryServices_test_net_4_5.dll: Test\System.DirectoryServices\DirectoryServicesPermissionTest.cs
+System.DirectoryServices_test_net_4_5.dll: Test\System.DirectoryServices\DirectoryServicesDirectoryEntryTest.cs
+System.DirectoryServices_test_net_4_5.dll: Test\System.DirectoryServices\DirectoryServicesDirectorySearcherTest.cs
+System.DirectoryServices_test_net_4_5.dll: Test\System.DirectoryServices\DirectoryServicesSearchResultTest.cs
+System.DirectoryServices_test_net_4_5.dll: Test\System.DirectoryServices\TestConfiguration.cs

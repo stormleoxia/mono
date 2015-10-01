@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\SystemWebTestShim.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\SystemWebTestShim.pdb
+D:\Development\Applications\mono2\mcs\class\SystemWebTestShim\obj\Debug\SystemWebTestShim-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\SystemWebTestShim\obj\Debug\SystemWebTestShim.dll
+D:\Development\Applications\mono2\mcs\class\SystemWebTestShim\obj\Debug\SystemWebTestShim.pdb

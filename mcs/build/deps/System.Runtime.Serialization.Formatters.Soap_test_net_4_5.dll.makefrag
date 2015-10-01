@@ -1,0 +1,5 @@
+System.Runtime.Serialization.Formatters.Soap_test_net_4_5.dll: Test\AssemblyInfo.cs
+System.Runtime.Serialization.Formatters.Soap_test_net_4_5.dll: Test\SoapFormatterTest.cs
+System.Runtime.Serialization.Formatters.Soap_test_net_4_5.dll: Test\SerializationTest.cs
+System.Runtime.Serialization.Formatters.Soap_test_net_4_5.dll: Test\SerializationCallbackTest.cs
+System.Runtime.Serialization.Formatters.Soap_test_net_4_5.dll: Test\InternalSoapValuesTest.cs

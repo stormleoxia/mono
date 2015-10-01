@@ -1,0 +1,6 @@
+./../../../class/lib/net_4_5/nunit-console-runner.dll: ../../CommonAssemblyInfo.cs
+./../../../class/lib/net_4_5/nunit-console-runner.dll: AssemblyInfo.cs
+./../../../class/lib/net_4_5/nunit-console-runner.dll: ConsoleOptions.cs
+./../../../class/lib/net_4_5/nunit-console-runner.dll: ConsoleUi.cs
+./../../../class/lib/net_4_5/nunit-console-runner.dll: EventCollector.cs
+./../../../class/lib/net_4_5/nunit-console-runner.dll: Runner.cs

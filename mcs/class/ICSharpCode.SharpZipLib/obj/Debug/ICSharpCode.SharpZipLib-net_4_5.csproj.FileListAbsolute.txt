@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\ICSharpCode.SharpZipLib.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\ICSharpCode.SharpZipLib.pdb
+D:\Development\Applications\mono2\mcs\class\ICSharpCode.SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\ICSharpCode.SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+D:\Development\Applications\mono2\mcs\class\ICSharpCode.SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb

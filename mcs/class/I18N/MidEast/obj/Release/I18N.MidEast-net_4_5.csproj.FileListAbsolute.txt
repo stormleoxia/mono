@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\I18N.MidEast.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\I18N.MidEast.pdb
+D:\Development\Applications\mono2\mcs\class\I18N\MidEast\obj\Release\I18N.MidEast-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\I18N\MidEast\obj\Release\I18N.MidEast.dll
+D:\Development\Applications\mono2\mcs\class\I18N\MidEast\obj\Release\I18N.MidEast.pdb

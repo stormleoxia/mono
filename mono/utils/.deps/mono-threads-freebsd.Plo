@@ -1,0 +1,3 @@
+mono-threads-freebsd.lo: mono-threads-freebsd.c ../../config.h
+
+../../config.h:

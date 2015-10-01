@@ -1,0 +1,60 @@
+strenc.lo: strenc.c ../../config.h ../../eglib/src/glib.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/string.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h \
+ ../../eglib/src/eglib-config.h ../../eglib/src/eglib-remap.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h strenc.h \
+ ../../mono/utils/mono-publib.h
+
+../../config.h:
+
+../../eglib/src/glib.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/string.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h:
+
+../../eglib/src/eglib-config.h:
+
+../../eglib/src/eglib-remap.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h:
+
+strenc.h:
+
+../../mono/utils/mono-publib.h:

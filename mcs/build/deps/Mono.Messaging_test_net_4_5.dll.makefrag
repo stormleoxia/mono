@@ -1,0 +1,2 @@
+Mono.Messaging_test_net_4_5.dll: Test\Mono.Messaging\ConcurrentLinkedQueueTest.cs
+Mono.Messaging_test_net_4_5.dll: Test\Mono.Messaging\QueueReferenceTest.cs

@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Net.Requests.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Net.Requests.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.Requests\obj\Release\System.Net.Requests-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.Requests\obj\Release\System.Net.Requests.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.Requests\obj\Release\System.Net.Requests.pdb

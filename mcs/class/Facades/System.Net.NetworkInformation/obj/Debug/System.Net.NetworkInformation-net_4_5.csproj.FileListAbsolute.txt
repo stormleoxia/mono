@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Net.NetworkInformation.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Net.NetworkInformation.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.NetworkInformation\obj\Debug\System.Net.NetworkInformation-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.NetworkInformation\obj\Debug\System.Net.NetworkInformation.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Net.NetworkInformation\obj\Debug\System.Net.NetworkInformation.pdb

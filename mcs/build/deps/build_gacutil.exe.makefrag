@@ -1,0 +1,2 @@
+./../../class/lib/build/gacutil.exe: driver.cs
+./../../class/lib/build/gacutil.exe: ../security/StrongNameManager.cs

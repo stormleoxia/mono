@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Cecil.Mdb.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Cecil.Mdb.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Cecil.Mdb\obj\Release\Mono.Cecil.Mdb-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Cecil.Mdb\obj\Release\Mono.Cecil.Mdb.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Cecil.Mdb\obj\Release\Mono.Cecil.Mdb.pdb

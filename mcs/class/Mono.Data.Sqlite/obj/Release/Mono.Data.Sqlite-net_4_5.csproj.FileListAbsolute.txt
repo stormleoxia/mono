@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Data.Sqlite.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Data.Sqlite.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Data.Sqlite\obj\Release\Mono.Data.Sqlite.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Data.Sqlite\obj\Release\Mono.Data.Sqlite.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Data.Sqlite\obj\Release\Mono.Data.Sqlite-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\lib\net_4_5\Mono.Data.Sqlite.dll
+E:\mono2\mcs\class\lib\net_4_5\Mono.Data.Sqlite.pdb
+E:\mono2\mcs\class\Mono.Data.Sqlite\obj\Release\Mono.Data.Sqlite-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Mono.Data.Sqlite\obj\Release\Mono.Data.Sqlite.dll
+E:\mono2\mcs\class\Mono.Data.Sqlite\obj\Release\Mono.Data.Sqlite.pdb

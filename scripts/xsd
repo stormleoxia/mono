@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /cygdrive/d/Development/Tools/mono/bin/mono $MONO_OPTIONS D:/Development/Tools/mono/lib/mono/4.5/xsd.exe "$@"

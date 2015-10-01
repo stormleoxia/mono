@@ -1,0 +1,122 @@
+lock-free-array-queue.lo: lock-free-array-queue.c \
+ ../../mono/utils/atomic.h ../../config.h ../../eglib/src/glib.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/string.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h \
+ ../../eglib/src/eglib-config.h ../../eglib/src/eglib-remap.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/windows.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/windef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnt.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winerror.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/basetsd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/pshpack4.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/poppack.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wincon.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winbase.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wingdi.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winuser.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnls.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winver.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnetwk.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winreg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/reason.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winsvc.h \
+ ../../mono/utils/mono-membar.h ../../mono/utils/mono-mmap.h \
+ ../../mono/utils/mono-publib.h ../../mono/utils/lock-free-array-queue.h \
+ ../../mono/utils/mono-compiler.h
+
+../../mono/utils/atomic.h:
+
+../../config.h:
+
+../../eglib/src/glib.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/string.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h:
+
+../../eglib/src/eglib-config.h:
+
+../../eglib/src/eglib-remap.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/windows.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/windef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnt.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winerror.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/basetsd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/pshpack4.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/poppack.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wincon.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winbase.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wingdi.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winuser.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnls.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winver.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnetwk.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winreg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/reason.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winsvc.h:
+
+../../mono/utils/mono-membar.h:
+
+../../mono/utils/mono-mmap.h:
+
+../../mono/utils/mono-publib.h:
+
+../../mono/utils/lock-free-array-queue.h:
+
+../../mono/utils/mono-compiler.h:

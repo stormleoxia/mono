@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Drawing.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Drawing.pdb
+D:\Development\Applications\mono2\mcs\class\System.Drawing\obj\Release\System.Drawing-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Drawing\obj\Release\System.Drawing.dll
+D:\Development\Applications\mono2\mcs\class\System.Drawing\obj\Release\System.Drawing.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Drawing.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Drawing.pdb
+E:\mono2\mcs\class\System.Drawing\obj\Release\System.Drawing-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Drawing\obj\Release\System.Drawing.dll
+E:\mono2\mcs\class\System.Drawing\obj\Release\System.Drawing.pdb

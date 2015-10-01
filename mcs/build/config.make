@@ -1,0 +1,12 @@
+prefix=/cygdrive/d/Development/Tools/mono
+exec_prefix=${prefix}
+sysconfdir=${prefix}/etc
+mono_libdir=${exec_prefix}/lib
+IL_FLAGS = /debug
+RUNTIME = /cygdrive/e/mono2/runtime/mono-wrapper
+ILDISASM = /cygdrive/e/mono2/runtime/monodis-wrapper
+JAY_CFLAGS = -Wno-implicit-function-declaration
+INSTALL = /usr/bin/install -c
+MONO_VERSION = 4.0.3.0
+DEFAULT_PROFILE = net_4_5
+BCL_OPTIMIZE = 1

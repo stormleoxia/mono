@@ -1,0 +1,13 @@
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/TunerAnnotations.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/PrintStatus.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/RemoveSerialization.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/AdjustVisibility.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/CheckVisibility.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/InjectSecurityAttributes.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/MoonlightA11yApiMarker.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/MoonlightA11yAssemblyStep.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/MoonlightA11yDescriptorGenerator.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/MoonlightA11yProcessor.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/MoonlightA11yUsageInspectionStep.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/MoonlightAssemblyStep.cs
+./../../class/lib/net_4_5/Mono.Tuner.dll: Mono.Tuner/FilterAttributes.cs

@@ -1,0 +1,3 @@
+#!/bin/sh
+umask 077
+exec /cygdrive/d/Development/Tools/mono/bin/mono $MONO_OPTIONS D:/Development/Tools/mono/lib/mono/4.5/makecert.exe "$@"

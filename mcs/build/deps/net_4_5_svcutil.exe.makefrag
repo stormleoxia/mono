@@ -1,0 +1,5 @@
+./../../class/lib/net_4_5/svcutil.exe: ../../class/Mono.Options/Mono.Options/Options.cs
+./../../class/lib/net_4_5/svcutil.exe: Driver.cs
+./../../class/lib/net_4_5/svcutil.exe: CommandLineOptions.cs
+./../../class/lib/net_4_5/svcutil.exe: MoonlightChannelBaseExtension.cs
+./../../class/lib/net_4_5/svcutil.exe: 

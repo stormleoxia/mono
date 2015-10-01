@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Core.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Core.pdb
+D:\Development\Applications\mono2\mcs\class\System.Core\obj\Release\System.Core-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Core\obj\Release\System.Core.dll
+D:\Development\Applications\mono2\mcs\class\System.Core\obj\Release\System.Core.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Core.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Core.pdb
+E:\mono2\mcs\class\System.Core\obj\Release\System.Core-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Core\obj\Release\System.Core.dll
+E:\mono2\mcs\class\System.Core\obj\Release\System.Core.pdb

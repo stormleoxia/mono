@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Xml.ReaderWriter.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Xml.ReaderWriter.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Xml.ReaderWriter\obj\Release\System.Xml.ReaderWriter-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Xml.ReaderWriter\obj\Release\System.Xml.ReaderWriter.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Xml.ReaderWriter\obj\Release\System.Xml.ReaderWriter.pdb

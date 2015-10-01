@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Diagnostics.Tracing.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Diagnostics.Tracing.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Diagnostics.Tracing\obj\Release\System.Diagnostics.Tracing-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Diagnostics.Tracing\obj\Release\System.Diagnostics.Tracing.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Diagnostics.Tracing\obj\Release\System.Diagnostics.Tracing.pdb

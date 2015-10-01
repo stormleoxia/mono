@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\System.Web.Http.WebHost\obj\Release\System.Web.Http.WebHost-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.Http.WebHost.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.Http.WebHost.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.Http.WebHost\obj\Release\System.Web.Http.WebHost.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.Http.WebHost\obj\Release\System.Web.Http.WebHost.pdb

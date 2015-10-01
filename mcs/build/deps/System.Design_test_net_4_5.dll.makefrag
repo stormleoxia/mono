@@ -1,0 +1,12 @@
+System.Design_test_net_4_5.dll: Test\System.ComponentModel.Design\DesignerActionListsChangedEventArgsTest.cs
+System.Design_test_net_4_5.dll: Test\System.ComponentModel.Design\DesignerActionMethodItemTest.cs
+System.Design_test_net_4_5.dll: Test\System.ComponentModel.Design\DesignerActionPropertyItemTest.cs
+System.Design_test_net_4_5.dll: Test\System.Diagnostics.Design\StringValueConverterTest.cs
+System.Design_test_net_4_5.dll: Test\System.Windows.Forms.Design\MenuCommandsTest.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderCodeDomTest.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderBaseNameTests.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderNamespaceTests.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderOtherTests.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderResourceNameTests.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderResxFileTests.cs
+System.Design_test_net_4_5.dll: Test\System.Resources.Tools\StronglyTypedResourceBuilderVerifyResourceNameTests.cs

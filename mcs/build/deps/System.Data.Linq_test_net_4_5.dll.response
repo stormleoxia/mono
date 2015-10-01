@@ -1,0 +1,9 @@
+Test\dummy.cs
+Test\..\src\DbLinq.SqlServer\Test\MsSqlDataContextTest.cs
+Test\..\src\DbLinq\Test\BinaryTest.cs
+Test\..\src\DbLinq\Test\DataContextTest.cs
+Test\..\src\DbLinq\Test\EntitySetTest.cs
+Test\..\src\DbLinq\Test\NullProvider.cs
+Test\..\src\DbLinq\Test\PeopleTable.cs
+Test\..\src\DbLinq\Test\Providers\DataContextTestBase.cs
+Test\..\src\DbLinq\Test\TableTest.cs

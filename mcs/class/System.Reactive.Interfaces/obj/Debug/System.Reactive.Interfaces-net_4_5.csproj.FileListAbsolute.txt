@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.Interfaces.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.Interfaces.pdb
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Interfaces\obj\Debug\System.Reactive.Interfaces-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Interfaces\obj\Debug\System.Reactive.Interfaces.dll
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Interfaces\obj\Debug\System.Reactive.Interfaces.pdb

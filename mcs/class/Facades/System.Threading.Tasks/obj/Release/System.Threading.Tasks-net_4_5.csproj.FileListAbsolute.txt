@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Threading.Tasks.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Threading.Tasks.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Threading.Tasks\obj\Release\System.Threading.Tasks-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Threading.Tasks\obj\Release\System.Threading.Tasks.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Threading.Tasks\obj\Release\System.Threading.Tasks.pdb

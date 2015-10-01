@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Diagnostics.Tools.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Diagnostics.Tools.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Diagnostics.Tools\obj\Release\System.Diagnostics.Tools-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Diagnostics.Tools\obj\Release\System.Diagnostics.Tools.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Diagnostics.Tools\obj\Release\System.Diagnostics.Tools.pdb

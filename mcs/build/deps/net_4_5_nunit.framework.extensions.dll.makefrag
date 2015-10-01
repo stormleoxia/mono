@@ -1,0 +1,9 @@
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: ../../CommonAssemblyInfo.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: AssemblyInfo.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: RepeatAttribute.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: RowAttribute.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: RowTest/RowAttribute.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: RowTest/RowTestAttribute.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: RowTest/SpecialValue.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: RowTestAttribute.cs
+./../../../class/lib/net_4_5/nunit.framework.extensions.dll: SpecialValue.cs

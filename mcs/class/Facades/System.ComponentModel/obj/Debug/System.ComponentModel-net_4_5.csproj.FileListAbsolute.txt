@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel\obj\Debug\System.ComponentModel-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel\obj\Debug\System.ComponentModel.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel\obj\Debug\System.ComponentModel.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.pdb
+E:\mono2\mcs\class\Facades\System.ComponentModel\obj\Debug\System.ComponentModel-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.ComponentModel\obj\Debug\System.ComponentModel.dll
+E:\mono2\mcs\class\Facades\System.ComponentModel\obj\Debug\System.ComponentModel.pdb

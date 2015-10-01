@@ -1,0 +1,4 @@
+Test\AssemblyInfo.cs
+Test\..\..\..\class\System.Data.Linq\src\DbMetal\Test\EnglishWordsTest.cs
+Test\..\..\..\class\System.Data.Linq\src\DbMetal\Test\FrenchWordsTest.cs
+Test\..\..\..\class\System.Data.Linq\src\DbMetal\Test\NameFormatterTest.cs

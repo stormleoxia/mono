@@ -1,0 +1,20 @@
+jni.lo: jni.c /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h jni.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h:
+
+jni.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:

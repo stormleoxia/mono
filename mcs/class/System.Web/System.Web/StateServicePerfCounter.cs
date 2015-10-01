@@ -1,0 +1,11 @@
+﻿using System;
+namespace System.Web
+{
+	internal enum StateServicePerfCounter
+	{
+		STATE_SERVICE_SESSIONS_ACTIVE = 97,
+		STATE_SERVICE_SESSIONS_ABANDONED,
+		STATE_SERVICE_SESSIONS_TIMED_OUT,
+		STATE_SERVICE_SESSIONS_TOTAL
+	}
+}

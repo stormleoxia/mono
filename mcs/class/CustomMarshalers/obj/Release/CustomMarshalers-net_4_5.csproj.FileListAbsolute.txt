@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\CustomMarshalers.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\CustomMarshalers.pdb
+D:\Development\Applications\mono2\mcs\class\CustomMarshalers\obj\Release\CustomMarshalers-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\CustomMarshalers\obj\Release\CustomMarshalers.dll
+D:\Development\Applications\mono2\mcs\class\CustomMarshalers\obj\Release\CustomMarshalers.pdb

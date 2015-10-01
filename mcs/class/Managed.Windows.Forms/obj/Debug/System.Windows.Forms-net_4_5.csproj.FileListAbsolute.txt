@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\Managed.Windows.Forms\obj\Debug\System.Windows.Forms-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Windows.Forms.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Windows.Forms.pdb
+D:\Development\Applications\mono2\mcs\class\Managed.Windows.Forms\obj\Debug\System.Windows.Forms.dll
+D:\Development\Applications\mono2\mcs\class\Managed.Windows.Forms\obj\Debug\System.Windows.Forms.pdb

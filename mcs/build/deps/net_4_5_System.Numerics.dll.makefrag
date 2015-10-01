@@ -1,0 +1,10 @@
+./../../class/lib/net_4_5/System.Numerics.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ../../build/common/SR.cs
+./../../class/lib/net_4_5/System.Numerics.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ReferenceSources/Environment.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ReferenceSources/SR.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ../../../external/referencesource/System.Numerics/System/Numerics/BigInteger.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ../../../external/referencesource/System.Numerics/System/Numerics/BigIntegerBuilder.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ../../../external/referencesource/System.Numerics/System/Numerics/BigNumber.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ../../../external/referencesource/System.Numerics/System/Numerics/Complex.cs
+./../../class/lib/net_4_5/System.Numerics.dll: ../../../external/referencesource/System.Numerics/System/Numerics/NumericsHelpers.cs

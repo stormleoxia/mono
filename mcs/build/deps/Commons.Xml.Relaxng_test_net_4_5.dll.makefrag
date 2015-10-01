@@ -1,0 +1,7 @@
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\RdpPatternTests.cs
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\RelaxngDatatypeProviderTests.cs
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\RelaxngReaderTests.cs
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\RelaxngValidatingReaderTests.cs
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\XsdDatatypeTests.cs
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\RncTests.cs
+Commons.Xml.Relaxng_test_net_4_5.dll: Test\NvdlValidatingReaderTests.cs

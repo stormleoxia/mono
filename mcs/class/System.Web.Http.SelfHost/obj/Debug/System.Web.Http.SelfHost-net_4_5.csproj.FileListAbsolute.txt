@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.Http.SelfHost.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.Http.SelfHost.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.Http.SelfHost\obj\Debug\System.Web.Http.SelfHost-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Web.Http.SelfHost\obj\Debug\System.Web.Http.SelfHost.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.Http.SelfHost\obj\Debug\System.Web.Http.SelfHost.pdb

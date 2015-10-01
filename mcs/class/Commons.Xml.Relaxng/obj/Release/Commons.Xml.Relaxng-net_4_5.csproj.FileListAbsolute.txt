@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Commons.Xml.Relaxng.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Commons.Xml.Relaxng.pdb
+D:\Development\Applications\mono2\mcs\class\Commons.Xml.Relaxng\obj\Release\Commons.Xml.Relaxng-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Commons.Xml.Relaxng\obj\Release\Commons.Xml.Relaxng.dll
+D:\Development\Applications\mono2\mcs\class\Commons.Xml.Relaxng\obj\Release\Commons.Xml.Relaxng.pdb

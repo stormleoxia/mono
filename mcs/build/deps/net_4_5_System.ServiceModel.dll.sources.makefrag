@@ -1,0 +1,4 @@
+../../build/deps/net_4_5_System.ServiceModel.dll.sources: net_4_0_System.ServiceModel.dll.sources
+net_4_0_System.ServiceModel.dll.sources:
+../../build/deps/net_4_5_System.ServiceModel.dll.sources: System.ServiceModel.dll.sources
+System.ServiceModel.dll.sources:

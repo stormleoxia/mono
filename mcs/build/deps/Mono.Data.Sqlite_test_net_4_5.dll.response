@@ -1,0 +1,8 @@
+Test\SqliteCommandUnitTests.cs
+Test\SqliteConnectionTest.cs
+Test\SqliteDataAdapterUnitTests.cs
+Test\SqliteDataReaderTest.cs
+Test\SqliteExceptionUnitTests.cs
+Test\SqliteParameterUnitTests.cs
+Test\SqliteFunctionTests.cs
+Test\Bug27864.cs

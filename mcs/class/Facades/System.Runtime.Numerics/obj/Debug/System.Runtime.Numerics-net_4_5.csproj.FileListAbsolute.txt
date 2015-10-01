@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Numerics.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Numerics.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Numerics\obj\Debug\System.Runtime.Numerics-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Numerics\obj\Debug\System.Runtime.Numerics.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.Numerics\obj\Debug\System.Runtime.Numerics.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Numerics.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.Numerics.pdb
+E:\mono2\mcs\class\Facades\System.Runtime.Numerics\obj\Debug\System.Runtime.Numerics-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.Runtime.Numerics\obj\Debug\System.Runtime.Numerics.dll
+E:\mono2\mcs\class\Facades\System.Runtime.Numerics\obj\Debug\System.Runtime.Numerics.pdb

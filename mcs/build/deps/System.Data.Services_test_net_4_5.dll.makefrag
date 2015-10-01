@@ -1,0 +1,12 @@
+System.Data.Services_test_net_4_5.dll: Test\..\..\System.Web.DynamicData\Test\Common\AssertExtensions.cs
+System.Data.Services_test_net_4_5.dll: Test\.\IgnorePropertiesAttributeTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\QueryInterceptorAttributeTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\DataServiceTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\ExpandSegmentCollectionTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\ExpandSegmentTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\ChangeInterceptorAttributeTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\MimeTypeAttributeTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\DataServiceExceptionTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\ETagAttributeTests.cs
+System.Data.Services_test_net_4_5.dll: Test\.\System.Data.Services.Providers\DataServiceProviderMethodsTest.cs
+System.Data.Services_test_net_4_5.dll: Test\.\System.Data.Services.Providers\ResourceTypeTest.cs

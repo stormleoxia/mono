@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.XBuild.Tasks.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.XBuild.Tasks.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.XBuild.Tasks\obj\Release\Mono.XBuild.Tasks-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.XBuild.Tasks\obj\Release\Mono.XBuild.Tasks.dll
+D:\Development\Applications\mono2\mcs\class\Mono.XBuild.Tasks\obj\Release\Mono.XBuild.Tasks.pdb

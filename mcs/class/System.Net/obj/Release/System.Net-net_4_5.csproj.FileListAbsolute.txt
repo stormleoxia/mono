@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Net.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Net.pdb
+D:\Development\Applications\mono2\mcs\class\System.Net\obj\Release\System.Net-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Net\obj\Release\System.Net.dll
+D:\Development\Applications\mono2\mcs\class\System.Net\obj\Release\System.Net.pdb

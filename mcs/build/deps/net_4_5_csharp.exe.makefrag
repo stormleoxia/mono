@@ -1,0 +1,3 @@
+./../../class/lib/net_4_5/csharp.exe: ../../class/corlib/Mono/DataConverter.cs
+./../../class/lib/net_4_5/csharp.exe: repl.cs
+./../../class/lib/net_4_5/csharp.exe: getline.cs

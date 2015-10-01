@@ -1,0 +1,3 @@
+mono-threads-mach.lo: mono-threads-mach.c ../../config.h
+
+../../config.h:

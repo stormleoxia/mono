@@ -1,0 +1,89 @@
+dlmalloc.lo: dlmalloc.c ../../mono/utils/dlmalloc.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h \
+ ../../mono/utils/mono-compiler.h ../../config.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/windows.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/windef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnt.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winerror.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/string.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/basetsd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/pshpack4.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/poppack.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wincon.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winbase.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/wingdi.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winuser.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnls.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winver.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winnetwk.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winreg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/reason.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/winsvc.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/fcntl.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/io.h
+
+../../mono/utils/dlmalloc.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:
+
+../../mono/utils/mono-compiler.h:
+
+../../config.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/windows.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/windef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnt.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winerror.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/string.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/basetsd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/pshpack4.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/poppack.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wincon.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winbase.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/wingdi.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winuser.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnls.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winver.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winnetwk.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winreg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/reason.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/winsvc.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/fcntl.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/io.h:

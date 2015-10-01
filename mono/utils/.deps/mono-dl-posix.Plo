@@ -1,0 +1,36 @@
+mono-dl-posix.lo: mono-dl-posix.c ../../config.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/unistd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/io.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/string.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/process.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/getopt.h
+
+../../config.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/unistd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/io.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/string.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/process.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/getopt.h:

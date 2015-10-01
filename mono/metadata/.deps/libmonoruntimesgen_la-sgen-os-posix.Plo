@@ -1,0 +1,3 @@
+libmonoruntimesgen_la-sgen-os-posix.lo: sgen-os-posix.c ../../config.h
+
+../../config.h:

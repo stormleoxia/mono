@@ -1,0 +1,4 @@
+Test\WebMatrix.Data\ConnectionEventArgsTests.cs
+Test\WebMatrix.Data\DynamicRecordTests.cs
+Test\..\WebMatrix.Data\DynamicRecord.cs
+Test\WebMatrix.Data\DatabaseTests.cs

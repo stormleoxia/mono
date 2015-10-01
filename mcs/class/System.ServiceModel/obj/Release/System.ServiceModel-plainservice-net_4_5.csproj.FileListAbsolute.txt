@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel\obj\Release\System.ServiceModel-plainservice-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\plainservice\System.ServiceModel.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\plainservice\System.ServiceModel.pdb
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel\obj\Release\System.ServiceModel.dll
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel\obj\Release\System.ServiceModel.pdb
+E:\mono2\mcs\class\lib\net_4_5\plainservice\System.ServiceModel.dll
+E:\mono2\mcs\class\lib\net_4_5\plainservice\System.ServiceModel.pdb
+E:\mono2\mcs\class\System.ServiceModel\obj\Release\System.ServiceModel-plainservice-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.ServiceModel\obj\Release\System.ServiceModel.dll
+E:\mono2\mcs\class\System.ServiceModel\obj\Release\System.ServiceModel.pdb

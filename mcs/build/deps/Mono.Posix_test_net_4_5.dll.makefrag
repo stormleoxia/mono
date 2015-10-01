@@ -1,0 +1,10 @@
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\ReadlinkTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\StdioFileStreamTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\UnixEncodingTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\UnixGroupTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\UnixMarshalTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\UnixPathTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\UnixSignalTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix\UnixUserTest.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix.Native\RealTimeSignumTests.cs
+Mono.Posix_test_net_4_5.dll: Test\Mono.Unix.Native\StdlibTest.cs

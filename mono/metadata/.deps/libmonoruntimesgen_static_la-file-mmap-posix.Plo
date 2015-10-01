@@ -1,0 +1,4 @@
+libmonoruntimesgen_static_la-file-mmap-posix.lo: file-mmap-posix.c \
+ ../../config.h
+
+../../config.h:

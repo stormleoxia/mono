@@ -1,0 +1,10 @@
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\AdminTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\AsyncPeekTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\AsyncReceiveTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\BasicMessagingTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\MessageEnumeratorTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\MessageQueuePermissionAttributeTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\MQUtil.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\PeekTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\SelectorTest.cs
+System.Messaging_test_net_4_5.dll: Test\System.Messaging\TransactionMessagingTest.cs

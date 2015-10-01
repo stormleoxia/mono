@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.Remoting.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.Remoting.pdb
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Remoting\obj\Debug\System.Runtime.Remoting-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Remoting\obj\Debug\System.Runtime.Remoting.dll
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Remoting\obj\Debug\System.Runtime.Remoting.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Runtime.Remoting.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Runtime.Remoting.pdb
+E:\mono2\mcs\class\System.Runtime.Remoting\obj\Debug\System.Runtime.Remoting-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Runtime.Remoting\obj\Debug\System.Runtime.Remoting.dll
+E:\mono2\mcs\class\System.Runtime.Remoting\obj\Debug\System.Runtime.Remoting.pdb

@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\IBM.Data.DB2.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\IBM.Data.DB2.pdb
+D:\Development\Applications\mono2\mcs\class\IBM.Data.DB2\obj\Debug\IBM.Data.DB2-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\IBM.Data.DB2\obj\Debug\IBM.Data.DB2.dll
+D:\Development\Applications\mono2\mcs\class\IBM.Data.DB2\obj\Debug\IBM.Data.DB2.pdb

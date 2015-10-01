@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Net.Http.Formatting.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Net.Http.Formatting.pdb
+D:\Development\Applications\mono2\mcs\class\System.Net.Http.Formatting\obj\Debug\System.Net.Http.Formatting-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Net.Http.Formatting\obj\Debug\System.Net.Http.Formatting.dll
+D:\Development\Applications\mono2\mcs\class\System.Net.Http.Formatting\obj\Debug\System.Net.Http.Formatting.pdb

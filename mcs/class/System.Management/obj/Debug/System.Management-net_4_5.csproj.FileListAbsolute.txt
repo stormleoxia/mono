@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Management.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Management.pdb
+D:\Development\Applications\mono2\mcs\class\System.Management\obj\Debug\System.Management-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Management\obj\Debug\System.Management.dll
+D:\Development\Applications\mono2\mcs\class\System.Management\obj\Debug\System.Management.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Management.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Management.pdb
+E:\mono2\mcs\class\System.Management\obj\Debug\System.Management-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Management\obj\Debug\System.Management.dll
+E:\mono2\mcs\class\System.Management\obj\Debug\System.Management.pdb

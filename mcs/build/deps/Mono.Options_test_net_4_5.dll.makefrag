@@ -1,0 +1,7 @@
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\BaseRocksFixture.cs
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\CollectionContract.cs
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\ListContract.cs
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\OptionContextTest.cs
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\OptionSetTest.cs
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\OptionTest.cs
+Mono.Options_test_net_4_5.dll: Test\Mono.Options\Utils.cs

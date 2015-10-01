@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Primitives.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Primitives.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Release\System.Reflection.Primitives-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Release\System.Reflection.Primitives.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Release\System.Reflection.Primitives.pdb

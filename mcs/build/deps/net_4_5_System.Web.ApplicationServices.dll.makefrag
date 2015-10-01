@@ -1,0 +1,26 @@
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: ../../../external/referencesource/System.Web.ApplicationServices/Security/IMembershipAdapter.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: ../../build/common/Locale.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: ../../build/common/MonoTODOAttribute.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Configuration/MembershipPasswordCompatibilityMode.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/IMembershipHelper.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipCreateStatus.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipCreateUserException.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipPasswordException.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipPasswordFormat.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipProvider.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipProviderCollection.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipUser.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipUserCollection.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/MembershipValidatePasswordEventHandler.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/RoleProvider.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.Security/ValidatePasswordEventArgs.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.UI/KeyedList.cs
+./../../class/lib/net_4_5/System.Web.ApplicationServices.dll: System.Web.UI/KeyedListEnumerator.cs
+../../build/deps/net_4_5_System.Web.ApplicationServices.dll.sources: net_4_0_System.Web.ApplicationServices.dll.sources
+net_4_0_System.Web.ApplicationServices.dll.sources:
+../../build/deps/net_4_5_System.Web.ApplicationServices.dll.sources: System.Web.ApplicationServices.dll.sources
+System.Web.ApplicationServices.dll.sources:
+../../build/deps/net_4_5_System.Web.ApplicationServices.dll.makefrag: ./../../build/deps/net_4_5_System.Web.ApplicationServices.dll.sources.makefrag
+./../../build/deps/net_4_5_System.Web.ApplicationServices.dll.sources.makefrag:

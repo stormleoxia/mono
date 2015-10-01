@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ComponentModel.Composition.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ComponentModel.Composition.pdb
+D:\Development\Applications\mono2\mcs\class\System.ComponentModel.Composition.4.5\obj\Release\System.ComponentModel.Composition-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.ComponentModel.Composition.4.5\obj\Release\System.ComponentModel.Composition.dll
+D:\Development\Applications\mono2\mcs\class\System.ComponentModel.Composition.4.5\obj\Release\System.ComponentModel.Composition.pdb

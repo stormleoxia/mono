@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.VisualC.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.VisualC.pdb
+D:\Development\Applications\mono2\mcs\class\Microsoft.VisualC\obj\Release\Microsoft.VisualC-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Microsoft.VisualC\obj\Release\Microsoft.VisualC.dll
+D:\Development\Applications\mono2\mcs\class\Microsoft.VisualC\obj\Release\Microsoft.VisualC.pdb

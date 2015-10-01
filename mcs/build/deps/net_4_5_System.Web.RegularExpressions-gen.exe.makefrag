@@ -1,0 +1,5 @@
+./../../class/lib/net_4_5/System.Web.RegularExpressions-gen.exe: Program.cs
+./../../class/lib/net_4_5/System.Web.RegularExpressions-gen.exe: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/System.Web.RegularExpressions-gen.exe: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/System.Web.RegularExpressions-gen.exe: ../../build/common/Locale.cs
+./../../class/lib/net_4_5/System.Web.RegularExpressions-gen.exe: ../../build/common/MonoTODOAttribute.cs

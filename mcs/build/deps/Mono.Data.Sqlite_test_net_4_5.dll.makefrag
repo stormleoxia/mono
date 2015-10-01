@@ -1,0 +1,8 @@
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteCommandUnitTests.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteConnectionTest.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteDataAdapterUnitTests.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteDataReaderTest.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteExceptionUnitTests.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteParameterUnitTests.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\SqliteFunctionTests.cs
+Mono.Data.Sqlite_test_net_4_5.dll: Test\Bug27864.cs

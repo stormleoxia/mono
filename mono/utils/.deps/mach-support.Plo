@@ -1,0 +1,3 @@
+mach-support.lo: mach-support.c ../../config.h
+
+../../config.h:

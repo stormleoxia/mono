@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\cscompmgd.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\cscompmgd.pdb
+D:\Development\Applications\mono2\mcs\class\Cscompmgd\obj\Release\Cscompmgd-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Cscompmgd\obj\Release\cscompmgd.dll
+D:\Development\Applications\mono2\mcs\class\Cscompmgd\obj\Release\cscompmgd.pdb

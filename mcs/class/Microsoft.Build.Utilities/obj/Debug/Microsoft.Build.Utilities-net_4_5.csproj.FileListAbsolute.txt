@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Build.Utilities.v4.0.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Build.Utilities.v4.0.pdb
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build.Utilities\obj\Debug\Microsoft.Build.Utilities-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build.Utilities\obj\Debug\Microsoft.Build.Utilities.v4.0.dll
+D:\Development\Applications\mono2\mcs\class\Microsoft.Build.Utilities\obj\Debug\Microsoft.Build.Utilities.v4.0.pdb

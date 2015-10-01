@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\System.IdentityModel.Selectors\obj\Release\System.IdentityModel.Selectors-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.IdentityModel.Selectors.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.IdentityModel.Selectors.pdb
+D:\Development\Applications\mono2\mcs\class\System.IdentityModel.Selectors\obj\Release\System.IdentityModel.Selectors.dll
+D:\Development\Applications\mono2\mcs\class\System.IdentityModel.Selectors\obj\Release\System.IdentityModel.Selectors.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.IdentityModel.Selectors.dll
+E:\mono2\mcs\class\lib\net_4_5\System.IdentityModel.Selectors.pdb
+E:\mono2\mcs\class\System.IdentityModel.Selectors\obj\Release\System.IdentityModel.Selectors-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.IdentityModel.Selectors\obj\Release\System.IdentityModel.Selectors.dll
+E:\mono2\mcs\class\System.IdentityModel.Selectors\obj\Release\System.IdentityModel.Selectors.pdb

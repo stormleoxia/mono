@@ -1,0 +1,4 @@
+System.Data.DataSetExtensions_test_net_4_5.dll: Test\System.Data\DataRowComparerTest.cs
+System.Data.DataSetExtensions_test_net_4_5.dll: Test\System.Data\DataRowExtensionsTest.cs
+System.Data.DataSetExtensions_test_net_4_5.dll: Test\System.Data\DataTableExtensionsTest.cs
+System.Data.DataSetExtensions_test_net_4_5.dll: Test\System.Data\EnumerableRowCollectionTest.cs

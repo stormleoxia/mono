@@ -1,0 +1,92 @@
+map.lo: map.c ../config.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/string.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/stat.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/unistd.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/io.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/process.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/getopt.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/fcntl.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/signal.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/errno.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/utime.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/sys/utime.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/time.h mph.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/limits.h ../eglib/src/glib.h \
+ /usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h \
+ ../eglib/src/eglib-config.h ../eglib/src/eglib-remap.h \
+ /usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h map.h
+
+../config.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdlib.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sdkddkver.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stddef.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/string.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/types.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/stat.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/unistd.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/io.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/process.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdint.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/getopt.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/fcntl.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/signal.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/errno.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/utime.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/sys/utime.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/time.h:
+
+mph.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include-fixed/syslimits.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/limits.h:
+
+../eglib/src/glib.h:
+
+/usr/lib/gcc/i686-pc-mingw32/4.7.3/include/stdarg.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/stdio.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/ctype.h:
+
+../eglib/src/eglib-config.h:
+
+../eglib/src/eglib-remap.h:
+
+/usr/i686-pc-mingw32/sys-root/mingw/include/malloc.h:
+
+map.h:

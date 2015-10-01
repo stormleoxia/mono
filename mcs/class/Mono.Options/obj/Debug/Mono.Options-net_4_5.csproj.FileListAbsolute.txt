@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Options.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Options.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Options\obj\Debug\Mono.Options-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Options\obj\Debug\Mono.Options.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Options\obj\Debug\Mono.Options.pdb

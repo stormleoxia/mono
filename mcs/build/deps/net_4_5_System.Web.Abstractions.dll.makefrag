@@ -1,0 +1,7 @@
+./../../class/lib/net_4_5/System.Web.Abstractions.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/System.Web.Abstractions.dll: ../../build/common/MonoTODOAttribute.cs
+./../../class/lib/net_4_5/System.Web.Abstractions.dll: Assembly/AssemblyInfo.cs
+../../build/deps/net_4_5_System.Web.Abstractions.dll.sources: net_4_0_System.Web.Abstractions.dll.sources
+net_4_0_System.Web.Abstractions.dll.sources:
+../../build/deps/net_4_5_System.Web.Abstractions.dll.makefrag: ./../../build/deps/net_4_5_System.Web.Abstractions.dll.sources.makefrag
+./../../build/deps/net_4_5_System.Web.Abstractions.dll.sources.makefrag:

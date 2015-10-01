@@ -1,0 +1,1 @@
+libmonoruntime_static_la-mono-route.lo: mono-route.c

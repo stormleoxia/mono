@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.ILGeneration.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.ILGeneration.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Emit.ILGeneration\obj\Debug\System.Reflection.Emit.ILGeneration-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Emit.ILGeneration\obj\Debug\System.Reflection.Emit.ILGeneration.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Emit.ILGeneration\obj\Debug\System.Reflection.Emit.ILGeneration.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.ILGeneration.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.ILGeneration.pdb
+E:\mono2\mcs\class\Facades\System.Reflection.Emit.ILGeneration\obj\Debug\System.Reflection.Emit.ILGeneration-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.Reflection.Emit.ILGeneration\obj\Debug\System.Reflection.Emit.ILGeneration.dll
+E:\mono2\mcs\class\Facades\System.Reflection.Emit.ILGeneration\obj\Debug\System.Reflection.Emit.ILGeneration.pdb

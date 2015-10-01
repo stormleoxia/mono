@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /cygdrive/d/Development/Tools/mono/bin/mono --debug $MONO_OPTIONS D:/Development/Tools/mono/lib/mono/2.0/nunit-console.exe "$@"

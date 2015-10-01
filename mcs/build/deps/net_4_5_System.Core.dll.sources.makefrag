@@ -1,0 +1,4 @@
+../../build/deps/net_4_5_System.Core.dll.sources: common_System.Core.dll.sources
+common_System.Core.dll.sources:
+../../build/deps/net_4_5_System.Core.dll.sources: dynamic_System.Core.dll.sources
+dynamic_System.Core.dll.sources:

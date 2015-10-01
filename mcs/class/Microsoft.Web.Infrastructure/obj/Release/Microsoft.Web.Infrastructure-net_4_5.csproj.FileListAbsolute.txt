@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\Microsoft.Web.Infrastructure\obj\Release\Microsoft.Web.Infrastructure-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Web.Infrastructure.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.Web.Infrastructure.pdb
+D:\Development\Applications\mono2\mcs\class\Microsoft.Web.Infrastructure\obj\Release\Microsoft.Web.Infrastructure.dll
+D:\Development\Applications\mono2\mcs\class\Microsoft.Web.Infrastructure\obj\Release\Microsoft.Web.Infrastructure.pdb
+E:\mono2\mcs\class\lib\net_4_5\Microsoft.Web.Infrastructure.dll
+E:\mono2\mcs\class\lib\net_4_5\Microsoft.Web.Infrastructure.pdb
+E:\mono2\mcs\class\Microsoft.Web.Infrastructure\obj\Release\Microsoft.Web.Infrastructure-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Microsoft.Web.Infrastructure\obj\Release\Microsoft.Web.Infrastructure.dll
+E:\mono2\mcs\class\Microsoft.Web.Infrastructure\obj\Release\Microsoft.Web.Infrastructure.pdb

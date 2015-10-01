@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\System\obj\Debug\System-secxml-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System\obj\Debug\System.dll
+D:\Development\Applications\mono2\mcs\class\System\obj\Debug\System.pdb
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\secxml\System.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\secxml\System.pdb
+E:\mono2\mcs\class\lib\net_4_5\secxml\System.dll
+E:\mono2\mcs\class\lib\net_4_5\secxml\System.pdb
+E:\mono2\mcs\class\System\obj\Debug\System-secxml-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System\obj\Debug\System.dll
+E:\mono2\mcs\class\System\obj\Debug\System.pdb

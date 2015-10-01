@@ -1,0 +1,8 @@
+Test\Monodoc\HelpSourceTests.cs
+Test\Monodoc\EcmaDocTests.cs
+Test\Monodoc\TreeTest.cs
+Test\Monodoc.Ecma\EcmaUrlTests.cs
+Test\Monodoc\SettingsTest.cs
+Test\Monodoc.Generators\RawGeneratorTests.cs
+Test\Monodoc\NodeTest.cs
+Test\Monodoc\RootTreeTest.cs

@@ -1,0 +1,7 @@
+./../../class/lib/net_4_5/SystemWebTestShim.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/SystemWebTestShim.dll: SystemWebTestShim/Adapters.cs
+./../../class/lib/net_4_5/SystemWebTestShim.dll: SystemWebTestShim/BuildManager.cs
+./../../class/lib/net_4_5/SystemWebTestShim.dll: SystemWebTestShim/HttpCapabilitiesBase.cs
+./../../class/lib/net_4_5/SystemWebTestShim.dll: SystemWebTestShim/Page.cs
+./../../class/lib/net_4_5/SystemWebTestShim.dll: SystemWebTestShim/UrlUtils.cs
+./../../class/lib/net_4_5/SystemWebTestShim.dll: ../../build/common/Consts.cs

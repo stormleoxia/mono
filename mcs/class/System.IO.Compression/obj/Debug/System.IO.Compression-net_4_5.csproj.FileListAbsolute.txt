@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.IO.Compression.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.IO.Compression.pdb
+D:\Development\Applications\mono2\mcs\class\System.IO.Compression\obj\Debug\System.IO.Compression-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.IO.Compression\obj\Debug\System.IO.Compression.dll
+D:\Development\Applications\mono2\mcs\class\System.IO.Compression\obj\Debug\System.IO.Compression.pdb

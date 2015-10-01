@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Posix.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Posix.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Posix\obj\Release\Mono.Posix-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Posix\obj\Release\Mono.Posix.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Posix\obj\Release\Mono.Posix.pdb
+E:\mono2\mcs\class\lib\net_4_5\Mono.Posix.dll
+E:\mono2\mcs\class\lib\net_4_5\Mono.Posix.pdb
+E:\mono2\mcs\class\Mono.Posix\obj\Release\Mono.Posix-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Mono.Posix\obj\Release\Mono.Posix.dll
+E:\mono2\mcs\class\Mono.Posix\obj\Release\Mono.Posix.pdb

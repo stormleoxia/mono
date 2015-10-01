@@ -1,0 +1,3 @@
+mono-threads-linux.lo: mono-threads-linux.c ../../config.h
+
+../../config.h:

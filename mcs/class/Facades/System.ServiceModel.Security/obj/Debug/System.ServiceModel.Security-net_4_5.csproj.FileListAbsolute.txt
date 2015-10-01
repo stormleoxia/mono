@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ServiceModel.Security.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ServiceModel.Security.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.ServiceModel.Security\obj\Debug\System.ServiceModel.Security-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.ServiceModel.Security\obj\Debug\System.ServiceModel.Security.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.ServiceModel.Security\obj\Debug\System.ServiceModel.Security.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.ServiceModel.Security.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.ServiceModel.Security.pdb
+E:\mono2\mcs\class\Facades\System.ServiceModel.Security\obj\Debug\System.ServiceModel.Security-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.ServiceModel.Security\obj\Debug\System.ServiceModel.Security.dll
+E:\mono2\mcs\class\Facades\System.ServiceModel.Security\obj\Debug\System.ServiceModel.Security.pdb

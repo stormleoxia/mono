@@ -1,0 +1,3 @@
+Test\..\..\System.Web.DynamicData\Test\Common\AssertExtensions.cs
+Test\System.Web\HttpApplicationStateBaseTest.cs
+Test\System.Web\HttpFileCollectionWrapperTest.cs

@@ -1,0 +1,2 @@
+./../../class/lib/net_4_5/disco.exe: disco.cs
+./../../class/lib/net_4_5/disco.exe: ../../build/common/Consts.cs

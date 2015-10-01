@@ -1,0 +1,4 @@
+Mono.Parallel_test_net_4_5.dll: Test\Mono.Collections.Concurrent\CollectionStressTestHelper.cs
+Mono.Parallel_test_net_4_5.dll: Test\Mono.Collections.Concurrent\ConcurrentSkipListTests.cs
+Mono.Parallel_test_net_4_5.dll: Test\Mono.Threading\ParallelTestHelper.cs
+Mono.Parallel_test_net_4_5.dll: Test\Mono.Threading\SnziTests.cs

@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.WebBrowser.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.WebBrowser.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.WebBrowser\obj\Release\Mono.WebBrowser-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.WebBrowser\obj\Release\Mono.WebBrowser.dll
+D:\Development\Applications\mono2\mcs\class\Mono.WebBrowser\obj\Release\Mono.WebBrowser.pdb
+E:\mono2\mcs\class\lib\net_4_5\Mono.WebBrowser.dll
+E:\mono2\mcs\class\lib\net_4_5\Mono.WebBrowser.pdb
+E:\mono2\mcs\class\Mono.WebBrowser\obj\Release\Mono.WebBrowser-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Mono.WebBrowser\obj\Release\Mono.WebBrowser.dll
+E:\mono2\mcs\class\Mono.WebBrowser\obj\Release\Mono.WebBrowser.pdb

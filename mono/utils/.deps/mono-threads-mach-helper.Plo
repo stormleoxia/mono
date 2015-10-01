@@ -1,0 +1,3 @@
+mono-threads-mach-helper.lo: mono-threads-mach-helper.c ../../config.h
+
+../../config.h:

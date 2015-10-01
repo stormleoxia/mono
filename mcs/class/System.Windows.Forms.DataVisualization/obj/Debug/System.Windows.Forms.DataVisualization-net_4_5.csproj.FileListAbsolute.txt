@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Windows.Forms.DataVisualization.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Windows.Forms.DataVisualization.pdb
+D:\Development\Applications\mono2\mcs\class\System.Windows.Forms.DataVisualization\obj\Debug\System.Windows.Forms.DataVisualization-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Windows.Forms.DataVisualization\obj\Debug\System.Windows.Forms.DataVisualization.dll
+D:\Development\Applications\mono2\mcs\class\System.Windows.Forms.DataVisualization\obj\Debug\System.Windows.Forms.DataVisualization.pdb

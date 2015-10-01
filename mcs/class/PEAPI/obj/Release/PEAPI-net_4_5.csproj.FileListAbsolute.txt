@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\PEAPI.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\PEAPI.pdb
+D:\Development\Applications\mono2\mcs\class\PEAPI\obj\Release\PEAPI-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\PEAPI\obj\Release\PEAPI.dll
+D:\Development\Applications\mono2\mcs\class\PEAPI\obj\Release\PEAPI.pdb

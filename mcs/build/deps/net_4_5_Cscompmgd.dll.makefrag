@@ -1,0 +1,7 @@
+./../../class/lib/net_4_5/cscompmgd.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/cscompmgd.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/cscompmgd.dll: ../../build/common/Locale.cs
+./../../class/lib/net_4_5/cscompmgd.dll: Microsoft.CSharp/Compiler.cs
+./../../class/lib/net_4_5/cscompmgd.dll: Microsoft.CSharp/CompilerError.cs
+./../../class/lib/net_4_5/cscompmgd.dll: Microsoft.CSharp/ErrorLevel.cs
+./../../class/lib/net_4_5/cscompmgd.dll: ../../build/common/MonoTODOAttribute.cs

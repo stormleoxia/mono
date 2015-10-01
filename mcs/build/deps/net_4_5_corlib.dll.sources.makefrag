@@ -1,0 +1,2 @@
+../../build/deps/net_4_5_corlib.dll.sources: corlib.dll.sources
+corlib.dll.sources:

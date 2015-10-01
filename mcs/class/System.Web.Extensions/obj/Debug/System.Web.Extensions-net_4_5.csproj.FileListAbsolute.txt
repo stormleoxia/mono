@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.Extensions.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.Extensions.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.Extensions\obj\Debug\System.Web.Extensions-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Web.Extensions\obj\Debug\System.Web.Extensions.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.Extensions\obj\Debug\System.Web.Extensions.pdb

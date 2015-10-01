@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.ApplicationServices.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.ApplicationServices.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.ApplicationServices\obj\Release\System.Web.ApplicationServices.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.ApplicationServices\obj\Release\System.Web.ApplicationServices.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.ApplicationServices\obj\Release\System.Web.ApplicationServices-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\lib\net_4_5\System.Web.ApplicationServices.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Web.ApplicationServices.pdb
+E:\mono2\mcs\class\System.Web.ApplicationServices\obj\Release\System.Web.ApplicationServices-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Web.ApplicationServices\obj\Release\System.Web.ApplicationServices.dll
+E:\mono2\mcs\class\System.Web.ApplicationServices\obj\Release\System.Web.ApplicationServices.pdb

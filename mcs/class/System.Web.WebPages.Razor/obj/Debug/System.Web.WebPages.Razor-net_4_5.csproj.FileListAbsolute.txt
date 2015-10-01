@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.WebPages.Razor.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.WebPages.Razor.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.pdb

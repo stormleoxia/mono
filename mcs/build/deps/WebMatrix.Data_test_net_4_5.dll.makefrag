@@ -1,0 +1,4 @@
+WebMatrix.Data_test_net_4_5.dll: Test\WebMatrix.Data\ConnectionEventArgsTests.cs
+WebMatrix.Data_test_net_4_5.dll: Test\WebMatrix.Data\DynamicRecordTests.cs
+WebMatrix.Data_test_net_4_5.dll: Test\..\WebMatrix.Data\DynamicRecord.cs
+WebMatrix.Data_test_net_4_5.dll: Test\WebMatrix.Data\DatabaseTests.cs

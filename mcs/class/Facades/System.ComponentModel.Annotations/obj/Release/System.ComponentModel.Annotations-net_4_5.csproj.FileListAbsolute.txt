@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.Annotations.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ComponentModel.Annotations.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel.Annotations\obj\Release\System.ComponentModel.Annotations-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel.Annotations\obj\Release\System.ComponentModel.Annotations.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.ComponentModel.Annotations\obj\Release\System.ComponentModel.Annotations.pdb

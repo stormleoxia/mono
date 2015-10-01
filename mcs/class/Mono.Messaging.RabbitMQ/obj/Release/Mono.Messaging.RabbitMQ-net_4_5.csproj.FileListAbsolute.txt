@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Messaging.RabbitMQ.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Messaging.RabbitMQ.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Messaging.RabbitMQ\obj\Release\Mono.Messaging.RabbitMQ-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Messaging.RabbitMQ\obj\Release\Mono.Messaging.RabbitMQ.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Messaging.RabbitMQ\obj\Release\Mono.Messaging.RabbitMQ.pdb

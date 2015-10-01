@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Dynamic.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Dynamic.pdb
+D:\Development\Applications\mono2\mcs\class\System.Dynamic\obj\Debug\System.Dynamic-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Dynamic\obj\Debug\System.Dynamic.dll
+D:\Development\Applications\mono2\mcs\class\System.Dynamic\obj\Debug\System.Dynamic.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Dynamic.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Dynamic.pdb
+E:\mono2\mcs\class\System.Dynamic\obj\Debug\System.Dynamic-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Dynamic\obj\Debug\System.Dynamic.dll
+E:\mono2\mcs\class\System.Dynamic\obj\Debug\System.Dynamic.pdb

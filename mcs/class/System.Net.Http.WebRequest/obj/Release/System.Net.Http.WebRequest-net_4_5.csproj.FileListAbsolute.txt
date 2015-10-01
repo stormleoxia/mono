@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Net.Http.WebRequest.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Net.Http.WebRequest.pdb
+D:\Development\Applications\mono2\mcs\class\System.Net.Http.WebRequest\obj\Release\System.Net.Http.WebRequest-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Net.Http.WebRequest\obj\Release\System.Net.Http.WebRequest.dll
+D:\Development\Applications\mono2\mcs\class\System.Net.Http.WebRequest\obj\Release\System.Net.Http.WebRequest.pdb

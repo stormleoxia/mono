@@ -1,0 +1,1 @@
+libmonoruntime_static_la-nacl-stub.lo: nacl-stub.c

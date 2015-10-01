@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.Caching.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Runtime.Caching.pdb
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Caching\obj\Release\System.Runtime.Caching-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Caching\obj\Release\System.Runtime.Caching.dll
+D:\Development\Applications\mono2\mcs\class\System.Runtime.Caching\obj\Release\System.Runtime.Caching.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.Runtime.Caching.dll
+E:\mono2\mcs\class\lib\net_4_5\System.Runtime.Caching.pdb
+E:\mono2\mcs\class\System.Runtime.Caching\obj\Release\System.Runtime.Caching-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.Runtime.Caching\obj\Release\System.Runtime.Caching.dll
+E:\mono2\mcs\class\System.Runtime.Caching\obj\Release\System.Runtime.Caching.pdb

@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.DynamicData.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Web.DynamicData.pdb
+D:\Development\Applications\mono2\mcs\class\System.Web.DynamicData\obj\Debug\System.Web.DynamicData-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Web.DynamicData\obj\Debug\System.Web.DynamicData.dll
+D:\Development\Applications\mono2\mcs\class\System.Web.DynamicData\obj\Debug\System.Web.DynamicData.pdb

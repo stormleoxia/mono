@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Json.Microsoft.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Json.Microsoft.pdb
+D:\Development\Applications\mono2\mcs\class\System.Json.Microsoft\obj\Debug\System.Json.Microsoft-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Json.Microsoft\obj\Debug\System.Json.Microsoft.dll
+D:\Development\Applications\mono2\mcs\class\System.Json.Microsoft\obj\Debug\System.Json.Microsoft.pdb

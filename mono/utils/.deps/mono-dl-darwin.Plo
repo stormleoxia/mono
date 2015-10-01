@@ -1,0 +1,3 @@
+mono-dl-darwin.lo: mono-dl-darwin.c ../../config.h
+
+../../config.h:

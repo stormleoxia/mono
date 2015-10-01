@@ -1,0 +1,2 @@
+./../../class/lib/net_4_5/nunitreport.exe: FailedTest.cs
+./../../class/lib/net_4_5/nunitreport.exe: NUnitReport.cs

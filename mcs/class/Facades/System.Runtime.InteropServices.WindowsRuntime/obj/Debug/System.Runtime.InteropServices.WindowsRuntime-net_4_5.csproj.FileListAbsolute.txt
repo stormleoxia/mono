@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Runtime.InteropServices.WindowsRuntime.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.InteropServices.WindowsRuntime\obj\Debug\System.Runtime.InteropServices.WindowsRuntime-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.InteropServices.WindowsRuntime\obj\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Runtime.InteropServices.WindowsRuntime\obj\Debug\System.Runtime.InteropServices.WindowsRuntime.pdb

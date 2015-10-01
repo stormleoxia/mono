@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /cygdrive/d/Development/Tools/mono/bin/mono $MONO_OPTIONS D:/Development/Tools/mono/lib/mono/xbuild/12.0/bin/xbuild.exe "$@"

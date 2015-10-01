@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5528F67-DFDB-4D5B-A36C-CCF128EDC75A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoWarn>1699</NoWarn>
+    <OutputPath>.\..\..\class\lib\net_4_5</OutputPath>
+    <NoStdLib>True</NoStdLib>
+    <NoConfig>True</NoConfig>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>..\lib\net_4_5</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>..\lib\net_4_5</OutputPath>
+  </PropertyGroup>
+  <!-- Set AddAdditionalExplicitAssemblyReferences to false, otherwise if targetting .NET4.0, 
+  Microsoft.NETFramework.props will force a dependency on the assembly System.Core. This
+  is a problem to compile the Mono mscorlib.dll -->
+  <PropertyGroup>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\EdmToObjectNamespaceMap.cs">
+      <Link>System.Data.EntityModel\EdmToObjectNamespaceMap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\AssociationTypeEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\AssociationTypeEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\AttributeEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\AttributeEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\ClientApiGenerator.cs">
+      <Link>System.Data.EntityModel.Emitters\ClientApiGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\CommentEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\CommentEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\ComplexTypeEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\ComplexTypeEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\Emitter.cs">
+      <Link>System.Data.EntityModel.Emitters\Emitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\EntityContainerEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\EntityContainerEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\EntityTypeEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\EntityTypeEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\FixUp.cs">
+      <Link>System.Data.EntityModel.Emitters\FixUp.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\FixUpCollection.cs">
+      <Link>System.Data.EntityModel.Emitters\FixUpCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\FixUpType.cs">
+      <Link>System.Data.EntityModel.Emitters\FixUpType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\MetadataItemEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\MetadataItemEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\NamespaceEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\NamespaceEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\NavigationPropertyEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\NavigationPropertyEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\PrivateMemberPrefixId.cs">
+      <Link>System.Data.EntityModel.Emitters\PrivateMemberPrefixId.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\PropertyEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\PropertyEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\PropertyEmitterBase.cs">
+      <Link>System.Data.EntityModel.Emitters\PropertyEmitterBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\SchemaTypeEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\SchemaTypeEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\StructuredTypeEmitter.cs">
+      <Link>System.Data.EntityModel.Emitters\StructuredTypeEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\TypeReference.cs">
+      <Link>System.Data.EntityModel.Emitters\TypeReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\Emitters\Utils.cs">
+      <Link>System.Data.EntityModel.Emitters\Utils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\EntityClassGenerator.cs">
+      <Link>System.Data.EntityModel\EntityClassGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\LanguageOption.cs">
+      <Link>System.Data.EntityModel\LanguageOption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\LazyTextWriterCreator.cs">
+      <Link>System.Data.EntityModel\LazyTextWriterCreator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\PropertyGeneratedEventArgs.cs">
+      <Link>System.Data.EntityModel\PropertyGeneratedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\TerminalErrorException.cs">
+      <Link>System.Data.EntityModel\TerminalErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\EntityModel\TypeGeneratedEventArgs.cs">
+      <Link>System.Data.EntityModel\TypeGeneratedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\AspNet\BuildProviderUtils.cs">
+      <Link>System.Data.Entity.Design.AspNet\BuildProviderUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\AspNet\EntityDesignerBuildProvider.cs">
+      <Link>System.Data.Entity.Design.AspNet\EntityDesignerBuildProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\AspNet\EntityModelBuildProvider.cs">
+      <Link>System.Data.Entity.Design.AspNet\EntityModelBuildProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\AspNet\MappingModelBuildProvider.cs">
+      <Link>System.Data.Entity.Design.AspNet\MappingModelBuildProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\AspNet\StorageModelBuildProvider.cs">
+      <Link>System.Data.Entity.Design.AspNet\StorageModelBuildProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\Common\EDesignUtil.cs">
+      <Link>System.Data.Entity.Design.Common\EDesignUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\Common\MetadataItemSerializer.cs">
+      <Link>System.Data.Entity.Design.Common\MetadataItemSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\Common\MetadataUtil.cs">
+      <Link>System.Data.Entity.Design.Common\MetadataUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\Common\UniqueIdentifierService.cs">
+      <Link>System.Data.Entity.Design.Common\UniqueIdentifierService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\DesignXmlConstants.cs">
+      <Link>System.Data.Entity.Design\DesignXmlConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityCodeGenerator.cs">
+      <Link>System.Data.Entity.Design\EntityCodeGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityDesignerUtils.cs">
+      <Link>System.Data.Entity.Design\EntityDesignerUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityFrameworkVersions.cs">
+      <Link>System.Data.Entity.Design\EntityFrameworkVersions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityFrameworkVersionsUtil.cs">
+      <Link>System.Data.Entity.Design\EntityFrameworkVersionsUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityModelSchemaGenerator.cs">
+      <Link>System.Data.Entity.Design\EntityModelSchemaGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaFilterEffect.cs">
+      <Link>System.Data.Entity.Design\EntityStoreSchemaFilterEffect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaFilterEntry.cs">
+      <Link>System.Data.Entity.Design\EntityStoreSchemaFilterEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaFilterObjectTypes.cs">
+      <Link>System.Data.Entity.Design\EntityStoreSchemaFilterObjectTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaGenerator.cs">
+      <Link>System.Data.Entity.Design\EntityStoreSchemaGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaGenerator\EntityStoreSchemaGenerator.DbObjectKey.cs">
+      <Link>EntityStoreSchemaGenerator.DbObjectKey.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaGenerator\EntityStoreSchemaGenerator.EntityCreationStatus.cs">
+      <Link>EntityStoreSchemaGenerator.EntityCreationStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityStoreSchemaGenerator\EntityStoreSchemaGenerator.LoadMethodSessionState.cs">
+      <Link>EntityStoreSchemaGenerator.LoadMethodSessionState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityViewGeneration\EntityViewGenerationConstants.cs" />
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\EntityViewGeneration\EntityViewGenerator.cs" />
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\MetadataExtensionMethods.cs">
+      <Link>System.Data.Entity.Design\MetadataExtensionMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\MetadataItemCollectionFactory.cs">
+      <Link>System.Data.Entity.Design\MetadataItemCollectionFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\PluralizationService\BidirectionalDictionary.cs">
+      <Link>BidirectionalDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\PluralizationService\EnglishPluralizationService.cs">
+      <Link>EnglishPluralizationService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\PluralizationService\EntityDesignPluralizationHandler.cs">
+      <Link>EntityDesignPluralizationHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\PluralizationService\ICustomPluralizationMapping.cs">
+      <Link>ICustomPluralizationMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\PluralizationService\PluralizationService.cs">
+      <Link>PluralizationService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\PluralizationService\PluralizationServiceUtil.cs">
+      <Link>PluralizationServiceUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\EntityStoreSchemaGeneratorDatabaseSchemaLoader.cs">
+      <Link>EntityStoreSchemaGeneratorDatabaseSchemaLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\FunctionDetailsReader.cs">
+      <Link>FunctionDetailsReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\ModelBuilderErrorCodes.cs">
+      <Link>ModelBuilderErrorCodes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\RelationshipDetailsCollection.cs">
+      <Link>RelationshipDetailsCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\RelationshipDetailsRow.cs">
+      <Link>RelationshipDetailsRow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\TableDetailsCollection.cs">
+      <Link>TableDetailsCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\Entity\Design\SSDLGenerator\TableDetailsRow.cs">
+      <Link>TableDetailsRow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\System.Data.Entity.Design\System\Data\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="..\..\build\common\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\Locale.cs">
+      <Link>Locale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\build\common\MonoTODOAttribute.cs">
+      <Link>MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="System.Data.Entity.Design.Common\OneToOneMappingSerializer.cs" />
+    <Compile Include="Strings.cs" />
+    <Compile Include="System.Data\EDesignRes.cs" />
+    <Compile Include="System.Data\EDesignResCategoryAttribute.cs" />
+    <Compile Include="System.Data\EDesignResDescriptionAttribute.cs" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
+    </PreBuildEvent>
+    <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
+    </PreBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
+    </PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
+      <Project>{33BF0182-AC5C-464C-995B-C9CFE74E1A95}</Project>
+      <Name>corlib-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data.DataSetExtensions\System.Data.DataSetExtensions-net_4_5.csproj">
+      <Project>{9d2dbcba-6c1e-405b-bcba-20406ea9501f}</Project>
+      <Name>System.Data.DataSetExtensions-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System-net_4_5.csproj">
+      <Project>{FFAC0B73-D997-493B-9C62-27656CD858BB}</Project>
+      <Name>System-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
+      <Project>{D92530F4-3F2B-4351-BD21-9D6BEE6D2A4E}</Project>
+      <Name>System.Core-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data\System.Data-net_4_5.csproj">
+      <Project>{9A33954F-57A8-4D75-B1D8-0F81808A0DD4}</Project>
+      <Name>System.Data-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.XML\System.Xml-net_4_5.csproj">
+      <Project>{2951DEC2-4393-4A78-83F9-42EB39CB708F}</Project>
+      <Name>System.Xml-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Xml.Linq\System.Xml.Linq-net_4_5.csproj">
+      <Project>{8328796E-8A15-4972-8F1E-2F15E7D57C42}</Project>
+      <Name>System.Xml.Linq-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Transactions\System.Transactions-net_4_5.csproj">
+      <Project>{AF2BBF50-AB57-4CA1-8EF5-2B54C7418434}</Project>
+      <Name>System.Transactions-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_5.csproj">
+      <Project>{08FF4C26-9C12-433D-AE90-43370046387A}</Project>
+      <Name>System.Runtime.Serialization-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_4_5.csproj">
+      <Project>{63EC4158-FFAC-4867-8003-CF6054C8DF0B}</Project>
+      <Name>System.ComponentModel.DataAnnotations-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
+      <Project>{D52A2CEA-245E-4877-950E-3EAC5F541B8E}</Project>
+      <Name>System.Configuration-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data.Entity\System.Data.Entity-net_4_5.csproj">
+      <Project>{E902CD82-23AC-456B-9F4B-51CC193275F8}</Project>
+      <Name>System.Data.Entity-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Web\System.Web-net_4_5.csproj">
+      <Project>{B489C3DE-3ED3-4EDC-B42B-82B38E101857}</Project>
+      <Name>System.Web-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Build.Utilities\Microsoft.Build.Utilities-net_4_5.csproj">
+      <Project>{6E1C7BDE-7B9E-47B0-A7B2-1561822FE922}</Project>
+      <Name>Microsoft.Build.Utilities-net_4_5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <MonoDevelop.Autotools.MakefileInfo RelativeMakefileName="Makefile" IsAutotoolsProject="True" RelativeConfigureInPath="../../..">
+          <BuildFilesVar />
+          <DeployFilesVar />
+          <ResourcesVar />
+          <OthersVar />
+          <GacRefVar />
+          <AsmRefVar />
+          <ProjectRefVar />
+        </MonoDevelop.Autotools.MakefileInfo>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

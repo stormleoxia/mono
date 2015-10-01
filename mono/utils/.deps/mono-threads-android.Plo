@@ -1,0 +1,3 @@
+mono-threads-android.lo: mono-threads-android.c ../../config.h
+
+../../config.h:

@@ -1,0 +1,4 @@
+../../build/deps/net_4_5_System.Web.dll.sources: net_4_0_System.Web.dll.sources
+net_4_0_System.Web.dll.sources:
+../../build/deps/net_4_5_System.Web.dll.sources: System.Web.dll.sources
+System.Web.dll.sources:

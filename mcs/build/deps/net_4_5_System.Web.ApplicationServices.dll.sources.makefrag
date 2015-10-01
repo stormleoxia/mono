@@ -1,0 +1,4 @@
+../../build/deps/net_4_5_System.Web.ApplicationServices.dll.sources: net_4_0_System.Web.ApplicationServices.dll.sources
+net_4_0_System.Web.ApplicationServices.dll.sources:
+../../build/deps/net_4_5_System.Web.ApplicationServices.dll.sources: System.Web.ApplicationServices.dll.sources
+System.Web.ApplicationServices.dll.sources:

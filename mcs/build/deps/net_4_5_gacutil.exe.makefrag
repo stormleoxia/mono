@@ -1,0 +1,2 @@
+./../../class/lib/net_4_5/gacutil.exe: driver.cs
+./../../class/lib/net_4_5/gacutil.exe: ../security/StrongNameManager.cs

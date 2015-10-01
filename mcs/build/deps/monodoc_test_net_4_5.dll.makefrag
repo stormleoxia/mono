@@ -1,0 +1,8 @@
+monodoc_test_net_4_5.dll: Test\Monodoc\HelpSourceTests.cs
+monodoc_test_net_4_5.dll: Test\Monodoc\EcmaDocTests.cs
+monodoc_test_net_4_5.dll: Test\Monodoc\TreeTest.cs
+monodoc_test_net_4_5.dll: Test\Monodoc.Ecma\EcmaUrlTests.cs
+monodoc_test_net_4_5.dll: Test\Monodoc\SettingsTest.cs
+monodoc_test_net_4_5.dll: Test\Monodoc.Generators\RawGeneratorTests.cs
+monodoc_test_net_4_5.dll: Test\Monodoc\NodeTest.cs
+monodoc_test_net_4_5.dll: Test\Monodoc\RootTreeTest.cs

@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Data.Services.Client.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Data.Services.Client.pdb
+D:\Development\Applications\mono2\mcs\class\System.Data.Services.Client\obj\Release\System.Data.Services.Client-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Data.Services.Client\obj\Release\System.Data.Services.Client.dll
+D:\Development\Applications\mono2\mcs\class\System.Data.Services.Client\obj\Release\System.Data.Services.Client.pdb

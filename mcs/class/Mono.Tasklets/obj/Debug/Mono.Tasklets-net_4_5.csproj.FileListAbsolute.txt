@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Tasklets.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Tasklets.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Tasklets\obj\Debug\Mono.Tasklets-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Tasklets\obj\Debug\Mono.Tasklets.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Tasklets\obj\Debug\Mono.Tasklets.pdb

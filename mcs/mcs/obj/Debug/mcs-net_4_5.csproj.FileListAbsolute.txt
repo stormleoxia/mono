@@ -1,0 +1,7 @@
+D:\Development\Applications\mono2\mcs\mcs\bin\Debug\mcs-net_4_5\mcs.dll
+D:\Development\Applications\mono2\mcs\mcs\bin\Debug\mcs-net_4_5\mcs.pdb
+D:\Development\Applications\mono2\mcs\mcs\bin\Debug\mcs-net_4_5\Mono.CSharp.dll
+D:\Development\Applications\mono2\mcs\mcs\bin\Debug\mcs-net_4_5\Mono.CSharp.pdb
+D:\Development\Applications\mono2\mcs\mcs\obj\Debug\mcs-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\mcs\obj\Debug\mcs.dll
+D:\Development\Applications\mono2\mcs\mcs\obj\Debug\mcs.pdb

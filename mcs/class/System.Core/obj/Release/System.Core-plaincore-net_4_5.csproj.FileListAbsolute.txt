@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\plaincore\System.Core.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\plaincore\System.Core.pdb
+D:\Development\Applications\mono2\mcs\class\System.Core\obj\Release\System.Core-plaincore-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Core\obj\Release\System.Core.dll
+D:\Development\Applications\mono2\mcs\class\System.Core\obj\Release\System.Core.pdb

@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Collections.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Collections.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Collections\obj\Release\System.Collections-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Collections\obj\Release\System.Collections.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Collections\obj\Release\System.Collections.pdb

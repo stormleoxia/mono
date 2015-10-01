@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\RabbitMQ.Client.Apigen.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\RabbitMQ.Client.Apigen.pdb
+D:\Development\Applications\mono2\mcs\class\RabbitMQ.Client\src\apigen\obj\Release\RabbitMQ.Client.Apigen-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\RabbitMQ.Client\src\apigen\obj\Release\RabbitMQ.Client.Apigen.dll
+D:\Development\Applications\mono2\mcs\class\RabbitMQ.Client\src\apigen\obj\Release\RabbitMQ.Client.Apigen.pdb

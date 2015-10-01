@@ -1,0 +1,10 @@
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: ../../CommonAssemblyInfo.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: AssemblyInfo.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RepeatedTestCase.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RepeatedTestDecorator.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RowTest/RowTestAddIn.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RowTest/RowTestCase.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RowTest/RowTestFactory.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RowTest/RowTestFramework.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RowTest/RowTestNameBuilder.cs
+./../../../class/lib/net_4_5/nunit.core.extensions.dll: RowTest/RowTestSuite.cs

@@ -1,0 +1,15 @@
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\AssertExtensions.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\FakeHttpWorkerRequest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\HttpMethodConstraintTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\KnownResponseHeader.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\RequestContext.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\RouteCollectionTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\RouteDataTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\RouteTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\RouteValueDictionaryTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\StopRoutingHandlerTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\TestStubTypes.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\UnknownResponseHeader.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\UrlRoutingHandlerTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\UrlRoutingModuleTest.cs
+System.Web.Routing_test_net_4_5.dll: Test\System.Web.Routing\VirtualPathDataTest.cs

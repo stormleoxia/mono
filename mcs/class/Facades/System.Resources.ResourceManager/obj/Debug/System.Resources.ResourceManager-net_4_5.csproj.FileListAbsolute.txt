@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Resources.ResourceManager.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Resources.ResourceManager.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Resources.ResourceManager\obj\Debug\System.Resources.ResourceManager-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Resources.ResourceManager\obj\Debug\System.Resources.ResourceManager.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Resources.ResourceManager\obj\Debug\System.Resources.ResourceManager.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Resources.ResourceManager.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Resources.ResourceManager.pdb
+E:\mono2\mcs\class\Facades\System.Resources.ResourceManager\obj\Debug\System.Resources.ResourceManager-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.Resources.ResourceManager\obj\Debug\System.Resources.ResourceManager.dll
+E:\mono2\mcs\class\Facades\System.Resources.ResourceManager\obj\Debug\System.Resources.ResourceManager.pdb

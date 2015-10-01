@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Cairo.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Cairo.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Cairo\obj\Debug\Mono.Cairo-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Cairo\obj\Debug\Mono.Cairo.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Cairo\obj\Debug\Mono.Cairo.pdb

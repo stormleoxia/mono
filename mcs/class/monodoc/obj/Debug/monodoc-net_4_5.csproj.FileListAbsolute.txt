@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\monodoc.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\monodoc.pdb
+D:\Development\Applications\mono2\mcs\class\monodoc\obj\Debug\monodoc-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\monodoc\obj\Debug\monodoc.dll
+D:\Development\Applications\mono2\mcs\class\monodoc\obj\Debug\monodoc.pdb

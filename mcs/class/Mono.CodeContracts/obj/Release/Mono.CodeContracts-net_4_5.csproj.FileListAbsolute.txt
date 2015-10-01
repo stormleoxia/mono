@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.CodeContracts.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.CodeContracts.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.CodeContracts\obj\Release\Mono.CodeContracts-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.CodeContracts\obj\Release\Mono.CodeContracts.dll
+D:\Development\Applications\mono2\mcs\class\Mono.CodeContracts\obj\Release\Mono.CodeContracts.pdb

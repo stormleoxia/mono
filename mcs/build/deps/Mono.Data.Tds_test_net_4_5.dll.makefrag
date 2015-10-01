@@ -1,0 +1,2 @@
+Mono.Data.Tds_test_net_4_5.dll: Test\bug-4786.cs
+Mono.Data.Tds_test_net_4_5.dll: Test\ConnLifetime.cs

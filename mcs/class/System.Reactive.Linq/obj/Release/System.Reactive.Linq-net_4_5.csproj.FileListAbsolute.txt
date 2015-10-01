@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.Linq.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Reactive.Linq.pdb
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Linq\obj\Release\System.Reactive.Linq-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Linq\obj\Release\System.Reactive.Linq.dll
+D:\Development\Applications\mono2\mcs\class\System.Reactive.Linq\obj\Release\System.Reactive.Linq.pdb

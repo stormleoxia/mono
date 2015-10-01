@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.DirectoryServices.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.DirectoryServices.pdb
+D:\Development\Applications\mono2\mcs\class\System.DirectoryServices\obj\Release\System.DirectoryServices-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.DirectoryServices\obj\Release\System.DirectoryServices.dll
+D:\Development\Applications\mono2\mcs\class\System.DirectoryServices\obj\Release\System.DirectoryServices.pdb

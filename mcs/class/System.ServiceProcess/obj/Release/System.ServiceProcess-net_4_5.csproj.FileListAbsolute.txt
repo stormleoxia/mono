@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ServiceProcess.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ServiceProcess.pdb
+D:\Development\Applications\mono2\mcs\class\System.ServiceProcess\obj\Release\System.ServiceProcess-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.ServiceProcess\obj\Release\System.ServiceProcess.dll
+D:\Development\Applications\mono2\mcs\class\System.ServiceProcess\obj\Release\System.ServiceProcess.pdb

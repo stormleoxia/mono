@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Security.Win32.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Security.Win32.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Security.Win32\obj\Debug\Mono.Security.Win32-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Security.Win32\obj\Debug\Mono.Security.Win32.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Security.Win32\obj\Debug\Mono.Security.Win32.pdb

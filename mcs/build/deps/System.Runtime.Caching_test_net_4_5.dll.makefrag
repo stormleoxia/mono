@@ -1,0 +1,9 @@
+System.Runtime.Caching_test_net_4_5.dll: Test\Common\AppDomainTools.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\Common\AssertExtensions.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\Common\PokerChangeMonitor.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\Common\PokerMemoryCache.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\Common\PokerObjectCache.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\Common\TestNotificationSystem.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\System.Runtime.Caching\HostFileChangeMonitorTest.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\System.Runtime.Caching\MemoryCacheTest.cs
+System.Runtime.Caching_test_net_4_5.dll: Test\System.Runtime.Caching\ObjectCacheTest.cs

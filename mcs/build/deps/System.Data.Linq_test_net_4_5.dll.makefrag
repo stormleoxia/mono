@@ -1,0 +1,9 @@
+System.Data.Linq_test_net_4_5.dll: Test\dummy.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq.SqlServer\Test\MsSqlDataContextTest.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\BinaryTest.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\DataContextTest.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\EntitySetTest.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\NullProvider.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\PeopleTable.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\Providers\DataContextTestBase.cs
+System.Data.Linq_test_net_4_5.dll: Test\..\src\DbLinq\Test\TableTest.cs

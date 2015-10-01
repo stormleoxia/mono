@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\Facades\System.ServiceModel.Http\obj\Release\System.ServiceModel.Http-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ServiceModel.Http.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.ServiceModel.Http.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.ServiceModel.Http\obj\Release\System.ServiceModel.Http.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.ServiceModel.Http\obj\Release\System.ServiceModel.Http.pdb

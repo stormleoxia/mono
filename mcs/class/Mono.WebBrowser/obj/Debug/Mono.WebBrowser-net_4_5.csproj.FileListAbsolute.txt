@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.WebBrowser.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.WebBrowser.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.WebBrowser\obj\Debug\Mono.WebBrowser-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.WebBrowser\obj\Debug\Mono.WebBrowser.dll
+D:\Development\Applications\mono2\mcs\class\Mono.WebBrowser\obj\Debug\Mono.WebBrowser.pdb

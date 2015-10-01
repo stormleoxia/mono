@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel.Activation\obj\Release\System.ServiceModel.Activation-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ServiceModel.Activation.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ServiceModel.Activation.pdb
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel.Activation\obj\Release\System.ServiceModel.Activation.dll
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel.Activation\obj\Release\System.ServiceModel.Activation.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.ServiceModel.Activation.dll
+E:\mono2\mcs\class\lib\net_4_5\System.ServiceModel.Activation.pdb
+E:\mono2\mcs\class\System.ServiceModel.Activation\obj\Release\System.ServiceModel.Activation-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.ServiceModel.Activation\obj\Release\System.ServiceModel.Activation.dll
+E:\mono2\mcs\class\System.ServiceModel.Activation\obj\Release\System.ServiceModel.Activation.pdb

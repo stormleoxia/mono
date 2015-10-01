@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Cecil.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Cecil.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Cecil\obj\Debug\Mono.Cecil-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Cecil\obj\Debug\Mono.Cecil.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Cecil\obj\Debug\Mono.Cecil.pdb

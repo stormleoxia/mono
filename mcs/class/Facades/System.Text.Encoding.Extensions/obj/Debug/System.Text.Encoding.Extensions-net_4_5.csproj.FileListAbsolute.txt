@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Text.Encoding.Extensions.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Text.Encoding.Extensions.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Text.Encoding.Extensions\obj\Debug\System.Text.Encoding.Extensions-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Text.Encoding.Extensions\obj\Debug\System.Text.Encoding.Extensions.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Text.Encoding.Extensions\obj\Debug\System.Text.Encoding.Extensions.pdb

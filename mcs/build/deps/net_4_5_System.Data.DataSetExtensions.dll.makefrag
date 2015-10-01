@@ -1,0 +1,15 @@
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: ../../build/common/Locale.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: ../../build/common/MonoTODOAttribute.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/DataRowComparer.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/DataRowComparer_1.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/DataRowExtensions.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/DataTableExtensions.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/EnumerableRowCollection.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/EnumerableRowCollectionExtensions.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/EnumerableRowCollection_1.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/OrderedEnumerableRowCollection.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/RowEnumerableDataReader.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/TypedTableBase.cs
+./../../class/lib/net_4_5/System.Data.DataSetExtensions.dll: System.Data/TypedTableBaseExtensions.cs

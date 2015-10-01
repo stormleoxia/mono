@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Novell.Directory.Ldap.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Novell.Directory.Ldap.pdb
+D:\Development\Applications\mono2\mcs\class\Novell.Directory.Ldap\obj\Release\Novell.Directory.Ldap-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Novell.Directory.Ldap\obj\Release\Novell.Directory.Ldap.dll
+D:\Development\Applications\mono2\mcs\class\Novell.Directory.Ldap\obj\Release\Novell.Directory.Ldap.pdb

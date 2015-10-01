@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Primitives.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Primitives.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Debug\System.Reflection.Primitives-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Debug\System.Reflection.Primitives.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Debug\System.Reflection.Primitives.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Primitives.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Primitives.pdb
+E:\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Debug\System.Reflection.Primitives-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Debug\System.Reflection.Primitives.dll
+E:\mono2\mcs\class\Facades\System.Reflection.Primitives\obj\Debug\System.Reflection.Primitives.pdb

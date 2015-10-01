@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.CSharp.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Microsoft.CSharp.pdb
+D:\Development\Applications\mono2\mcs\class\Microsoft.CSharp\obj\Release\Microsoft.CSharp-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Microsoft.CSharp\obj\Release\Microsoft.CSharp.dll
+D:\Development\Applications\mono2\mcs\class\Microsoft.CSharp\obj\Release\Microsoft.CSharp.pdb
+E:\mono2\mcs\class\lib\net_4_5\Microsoft.CSharp.dll
+E:\mono2\mcs\class\lib\net_4_5\Microsoft.CSharp.pdb
+E:\mono2\mcs\class\Microsoft.CSharp\obj\Release\Microsoft.CSharp-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Microsoft.CSharp\obj\Release\Microsoft.CSharp.dll
+E:\mono2\mcs\class\Microsoft.CSharp\obj\Release\Microsoft.CSharp.pdb

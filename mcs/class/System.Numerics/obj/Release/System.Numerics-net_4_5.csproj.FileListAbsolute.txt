@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Numerics.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.Numerics.pdb
+D:\Development\Applications\mono2\mcs\class\System.Numerics\obj\Release\System.Numerics-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.Numerics\obj\Release\System.Numerics.dll
+D:\Development\Applications\mono2\mcs\class\System.Numerics\obj\Release\System.Numerics.pdb

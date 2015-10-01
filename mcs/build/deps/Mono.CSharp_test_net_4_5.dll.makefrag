@@ -1,0 +1,7 @@
+Mono.CSharp_test_net_4_5.dll: Test\AssertReportPrinter.cs
+Mono.CSharp_test_net_4_5.dll: Test\Evaluator\BuildinCommands.cs
+Mono.CSharp_test_net_4_5.dll: Test\Evaluator\CompletionTest.cs
+Mono.CSharp_test_net_4_5.dll: Test\Evaluator\EvaluatorFixture.cs
+Mono.CSharp_test_net_4_5.dll: Test\Evaluator\EvaluatorTest.cs
+Mono.CSharp_test_net_4_5.dll: Test\Evaluator\ExpressionsTest.cs
+Mono.CSharp_test_net_4_5.dll: Test\Evaluator\TypesTest.cs

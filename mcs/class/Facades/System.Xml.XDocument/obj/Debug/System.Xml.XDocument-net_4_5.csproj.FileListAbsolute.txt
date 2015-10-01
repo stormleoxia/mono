@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Xml.XDocument.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Xml.XDocument.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Xml.XDocument\obj\Debug\System.Xml.XDocument-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Xml.XDocument\obj\Debug\System.Xml.XDocument.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Xml.XDocument\obj\Debug\System.Xml.XDocument.pdb

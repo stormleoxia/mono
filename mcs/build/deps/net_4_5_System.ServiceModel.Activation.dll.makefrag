@@ -1,0 +1,6 @@
+./../../class/lib/net_4_5/System.ServiceModel.Activation.dll: ../../build/common/Consts.cs
+./../../class/lib/net_4_5/System.ServiceModel.Activation.dll: ../../build/common/MonoTODOAttribute.cs
+./../../class/lib/net_4_5/System.ServiceModel.Activation.dll: Assembly/AssemblyInfo.cs
+./../../class/lib/net_4_5/System.ServiceModel.Activation.dll: 
+./../../class/lib/net_4_5/System.ServiceModel.Activation.dll: ../System.ServiceModel/System.ServiceModel/ServiceHostingEnvironment.cs
+./../../class/lib/net_4_5/System.ServiceModel.Activation.dll: ../System.ServiceModel/System.ServiceModel.Activation/ServiceHostFactory.cs

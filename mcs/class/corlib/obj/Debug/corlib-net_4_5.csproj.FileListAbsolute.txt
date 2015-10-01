@@ -1,0 +1,8 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\mscorlib.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\mscorlib.pdb
+D:\Development\Applications\mono2\mcs\class\corlib\obj\Debug\mscorlib.dll
+D:\Development\Applications\mono2\mcs\class\corlib\obj\Debug\mscorlib.pdb
+E:\mono2\mcs\class\lib\net_4_5\mscorlib.dll
+E:\mono2\mcs\class\lib\net_4_5\mscorlib.pdb
+E:\mono2\mcs\class\corlib\obj\Debug\mscorlib.dll
+E:\mono2\mcs\class\corlib\obj\Debug\mscorlib.pdb

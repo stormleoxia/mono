@@ -1,0 +1,5 @@
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel.Discovery\obj\Release\System.ServiceModel.Discovery-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ServiceModel.Discovery.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.ServiceModel.Discovery.pdb
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel.Discovery\obj\Release\System.ServiceModel.Discovery.dll
+D:\Development\Applications\mono2\mcs\class\System.ServiceModel.Discovery\obj\Release\System.ServiceModel.Discovery.pdb

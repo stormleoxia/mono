@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.Lightweight.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.Lightweight.pdb
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Emit.Lightweight\obj\Debug\System.Reflection.Emit.Lightweight-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Emit.Lightweight\obj\Debug\System.Reflection.Emit.Lightweight.dll
+D:\Development\Applications\mono2\mcs\class\Facades\System.Reflection.Emit.Lightweight\obj\Debug\System.Reflection.Emit.Lightweight.pdb
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.Lightweight.dll
+E:\mono2\mcs\class\lib\net_4_5\Facades\System.Reflection.Emit.Lightweight.pdb
+E:\mono2\mcs\class\Facades\System.Reflection.Emit.Lightweight\obj\Debug\System.Reflection.Emit.Lightweight-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Facades\System.Reflection.Emit.Lightweight\obj\Debug\System.Reflection.Emit.Lightweight.dll
+E:\mono2\mcs\class\Facades\System.Reflection.Emit.Lightweight\obj\Debug\System.Reflection.Emit.Lightweight.pdb

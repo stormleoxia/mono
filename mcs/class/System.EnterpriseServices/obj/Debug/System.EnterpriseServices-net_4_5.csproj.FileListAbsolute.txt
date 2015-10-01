@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.EnterpriseServices.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\System.EnterpriseServices.pdb
+D:\Development\Applications\mono2\mcs\class\System.EnterpriseServices\obj\Debug\System.EnterpriseServices-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\System.EnterpriseServices\obj\Debug\System.EnterpriseServices.dll
+D:\Development\Applications\mono2\mcs\class\System.EnterpriseServices\obj\Debug\System.EnterpriseServices.pdb
+E:\mono2\mcs\class\lib\net_4_5\System.EnterpriseServices.dll
+E:\mono2\mcs\class\lib\net_4_5\System.EnterpriseServices.pdb
+E:\mono2\mcs\class\System.EnterpriseServices\obj\Debug\System.EnterpriseServices-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\System.EnterpriseServices\obj\Debug\System.EnterpriseServices.dll
+E:\mono2\mcs\class\System.EnterpriseServices\obj\Debug\System.EnterpriseServices.pdb

@@ -1,0 +1,10 @@
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Data.Tds.dll
+D:\Development\Applications\mono2\mcs\class\lib\net_4_5\Mono.Data.Tds.pdb
+D:\Development\Applications\mono2\mcs\class\Mono.Data.Tds\obj\Debug\Mono.Data.Tds-net_4_5.csprojResolveAssemblyReference.cache
+D:\Development\Applications\mono2\mcs\class\Mono.Data.Tds\obj\Debug\Mono.Data.Tds.dll
+D:\Development\Applications\mono2\mcs\class\Mono.Data.Tds\obj\Debug\Mono.Data.Tds.pdb
+E:\mono2\mcs\class\lib\net_4_5\Mono.Data.Tds.dll
+E:\mono2\mcs\class\lib\net_4_5\Mono.Data.Tds.pdb
+E:\mono2\mcs\class\Mono.Data.Tds\obj\Debug\Mono.Data.Tds-net_4_5.csprojResolveAssemblyReference.cache
+E:\mono2\mcs\class\Mono.Data.Tds\obj\Debug\Mono.Data.Tds.dll
+E:\mono2\mcs\class\Mono.Data.Tds\obj\Debug\Mono.Data.Tds.pdb
