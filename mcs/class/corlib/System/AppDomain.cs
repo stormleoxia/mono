@@ -162,7 +162,20 @@ namespace System {
 			}
 		}
 
-		public string DynamicDirectory {
+	    public HostSecurityManager HostSecurityManager {
+	        get {
+	            return DomainManager.HostSecurityManager;
+	        }
+	    }
+
+        [MonoTODO ("Should check whether Legacy CAS should be enabled")]
+	    public bool IsLegacyCasPolicyEnabled {
+	        get {
+	            return false;
+	        }
+	    }
+
+	    public string DynamicDirectory {
 			get {
 				AppDomainSetup setup = SetupInformationNoCopy;
 				if (setup.DynamicBase == null)

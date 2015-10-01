@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <NoWarn>612,618,1699</NoWarn>
     <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE;INSIDE_CORLIB;MONO_CULTURE_DATA;LIBC;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;INSIDE_CORLIB;MONO_CULTURE_DATA;LIBC;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING;FEATURE_SERIALIZATION;FEATURE_CAS_POLICY;FEATURE_RWLOCK</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -32,7 +32,7 @@
     <DebugType>pdbonly</DebugType>
     <NoWarn>612,618,1699</NoWarn>
     <Optimize>true</Optimize>
-    <DefineConstants>INSIDE_CORLIB;MONO_CULTURE_DATA;LIBC;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING</DefineConstants>
+    <DefineConstants>INSIDE_CORLIB;MONO_CULTURE_DATA;LIBC;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING;NET_4_0;NET_4_5;MONO;DISABLE_CAS_USE;FEATURE_PAL;GENERICS_WORK;FEATURE_LIST_PREDICATES;FEATURE_SERIALIZATION;FEATURE_ASCII;FEATURE_LATIN1;FEATURE_UTF7;FEATURE_UTF32;MONO_HYBRID_ENCODING_SUPPORT;FEATURE_ASYNC_IO;NEW_EXPERIMENTAL_ASYNC_IO;FEATURE_UTF32;FEATURE_REMOTING;FEATURE_SERIALIZATION;FEATURE_CAS_POLICY;FEATURE_RWLOCK</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -185,6 +185,21 @@
     <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Diagnostics\Eventing\Winmeta.cs">
       <Link>System.Diagnostics.Tracing\Winmeta.cs</Link>
     </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Security\Policy\Evidence.cs">
+      <Link>System.Security.Policy\Evidence.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Security\Policy\EvidenceBase.cs">
+      <Link>System.Security.Policy\EvidenceBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Security\Policy\EvidenceTypeDescriptor.cs">
+      <Link>System.Security.Policy\EvidenceTypeDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Security\Policy\IDelayEvaluatedEvidence.cs">
+      <Link>System.Security.Policy\IDelayEvaluatedEvidence.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Security\Policy\IRuntimeEvidenceFactory.cs">
+      <Link>System.Security.Policy\IRuntimeEvidenceFactory.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Threading\AsyncLocal.cs">
       <Link>System.Threading\AsyncLocal.cs</Link>
     </Compile>
@@ -193,6 +208,9 @@
     </Compile>
     <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Threading\Tasks\TPLETWProvider.cs">
       <Link>System.Threading.Tasks\TPLETWProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\external\referencesource\mscorlib\system\security\claims\ClaimsIdentity.cs">
+      <Link>System.Security.Claims\ClaimsIdentity.cs</Link>
     </Compile>
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\__hresults.cs">
       <Link>System/__hresults.cs</Link>
@@ -1973,7 +1991,9 @@
     <Compile Include="System.Security.AccessControl\SecurityInfos.cs" />
     <Compile Include="System.Security.AccessControl\SystemAcl.cs" />
     <Compile Include="System.Security.Claims\Claim.cs" />
-    <Compile Include="System.Security.Claims\ClaimsIdentity.cs" />
+    <Compile Include="System.Security.Claims\ClaimsIdentity.mono.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="System.Security.Claims\ClaimsPrincipal.cs" />
     <Compile Include="System.Security.Claims\ClaimTypes.cs" />
     <Compile Include="System.Security.Claims\ClaimValueTypes.cs" />
@@ -2133,8 +2153,6 @@
     <Compile Include="System.Security.Policy\CodeConnectAccess.cs" />
     <Compile Include="System.Security.Policy\CodeGroup.cs" />
     <Compile Include="System.Security.Policy\DefaultPolicies.cs" />
-    <Compile Include="System.Security.Policy\Evidence.cs" />
-    <Compile Include="System.Security.Policy\EvidenceBase.cs" />
     <Compile Include="System.Security.Policy\FileCodeGroup.cs" />
     <Compile Include="System.Security.Policy\FirstMatchCodeGroup.cs" />
     <Compile Include="System.Security.Policy\Gac.cs" />

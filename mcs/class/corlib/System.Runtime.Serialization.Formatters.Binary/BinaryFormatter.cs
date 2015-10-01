@@ -32,6 +32,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Claims;
 using System.Security.Permissions;
 
 namespace System.Runtime.Serialization.Formatters.Binary {
@@ -269,5 +270,15 @@ namespace System.Runtime.Serialization.Formatters.Binary {
 			reader.ReadInt32();
 			reader.ReadInt32();
 		}
+
+	    public void Serialize(Stream serializationStream, object graph, Header[] headers, bool flag)
+        {
+            Serialize(serializationStream, graph, headers);
+        }
+
+	    public object Deserialize(Stream serializationStream, HeaderHandler handler, bool flag)
+	    {
+            return Deserialize(serializationStream, handler);
+	    }
 	}
 }

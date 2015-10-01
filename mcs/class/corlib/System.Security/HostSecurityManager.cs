@@ -99,5 +99,29 @@ namespace System.Security {
 				throw new NullReferenceException ("evidence");
 			return SecurityManager.ResolvePolicy (evidence);
 		}
+
+        [MonoTODO("Generate AppDomain Evidence is not implemented")]
+	    public EvidenceBase GenerateAppDomainEvidence(Type type)
+	    {
+	        return null;
+	    }
+
+        [MonoTODO("Generate AppDomain Evidence is not implemented")]
+	    public EvidenceBase GenerateAssemblyEvidence(Type type, Assembly targetAssembly)
+	    {
+	        return null;
+	    }
+
+        [MonoTODO("GetHostSuppliedAssemblyEvidenceTypes is not implemented")]
+	    public Type[] GetHostSuppliedAssemblyEvidenceTypes(Assembly targetAssembly)
+	    {
+	        return EmptyArray<Type>.Value;
+	    }
+
+        [MonoTODO("GetHostSuppliedAssemblyEvidenceTypes is not implemented")]
+	    public Type[] GetHostSuppliedAppDomainEvidenceTypes()
+	    {
+	        return EmptyArray<Type>.Value;
+	    }
 	}
 }

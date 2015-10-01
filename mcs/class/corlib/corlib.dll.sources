@@ -1117,7 +1117,8 @@ System.Security.AccessControl/SecurityInfos.cs
 System.Security.AccessControl/SystemAcl.cs
 System.Security.Cryptography/Aes.cs
 System.Security.Claims/Claim.cs
-System.Security.Claims/ClaimsIdentity.cs
+../../../external/referencesource/mscorlib/system/security/claims/ClaimsIdentity.cs
+System.Security.Claims/ClaimsIdentity.mono.cs
 System.Security.Claims/ClaimsPrincipal.cs
 System.Security.Claims/ClaimTypes.cs
 System.Security.Claims/ClaimValueTypes.cs
@@ -1276,8 +1277,11 @@ System.Security.Policy/ApplicationVersionMatch.cs
 System.Security.Policy/CodeConnectAccess.cs
 System.Security.Policy/CodeGroup.cs
 System.Security.Policy/DefaultPolicies.cs
-System.Security.Policy/Evidence.cs
-System.Security.Policy/EvidenceBase.cs
+../../../external/coreclr/src/mscorlib/src/System/Security/Policy/Evidence.cs
+../../../external/coreclr/src/mscorlib/src/System/Security/Policy/EvidenceBase.cs
+../../../external/coreclr/src/mscorlib/src/System/Security/Policy/EvidenceTypeDescriptor.cs
+../../../external/coreclr/src/mscorlib/src/System/Security/Policy/IDelayEvaluatedEvidence.cs
+../../../external/coreclr/src/mscorlib/src/System/Security/Policy/IRuntimeEvidenceFactory.cs
 System.Security.Policy/FileCodeGroup.cs
 System.Security.Policy/FirstMatchCodeGroup.cs
 System.Security.Policy/Gac.cs

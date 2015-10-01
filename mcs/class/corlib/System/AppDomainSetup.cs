@@ -39,6 +39,7 @@ using System.Security;
 using System.Runtime.Serialization.Formatters.Binary;
 
 using System.Runtime.Hosting;
+using System.Runtime.Serialization;
 using System.Security.Policy;
 
 namespace System
@@ -117,6 +118,7 @@ namespace System
 			domain_initializer_args = setup.domain_initializer_args;
 			disallow_appbase_probe = setup.disallow_appbase_probe;
 			configuration_bytes = setup.configuration_bytes;
+            _AptcaVisibleAssemblies = setup.PartialTrustVisibleAssemblies;
 		}
 
 		public AppDomainSetup (ActivationArguments activationArguments)
@@ -396,5 +398,22 @@ namespace System
 		public void SetCompatibilitySwitches (IEnumerable<string> switches)
 		{
 		}
+
+        [OptionalField(VersionAdded = 4)]
+        private string[] _AptcaVisibleAssemblies;
+
+        public string[] PartialTrustVisibleAssemblies
+        {
+            get { return _AptcaVisibleAssemblies; }
+            set { 
+                if (value != null) {
+                    _AptcaVisibleAssemblies = (string[])value.Clone(); 
+                    Array.Sort<string>(_AptcaVisibleAssemblies, StringComparer.OrdinalIgnoreCase);
+                }
+                else {
+                    _AptcaVisibleAssemblies = null;
+                }
+            }
+        }
 	}
 }
