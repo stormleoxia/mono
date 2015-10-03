@@ -155,6 +155,17 @@ namespace Mono.CSharp
 			foreach (var type in builtin.AllTypes) {
 				compiled_types.Add (corlib.GetType (type.FullName), type);
 			}
+            // Since there are builtins : we should initialize their definitions right now.
+            // Otherwise, type resolution may fail if builtin definition is set after one of its dependency try to resolve it.
+            // It's a bug fix 
+		    foreach (var pair in compiled_types)
+		    {
+		        var builtinSpec = pair.Value as BuiltinTypeSpec;
+		        if (builtinSpec != null)
+		        {
+		            builtinSpec.SetDefinition(new ImportedTypeDefinition(pair.Key, this), pair.Key, pair.Value.Modifiers);
+		        }
+		    }
 		}
 	}
 #endif
