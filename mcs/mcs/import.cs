@@ -861,52 +861,14 @@ namespace Mono.CSharp
 			Modifiers mod;
 			MemberKind kind;
 
-			var ma = type.Attributes;
-			switch (ma & TypeAttributes.VisibilityMask) {
-			case TypeAttributes.Public:
-			case TypeAttributes.NestedPublic:
-				mod = Modifiers.PUBLIC;
-				break;
-			case TypeAttributes.NestedPrivate:
-				mod = Modifiers.PRIVATE;
-				break;
-			case TypeAttributes.NestedFamily:
-				mod = Modifiers.PROTECTED;
-				break;
-			case TypeAttributes.NestedFamORAssem:
-				mod = Modifiers.PROTECTED | Modifiers.INTERNAL;
-				break;
-			default:
-				mod = Modifiers.INTERNAL;
-				break;
-			}
+			
+            
+            var ma = type.Attributes;
 
-			if ((ma & TypeAttributes.Interface) != 0) {
-				kind = MemberKind.Interface;
-			} else if (type.IsGenericParameter) {
-				kind = MemberKind.TypeParameter;
-			} else {
-				var base_type = type.BaseType;
-				if (base_type == null || (ma & TypeAttributes.Abstract) != 0) {
-					kind = MemberKind.Class;
-				} else {
-					kind = DetermineKindFromBaseType (base_type);
-					if (kind == MemberKind.Struct || kind == MemberKind.Delegate) {
-						mod |= Modifiers.SEALED;
-					}
-				}
+            kind = DetermineMemberKind(type);
 
-				if (kind == MemberKind.Class) {
-					if ((ma & TypeAttributes.Sealed) != 0) {
-						if ((ma & TypeAttributes.Abstract) != 0)
-							mod |= Modifiers.STATIC;
-						else
-							mod |= Modifiers.SEALED;
-					} else if ((ma & TypeAttributes.Abstract) != 0) {
-						mod |= Modifiers.ABSTRACT;
-					}
-				}
-			}
+            mod = DetermineModifiers(ma, kind);
+
 
 			var definition = new ImportedTypeDefinition (type, this);
 			TypeSpec pt;
@@ -965,7 +927,76 @@ namespace Mono.CSharp
 			return spec;
 		}
 
-		public IAssemblyDefinition GetAssemblyDefinition (Assembly assembly)
+	    protected MemberKind DetermineMemberKind(MetaType type)
+	    {
+	        MemberKind kind;
+	        if ((type.Attributes & TypeAttributes.Interface) != 0)
+	        {
+	            kind = MemberKind.Interface;
+	        }
+	        else if (type.IsGenericParameter)
+	        {
+	            kind = MemberKind.TypeParameter;
+	        }
+	        else
+	        {
+	            var base_type = type.BaseType;
+	            if (base_type == null || (type.Attributes & TypeAttributes.Abstract) != 0)
+	            {
+	                kind = MemberKind.Class;
+	            }
+	            else
+	            {
+	                kind = DetermineKindFromBaseType(base_type);
+	            }
+	        }
+	        return kind;
+	    }
+
+	    protected static Modifiers DetermineModifiers(TypeAttributes typeAttributes, MemberKind kind)
+	    {
+	        Modifiers mod;
+	        switch (typeAttributes & TypeAttributes.VisibilityMask)
+	        {
+	            case TypeAttributes.Public:
+	            case TypeAttributes.NestedPublic:
+	                mod = Modifiers.PUBLIC;
+	                break;
+	            case TypeAttributes.NestedPrivate:
+	                mod = Modifiers.PRIVATE;
+	                break;
+	            case TypeAttributes.NestedFamily:
+	                mod = Modifiers.PROTECTED;
+	                break;
+	            case TypeAttributes.NestedFamORAssem:
+	                mod = Modifiers.PROTECTED | Modifiers.INTERNAL;
+	                break;
+	            default:
+	                mod = Modifiers.INTERNAL;
+	                break;
+	        }
+	        if (kind == MemberKind.Struct || kind == MemberKind.Delegate)
+	        {
+	            mod |= Modifiers.SEALED;
+	        }
+	        if (kind == MemberKind.Class)
+	        {
+	            if ((typeAttributes & TypeAttributes.Sealed) != 0)
+	            {
+	                if ((typeAttributes & TypeAttributes.Abstract) != 0)
+	                    mod |= Modifiers.STATIC;
+	                else
+	                    mod |= Modifiers.SEALED;
+	            }
+	            else if ((typeAttributes & TypeAttributes.Abstract) != 0)
+	            {
+	                mod |= Modifiers.ABSTRACT;
+	            }
+	        }
+	        return mod;
+	    }
+
+	    public IAssemblyDefinition GetAssemblyDefinition (Assembly assembly)
 		{
 			IAssemblyDefinition found;
 			if (!assembly_2_definition.TryGetValue (assembly, out found)) {
