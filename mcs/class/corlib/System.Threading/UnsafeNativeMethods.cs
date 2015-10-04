@@ -7,7 +7,7 @@ using Microsoft.Win32;
 
 namespace System.Threading
 {
-    class UnsafeNativeMethods
+    class UnsafeMethods
     {
         [SecurityCritical]
         [SuppressUnmanagedCodeSecurityAttribute()]
