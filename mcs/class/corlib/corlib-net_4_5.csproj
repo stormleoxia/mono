@@ -209,9 +209,6 @@
     <Compile Include="..\..\..\external\coreclr\src\mscorlib\src\System\Threading\Tasks\TPLETWProvider.cs">
       <Link>System.Threading.Tasks\TPLETWProvider.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\external\referencesource\mscorlib\system\security\claims\ClaimsIdentity.cs">
-      <Link>System.Security.Claims\ClaimsIdentity.cs</Link>
-    </Compile>
     <Compile Include="..\..\..\external\referencesource\mscorlib\system\__hresults.cs">
       <Link>System/__hresults.cs</Link>
     </Compile>
@@ -1132,6 +1129,7 @@
     <Compile Include="Microsoft.Win32\RegistryValueOptions.cs" />
     <Compile Include="Microsoft.Win32\RegistryView.cs" />
     <Compile Include="Microsoft.Win32\UnixRegistryApi.cs" />
+    <Compile Include="Microsoft.Win32\UnsafeNativeMethods.cs" />
     <Compile Include="Microsoft.Win32\Win32Native.cs" />
     <Compile Include="Microsoft.Win32\Win32RegistryApi.cs" />
     <Compile Include="Microsoft.Win32\Win32ResultCode.cs" />
@@ -1991,9 +1989,7 @@
     <Compile Include="System.Security.AccessControl\SecurityInfos.cs" />
     <Compile Include="System.Security.AccessControl\SystemAcl.cs" />
     <Compile Include="System.Security.Claims\Claim.cs" />
-    <Compile Include="System.Security.Claims\ClaimsIdentity.mono.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="System.Security.Claims\ClaimsIdentity.cs" />
     <Compile Include="System.Security.Claims\ClaimsPrincipal.cs" />
     <Compile Include="System.Security.Claims\ClaimTypes.cs" />
     <Compile Include="System.Security.Claims\ClaimValueTypes.cs" />
@@ -2514,4 +2510,5 @@
       <LogicalName>collation.cjkKOlv2.bin</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
+
 </Project>
