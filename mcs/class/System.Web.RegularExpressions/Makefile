@@ -18,7 +18,7 @@ all:System.Web.RegularExpressions.dll
 	
 System.Web.RegularExpressions.dll: all-local
 	echo "Generate Library"
-	../../../runtime/mono-wrapper ../lib/net_4_5/System.Web.RegularExpressions-gen.exe ../mono.snk
+	MONO_PATH="$(topdir)/class/lib/$(DEFAULT_PROFILE)$(PLATFORM_PATH_SEPARATOR)$$MONO_PATH" $(RUNTIME) ../lib/net_4_5/System.Web.RegularExpressions-gen.exe ../mono.snk
 	echo "Sign Generated Library"
-	../../../runtime/mono-wrapper ../lib/build/sn.exe -R System.Web.RegularExpressions.dll ../mono.snk
+	MONO_PATH="$(topdir)/class/lib/$(DEFAULT_PROFILE)$(PLATFORM_PATH_SEPARATOR)$$MONO_PATH" $(RUNTIME) ../lib/build/sn.exe -R System.Web.RegularExpressions.dll ../mono.snk
 	mv System.Web.RegularExpressions.dll ../lib/net_4_5/
