@@ -807,6 +807,10 @@ namespace System.Web.Compilation
 			StringCollection optRefAsm = options.ReferencedAssemblies;
 			ReferenceAssemblies (moduleGuidCache, assembliesToReference, ReferencedAssemblies);
 			ReferenceAssemblies (moduleGuidCache, assembliesToReference, optRefAsm);
+            foreach (var unit in units)
+		    {
+		        ReferenceAssemblies(moduleGuidCache, assembliesToReference, unit.Unit.ReferencedAssemblies);
+		    }
 			Type appType = HttpApplicationFactory.AppType;
 			if (appType != null)
 				ReferenceAssembly (moduleGuidCache, assembliesToReference, appType.Assembly);
