@@ -87,12 +87,13 @@ namespace System.Web.Profile
 			anonymousCookieName = anonymousConfig.CookieName;
 		}
 		
-		void OnEnter (object o, EventArgs eventArgs)
+		void OnEnter (object source, EventArgs eventArgs)
 		{
 			if (!ProfileManager.Enabled)
 				return;
-			
-			if (HttpContext.Current.Request.IsAuthenticated) {
+			HttpContext context = ((HttpApplication)source).Context;
+
+			if (context.Request.IsAuthenticated) {
 				HttpCookie cookie = app.Request.Cookies [anonymousCookieName];
 				if (cookie != null && (cookie.Expires != DateTime.MinValue && cookie.Expires > DateTime.Now)) {
 					ProfileMigrateEventHandler eh = events [migrateAnonymousEvent] as ProfileMigrateEventHandler;
