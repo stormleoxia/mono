@@ -261,23 +261,22 @@ namespace System.Web.Routing
 			return route;
 		}
 
+        // Called by collection (so already locked)
 	    protected override void InsertItem(int index, RouteBase item)
 	    {
 	        if (item == null) {
 	            throw new ArgumentNullException("item");
 	        }
-	        using (GetWriteLock()) {
-	            AssertDoesNotContain(item);
-	            // FIXME: what happens wrt its name?
-	            base.InsertItem(index, item);
-	        }
+	        AssertDoesNotContain(item);
+	        // FIXME: what happens wrt its name?
+	        base.InsertItem(index, item);
+
 	    }
 
 	    private void RemoveRouteNames(int index)
 	    {
 	        RouteBase route = this[index];
-	        foreach (KeyValuePair<string, RouteBase> namedRoute in _namedMap)
-	        {
+	        foreach (KeyValuePair<string, RouteBase> namedRoute in _namedMap) {
 	            if (namedRoute.Value == route)
 	            {
 	                _namedMap.Remove(namedRoute.Key);
@@ -286,6 +285,7 @@ namespace System.Web.Routing
 	        }
 	    }
 
+        // Called by collection (so already locked)
 	    protected override void RemoveItem (int index)
 		{
 			// FIXME: what happens wrt its name?
@@ -295,20 +295,19 @@ namespace System.Web.Routing
 			}
 		}
 
-    	protected override void SetItem (int index, RouteBase item)
-		{
-            if (item == null) {
-                throw new ArgumentNullException("item");
-            }
-            using (GetWriteLock ()) {
-		        AssertDoesNotContain(item);
-			    // FIXME: what happens wrt its name?
-                RemoveRouteNames(index);
-				base.SetItem (index, item);
-			}
-		}
+        // Called by collection (so already locked)
+	    protected override void SetItem(int index, RouteBase item)
+	    {
+	        if (item == null) {
+	            throw new ArgumentNullException("item");
+	        }
+	        AssertDoesNotContain(item);
+	        // FIXME: what happens wrt its name?
+	        RemoveRouteNames(index);
+	        base.SetItem(index, item);
+	    }
 
-        private struct WriteLockDisposable : IDisposable
+	    private struct WriteLockDisposable : IDisposable
         {
             private readonly ReaderWriterLockSlim _rwLock;
 
