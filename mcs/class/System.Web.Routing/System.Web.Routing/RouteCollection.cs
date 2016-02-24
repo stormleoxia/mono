@@ -31,9 +31,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Security.Permissions;
+using System.Threading;
 using System.Web;
 using System.Web.Hosting;
 
@@ -44,51 +46,39 @@ namespace System.Web.Routing
 	[AspNetHostingPermission (SecurityAction.InheritanceDemand, Level = AspNetHostingPermissionLevel.Minimal)]
 	public class RouteCollection : Collection<RouteBase>
 	{
-		class Lock : IDisposable
-		{
-			//RouteCollection owner;
-			//bool read;
+	    private readonly VirtualPathProvider _provider;
+        private readonly ReaderWriterLockSlim _rwLock = new ReaderWriterLockSlim();
 
-			public Lock (RouteCollection owner, bool read)
-			{
-				//this.owner = owner;
-				//this.read = read;
-			}
-
-			public void Dispose ()
-			{
-				//if (read)
-				//	owner.read_lock = null;
-				//else
-				//	owner_write_lock = null;
-			}
-		}
-
-		public RouteCollection ()
-			: this (null)
+		public RouteCollection () : 
+            this (null)
 		{
 		}
 
 		public RouteCollection (VirtualPathProvider virtualPathProvider)
 		{
-			// null argument is allowed
-			//provider = virtualPathProvider;
-
-			read_lock = new Lock (this, true);
-			write_lock = new Lock (this, false);
+		    if (virtualPathProvider == null) {
+		        _provider = HostingEnvironment.VirtualPathProvider;
+		    }
+		    else {
+                _provider = virtualPathProvider;		        
+		    }
 		}
 
-		//VirtualPathProvider provider;
-		Dictionary<string,RouteBase> d = new Dictionary<string,RouteBase> ();
-
-		Lock read_lock, write_lock;
+		private readonly Dictionary<string,RouteBase> _namedMap = new Dictionary<string,RouteBase> ();
 
 		public RouteBase this [string name] {
 			get {
-				foreach (var p in d)
-					if (p.Key == name)
-						return p.Value;
-				return null;
+                if (String.IsNullOrEmpty(name)) {
+                    return null;
+                }
+			    using (GetReadLock())
+			    {
+			        RouteBase route;
+			        if (_namedMap.TryGetValue(name, out route)) {
+			            return route;
+			        }
+			    }
+			    return null;
 			}
 		}
 
@@ -98,22 +88,55 @@ namespace System.Web.Routing
 
 		public void Add (string name, RouteBase item)
 		{
-			lock (GetWriteLock ()) {
+            if (item == null) {
+                throw new ArgumentNullException("item");
+            }
+			using (GetWriteLock ()) {
+                // It could contains the same item with different names                
+                AssertDoesNotContain(name);
 				base.Add (item);
 				if (!String.IsNullOrEmpty (name))
-					d.Add (name, item);
+					_namedMap.Add(name, item);
 			}
 		}
 
-		protected override void ClearItems ()
+	    private void AssertDoesNotContain(string name)
+	    {
+            if (!String.IsNullOrEmpty(name)) {
+	            if (_namedMap.ContainsKey(name)) {
+	                throw new ArgumentException(
+	                    String.Format(
+	                        CultureInfo.CurrentUICulture,
+	                        "There is already a route for {0}",
+	                        name),
+	                    "name");
+	            }
+	        }
+	    }
+
+
+        private void AssertDoesNotContain(RouteBase item)
+	    {
+            // Insertions by index forbid several occurence of the same item
+	        if (Contains(item)) {
+                throw new ArgumentException(
+                    String.Format(
+                        CultureInfo.CurrentCulture,
+                        "Route is already in the current RouteCollection"),
+                    "item");
+            }
+	    }
+
+	    protected override void ClearItems ()
 		{
-			lock (GetWriteLock ())
+			using (GetWriteLock ())
 				base.ClearItems ();
 		}
 
 		public IDisposable GetReadLock ()
 		{
-			return read_lock;
+			_rwLock.EnterReadLock();
+            return new ReadLockDisposable(_rwLock);
 		}
 
 		public RouteData GetRouteData (HttpContextBase httpContext)
@@ -126,21 +149,28 @@ namespace System.Web.Routing
 			if (Count == 0)
 				return null;
 			if (!RouteExistingFiles) {
-				var path = httpContext.Request.AppRelativeCurrentExecutionFilePath;
-				VirtualPathProvider vpp = HostingEnvironment.VirtualPathProvider;
-				if (path != "~/" && vpp != null && (vpp.FileExists (path) || vpp.DirectoryExists (path)))
+				if (IsRouteToExistingFile(httpContext))
 					return null;
 			}
-			foreach (RouteBase rb in this) {
-				var rd = rb.GetRouteData (httpContext);
-				if (rd != null)
-					return rd;
-			}
-
-			return null;
+		    using (GetReadLock()) {
+		        foreach (RouteBase rb in this) {
+		            var routeData = rb.GetRouteData(httpContext);
+		            if (routeData != null) {
+		                return routeData;
+		            }
+		        }
+		    }
+		    return null;
 		}
 
-		public VirtualPathData GetVirtualPath (RequestContext requestContext, RouteValueDictionary values)
+	    private bool IsRouteToExistingFile(HttpContextBase httpContext)
+	    {
+	        var path = httpContext.Request.AppRelativeCurrentExecutionFilePath;
+	        VirtualPathProvider vpp = _provider;
+	        return path != "~/" && vpp != null && (vpp.FileExists(path) || vpp.DirectoryExists(path));
+	    }
+
+	    public VirtualPathData GetVirtualPath (RequestContext requestContext, RouteValueDictionary values)
 		{
 			return GetVirtualPath (requestContext, null, values);
 		}
@@ -157,11 +187,13 @@ namespace System.Web.Routing
 				else
 					throw new ArgumentException ("A route named '" + name + "' could not be found in the route collection.", "name");
 			} else {
-				foreach (RouteBase rb in this) {
-					vp = rb.GetVirtualPath (requestContext, values);
-					if (vp != null)
-						break;
-				}
+			    using (GetReadLock()) {
+			        foreach (RouteBase rb in this) {
+			            vp = rb.GetVirtualPath(requestContext, values);
+			            if (vp != null)
+			                break;
+			        }
+			    }
 			}
 
 			if (vp != null) {
@@ -179,7 +211,8 @@ namespace System.Web.Routing
 
 		public IDisposable GetWriteLock ()
 		{
-			return write_lock;
+			_rwLock.EnterWriteLock();
+            return new WriteLockDisposable(_rwLock);
 		}
 		public void Ignore (string url)
 		{
@@ -227,42 +260,83 @@ namespace System.Web.Routing
 
 			return route;
 		}
-		protected override void InsertItem (int index, RouteBase item)
-		{
-			// FIXME: what happens wrt its name?
-			lock (GetWriteLock ())
-				base.InsertItem (index, item);
-		}
 
-		protected override void RemoveItem (int index)
+	    protected override void InsertItem(int index, RouteBase item)
+	    {
+	        if (item == null) {
+	            throw new ArgumentNullException("item");
+	        }
+	        using (GetWriteLock()) {
+	            AssertDoesNotContain(item);
+	            // FIXME: what happens wrt its name?
+	            base.InsertItem(index, item);
+	        }
+	    }
+
+	    private void RemoveRouteNames(int index)
+	    {
+	        RouteBase route = this[index];
+	        foreach (KeyValuePair<string, RouteBase> namedRoute in _namedMap)
+	        {
+	            if (namedRoute.Value == route)
+	            {
+	                _namedMap.Remove(namedRoute.Key);
+	                break;
+	            }
+	        }
+	    }
+
+	    protected override void RemoveItem (int index)
 		{
 			// FIXME: what happens wrt its name?
-			lock (GetWriteLock ()) {
-				string k = GetKey (index);
+			using (GetWriteLock ()) {
+                RemoveRouteNames(index);
 				base.RemoveItem (index);
-				if (k != null)
-					d.Remove (k);
 			}
 		}
 
-		protected override void SetItem (int index, RouteBase item)
+    	protected override void SetItem (int index, RouteBase item)
 		{
-			// FIXME: what happens wrt its name?
-			lock (GetWriteLock ()) {
-				string k = GetKey (index);
+            if (item == null) {
+                throw new ArgumentNullException("item");
+            }
+            using (GetWriteLock ()) {
+		        AssertDoesNotContain(item);
+			    // FIXME: what happens wrt its name?
+                RemoveRouteNames(index);
 				base.SetItem (index, item);
-				if (k != null)
-					d.Remove (k);
 			}
 		}
 
-		string GetKey (int index)
-		{
-			var item = this [index];
-			foreach (var p in d)
-				if (p.Value == item)
-					return p.Key;
-			return null;
-		}
+        private struct WriteLockDisposable : IDisposable
+        {
+            private readonly ReaderWriterLockSlim _rwLock;
+
+            public WriteLockDisposable(ReaderWriterLockSlim rwLock)
+            {
+                _rwLock = rwLock;
+            }
+
+            public void Dispose()
+            {
+                _rwLock.ExitWriteLock();
+            }
+        }
+
+        private struct ReadLockDisposable : IDisposable
+        {
+            private readonly ReaderWriterLockSlim _rwLock;
+
+            public ReadLockDisposable(ReaderWriterLockSlim rwLock)
+            {
+                _rwLock = rwLock;
+            }
+
+            public void Dispose()
+            {
+                _rwLock.ExitReadLock();
+            }
+        }
 	}
+
 }
