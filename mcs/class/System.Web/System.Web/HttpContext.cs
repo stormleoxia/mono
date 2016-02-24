@@ -170,11 +170,11 @@ namespace System.Web
 		//
 		public static HttpContext Current {
 			get {
-				return (HttpContext) CallContext.GetData ("c");
+				return (HttpContext) CallContext.HostContext;
 			}
 
 			set {
-				CallContext.SetData ("c", value);
+				CallContext.HostContext = value;
 			}
 		}
 
