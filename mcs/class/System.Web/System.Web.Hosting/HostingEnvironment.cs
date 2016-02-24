@@ -37,6 +37,7 @@ using System.Threading;
 using System.Web.Configuration;
 using System.Web.Caching;
 using System.Web.Util;
+using System.IO;
 
 namespace System.Web.Hosting {
 
@@ -153,12 +154,19 @@ namespace System.Web.Hosting {
 		{
 			if (virtualPath == null || virtualPath == "")
 				throw new ArgumentNullException ("virtualPath");
-			
+
+			if (virtualPath.StartsWith ("~/")) {
+				virtualPath = virtualPath.Substring (2); 
+			}
+
 			HttpContext context = HttpContext.Current;
 			HttpRequest req = context == null ? null : context.Request;
-			if (req == null)
-				return null;
-
+			if (req == null) {
+				if (virtualPath.StartsWith("/")) {
+					virtualPath = virtualPath.Substring(1);
+				}
+				return Path.Combine(HostingEnvironment.ApplicationPhysicalPath, virtualPath);
+			}
 			return req.MapPath (virtualPath);
 		}
 
