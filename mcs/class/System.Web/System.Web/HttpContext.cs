@@ -173,8 +173,15 @@ namespace System.Web
 				return (HttpContext) CallContext.HostContext;
 			}
 
-			set {
-				CallContext.HostContext = value;
+			set
+			{
+			    var currentContext = Current;
+			    if (currentContext != null)
+			    {
+			        currentContext.Request.ReleaseResources();
+			        currentContext.Response.ReleaseResources();
+			    }
+			    CallContext.HostContext = value;
 			}
 		}
 

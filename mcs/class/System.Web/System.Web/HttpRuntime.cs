@@ -319,10 +319,6 @@ namespace System.Web
 			response.ExpiresAbsolute = DateTime.UtcNow;
 			response.StatusCode = 503;
 			response.TransmitFile (app_offline_file, true);
-			
-			context.Request.ReleaseResources ();
-			context.Response.ReleaseResources ();
-			HttpContext.Current = null;
 			HttpApplication.requests_total_counter.Increment ();
 			
 			return true;
@@ -459,7 +455,8 @@ namespace System.Web
 			if (error) {
 				context.Request.ReleaseResources ();
 				context.Response.ReleaseResources ();
-				HttpContext.Current = null;
+				// .NET never set current HttpContext to null in this situation.
+                //HttpContext.Current = null;
 			} else {
 				context.ApplicationInstance = app;
 				req.SetEndOfSendNotification (end_of_send_cb, context);
@@ -467,11 +464,11 @@ namespace System.Web
 				//
 				// Ask application to service the request
 				//
-				
-				IHttpHandler ihh = app;
-//				IAsyncResult appiar = ihah.BeginProcessRequest (context, new AsyncCallback (request_processed), context);
-//				ihah.EndProcessRequest (appiar);
-				ihh.ProcessRequest (context);
+			    IHttpHandler ihh = app;
+    			//TODO: should do it Async by default
+                //IAsyncResult appiar = ihah.BeginProcessRequest (context, new AsyncCallback (request_processed), context);
+    			//ihah.EndProcessRequest (appiar);
+			    ihh.ProcessRequest (context);
 
 				HttpApplicationFactory.Recycle (app);
 			}

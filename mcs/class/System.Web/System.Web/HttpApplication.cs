@@ -222,9 +222,11 @@ namespace System.Web
 					}
 
 					Interlocked.CompareExchange (ref modcoll, coll, null);
-					HttpContext.Current = saved;
-
-					if (full_init) {
+				    if (saved != null)
+				    {
+				        HttpContext.Current = saved;
+				    }
+				    if (full_init) {
 						HttpApplicationFactory.AttachEvents (this);
 						Init ();
 						fullInitComplete = true;
@@ -1489,11 +1491,6 @@ namespace System.Web
 			if (context == null)
 				context = HttpContext.Current;
 			context.StopTimeoutTimer ();
-			context.Request.ReleaseResources ();
-			context.Response.ReleaseResources ();
-			context = null;
-			session = null;
-			HttpContext.Current = null;
 		}
 
 		void Start (object x)
@@ -1514,9 +1511,15 @@ namespace System.Web
 				PipelineDone ();
 				return;
 			}
-
-			HttpContext.Current = Context;
-			PreStart ();
+		    if (context != null)
+		    {
+		        HttpContext.Current = context;
+		    }
+		    else
+		    {
+		        context = HttpContext.Current;		        
+		    }
+		    PreStart ();
 			pipeline = Pipeline ();
 			Tick ();
 		}
