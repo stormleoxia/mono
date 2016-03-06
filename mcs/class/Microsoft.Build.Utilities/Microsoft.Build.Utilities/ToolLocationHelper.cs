@@ -26,9 +26,11 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 using System.Linq;
+using System.Runtime.Versioning;
 
 namespace Microsoft.Build.Utilities
 {
@@ -42,63 +44,91 @@ namespace Microsoft.Build.Utilities
 		static string lib_mono_dir;
 		static string [] mono_dir;
 		static bool runningOnDotNet;
+	    private static readonly List<string> SupportedFrameworkNames;
 
-		static ToolLocationHelper ()
-		{
-			string assemblyLocation;
-			DirectoryInfo t1, t2;
+	    static ToolLocationHelper()
+	    {
+	        string assemblyLocation;
+	        DirectoryInfo t1, t2;
 
-			// /usr/local/lib/mono/1.0
-			assemblyLocation = Path.GetDirectoryName (typeof (object).Assembly.Location);
-			t1 = new DirectoryInfo (assemblyLocation);
+	        // /usr/local/lib/mono/1.0
+	        assemblyLocation = Path.GetDirectoryName(typeof (object).Assembly.Location);
+	        t1 = new DirectoryInfo(assemblyLocation);
 
-			// usr/local/lib/mono
-			t2 = t1.Parent;
+	        // usr/local/lib/mono
+	        t2 = t1.Parent;
 
-			lib_mono_dir = t2.FullName;
+	        lib_mono_dir = t2.FullName;
 
-			var windowsPath = Environment.GetFolderPath (Environment.SpecialFolder.Windows);
-			runningOnDotNet = !string.IsNullOrEmpty (windowsPath) && lib_mono_dir.StartsWith (windowsPath);
+	        var windowsPath = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+	        runningOnDotNet = !string.IsNullOrEmpty(windowsPath) && lib_mono_dir.StartsWith(windowsPath);
 
-			if (Environment.GetEnvironmentVariable ("TESTING_MONO") != null) {
-				mono_dir = new string [] {
-					Path.Combine (lib_mono_dir, "net_1_0"),
-					Path.Combine (lib_mono_dir, "net_2_0"),
-					Path.Combine (lib_mono_dir, "net_2_0"),
-					Path.Combine (lib_mono_dir, "net_3_5"),
-					// mono's 4.0 is not an actual framework directory with all tools etc
-					// it's simply reference assemblies. So like .NET we consider 4.5 to
-					// be a complete replacement for 4.0.
-					Path.Combine (lib_mono_dir, "net_4_5"),
-					Path.Combine (lib_mono_dir, "net_4_5"),
-					Path.Combine (lib_mono_dir, "net_4_5")
-				};	
-			} else if (runningOnDotNet) {
-				mono_dir = new string [] {
-					Path.Combine (lib_mono_dir, "v1.0.3705"),
-					Path.Combine (lib_mono_dir, "v2.0.50727"),
-					Path.Combine (lib_mono_dir, "v2.0.50727"),
-					Path.Combine (lib_mono_dir, "v3.5"),
-					Path.Combine (lib_mono_dir, "v4.0.30319"),
-					Path.Combine (lib_mono_dir, "v4.0.30319"),
-					Path.Combine (lib_mono_dir, "v4.0.30319")
-				};
-			} else {
-				mono_dir = new string [] {
-					Path.Combine (lib_mono_dir, "1.0"),
-					Path.Combine (lib_mono_dir, "2.0"),
-					Path.Combine (lib_mono_dir, "2.0"),
-					Path.Combine (lib_mono_dir, "3.5"),
-					// see comment above regarding 4.0/4.5
-					Path.Combine (lib_mono_dir, "4.5"),
-					Path.Combine (lib_mono_dir, "4.5"),
-					Path.Combine (lib_mono_dir, "4.5"),
-				};
-			}
+	        if (Environment.GetEnvironmentVariable("TESTING_MONO") != null)
+	        {
+	            mono_dir = new string[]
+	            {
+	                Path.Combine(lib_mono_dir, "net_1_0"),
+	                Path.Combine(lib_mono_dir, "net_2_0"),
+	                Path.Combine(lib_mono_dir, "net_2_0"),
+	                Path.Combine(lib_mono_dir, "net_3_5"),
+	                // mono's 4.0 is not an actual framework directory with all tools etc
+	                // it's simply reference assemblies. So like .NET we consider 4.5 to
+	                // be a complete replacement for 4.0.
+	                Path.Combine(lib_mono_dir, "net_4_5"),
+	                Path.Combine(lib_mono_dir, "net_4_5"),
+	                Path.Combine(lib_mono_dir, "net_4_5")
+	            };
+	        }
+	        else if (runningOnDotNet)
+	        {
+	            mono_dir = new string[]
+	            {
+	                Path.Combine(lib_mono_dir, "v1.0.3705"),
+	                Path.Combine(lib_mono_dir, "v2.0.50727"),
+	                Path.Combine(lib_mono_dir, "v2.0.50727"),
+	                Path.Combine(lib_mono_dir, "v3.5"),
+	                Path.Combine(lib_mono_dir, "v4.0.30319"),
+	                Path.Combine(lib_mono_dir, "v4.0.30319"),
+	                Path.Combine(lib_mono_dir, "v4.0.30319")
+	            };
+	        }
+	        else
+	        {
+	            mono_dir = new string[]
+	            {
+	                Path.Combine(lib_mono_dir, "1.0"),
+	                Path.Combine(lib_mono_dir, "2.0"),
+	                Path.Combine(lib_mono_dir, "2.0"),
+	                Path.Combine(lib_mono_dir, "3.5"),
+	                // see comment above regarding 4.0/4.5
+	                Path.Combine(lib_mono_dir, "4.5"),
+	                Path.Combine(lib_mono_dir, "4.5"),
+	                Path.Combine(lib_mono_dir, "4.5"),
+	            };
+	        }
+            SupportedFrameworkNames = new List<string>();
+	        var rootPath = Path.GetFullPath(Path.Combine(lib_mono_dir, "xbuild-frameworks"));
+	        foreach (var frameworkIdentifierPath in Directory.EnumerateDirectories(rootPath))
+	        {
+	            var frameworkIdentifier = Path.GetDirectoryName(frameworkIdentifierPath);
+	            foreach (var versionPath in Directory.EnumerateDirectories(frameworkIdentifierPath))
+	            {
+	                var version = Path.GetDirectoryName(versionPath);
+	                SupportedFrameworkNames.Add(new FrameworkName(frameworkIdentifier, Version.Parse(version), string.Empty).FullName);
+	                var profileRootPath = Path.Combine(versionPath, "Profile");
+	                if (Directory.Exists(profileRootPath))
+	                {
+	                    foreach (var profilePath in Directory.EnumerateDirectories(profileRootPath))
+	                    {
+	                        var profile = Path.GetDirectoryName(profilePath);
+	                        SupportedFrameworkNames.Add(new FrameworkName(frameworkIdentifier, Version.Parse(version), profile).FullName);
+	                    }
+	                }
+	            }
+	        }
+	    }
 
-		}
-
-		[MonoTODO]
+	    [MonoTODO]
 		public static string GetDotNetFrameworkRootRegistryKey (TargetDotNetFrameworkVersion version)
 		{
 			throw new NotImplementedException ();
@@ -217,6 +247,17 @@ namespace Microsoft.Build.Utilities
 				throw new NotImplementedException ();
 			}
 		}
+
+	    public static IList<string> GetPathToReferenceAssemblies(FrameworkName frameworkName)
+	    {
+	        return new List<string> {GetPathToStandardLibraries(frameworkName.Identifier, frameworkName.Version.ToString(), frameworkName.Profile)};
+	    }
+
+	    public static IList<string> GetSupportedTargetFrameworks()
+	    {
+	        return SupportedFrameworkNames;
+	    }
+
 
 #if XBUILD_12
 		public static string CurrentToolsVersion {
