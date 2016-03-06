@@ -8,6 +8,10 @@ Assembly/AssemblyInfo.cs
 System.Web.Configuration/MembershipPasswordCompatibilityMode.cs
 System.Web.Security/IMembershipHelper.cs
 ../../../external/referencesource/System.Web.ApplicationServices/Security/IMembershipAdapter.cs
+../../../external/referencesource/System.Web.ApplicationServices/Hosting/CustomLoaderAttribute.cs
+../../../external/referencesource/System.Web.ApplicationServices/Hosting/CustomLoaderHelper.cs
+../../../external/referencesource/System.Web.ApplicationServices/Hosting/ICustomLoaderHelperFunctions.cs
+../../../external/referencesource/System.Web.ApplicationServices/ApplicationServicesStrings.Designer.cs
 
 System.Web.UI/KeyedList.cs
 System.Web.UI/KeyedListEnumerator.cs
