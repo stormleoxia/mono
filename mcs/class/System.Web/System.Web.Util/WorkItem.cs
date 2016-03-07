@@ -27,25 +27,52 @@
 //
 
 using System.Security.Permissions;
+using System.Threading;
 
 namespace System.Web.Util
 {
-	// CAS
-	[AspNetHostingPermission (SecurityAction.LinkDemand, Level = AspNetHostingPermissionLevel.Minimal)]
-	[AspNetHostingPermission (SecurityAction.InheritanceDemand, Level = AspNetHostingPermissionLevel.Minimal)]
-	public class WorkItem
-	{
-		public WorkItem ()
-		{
-		}
+    public delegate void WorkItemCallback();
 
-		[SecurityPermission (SecurityAction.Demand, UnmanagedCode = true)]
-		[MonoTODO ("Not implemented, not currently supported by Mono")]
-		public static void Post (WorkItemCallback callback)
-		{
-			// note: this is the documented exception for (Windows) OS prior to NT
-			// so in this case we won't throw a NotImplementedException
-			throw new PlatformNotSupportedException ("Not supported on mono");
-		}
-	}
+
+    /// <summary>
+    /// Support for positing of work items to a different thread
+    /// </summary>
+    [AspNetHostingPermission(SecurityAction.LinkDemand, Level = AspNetHostingPermissionLevel.Minimal)]
+    [AspNetHostingPermission(SecurityAction.InheritanceDemand, Level = AspNetHostingPermissionLevel.Minimal)]
+    public class WorkItem
+    {
+        private static readonly WaitCallback _onQueueUserWorkItemCompletion = OnQueueUserWorkItemCompletion;
+
+
+        [SecurityPermission(SecurityAction.Demand, Unrestricted = true)]
+        public static void Post(WorkItemCallback callback)
+        {
+            PostInternal(callback);
+        }
+
+        /// <summary>
+        /// Assert to disregard the user code up the compressed stack.
+        /// </summary>
+        /// <param name="callback">The callback.</param>
+        [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
+        private static void CallCallbackWithAssert(WorkItemCallback callback)
+        {
+            callback();
+        }
+
+        private static void OnQueueUserWorkItemCompletion(object state)
+        {
+            WorkItemCallback callback = state as WorkItemCallback;
+
+            if (callback != null)
+            {
+                CallCallbackWithAssert(callback);
+            }
+        }
+
+        internal static void PostInternal(WorkItemCallback callback)
+        {
+            ThreadPool.QueueUserWorkItem(_onQueueUserWorkItemCompletion, callback);
+        }
+    }
 }

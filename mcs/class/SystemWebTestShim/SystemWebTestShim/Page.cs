@@ -37,14 +37,15 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 			set; private get;
 #else
-			set { base.RawViewState = value; }
+            set; private get;
+			//set { base.RawViewState = value; }
 #endif
 		}
 
 		public new void SetContext (HttpContext ctx)
 		{
 #if !TARGET_DOTNET
-			base.SetContext (ctx);
+			//base.SetContext (ctx);
 #endif
 		}
 	}

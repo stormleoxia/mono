@@ -37,8 +37,9 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 			get; set;
 #else
-			get { return Orig.GetConfigCapabilities_called; }
-			set { Orig.GetConfigCapabilities_called = value; }
+            get; set;
+            //get { return Orig.GetConfigCapabilities_called; }
+            //set { Orig.GetConfigCapabilities_called = value; }
 #endif
 		}
 	}

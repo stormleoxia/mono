@@ -67,12 +67,12 @@ namespace MonoCasTests.System.Web.UI {
 			LosFormatter lf = new LosFormatter (true, String.Empty);
 		}
 
-		[Test]
-		[PermissionSet (SecurityAction.Deny, Unrestricted = true)]
-		public void CtorBoolByteArray_Deny_Unrestricted ()
-		{
-			LosFormatter lf = new LosFormatter (true, (byte[])null);
-		}
+        //[Test]
+        //[PermissionSet (SecurityAction.Deny, Unrestricted = true)]
+        //public void CtorBoolByteArray_Deny_Unrestricted ()
+        //{
+        //    LosFormatter lf = new LosFormatter (true, (byte[])null);
+        //}
 
 		// LinkDemand
 

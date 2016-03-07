@@ -61,34 +61,34 @@ namespace MonoTests.System.Web.UI
 			return serializedData;
 		}
 
-		[Test]
-		public void Ctor_BoolByteArray ()
-		{
-			LosFormatter lf1 = new LosFormatter (false, (byte []) null);
-			string expected = NoKeyRoundTrip (lf1, "false, null");
+//        [Test]
+//        public void Ctor_BoolByteArray ()
+//        {
+//            LosFormatter lf1 = new LosFormatter (false, (byte []) null);
+//            string expected = NoKeyRoundTrip (lf1, "false, null");
 
-			LosFormatter lf2 = new LosFormatter (true, (byte []) null);
-			Assert.AreEqual (expected, NoKeyRoundTrip (lf2, "true, null"), "2");
+//            LosFormatter lf2 = new LosFormatter (true, (byte []) null);
+//            Assert.AreEqual (expected, NoKeyRoundTrip (lf2, "true, null"), "2");
 
-			LosFormatter lf3 = new LosFormatter (false, Empty);
-			Assert.AreEqual (expected, NoKeyRoundTrip (lf3, "false, empty"), "3");
+//            LosFormatter lf3 = new LosFormatter (false, Empty);
+//            Assert.AreEqual (expected, NoKeyRoundTrip (lf3, "false, empty"), "3");
 
-			// an empty key is still a key - a signature is appended
-			LosFormatter lf4 = new LosFormatter (true, Empty);
-			string signed = NoKeyRoundTrip (lf4, "true, empty");
-			Assert.AreNotEqual (expected, signed, "4");
+//            // an empty key is still a key - a signature is appended
+//            LosFormatter lf4 = new LosFormatter (true, Empty);
+//            string signed = NoKeyRoundTrip (lf4, "true, empty");
+//            Assert.AreNotEqual (expected, signed, "4");
 
-			byte [] data = Convert.FromBase64String (expected);
-			byte [] signed_data = Convert.FromBase64String (signed);
-			Assert.IsTrue (BitConverter.ToString (signed_data).StartsWith (BitConverter.ToString (data)), "4 / same data");
-#if NET_4_0
-			// 32 bytes == 256 bits -> match HMACSHA256 as default
-			Assert.AreEqual (32, signed_data.Length - data.Length, "signature length");
-#else
-			// 20 bytes == 160 bits -> match HMACSHA1 as default
-			Assert.AreEqual (20, signed_data.Length - data.Length, "signature length");
-#endif
-		}
+//            byte [] data = Convert.FromBase64String (expected);
+//            byte [] signed_data = Convert.FromBase64String (signed);
+//            Assert.IsTrue (BitConverter.ToString (signed_data).StartsWith (BitConverter.ToString (data)), "4 / same data");
+//#if NET_4_0
+//            // 32 bytes == 256 bits -> match HMACSHA256 as default
+//            Assert.AreEqual (32, signed_data.Length - data.Length, "signature length");
+//#else
+//            // 20 bytes == 160 bits -> match HMACSHA1 as default
+//            Assert.AreEqual (20, signed_data.Length - data.Length, "signature length");
+//#endif
+//        }
 
 		[Test]
 		public void Ctor_BoolString ()

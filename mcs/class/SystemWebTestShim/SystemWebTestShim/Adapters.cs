@@ -41,7 +41,7 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 		public PageAdapter (Page p) : base () { }
 #else
-		public PageAdapter (Page p) : base (p) {}
+		public PageAdapter (Page p) : base () {}
 #endif
 	}
 }
@@ -53,7 +53,7 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 		public DataBoundControlAdapter (DataBoundControl c) : base () { }
 #else
-		public DataBoundControlAdapter (DataBoundControl c) : base (c) {}
+		public DataBoundControlAdapter (DataBoundControl c) : base () {}
 #endif
 
 		public new void PerformDataBinding (IEnumerable data)
@@ -66,7 +66,7 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 		public HierarchicalDataBoundControlAdapter (HierarchicalDataBoundControl h) : base () { }
 #else
-		public HierarchicalDataBoundControlAdapter (HierarchicalDataBoundControl h) : base (h) {}
+		public HierarchicalDataBoundControlAdapter (HierarchicalDataBoundControl h) : base () {}
 #endif
 
 		public new void PerformDataBinding ()
@@ -79,7 +79,7 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 		public WebControlAdapter (WebControl c) : base () {}
 #else
-		public WebControlAdapter (WebControl c) : base (c) {}
+		public WebControlAdapter (WebControl c) : base () {}
 #endif
 	}
 
@@ -87,7 +87,7 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 		public MenuAdapter (Menu c) : base () {}
 #else
-		public MenuAdapter (Menu c) : base (c) {}
+		public MenuAdapter (Menu c) : base () {}
 #endif
 	}
 
@@ -95,7 +95,7 @@ namespace SystemWebTestShim {
 #if TARGET_DOTNET
 		public HideDisabledControlAdapter (WebControl c) : base () { }
 #else
-		public HideDisabledControlAdapter (WebControl c) : base (c) {}
+		public HideDisabledControlAdapter (WebControl c) : base () {}
 #endif
 
 		public new void Render (HtmlTextWriter w)
